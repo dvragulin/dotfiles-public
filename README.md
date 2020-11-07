@@ -1,4 +1,4 @@
-# Dotfilies
+# Dotfiles
 
 ### dotfiles for n-master
 ```
