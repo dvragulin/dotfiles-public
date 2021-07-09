@@ -1,0 +1,82 @@
+---
+# tasks file for _prepare_applications
+
+- name: Upgrade all packages
+  become: yes
+  pacman: 
+    upgrade: yes
+
+
+- name: Install default packages
+  become: yes
+  pacman:
+    name: '{{ item }}'
+    state: present
+  loop:
+    - git
+    - mc
+    - make
+    - sudo
+    - gcc
+    - rsync
+    - go
+    - snapd
+    - guake
+    - vim-runtime
+    - ranger
+    - tmux
+    - tldr
+    - hstr
+    - ncdu
+    - fd
+    - bat
+    - exa
+    - jq
+    - git-delta-bin
+    - thunderbird
+    - mattermost
+    - asbru-cm
+    - calibre
+    - pidgin
+    - vlc
+    - obs-studio
+    - woeusb-gui
+    - youtube-dl
+    - wakeonlan
+    - pgadmin4
+    - python3
+    - python-pip
+    - trello
+    - llvm
+    - make
+    - wget
+    - htop
+    - google-chrome
+    - chromedriver
+
+
+- name: Install Snap packages
+  snap:
+    name: '{{ item }}'
+    state: present
+  loop:
+    - gitkraken
+    - skype
+    - discord
+    - powershell
+    - bitwarden
+    - postman
+    - whatsdesk
+    - pycharm-community
+
+- name: Install PIP packages
+  pip:
+    name: '{{ item }}'
+    state: latest
+  loop:
+    - requests
+    - jinja2
+    - flake8
+    - prettytable
+    - gitpython
+ 
