@@ -34,7 +34,6 @@
     - jq
     - git-delta-bin
     - thunderbird
-    - mattermost
     - asbru-cm
     - calibre
     - pidgin
@@ -53,6 +52,10 @@
     - htop
     - google-chrome
     - chromedriver
+    - zoom
+    - shotwell
+    - ipython
+    - telegram-desktop
 
 
 - name: Install Snap packages
@@ -68,6 +71,8 @@
     - postman
     - whatsdesk
     - pycharm-community
+    - mattermost-desktop
+    - slack
 
 - name: Install PIP packages
   pip:
