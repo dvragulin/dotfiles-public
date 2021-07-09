@@ -1,9 +1,2 @@
 ---
 # tasks file for _prepare_structure
-
-- name: install antigen
-  get_url:
-    url: http://git.io/antigen
-    dest: "$HOME/antigen.zsh"
-  become: no
-
