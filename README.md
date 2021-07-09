@@ -1,7 +1,7 @@
 # Dotfiles
 
-### dotfiles for n-master
+### Usage
 ```
-git clone https://github.com/dvragulin/CommonScripts.git; ./CommonScripts/dotfiles.sh
+wget -c https://raw.githubusercontent.com/dvragulin/dotfiles-public/master/auto_run.sh && chmod +x ./auto_run.sh && ./auto_run.sh 'sudo_password'
 ```
 
