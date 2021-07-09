@@ -1,6 +1,6 @@
 # Dotfiles
 
-Personal ansible roles for confuging my workstation
+Personal ansible roles for configuring my workstation
 
 #### Usage
 ```
@@ -9,6 +9,7 @@ wget -c https://raw.githubusercontent.com/dvragulin/dotfiles-public/master/auto_
 
 #### TODO
 - [ ] Host:
+    - [ ] prepear_applications
     - [ ] prepear_workstation
 
 - [ ] Dotfiles:
