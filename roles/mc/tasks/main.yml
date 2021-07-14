@@ -1,2 +1,17 @@
 ---
 # tasks file for mc
+
+- name: Link mc config files | ini
+  file:
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/mc/files/ini"
+    dest: "$HOME/.config/mc/ini"
+    state: link
+    force: yes
+
+- name: Link mc config files | panels.ini
+  file:
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/mc/files/panels.ini"
+    dest: "$HOME/.config/mc/panels.ini"
+    state: link
+    force: yes
+
