@@ -8,10 +8,10 @@ wget -c https://raw.githubusercontent.com/dvragulin/dotfiles-public/master/bin/b
 ```
 
 #### TODO
-- [ ] Host:
+- [x] Host:
     - [x] bootstrap
     - [x] prepear_applications
-    - [ ] prepear_workstation
+    - [x] prepear_workstation
 
 - [ ] Dotfiles:
     - [x] avatars

@@ -3,7 +3,7 @@
   hosts: DESKTOP
   become: yes
   roles:
-#    - _prepare_applications
+    - _prepare_applications
     - _prepare_workstation
 
 - name: Apply dotfiles
