@@ -1,2 +1,66 @@
 ---
 # defaults file for _prepare_applications
+default_packages:
+  - git           
+  - mc            
+  - make          
+  - sudo          
+  - gcc           
+  - rsync         
+  - go            
+  - snapd         
+  - guake         
+  - vim-runtime   
+  - ranger        
+  - tmux          
+  - tldr          
+  - hstr          
+  - ncdu          
+  - fd            
+  - bat           
+  - exa           
+  - jq            
+  - git-delta-bin 
+  - thunderbird       
+  - asbru-cm          
+  - calibre           
+  - pidgin            
+  - vlc               
+  - obs-studio        
+  - woeusb-gui        
+  - youtube-dl        
+  - wakeonlan         
+  - pgadmin4          
+  - python3           
+  - python-pip        
+  - trello            
+  - llvm              
+  - make              
+  - wget              
+  - htop              
+  - google-chrome     
+  - chromedriver      
+  - zoom              
+  - shotwell          
+  - ipython           
+  - telegram-desktop  
+
+snap_packages:
+  - gitkraken         
+  - skype             
+  - discord           
+  - powershell        
+  - bitwarden         
+  - postman           
+  - whatsdesk         
+  - pycharm-community 
+  - mattermost-desktop
+  - slack             
+
+pip_packages:
+  - requests   
+  - jinja2     
+  - flake8     
+  - prettytable
+  - gitpython  
+

@@ -12,76 +12,18 @@
   pacman:
     name: '{{ item }}'
     state: present
-  loop:
-    - git
-    - mc
-    - make
-    - sudo
-    - gcc
-    - rsync
-    - go
-    - snapd
-    - guake
-    - vim-runtime
-    - ranger
-    - tmux
-    - tldr
-    - hstr
-    - ncdu
-    - fd
-    - bat
-    - exa
-    - jq
-    - git-delta-bin
-    - thunderbird
-    - asbru-cm
-    - calibre
-    - pidgin
-    - vlc
-    - obs-studio
-    - woeusb-gui
-    - youtube-dl
-    - wakeonlan
-    - pgadmin4
-    - python3
-    - python-pip
-    - trello
-    - llvm
-    - make
-    - wget
-    - htop
-    - google-chrome
-    - chromedriver
-    - zoom
-    - shotwell
-    - ipython
-    - telegram-desktop
+  loop: "{{ default_packages }}"
 
 
 - name: Install Snap packages
   snap:
     name: '{{ item }}'
     state: present
-  loop:
-    - gitkraken
-    - skype
-    - discord
-    - powershell
-    - bitwarden
-    - postman
-    - whatsdesk
-    - pycharm-community
-    - mattermost-desktop
-    - slack
+  loop: "{{ snap_packages }}"
 
 - name: Install PIP packages
   pip:
     name: '{{ item }}'
     state: latest
-  loop:
-    - requests
-    - jinja2
-    - flake8
-    - prettytable
-    - gitpython
+  loop: "{{ pip_packages }}"
  
