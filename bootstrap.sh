@@ -1,5 +1,7 @@
 #!/bin/bash
 
+read -sp "Please enter your sudo password: " PW
+
 mkdir $HOME/GIT \
       $HOME/GIT/Projects_Home \
       $HOME/GIT/Projects_Personal \
@@ -12,5 +14,11 @@ git clone git@github.com:dvragulin/dotfiles-public.git
 
 cd dotfiles-public
 
-ansible-playbook playbook.yml --extra-vars "ansible_sudo_pass=$1"
+if ! [ -x "$(command -v ansible)" ]; then
+  yes | sudo -S pacman -SY ansible
+fi
+
+ansible-playbook playbook.yml --extra-vars "ansible_sudo_pass=$PW"
+
+echo "[INFO]: Bootstrap complete. Successfully set up environment."
 

@@ -4,7 +4,7 @@ Personal ansible roles for configuring my workstation
 
 #### Usage
 ```
-wget -c https://raw.githubusercontent.com/dvragulin/dotfiles-public/master/auto_run.sh && chmod +x ./auto_run.sh && ./auto_run.sh 'sudo_password'
+wget -c https://raw.githubusercontent.com/dvragulin/dotfiles-public/master/bin/bootstrap.sh && chmod +x ./bootstrap.sh && ./bootstrap.sh
 ```
 
 #### TODO
