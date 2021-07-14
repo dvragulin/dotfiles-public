@@ -9,22 +9,21 @@ wget -c https://raw.githubusercontent.com/dvragulin/dotfiles-public/master/bin/b
 
 #### TODO
 - [ ] Host:
-    - [ ] prepear_applications
+    - [x] bootstrap
+    - [x] prepear_applications
     - [ ] prepear_workstation
 
 - [ ] Dotfiles:
-    - [ ] asbru
-    - [ ] avatars
-    - [ ] bash
-    - [ ] docker
-    - [ ] feedbro
-    - [ ] git
-    - [ ] ranger
-    - [ ] rofi
-    - [ ] ssh
+    - [x] avatars
+    - [x] bash
+    - [x] feedbro
+    - [x] git
+    - [x] ranger
+    - [x] rofi
+    - [x] ssh
     - [ ] tmux
     - [ ] vim
-    - [ ] xinit
+    - [x] xinit
     - [ ] zsh
-    - [ ] mc
+    - [x] mc
 

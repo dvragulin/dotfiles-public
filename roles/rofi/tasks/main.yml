@@ -1,2 +1,10 @@
 ---
 # tasks file for rofi
+                                                                            
+- name: Link rofi config file | config
+  file:
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/rofi/files/config"
+    dest: "$HOME/.config/rofi/config"
+    state: link
+    force: yes
+

@@ -1,0 +1,17 @@
+---
+# tasks file for vim
+                                                                            
+- name: Link bash config file | .vimrc
+  file:
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/vim/files/vimrc"
+    dest: "$HOME/.vimrc"
+    state: link
+    force: yes
+
+- name: Link bash config file | plug.vim
+  file:
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/vim/files/plug.vim"
+    dest: "$HOME/.vim/autoload/plug.vim"
+    state: link
+    force: yes
+

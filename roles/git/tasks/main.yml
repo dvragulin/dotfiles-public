@@ -1,2 +1,10 @@
 ---
 # tasks file for git
+                                                                            
+- name: Link git config file | gitconfig
+  file:
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/git/files/gitconfig"
+    dest: "$HOME/.gitconfig"
+    state: link
+    force: yes
+

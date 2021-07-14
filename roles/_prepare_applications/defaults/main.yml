@@ -43,7 +43,9 @@ default_packages:
   - zoom              
   - shotwell          
   - ipython           
-  - telegram-desktop  
+  - telegram-desktop
+  - lazygit
+  - lazydocker
 
 snap_packages:
   - gitkraken         

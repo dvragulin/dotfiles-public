@@ -1,2 +1,27 @@
 ---
-# tasks file for _prepare_structure
+# tasks file for _prepare_workstation
+                                                                            
+- name: Change cat to bat
+  became: yes
+  file:
+    src: "/usr/bin/bat"
+    dest: "/bin/cat"
+    state: link
+    force: yes
+
+- name: Change lazygit to lg
+  became: yes
+  file:
+    src: "/usr/bin/lazygit"
+    dest: "/usr/bin/lg"
+    state: link
+    force: yes
+
+- name: Change lazydocker to ld
+  became: yes
+  file:
+    src: "/usr/bin/lazydocker"
+    dest: "/usr/bin/ld"
+    state: link
+    force: yes
+

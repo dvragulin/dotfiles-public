@@ -1,0 +1,92 @@
+[init]
+	defaultBranch = master
+[user]
+	name = Ragulin Dmitry
+	email = dvragulin@gmail.com
+[core]
+    editor = vim
+	autocrlf = input
+[http]
+	sslVerify = false
+[credential]
+	help = cache
+[help]
+	autocorrect = 5
+[submodule]
+	recurse = true
+[pull]
+  rebase = true
+[push]
+  default = current
+  followTags = true
+[fetch]
+  prune = true
+[branch]
+  autosetupmerge = always
+  autosetuprebase = always
+[pager] # https://github.com/dandavison/delta
+  diff = delta
+  log = delta
+  reflog = delta
+  show = delta
+[delta]
+  plus-style = "syntax #012800"
+  minus-style = "syntax #340001"
+  navigate = true
+  line-numbers = true
+  side-by-side = true
+  syntax-theme = Nord
+  file-added-label = [+]
+  file-copied-label = [C]
+  file-modified-label = [M]
+  file-removed-label = [-]
+  file-renamed-label = [R]
+  line-numbers-zero-style = "#545474"# italic
+[interactive]
+  diffFilter = delta --color-only
+[alias]
+  home = config user.email \"dvragulin@gmail.com\"
+  work = config user.email \"dragulin@ptsecurity.com\"
+;   st = status -s
+;   sts = status
+;   p = push
+;   pr = pull -r
+;   pushf = push --force-with-leas
+;   s = status
+;   rb = rebase
+;   rbc = rebase --continue
+;   rbs = rebase --skip
+;   rba = rebase --abort
+;   oops = commit --amend -a --no-edit
+;   fix-working-tree = !git rm --cached -r . && git reset --hard
+;   fixauthor = commit --amend --reset-author --no-edit
+;   remote-cleanup = !git branch -r --merged | grep -v 'development\\|dev\\|devel\\|master' | grep origin | cut -d/ -f2- | xargs -r -n 1 git push origin --delete
+;   local-cleanup = !git branch --merged | grep -v 'development\\|dev\\|devel\\|master' | grep origin | cut -d/ -f2- | xargs -r -n 1 git branch -d
+;   fork-cleanup = !git branch -r | grep origin/ | grep -v 'master$' | grep -v HEAD | cut -d/ -f2- | xargs -r -n 1 git push origin --delete
+;   rerun-ci = !git commit -m \"Rerun CI\" --allow-empty && git push
+;   ax = add --chmod=+x
+;   b  = !git --no-pager branch
+;   ba  = !git --no-pager branch -a
+;   ci = commit -v
+;   ciam = commit -v --amend
+;   ciamno = commit --amend --no-edit
+;   ciamnop = !git commit --amend --no-edit && git push --force-with-lease
+;   check = diff --check
+;   co = checkout
+;   cm = ! git checkout master && git pull || git pull
+;   cp = cherry-pick
+;   cpa = cherry-pick --abort
+;   cpc = cherry-pick --continue
+;   dc = diff --cached
+;   lf   = log --name-only --oneline
+;   lg   = log --graph --oneline --decorate
+;   lga  = log --graph --oneline --decorate --all
+;   lp  = log -p
+;   ls = log --pretty=format:'%h %an: %s' --graph --decorate
+;   please = push --force-with-lease
+;   r  = remote -v
+;   rba = rebase --abort
+;   rbc = rebase --continue
+;   rbi = rebase -i
+;   st = status -s
+;   sts = status

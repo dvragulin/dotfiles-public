@@ -6,7 +6,9 @@ mkdir $HOME/GIT \
       $HOME/GIT/Projects_Home \
       $HOME/GIT/Projects_Personal \
       $HOME/GIT/Projects_Tests \
-      $HOME/GIT/Projects_OpenSource
+      $HOME/GIT/Projects_OpenSource \
+      $HOME/.vim \
+      $HOME/.vim/autoload
 
 cd $HOME/GIT/Projects_Home/
 
@@ -19,6 +21,8 @@ if ! [ -x "$(command -v ansible)" ]; then
 fi
 
 ansible-playbook playbook.yml --extra-vars "ansible_sudo_pass=$PW"
+
+chsh -s $(which zsh)
 
 echo "[INFO]: Bootstrap complete. Successfully set up environment."
 
