@@ -22,7 +22,8 @@ fi
 
 ansible-playbook playbook.yml --extra-vars "ansible_sudo_pass=$PW"
 
-chsh -s $(which zsh)
+echo $PW | chsh -s $(which zsh)
 
-echo "[INFO]: Bootstrap complete. Successfully set up environment."
+echo
+echo "Bootstrap complete. Successfully set up environment."
 
