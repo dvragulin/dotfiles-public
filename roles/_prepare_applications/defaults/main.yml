@@ -46,6 +46,7 @@ default_packages:
   - telegram-desktop
   - lazygit
   - lazydocker
+  - asciinema
 
 snap_packages:
   - gitkraken         
