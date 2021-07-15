@@ -3,14 +3,14 @@
                                                                             
 - name: Link bash config file | .bashrc
   file:
-    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/bash/files/.bashrc"
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/bash/files/bashrc"
     dest: "$HOME/.bashrc"
     state: link
     force: yes
 
 - name: Link bash config file | .bash_profile
   file:
-    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/bash/files/.bash_profile"
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/bash/files/bash_profile"
     dest: "$HOME/.bash_profile"
     state: link
     force: yes
