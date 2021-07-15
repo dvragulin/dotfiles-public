@@ -25,3 +25,11 @@
     state: link
     force: yes
 
+- name: Link max user watches
+  become: yes
+  file:
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/_prepare_workstation/files/50-max_user_watches.conf"
+    dest: "/etc/sysctl.d/50-max_user_watches.conf"
+    state: link
+    force: yes
+
