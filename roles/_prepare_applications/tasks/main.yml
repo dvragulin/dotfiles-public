@@ -6,14 +6,12 @@
   pacman: 
     upgrade: yes
 
-
 - name: Install default packages
   become: yes
   pacman:
     name: '{{ item }}'
     state: present
   loop: "{{ default_packages }}"
-
 
 - name: Install Snap packages
   snap:
