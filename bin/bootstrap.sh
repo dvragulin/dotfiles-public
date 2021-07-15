@@ -7,6 +7,7 @@ mkdir $HOME/GIT \
       $HOME/GIT/Projects_Personal \
       $HOME/GIT/Projects_Tests \
       $HOME/GIT/Projects_OpenSource \
+      $HOME/.tmux \
       $HOME/.vim \
       $HOME/.vim/autoload
 
