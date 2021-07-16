@@ -1,0 +1,44 @@
+
+# --- Default configuration -------------------------------
+
+set window-height            1200
+set window-width             1000
+set adjust-open              "best-fit"
+set sandbox                  none
+set statusbar-h-padding      0
+set statusbar-v-padding      0
+set page-padding             1
+set selection-clipboard      clipboard
+set pages-per-row            1
+set statusbar-basename       true
+set page-padding             1
+set adjust_window            width
+
+
+# --- Set colors ------------------------------------------
+
+map u scroll half-up
+map d scroll half-down
+map D toggle_page_mode
+map r reload
+map R rotate
+map K zoom in
+map J zoom out
+map i recolor
+map p print
+map g goto top
+
+
+# --- Set colors ------------------------------------------
+
+#set font                    "BreezeSans Regular 14"
+set completion-group-bg      "#2B2B2B"
+set completion-bg            "#2B2B2B"
+set completion-highlight-bg  "#2B2B2B"
+set notification-error-bg    "#2B2B2B"
+set notification-warning-bg  "#2B2B2B"
+set notification-bg          "#2B2B2B"
+set inputbar-bg              "#2B2B2B"
+set statusbar-bg             "#2B2B2B"
+set default-bg               "#2B2B2B"
+

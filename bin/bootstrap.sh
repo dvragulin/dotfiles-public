@@ -9,6 +9,7 @@ mkdir $HOME/GIT \
       $HOME/GIT/Projects_OpenSource \
       $HOME/GIT/Projects_Products \
       $HOME/.tmux \
+      $HOME/.config/zathura \
       $HOME/.vim \
       $HOME/.vim/autoload
 

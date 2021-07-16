@@ -1,0 +1,10 @@
+---
+# tasks file for zathura
+
+- name: Link zathura config file
+  file:
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/zathura/files/zathurarc"
+    dest: "$HOME/.config/zathura/zathurarc"
+    state: link
+    force: yes
+

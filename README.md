@@ -8,10 +8,14 @@ wget -c https://raw.githubusercontent.com/dvragulin/dotfiles-public/master/bin/b
 ```
 
 #### TODO
+- [ ] bootstrap:
+    - [x] Root auth
+    - [ ] Move mkdir's to `prepear_workstation` role
+
 - [x] Host:
     - [x] bootstrap
     - [x] prepear_applications
-    - [x] prepear_workstation
+    - [ ] prepear_workstation
 
 - [ ] Dotfiles:
     - [x] avatars
@@ -26,5 +30,5 @@ wget -c https://raw.githubusercontent.com/dvragulin/dotfiles-public/master/bin/b
     - [x] xinit
     - [ ] zsh
     - [x] mc
-    - [ ] zathura
+    - [x] zathura
 
