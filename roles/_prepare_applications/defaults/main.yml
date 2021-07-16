@@ -51,7 +51,6 @@ default_packages:
   - lazygit
   - lazydocker
   - asciinema
-  - alacritty
   - zathura
   - zathura-pdf-poopler
   - zathura-djvu
