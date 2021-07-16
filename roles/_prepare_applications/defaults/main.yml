@@ -51,6 +51,12 @@ default_packages:
   - lazygit
   - lazydocker
   - asciinema
+  - alacritty
+  - zathura
+  - zathura-pdf-poopler
+  - zathura-djvu
+  - zathura-ps
+
 
 snap_packages:
   - gitkraken

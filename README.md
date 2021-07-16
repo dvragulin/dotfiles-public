@@ -26,4 +26,6 @@ wget -c https://raw.githubusercontent.com/dvragulin/dotfiles-public/master/bin/b
     - [x] xinit
     - [ ] zsh
     - [x] mc
+    - [ ] zathura
+    - [ ] alacritty
 
