@@ -44,8 +44,6 @@
     replace: "CheckAURVCSUpdates"
 
 - name: Install pamac packages
-  shell:
-    shell: 'yes | pamac install {{ item }}'
-    state: latest
+  shell: 'yes | pamac install {{ item }}'
   loop: "{{ pamac_packages }}"
  
