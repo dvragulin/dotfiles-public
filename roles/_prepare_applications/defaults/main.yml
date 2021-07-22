@@ -12,7 +12,6 @@ default_packages:
   - ntfs-3g
   - virtualbox
   - vagrant
-  - go
   - snapd
   - guake
   - vim-runtime
@@ -78,4 +77,5 @@ pamac_packages:
   - git-delta-bin
   - wakeonlan
   - woeusb-gui
+  - go
 
