@@ -6,7 +6,6 @@ default_packages:
   - mc
   - net-tools
   - make
-  - sudo
   - gcc
   - rsync
   - ntfs-3g
@@ -16,8 +15,8 @@ default_packages:
   - guake
   - vim-runtime
   - ranger
+  - tldr
   - tmux
-  - hstr
   - ncdu
   - fd
   - bat
@@ -44,7 +43,6 @@ default_packages:
   - ipython
   - telegram-desktop
   - lazygit
-  - lazydocker
   - asciinema
   - zathura
   - zathura-pdf-poppler
@@ -72,10 +70,11 @@ pip_packages:
   - gitpython
 
 pamac_packages:
-  - tldr
   - chromedriver
   - git-delta-bin
   - wakeonlan
   - woeusb-gui
   - go
+  - hstr
+  - lazydocker
 
