@@ -7,7 +7,6 @@ mkdir $HOME/GIT \
       $HOME/GIT/Projects_Personal \
       $HOME/GIT/Projects_Tests \
       $HOME/GIT/Projects_OpenSource \
-      $HOME/GIT/Projects_Products \
       $HOME/.tmux \
       $HOME/.config/zathura \
       $HOME/.vim \
@@ -20,7 +19,7 @@ git clone git@github.com:dvragulin/dotfiles-public.git
 cd dotfiles-public
 
 if ! [ -x "$(command -v ansible)" ]; then
-  yes | sudo -S pacman -SY ansible
+  yes | sudo -S pacman -S ansible
 fi
 
 ansible-playbook playbook.yml --extra-vars "ansible_sudo_pass=$PW"

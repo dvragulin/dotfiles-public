@@ -18,23 +18,20 @@ default_packages:
   - vim-runtime
   - ranger
   - tmux
-  - tldr
   - hstr
   - ncdu
   - fd
   - bat
   - exa
+  - pamac
   - jq
-  - git-delta-bin
   - thunderbird
   - asbru-cm
   - calibre
   - pidgin
   - vlc
   - obs-studio
-  - woeusb-gui
   - youtube-dl
-  - wakeonlan
   - pgadmin4
   - python3
   - python-pip
@@ -43,7 +40,6 @@ default_packages:
   - make
   - htop
   - google-chrome
-  - chromedriver
   - zoom
   - shotwell
   - ipython
@@ -75,4 +71,11 @@ pip_packages:
   - flake8
   - prettytable
   - gitpython
+
+pamac_packages:
+  - tldr
+  - chromedriver
+  - git-delta-bin
+  - wakeonlan
+  - woeusb-gui
 

@@ -24,4 +24,28 @@
     name: '{{ item }}'
     state: latest
   loop: "{{ pip_packages }}"
+
+- name: Enable AUR in /etc/pamac.conf
+  replace:
+    path: /etc/pamac.conf
+    regexp: "^#EnableAUR$"
+    replace: "EnableAUR"
+
+- name: Check AUR Updates in /etc/pamac.conf
+  replace:
+    path: /etc/pamac.conf
+    regexp: "^#CheckAURUpdates$"
+    replace: "CheckAURUpdates"
+
+- name: Check AUR VCS Updates in /etc/pamac.conf
+  replace:
+    path: /etc/pamac.conf
+    regexp: "^#CheckAURVCSUpdates$"
+    replace: "CheckAURVCSUpdates"
+
+- name: Install pamac packages
+  shell:
+    shell: 'yes | pamac install {{ item }}'
+    state: latest
+  loop: "{{ pamac_packages }}"
  
