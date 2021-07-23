@@ -25,25 +25,13 @@
     state: latest
   loop: "{{ pip_packages }}"
 
-- name: Enable AUR in /etc/pamac.conf
-  replace:
-    path: /etc/pamac.conf
-    regexp: "^#EnableAUR$"
-    replace: "EnableAUR"
+- name: Install packages
+  shell: "yes | pamac install ansible-aur-git"   
 
-- name: Check AUR Updates in /etc/pamac.conf
-  replace:
-    path: /etc/pamac.conf
-    regexp: "^#CheckAURUpdates$"
-    replace: "CheckAURUpdates"
+- name: Install AUR packages
+  aur:
+    name: "{{ item }}"
+    state: latest
+  loop: "{{ aur_packages }}"                   
+  become: false 
 
-- name: Check AUR VCS Updates in /etc/pamac.conf
-  replace:
-    path: /etc/pamac.conf
-    regexp: "^#CheckAURVCSUpdates$"
-    replace: "CheckAURVCSUpdates"
-
-- name: Install pamac packages
-  shell: 'yes | pamac install {{ item }}'
-  loop: "{{ pamac_packages }}"
- 

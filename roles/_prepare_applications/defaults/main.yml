@@ -51,6 +51,14 @@ default_packages:
   - zathura-djvu
   - zathura-ps
 
+aur_packages:
+  - chromedriver
+  - git-delta
+  - wakeonlan
+  - woeusb-gui
+  - go
+  - lazydocker
+  - hstr
 
 snap_packages:
   - gitkraken
@@ -70,12 +78,4 @@ pip_packages:
   - flake8
   - prettytable
   - gitpython
-
-pamac_packages:
-  - chromedriver
-  - delta
-  - wakeonlan
-  - woeusb-gui
-  - go
-  - lazydocker
 

@@ -8,6 +8,7 @@ mkdir $HOME/GIT \
       $HOME/GIT/Projects_Tests \
       $HOME/GIT/Projects_OpenSource \
       $HOME/.tmux \
+      $HOME/.config/rofi \
       $HOME/.config/zathura \
       $HOME/.vim \
       $HOME/.vim/autoload
@@ -20,6 +21,8 @@ cd dotfiles-public
 
 if ! [ -x "$(command -v ansible)" ]; then
   yes | sudo -S pacman -S ansible
+  yes | sudo -S pamac install ansible-aur-git
+  ansible-galaxy collection install community.general
 fi
 
 ansible-playbook playbook.yml --extra-vars "ansible_sudo_pass=$PW"
