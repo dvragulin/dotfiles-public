@@ -34,7 +34,7 @@ fi
 
 if ! [ -x "$(command -v ansible)" ]; then
   yes | sudo -S pacman -S ansible
-  yes | yay -Ss ansible-aur
+  yes | yay -S ansible-aur
   ansible-galaxy collection install community.general
 fi
 
