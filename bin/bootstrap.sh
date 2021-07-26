@@ -7,23 +7,35 @@ mkdir $HOME/GIT \
       $HOME/GIT/Projects_Personal \
       $HOME/GIT/Projects_Tests \
       $HOME/GIT/Projects_OpenSource \
+      $HOME/.config \
       $HOME/.tmux \
       $HOME/.config/rofi \
       $HOME/.config/zathura \
       $HOME/.vim \
       $HOME/.vim/autoload
 
-cd $HOME/GIT/Projects_Home/
-
-git clone git@github.com:dvragulin/dotfiles-public.git 
-
-cd dotfiles-public
+if ! [ -x "$(command -v pamac)" ]; then
+  sudo pacman -S --needed base-devel yajl
+  cd /tmp
+  git clone https://aur.archlinux.org/package-query.git
+  cd package-query/
+  makepkg -si && cd /tmp/
+  git clone https://aur.archlinux.org/yaourt.git
+  cd yaourt/
+  makepkg -si
+  yaourt -S pamac-aur
+  yes | sudo -S pamac install ansible-aur-git
+fi
 
 if ! [ -x "$(command -v ansible)" ]; then
   yes | sudo -S pacman -S ansible
   yes | sudo -S pamac install ansible-aur-git
   ansible-galaxy collection install community.general
 fi
+
+cd $HOME/GIT/Projects_Home/
+git clone https://github.com/dvragulin/dotfiles-public.git
+cd $HOME/GIT/Projects_Home/dotfiles-public
 
 ansible-playbook playbook.yml --extra-vars "ansible_sudo_pass=$PW"
 

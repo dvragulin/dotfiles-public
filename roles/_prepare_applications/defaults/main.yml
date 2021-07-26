@@ -45,6 +45,7 @@ default_packages:
   - ipython
   - telegram-desktop
   - lazygit
+  - etcher
   - asciinema
   - zathura
   - zathura-pdf-poppler
