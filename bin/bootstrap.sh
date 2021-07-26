@@ -20,13 +20,13 @@ if ! [ -x "$(command -v yay)" ]; then
   yes | sudo pacman -S --needed base-devel git yajl python3
   cd /tmp
   git clone https://aur.archlinux.org/yay.git && cd yay/
-  makepkg -si
+  yes | makepkg -si
 fi
 
 if ! [ -x "$(command -v snap)" ]; then
   cd /tmp && git clone https://aur.archlinux.org/snapd.git
   cd snapd
-  makepkg -si
+  yes | makepkg -si
   sudo systemctl enable --now snapd.socket
   sudo ln -s /var/lib/snapd/snap /snap
 fi
