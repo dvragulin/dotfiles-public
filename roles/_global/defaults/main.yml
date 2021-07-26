@@ -2,7 +2,11 @@
 # defaults file for _applications
 
 pacman_packages:
-  - mc
+  - base
+  - base-devel
+  - linux
+  - linux-firmware
+  - openssh
   - net-tools
   - rsync
   - ntfs-3g
@@ -15,6 +19,7 @@ pacman_packages:
   - tldr
   - tmux
   - ncdu
+  - mc
   - fd
   - bat
   - exa
@@ -55,12 +60,12 @@ aur_packages:
   - etcher
 
 snap_packages:
-  - skype
   - discord
   - bitwarden
   - postman
   - whatsdesk
   - mattermost-desktop
+  - skype
 
 snap_classic_packages:
   - gitkraken
