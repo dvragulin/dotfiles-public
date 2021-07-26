@@ -1,13 +1,7 @@
 ---
-# tasks file for _prepare_applications
+# tasks file for _applications
 
-- name: Upgrade all packages
-  become: yes
-  pacman: 
-    upgrade: yes
-
-- name: Install default packages
-  become: yes
+- name: Install pacman packages
   pacman:
     name: '{{ item }}'
     state: present
@@ -25,13 +19,9 @@
     state: latest
   loop: "{{ pip_packages }}"
 
-- name: Install packages
-  shell: "yes | pamac install ansible-aur-git"   
-
 - name: Install AUR packages
+  become: false
   aur:
     name: "{{ item }}"
     state: latest
   loop: "{{ aur_packages }}"                   
-  become: false 
-

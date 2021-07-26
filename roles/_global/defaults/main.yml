@@ -1,6 +1,7 @@
 ---
-# defaults file for _prepare_applications
-default_packages:
+# defaults file for _applications
+
+pacman_packages:
   - mc
   - net-tools
   - rsync
@@ -39,13 +40,13 @@ default_packages:
   - zathura-pdf-poppler
   - zathura-djvu
   - zathura-ps
+  - alacritty
 
 aur_packages:
   - chromedriver
   - git-delta
   - wakeonlan
   - woeusb-gui
-  - go
   - lazydocker
   - hstr
   - asbru-cm
@@ -71,4 +72,3 @@ pip_packages:
   - flake8
   - prettytable
   - gitpython
-

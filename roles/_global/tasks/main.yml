@@ -1,0 +1,7 @@
+---
+# tasks file for _applications
+
+- name: Upgrade all packages
+  become: yes
+  pacman:
+    upgrade: yes

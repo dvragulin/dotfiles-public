@@ -1,5 +1,5 @@
 ---
-# tasks file for _prepare_workstation
+# tasks file for _applications
                                                                             
 - name: Link cat to bat
   become: yes
@@ -17,18 +17,18 @@
     state: link
     force: yes
 
-- name: Link lazydocker to ld
+- name: Link lazydocker to ldocker
   become: yes
   file:
     src: "/usr/bin/lazydocker"
-    dest: "/usr/bin/ld"
+    dest: "/usr/bin/ldocker"
     state: link
     force: yes
 
 - name: Link max user watches
   become: yes
   file:
-    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/_prepare_workstation/files/50-max_user_watches.conf"
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/_global/files/50-max_user_watches.conf"
     dest: "/etc/sysctl.d/50-max_user_watches.conf"
     state: link
     force: yes
@@ -36,7 +36,7 @@
 - name: Link locale.gen
   become: yes
   file:
-    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/_prepare_workstation/files/locale.gen"
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/_global/files/locale.gen"
     dest: "/etc/locale.gen"
     state: link
     force: yes
@@ -44,8 +44,7 @@
 - name: Link locale.conf
   become: yes
   file:
-    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/_prepare_workstation/files/locale.conf"
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/_global/files/locale.conf"
     dest: "/etc/locale.conf"
     state: link
     force: yes
-

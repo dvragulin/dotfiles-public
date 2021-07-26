@@ -8,6 +8,7 @@ mkdir $HOME/GIT \
       $HOME/GIT/Projects_Tests \
       $HOME/GIT/Projects_OpenSource \
       $HOME/.config \
+      $HOME/.ssh \
       $HOME/.tmux \
       $HOME/.config/rofi \
       $HOME/.config/zathura \
@@ -20,13 +21,13 @@ if ! [ -x "$(command -v yay)" ]; then
   yes | sudo pacman -S --needed base-devel git yajl python3
   cd /tmp
   git clone https://aur.archlinux.org/yay.git && cd yay/
-  yes | makepkg -si
+  makepkg -si
 fi
 
 if ! [ -x "$(command -v snap)" ]; then
   cd /tmp && git clone https://aur.archlinux.org/snapd.git
   cd snapd
-  yes | makepkg -si
+  makepkg -si
   sudo systemctl enable --now snapd.socket
   sudo ln -s /var/lib/snapd/snap /snap
 fi
@@ -43,7 +44,7 @@ cd $HOME/GIT/Projects_Home/dotfiles-public
 
 ansible-playbook playbook.yml --extra-vars "ansible_sudo_pass=$PW"
 
-echo $PW | chsh -s $(which zsh)
+echo $PW | chsh -s "$(which zsh)"
 
 echo
 echo "Bootstrap complete. Successfully set up environment."
