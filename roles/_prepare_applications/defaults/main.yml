@@ -1,21 +1,15 @@
 ---
 # defaults file for _prepare_applications
 default_packages:
-  - curl
-  - git
   - mc
   - net-tools
-  - make
-  - gcc
   - rsync
   - ntfs-3g
   - virtualbox
   - vagrant
-  - snapd
-  - snapd-glib
   - snappy
   - guake
-  - vim-runtime
+  - vim
   - ranger
   - tldr
   - tmux
@@ -23,24 +17,18 @@ default_packages:
   - fd
   - bat
   - exa
-  - pamac
   - jq
   - thunderbird
-  - asbru-cm
   - calibre
   - pidgin
   - vlc
   - obs-studio
   - youtube-dl
   - pgadmin4
-  - python3
   - python-pip
-  - trello
   - llvm
   - make
   - htop
-  - google-chrome
-  - zoom
   - shotwell
   - ipython
   - telegram-desktop
@@ -60,6 +48,10 @@ aur_packages:
   - go
   - lazydocker
   - hstr
+  - asbru-cm
+  - trello
+  - zoom
+  - google-chrome
 
 snap_packages:
   - gitkraken

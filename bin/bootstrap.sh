@@ -14,23 +14,26 @@ mkdir $HOME/GIT \
       $HOME/.vim \
       $HOME/.vim/autoload
 
-#if ! [ -x "$(command -v pamac)" ]; then
-yes | sudo pacman -S --needed base-devel yajl
-cd /tmp
-git clone https://aur.archlinux.org/package-query.git
-cd package-query/
-makepkg -si && cd /tmp/
-git clone https://aur.archlinux.org/yaourt.git
-cd yaourt/
-makepkg -si
-yaourt -S pamac-aur && cd /tmp/
-git clone	https://aur.archlinux.org/ansible-aur-git.git
-cd ansible-aur-git/
-makepkg -si
-#fi
+set -e
+
+if ! [ -x "$(command -v yay)" ]; then
+  yes | sudo pacman -S --needed base-devel git yajl python3
+  cd /tmp
+  git clone https://aur.archlinux.org/yay.git && cd yay/
+  makepkg -si
+fi
+
+if ! [ -x "$(command -v snap)" ]; then
+  cd /tmp && git clone https://aur.archlinux.org/snapd.git
+  cd snapd
+  makepkg -si
+  sudo systemctl enable --now snapd.socket
+  sudo ln -s /var/lib/snapd/snap /snap
+fi
 
 if ! [ -x "$(command -v ansible)" ]; then
   yes | sudo -S pacman -S ansible
+  yes | yay -Ss ansible-aur
   ansible-galaxy collection install community.general
 fi
 
