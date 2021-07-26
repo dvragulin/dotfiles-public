@@ -1,8 +1,9 @@
 #!/bin/bash
 
 read -sp "Please enter your sudo password: " PW
+set -e
 
-if [ ! -d "$DIRECTORY" ]; then
+if [ ! -d "$HOME/GIT" ]; then
   mkdir $HOME/GIT \
         $HOME/GIT/Projects_Home \
         $HOME/GIT/Projects_Personal \
@@ -17,7 +18,7 @@ if [ ! -d "$DIRECTORY" ]; then
         $HOME/.vim/autoload
 fi
 
-set -e
+# --- Install yay (if not exist)  -------------------------------------------------------------------------------------
 
 if ! [ -x "$(command -v yay)" ]; then
   yes | sudo pacman -S --needed base-devel git yajl python3
@@ -26,28 +27,31 @@ if ! [ -x "$(command -v yay)" ]; then
   makepkg -si
 fi
 
+# --- Install snap (if not exist)  ------------------------------------------------------------------------------------
+
 if ! [ -x "$(command -v snap)" ]; then
   yes | yay -S --noconfirm --needed snapd
-#  cd /tmp && git clone https://aur.archlinux.org/snapd.git
-#  cd snapd
-#  makepkg -si
   sudo systemctl enable --now snapd.socket
   sudo ln -s /var/lib/snapd/snap /snap
   echo "export PATH=\$PATH:\/snap/bin/" | sudo tee -a /etc/profile
 fi
 
+# --- Install ansible (if not exist) ----------------------------------------------------------------------------------
+
 if ! [ -x "$(command -v ansible)" ]; then
   yes | sudo -S pacman -S ansible
-  yes | yay -S  --noconfirm ansible-aur
-  yes | yay -S --noconfirm --needed snapd
+  yes | yay -S --noconfirm ansible-aur
   ansible-galaxy collection install community.general
 fi
 
+# --- Run playbook ---------------------------------------------------------------------------------------------------
 cd $HOME/GIT/Projects_Home/
 git clone https://github.com/dvragulin/dotfiles-public.git
 cd $HOME/GIT/Projects_Home/dotfiles-public
 
 ansible-playbook playbook.yml --extra-vars "ansible_sudo_pass=$PW"
+
+# --- Finaly ----- ---------------------------------------------------------------------------------------------------
 
 echo $PW | chsh -s "$(which zsh)"
 
