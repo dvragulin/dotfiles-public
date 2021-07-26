@@ -16,5 +16,6 @@
     force: yes
 
 - name: Apply configuration
+  become: false
   command: "tmux source $HOME/.tmux.conf"
 
