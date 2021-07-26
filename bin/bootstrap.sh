@@ -14,20 +14,20 @@ mkdir $HOME/GIT \
       $HOME/.vim \
       $HOME/.vim/autoload
 
-if ! [ -x "$(command -v pamac)" ]; then
-  yes | sudo pacman -S --needed base-devel yajl
-  cd /tmp
-  git clone https://aur.archlinux.org/package-query.git
-  cd package-query/
-  makepkg -si && cd /tmp/
-  git clone https://aur.archlinux.org/yaourt.git
-  cd yaourt/
-  makepkg -si
-  yaourt -S pamac-aur && cd /tmp/
-  git clone	https://aur.archlinux.org/ansible-aur-git.git
-  cd ansible-aur-git/
-  makepkg -si
-fi
+#if ! [ -x "$(command -v pamac)" ]; then
+yes | sudo pacman -S --needed base-devel yajl
+cd /tmp
+git clone https://aur.archlinux.org/package-query.git
+cd package-query/
+makepkg -si && cd /tmp/
+git clone https://aur.archlinux.org/yaourt.git
+cd yaourt/
+makepkg -si
+yaourt -S pamac-aur && cd /tmp/
+git clone	https://aur.archlinux.org/ansible-aur-git.git
+cd ansible-aur-git/
+makepkg -si
+#fi
 
 if ! [ -x "$(command -v ansible)" ]; then
   yes | sudo -S pacman -S ansible
