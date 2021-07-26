@@ -34,7 +34,6 @@ pacman_packages:
   - ipython
   - telegram-desktop
   - lazygit
-  - etcher
   - asciinema
   - zathura
   - zathura-pdf-poppler
@@ -53,6 +52,7 @@ aur_packages:
   - trello
   - zoom
   - google-chrome
+  - etcher
 
 snap_packages:
   - gitkraken
