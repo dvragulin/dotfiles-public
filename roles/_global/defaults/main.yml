@@ -80,7 +80,6 @@ pip_packages:
   - gitpython
 
 i3_packages:
-  - i3-wm
   - xorg-server
   - xorg-apps
   - xorg-xinit
