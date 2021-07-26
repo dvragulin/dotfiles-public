@@ -2,18 +2,20 @@
 
 read -sp "Please enter your sudo password: " PW
 
-mkdir $HOME/GIT \
-      $HOME/GIT/Projects_Home \
-      $HOME/GIT/Projects_Personal \
-      $HOME/GIT/Projects_Tests \
-      $HOME/GIT/Projects_OpenSource \
-      $HOME/.config \
-      $HOME/.ssh \
-      $HOME/.tmux \
-      $HOME/.config/rofi \
-      $HOME/.config/zathura \
-      $HOME/.vim \
-      $HOME/.vim/autoload
+if [ ! -d "$DIRECTORY" ]; then
+  mkdir $HOME/GIT \
+        $HOME/GIT/Projects_Home \
+        $HOME/GIT/Projects_Personal \
+        $HOME/GIT/Projects_Tests \
+        $HOME/GIT/Projects_OpenSource \
+        $HOME/.config \
+        $HOME/.ssh \
+        $HOME/.tmux \
+        $HOME/.config/rofi \
+        $HOME/.config/zathura \
+        $HOME/.vim \
+        $HOME/.vim/autoload
+fi
 
 set -e
 
@@ -25,16 +27,19 @@ if ! [ -x "$(command -v yay)" ]; then
 fi
 
 if ! [ -x "$(command -v snap)" ]; then
-  cd /tmp && git clone https://aur.archlinux.org/snapd.git
-  cd snapd
-  makepkg -si
+  yes | yay -S --noconfirm --needed snapd
+#  cd /tmp && git clone https://aur.archlinux.org/snapd.git
+#  cd snapd
+#  makepkg -si
   sudo systemctl enable --now snapd.socket
   sudo ln -s /var/lib/snapd/snap /snap
+  echo "export PATH=\$PATH:\/snap/bin/" | sudo tee -a /etc/profile
 fi
 
 if ! [ -x "$(command -v ansible)" ]; then
   yes | sudo -S pacman -S ansible
-  yes | yay -S ansible-aur
+  yes | yay -S  --noconfirm ansible-aur
+  yes | yay -S --noconfirm --needed snapd
   ansible-galaxy collection install community.general
 fi
 
@@ -48,4 +53,3 @@ echo $PW | chsh -s "$(which zsh)"
 
 echo
 echo "Bootstrap complete. Successfully set up environment."
-
