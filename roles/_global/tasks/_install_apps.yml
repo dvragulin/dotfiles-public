@@ -5,7 +5,7 @@
   pacman:
     name: '{{ item }}'
     state: present
-  loop: "{{ default_packages }}"
+  loop: "{{ pacman_packages }}"
 
 - name: Install Snap packages
   snap:
