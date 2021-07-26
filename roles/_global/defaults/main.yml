@@ -2,10 +2,6 @@
 # defaults file for _applications
 
 pacman_packages:
-  - base
-  - base-devel
-  - linux
-  - linux-firmware
   - openssh
   - net-tools
   - rsync
@@ -45,6 +41,7 @@ pacman_packages:
   - zathura-djvu
   - zathura-ps
   - alacritty
+  - zsh
 
 aur_packages:
   - chromedriver
@@ -53,6 +50,8 @@ aur_packages:
   - woeusb-gui
   - lazydocker
   - hstr
+  - vte3
+  - gtk2-perl
   - asbru-cm
   - trello
   - zoom
@@ -79,3 +78,22 @@ pip_packages:
   - flake8
   - prettytable
   - gitpython
+
+i3_packages:
+  - i3-wm
+  - xorg-server
+  - xorg-apps
+  - xorg-xinit
+  - i3-gaps
+  - i3blocks
+  - numlockx
+  - lightdm
+  - lightdm-gtk-greeter
+  - noto-fonts
+  - ttf-ubuntu-font-family
+  - ttf-dejavu
+  - ttf-freefont
+  - ttf-liberation
+  - ttf-droid
+  - ttf-roboto
+  - terminus-font
