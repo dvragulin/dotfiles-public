@@ -13,6 +13,13 @@
     state: present
   loop: "{{ snap_packages }}"
 
+- name: Install Snap classic packages
+  snap:
+    name: '{{ item }}'
+    classic: yes
+    state: present
+  loop: "{{ snap_classic_packages }}"
+
 - name: Install PIP packages
   pip:
     name: '{{ item }}'

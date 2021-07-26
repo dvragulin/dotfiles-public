@@ -55,15 +55,17 @@ aur_packages:
   - etcher
 
 snap_packages:
-  - gitkraken
   - skype
   - discord
-  - powershell
   - bitwarden
   - postman
   - whatsdesk
-  - pycharm-community
   - mattermost-desktop
+
+snap_classic_packages:
+  - gitkraken
+  - powershell
+  - pycharm-community
   - slack
 
 pip_packages:
