@@ -33,3 +33,19 @@
     state: link
     force: yes
 
+- name: Link locale.gen
+  become: yes
+  file:
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/_prepare_workstation/files/locale.gen"
+    dest: "/etc/locale.gen"
+    state: link
+    force: yes
+
+- name: Link locale.conf
+  become: yes
+  file:
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/_prepare_workstation/files/locale.conf"
+    dest: "/etc/locale.conf"
+    state: link
+    force: yes
+

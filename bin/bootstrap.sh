@@ -15,7 +15,7 @@ mkdir $HOME/GIT \
       $HOME/.vim/autoload
 
 if ! [ -x "$(command -v pamac)" ]; then
-  sudo pacman -S --needed base-devel yajl
+  yes | sudo pacman -S --needed base-devel yajl
   cd /tmp
   git clone https://aur.archlinux.org/package-query.git
   cd package-query/
@@ -23,13 +23,14 @@ if ! [ -x "$(command -v pamac)" ]; then
   git clone https://aur.archlinux.org/yaourt.git
   cd yaourt/
   makepkg -si
-  yaourt -S pamac-aur
-  yes | sudo -S pamac install ansible-aur-git
+  yaourt -S pamac-aur && cd /tmp/
+  git clone	https://aur.archlinux.org/ansible-aur-git.git
+  cd ansible-aur-git/
+  makepkg -si
 fi
 
 if ! [ -x "$(command -v ansible)" ]; then
   yes | sudo -S pacman -S ansible
-  yes | sudo -S pamac install ansible-aur-git
   ansible-galaxy collection install community.general
 fi
 
