@@ -8,4 +8,4 @@
 
 - include_tasks: _install_apps.yml
 - include_tasks: _install_i3.yml
-- include_tasks: _make_links.yml
+#- include_tasks: _make_links.yml
