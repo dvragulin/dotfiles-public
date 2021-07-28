@@ -10,7 +10,7 @@
   </outline>
   <outline title="Information Technologies" text="Information Technologies">
       <outline text="Все публикации подряд" title="Все публикации подряд" type="rss" 
-            xmlUrl="https://habr.com/ru/rss/all/all/?fl=ru" htmlUrl="https://habr.com/ru/all/all/"/>
+            xmlUrl="https://habr.com/ru/rss/all/all/?fl=ru" htmlUrl="https://habr.com/ru/all/"/>
       <outline text="GitLab" title="GitLab" type="rss" 
             xmlUrl="https://about.gitlab.com/atom.xml"/>
       <outline text="JetBrains Blog" title="JetBrains Blog" type="rss" 
