@@ -2,7 +2,7 @@
 # --- Default configuration -------------------------------
 
 set window-height            1200
-set window-width             1000
+set window-width             1800
 set adjust-open              "best-fit"
 set sandbox                  none
 set statusbar-h-padding      0
