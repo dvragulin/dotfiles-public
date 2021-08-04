@@ -32,19 +32,3 @@
     dest: "/etc/sysctl.d/50-max_user_watches.conf"
     state: link
     force: yes
-
-- name: Link locale.gen
-  become: yes
-  file:
-    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/_global/files/locale.gen"
-    dest: "/etc/locale.gen"
-    state: link
-    force: yes
-
-- name: Link locale.conf
-  become: yes
-  file:
-    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/_global/files/locale.conf"
-    dest: "/etc/locale.conf"
-    state: link
-    force: yes

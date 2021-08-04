@@ -12,16 +12,17 @@ if [ ! -d "$HOME/GIT" ]; then
         $HOME/.config \
         $HOME/.ssh \
         $HOME/.tmux \
+        $HOME/.mutt \
+        $HOME/.vim \
         $HOME/.config/rofi \
         $HOME/.config/zathura \
-        $HOME/.vim \
         $HOME/.vim/autoload
 fi
 
 # --- Install yay (if not exist)  -------------------------------------------------------------------------------------
 
 if ! [ -x "$(command -v yay)" ]; then
-  yes | sudo pacman -S --needed base-devel git yajl python3
+  yes | sudo pacman -S --needed base-devel yajl python3
   cd /tmp
   git clone https://aur.archlinux.org/yay.git && cd yay/
   makepkg -si
