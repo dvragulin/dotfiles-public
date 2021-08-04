@@ -10,7 +10,7 @@ pacman_packages:
   - vagrant
   - snappy
   - guake
-  - vim
+  - vim-runtime
   - ranger
   - tldr
   - tmux
@@ -82,25 +82,22 @@ pip_packages:
   - gitpython
 
 i3_packages:
-  - i3-wm
-  - i3status
-  - lock
-  - polybar
-  - feh
-  - dmenu
-  - gvfs
-  - udiskie
-  - numlockx
-  - lightdm
-  - lightdm-gtk-greeter
-  - noto-fonts
-  - ttf-ubuntu-font-family
-  - ttf-dejavu
-  - ttf-freefont
-  - ttf-liberation
-  - ttf-droid
-  - ttf-roboto
-  - terminus-font
-  - lxappearance
-  - arc-gtk-theme
-  - papirus-icon-theme
+  - i3-gaps                 # comment
+  - i3status                # comment
+  - polybar                 # comment
+  - feh                     # lightweight image viewer
+#  - gvfs                    # comment
+#  - udiskie                 # comment
+  - numlockx                # comment
+  - lightdm                 # comment
+  - lightdm-gtk-greeter     # comment
+  - noto-fonts              # comment
+  - ttf-ubuntu-font-family  # comment
+  - ttf-freefont            # comment
+  - ttf-liberation          # comment
+  - ttf-droid               # comment
+  - ttf-roboto              # comment
+  - terminus-font           # comment
+  - lxappearance            # comment
+  - arc-gtk-theme           # comment
+  - papirus-icon-theme      # comment

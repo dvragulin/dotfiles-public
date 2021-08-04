@@ -13,3 +13,6 @@ wget -c https://raw.githubusercontent.com/dvragulin/dotfiles-public/master/bin/b
     - [ ] tmux
     - [ ] vim
     - [ ] zsh
+    - [ ] polyvar
+    - [ ] i3
+    - [ ] wallpaper (/usr/share/backgrounds/Wallpaper-Desktop-2.jpg)
