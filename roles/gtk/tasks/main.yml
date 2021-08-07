@@ -1,0 +1,23 @@
+---
+# tasks file for gtk
+
+- name: Link colors.css file
+  file:
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/gtk/files/colors.css"
+    dest: "$HOME/.config/gtk-3.0/colors.css"
+    state: link
+    force: yes
+
+- name: Link gtk.css file
+  file:
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/gtk/files/gtk.css"
+    dest: "$HOME/.config/gtk-3.0/gtk.css"
+    state: link
+    force: yes
+
+- name: Link settings.ini file
+  file:
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/gtk/files/settings.ini"
+    dest: "$HOME/.config/gtk-3.0/settings.ini"
+    state: link
+    force: yes
