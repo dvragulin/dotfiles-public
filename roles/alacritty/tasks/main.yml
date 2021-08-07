@@ -1,0 +1,9 @@
+---
+# tasks file for alacritty
+
+- name: Link alacritty config file
+  file:
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/alacritty/files/alacritty.yml"
+    dest: "$HOME/.config/alacritty/alacritty.yml"
+    state: link
+    force: yes
