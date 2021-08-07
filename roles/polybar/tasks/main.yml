@@ -1,0 +1,44 @@
+---
+# tasks file for polybar
+
+- name: Link polybar config file
+  file:
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/polybar/files/config"
+    dest: "$HOME/.config/polybar/config"
+    state: link
+    force: yes
+
+- name: Link free_space_home.sh script
+  file:
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/polybar/files/free_space_home.sh"
+    dest: "$HOME/.config/polybar/free_space_home.sh"
+    state: link
+    force: yes
+
+- name: Link launch.sh script
+  file:
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/polybar/files/launch.sh"
+    dest: "$HOME/.config/polybar/launch.sh"
+    state: link
+    force: yes
+
+- name: Link trash.sh script
+  file:
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/polybar/files/trash.sh"
+    dest: "$HOME/.config/polybar/trash.sh"
+    state: link
+    force: yes
+
+- name: Link updates.sh script
+  file:
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/polybar/files/updates.sh"
+    dest: "$HOME/.config/polybar/updates.sh"
+    state: link
+    force: yes
+
+- name: Link weather-openmap.sh script
+  file:
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/polybar/files/weather-openmap.sh"
+    dest: "$HOME/.config/polybar/weather-openmap.sh"
+    state: link
+    force: yes

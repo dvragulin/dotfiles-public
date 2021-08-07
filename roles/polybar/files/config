@@ -1,0 +1,542 @@
+; --- Common settings -------------------------------------------------------------------------------------------------
+
+[colors]
+background       = #BCC3C3
+background-alt   = #2B2B2B
+foreground       = #002B36
+foreground-alt   = #BCC3C3
+primary          = #ffb52a
+secondary        = #e60053
+alert            = #FF0000
+
+; --- Bar settings ----------------------------------------------------------------------------------------------------
+
+[bar/dvragulin]
+foreground           = ${colors.foreground-alt}
+background           = ${colors.background-alt}
+
+monitor              = ${env:MONITOR:}
+width                = 100%
+height               = 35
+radius               = 0.0
+fixed-center         = true
+bottom               = no
+;offset-x            = 1%
+;offset-y            = 1%
+
+line-size            = 1
+line-color           = #dfdfdf
+border-top-size      = 0
+border-bottom-size   = 0
+border-left-size     = 0
+border-right-size    = 0
+padding-left         = 0
+padding-right        = 0
+module-margin-left   = 0
+module-margin-right  = 0
+
+font-0               = Noto:style=Sans:pixelsize=13;3
+font-1               = Siji:size=10;3
+font-2               = Siji:style=Solid:pixelsize=10
+font-3               = FontAwesome5Free:style=Solid:pixelsize=10;3
+font-4               = FontAewesome5Brands:style=Solid:pixelsize=10
+
+tray-position        = right
+tray-padding         = 0
+tray-detached        = false
+tray-maxsize         = 20
+;tray-transparent    = false
+;pseudo-transparency = false
+tray-scale           = 1.0
+tray-background      = ${colors.background-alt}
+tray-foreground      = ${colors.foreground-alt}
+tray-offset-x        = 0
+tray-offset-y        = 0
+
+wm-restack            = i3
+
+scroll-up             = i3wm-wsnext
+scroll-down           = i3wm-wsprev
+
+cursor-click          = pointer
+
+;cursor-scroll        = ns-resize
+;override-redirect    = true
+
+; --- Modules ---------------------------------------------------------------------------------------------------------
+
+modules-left         = i3 sp2 xwindow
+;modules-center      =
+modules-right        = netspdeth sp1 updates-pac-yay sp2 trash sp2 filesystem_custom sp2 volume sp2 xkeyboard sp2 battery0 sp2 date sp2 powermenu sp2
+
+; Used:
+;   [module/sp1]
+;   [module/sp2]
+;   [module/netspdeth]
+;   [module/eth]
+;   [module/date]
+;   [module/volume]
+;   [module/battery0]
+;   [module/xwindow]
+;   [module/xkeyboard]
+;   [module/i3]
+;   [module/powermenu]
+;   [module/updates-pac-yay]
+;   [module/trash]
+;   [module/filesystem_custom]
+
+; UnUsed:
+;   [module/openweathermap-fullfeatured]
+;   [module/netspdwlan]
+;   [module/wlan]
+;   [module/filesystem]
+;   [module/cpu]
+;   [module/memory]
+
+; ---------------------------------------------------------------------------------------------------------------------
+; --- Used Modules ----------------------------------------------------------------------------------------------------
+; ---------------------------------------------------------------------------------------------------------------------
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/sp1]
+type = custom/text
+content = " "
+content-foreground = ${colors.foreground-alt}
+content-background = ${colors.background-alt}
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/sp2]
+type = custom/text
+content = " | "
+content-foreground = #93A1A1
+content-background = ${colors.background-alt}
+
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/netspdeth]
+type = internal/network
+interface = enp0s20f0u2u1u2
+interval = 1.0
+format-connected = "<label-connected>"
+label-connected = " %downspeed:3% %upspeed:3% |"
+label-connected-foreground = ${colors.foreground-alt}
+label-connected-background = ${colors.background-alt}
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/eth]
+type = internal/network
+interface = enp0s20f0u2u1u2
+interval = 1.0
+
+format-connected-prefix = " "
+format-connected-prefix-foreground = ${colors.foreground-alt}
+format-connected-prefix-background = ${colors.background-alt}
+;format-connected-underline = ${colors.foreground}
+label-connected = " %local_ip% "
+
+;format-disconnected = <label-disconnected>
+;format-disconnected-underline = ${self.format-connected-underline}
+;label-disconnected =  %ifname%
+;label-disconnected-foreground = ${colors.foreground-alt}
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/date]
+type = internal/date
+interval = 1
+
+date = "%a %d %b"
+date-alt = "%a %Y/%m/%d"
+
+time = " %H:%M:%S"
+time-alt = " %H:%M"
+
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-background = ${colors.background-alt}
+;format-underline = ${colors.foreground}
+
+label = %date%%time%
+label-foreground = ${colors.foreground-alt}
+label-background = ${colors.background-alt}
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/volume]
+type = internal/alsa
+
+master-soundcard = default
+speaker-soundcard = default
+headphone-soundcard = default
+
+master-mixer = Master
+
+format-volume = "<label-volume><bar-volume>"
+label-volume = " "
+label-volume-foreground = ${colors.foreground-alt}
+label-volume-background = ${colors.background-alt}
+
+format-muted-prefix = " "
+format-muted-foreground = ${colors.foreground-alt}
+format-muted-background = ${colors.background-alt}
+label-muted = MUTED
+
+bar-volume-width = 5
+bar-volume-foreground-0 = ${colors.foreground-alt}
+bar-volume-foreground-1 = ${colors.foreground-alt}
+bar-volume-foreground-2 = ${colors.foreground-alt}
+bar-volume-foreground-3 = ${colors.foreground-alt}
+bar-volume-foreground-4 = ${colors.foreground-alt}
+bar-volume-foreground-5 = ${colors.foreground-alt}
+bar-volume-foreground-6 = ${colors.foreground-alt}
+bar-volume-gradient = false
+bar-volume-indicator = []
+bar-volume-indicator-font = 1
+bar-volume-indicator-foreground = ${colors.foreground-alt}
+bar-volume-indicator-background = ${colors.background-alt}
+bar-volume-fill = --
+bar-volume-fill-font = 1
+bar-volume-fill-foreground = ${colors.foreground-alt}
+bar-volume-fill-background = ${colors.background-alt}
+bar-volume-empty = --
+bar-volume-empty-font = 1
+bar-volume-empty-foreground = ${colors.foreground-alt}
+bar-volume-empty-background = ${colors.background-alt}
+;bar-volume-empty-underline = ${colors.foreground}
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/battery0]
+type = internal/battery
+battery = BAT0
+adapter = AC
+full-at = 90
+
+format-charging = "<animation-charging><label-charging>"
+;format-charging-underline = ${colors.foreground}
+label-charging-foreground = ${colors.foreground-alt}
+label-charging-background = ${colors.background-alt}
+
+format-discharging = "<ramp-capacity><label-discharging>"
+;format-discharging-underline = ${self.format-charging-underline}
+label-discharging-foreground = ${colors.foreground-alt}
+label-discharging-background = ${colors.background-alt}
+
+format-full-prefix = " "
+format-full-prefix-foreground = ${colors.foreground-alt}
+format-full-prefix-background = ${colors.background-alt}
+;format-full-underline = ${self.format-charging-underline}
+
+ramp-capacity-0 = " "
+ramp-capacity-0-foreground = ${colors.alert}
+ramp-capacity-1 = " "
+ramp-capacity-2 = " "
+ramp-capacity-foreground = ${colors.foreground-alt}
+ramp-capacity-background = ${colors.background-alt}
+
+animation-charging-0 = " "
+animation-charging-1 = " "
+animation-charging-2 = " "
+animation-charging-foreground = ${colors.foreground-alt}
+animation-charging-background = ${colors.background-alt}
+animation-charging-framerate = 750
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/xwindow]
+type = internal/xwindow
+format = <label>
+format-padding = 0
+
+;label = "  %title:0:60:...% "
+label = "  %title%"
+label-maxlen = 30
+label-foreground = ${colors.foreground-alt}
+label-background = ${colors.background-alt}
+;label-underline = ${colors.foreground}
+
+label-empty =
+label-empty-foreground = ${colors.background}
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+blacklist-1 = scroll lock
+
+format = <label-layout><label-indicator>
+format-spacing = 0
+
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-background = ${colors.background-alt}
+;format-prefix-underline = ${colors.foreground}
+
+label-layout = "%layout%"
+label-layout-foreground = ${colors.foreground-alt}
+label-layout-background = ${colors.background-alt}
+;label-layout-underline = ${colors.foreground}
+
+label-indicator-padding = 0
+label-indicator-margin = 0
+label-indicator = " CAPS "
+label-indicator-foreground = ${colors.foreground}
+label-indicator-background = ${colors.alert}
+;label-indicator-underline = ${colors.alert}
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/i3]
+type = internal/i3
+format = <label-state> <label-mode>
+index-sort = true
+wrapping-scroll = false
+strip-wsnumbers = false
+enable-click = false
+enable-scroll = false
+
+;ws-icon-0 = 1;
+;ws-icon-1 = 2;
+;ws-icon-2 = 3;
+;ws-icon-3 = 4;
+;ws-icon-4 = 5;
+;ws-icon-5 = 6;
+;ws-icon-6 = 7;
+;ws-icon-7 = 8;
+;ws-icon-8 = 9;
+;ws-icon-9 = 10;
+;ws-icon-default = ♟
+
+; Only show workspaces on the same output as the bar
+;pin-workspaces = true
+
+label-mode = %mode%
+label-mode-padding = 1
+label-mode-foreground = ${colors.foreground-alt}
+label-mode-background = ${colors.background-alt}
+
+; focused = Active workspace on focused monitor
+label-focused = %index%
+label-focused-foreground = ${colors.foreground}
+label-focused-background = ${colors.background}
+label-focused-underline = ${colors.foreground-alt}
+label-focused-padding = 1
+
+; unfocused = Inactive workspace on any monitor
+label-unfocused = %index%
+label-unfocused-padding = ${self.label-focused-padding}
+label-unfocused-foreground = ${colors.foreground-alt}
+label-unfocused-background = ${colors.background-alt}
+
+; visible = Active workspace on unfocused monitor
+label-visible = %index%
+label-visible-foreground = ${self.label-focused-background}
+label-visible-background = ${self.label-focused-foreground}
+label-visible-underline = ${self.label-focused-underline}
+label-visible-padding = ${self.label-focused-padding}
+
+; urgent = Workspace with urgency hint set
+label-urgent = %index%
+label-urgent-foreground = ${colors.foreground}
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 1
+
+; Separator in between workspaces
+label-separator =
+label-separator-padding = 0
+label-separator-foreground = #FFF
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/temperature]
+type = internal/temperature
+thermal-zone = 0
+warn-temperature = 80
+
+format = "<ramp><label>"
+format-foreground = ${colors.foreground-alt}
+format-background = ${colors.background-alt}
+;format-underline = ${colors.foreground}
+format-warn = <ramp><label-warn>
+;format-warn-underline = #f50a4d
+
+label = "%temperature%"
+label-foreground = ${colors.foreground-alt}
+label-background = ${colors.background-alt}
+label-warn = "%temperature%"
+label-warn-foreground = ${colors.alert}
+
+ramp-0 = " "
+ramp-1 = " "
+ramp-2 = " "
+ramp-foreground = ${colors.foreground-alt}
+ramp-background = ${colors.background-alt}
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/powermenu]
+type = custom/menu
+
+expand-right = true
+format-spacing = 1
+
+;ramp-foreground = ${colors.foreground-alt}
+;ramp-background = ${colors.background-alt}
+
+label-open = %{T4}%{T-}
+label-open-foreground = ${colors.foreground-alt}
+label-close = cancel
+label-close-foreground = ${colors.foreground-alt}
+;label-close-foreground = ${colors.secondary}
+label-separator = |
+label-separator-foreground = ${colors.foreground-alt}
+
+menu-0-0 = reboot
+menu-0-0-exec = menu-open-1
+menu-0-1 = power off
+menu-0-1-exec = menu-open-2
+
+menu-1-0 = cancel
+menu-1-0-exec = menu-open-0
+menu-1-1 = reboot
+menu-1-1-exec = sudo reboot
+
+menu-2-0 = power off
+menu-2-0-exec = sudo poweroff
+menu-2-1 = cancel
+menu-2-1-exec = menu-open-0
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/updates-pac-yay]
+type = custom/script
+exec = /home/dvragulin/.config/polybar/updates.sh
+interval = 600
+label = %{T4}%{T-} %output%
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/trash]
+type = custom/script
+exec = /home/dvragulin/.config/polybar/trash.sh
+interval = 1
+label = %output%
+format-prefix = "%{T4}%{T-} "
+format-prefix-padding-left = 0
+format-prefix-padding-right = 0
+;format-prefix-foreground = ${colors.foreground}
+label-padding = 0
+;label-foreground = ${colors.foreground}
+click-left = pcmanfm -n ~/.local/share/Trash/files
+click-right = rm -rf ~/.local/share/Trash/files/* exec notify-send 'Trash cleaned'
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/filesystem_custom]
+type = custom/script
+exec = /home/dvragulin/.config/polybar/free_space_home.sh
+click-left = dolphin
+
+interval = 600
+label = %{T4}%{T-} %output%
+
+; ---------------------------------------------------------------------------------------------------------------------
+; --- UnUsed Modules --------------------------------------------------------------------------------------------------
+; ---------------------------------------------------------------------------------------------------------------------
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/openweathermap-fullfeatured]
+type = custom/script
+exec = /home/dvragulin/.config/polybar/weather-openmap.sh
+interval = 600
+;label-font = 5
+;label = %{T1} %output% %{T-}
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/netspdwlan]
+type = internal/network
+interface = wlp2s0
+interval = 1.0
+format-connected = "<label-connected>"
+label-connected = "%downspeed:9:9% %upspeed:9:9%"
+label-connected-foreground = ${colors.foreground-alt}
+label-connected-background = ${colors.background-alt}
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/wlan]
+type = internal/network
+interface = wlp5s0
+interval = 1.0
+
+; Available tokens:
+;   %ifname%    [wireless+wired]
+;   %local_ip%  [wireless+wired]
+;   %local_ip6% [wireless+wired]
+;   %essid%     [wireless]
+;   %signal%    [wireless]
+;   %upspeed%   [wireless+wired]
+;   %downspeed% [wireless+wired]
+;   %linkspeed% [wired]
+; Default: %ifname% %local_ip%
+format-connected = "<label-connected>"
+;format-connected-underline = ${colors.foreground}
+;label-connected = " %essid:0:28:% "
+;label-connected = " %essid% (%signal%%)"
+label-connected = " | W: %signal%%"
+label-connected-foreground = ${colors.foreground-alt}
+label-connected-background = ${colors.background-alt}
+
+format-disconnected = <label-disconnected>
+;format-disconnected-underline = ${self.format-connected-underline}
+label-disconnected = " OFFLINE "
+label-disconnected-foreground = ${colors.foreground-alt}
+
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+ramp-signal-foreground = ${colors.foreground-alt}
+ramp-signal-background = ${colors.background-alt}
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/filesystem]
+type = internal/fs
+interval = 25
+mount-0 = /
+
+label-mounted = " %percentage_used%%"
+label-mounted-foreground = ${colors.foreground-alt}
+label-mounted-background = ${colors.background-alt}
+label-unmounted = %mountpoint% not mounted
+label-unmounted-foreground = ${colors.foreground}
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/cpu]
+type = internal/cpu
+interval = 1
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-background = ${colors.background-alt}
+;format-underline = ${colors.foreground}
+label = "%percentage:2%%"
+label-foreground = ${colors.foreground-alt}
+label-background = ${colors.background-alt}
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/memory]
+type = internal/memory
+interval = 1
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-background = ${colors.background-alt}
+;format-underline = ${colors.foreground}
+label = "%percentage_used%%"
+label-foreground = ${colors.foreground-alt}
+label-background = ${colors.background-alt}
+
+; ---------------------------------------------------------------------------------------------------------------------
+
+[settings]
+screenchange-reload = true
+compositing-background = over
+compositing-foreground = over
+compositing-overline = over
+compositing-border = over
+;compositing-underline = over
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+
+[global/wm]
+margin-top = 5
+margin-bottom = 5
