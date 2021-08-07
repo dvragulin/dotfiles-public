@@ -10,12 +10,15 @@ if [ ! -d "$HOME/GIT" ]; then
         $HOME/GIT/Projects_Tests \
         $HOME/GIT/Projects_OpenSource \
         $HOME/.config \
+        $HOME/.config/rofi \
+        $HOME/.config/zathura \
+        $HOME/.config/i3 \
+        $HOME/.config/polybar \
+        $HOME/.config/alacritty \
         $HOME/.ssh \
         $HOME/.tmux \
         $HOME/.mutt \
         $HOME/.vim \
-        $HOME/.config/rofi \
-        $HOME/.config/zathura \
         $HOME/.vim/autoload
 fi
 

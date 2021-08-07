@@ -32,3 +32,15 @@
     name: "{{ item }}"
     state: latest
   loop: "{{ aur_packages }}"                   
+
+- name: Install i3 packages
+  aur:
+    name: '{{ item }}'
+    state: present
+  loop: "{{ i3_packages }}"
+
+- name: Install Fonts packages
+  aur:
+    name: '{{ item }}'
+    state: present
+  loop: "{{ fonts_packages }}"
