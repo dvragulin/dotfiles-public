@@ -28,6 +28,13 @@ wget -c https://raw.githubusercontent.com/dvragulin/dotfiles-public/master/bin/b
   - zathura
   - zsh
 
+#### Requirements
+
+    - OS Manjaro Linux KDE
+    - Private SSH Keys
+    - Git
+    - Wget
+
 # View installation on asciinema
 [![Watch the video](./.media/screen_1.png)](https://asciinema.org/a/xixWcDhLGiSiOcNWFpzXshYh6)
 # Desktop view
