@@ -38,4 +38,4 @@ wget -c https://raw.githubusercontent.com/dvragulin/dotfiles-public/master/bin/b
 # Watch installation on asciinema
 [![Watch the video](./.media/screen_1.png)](https://asciinema.org/a/xixWcDhLGiSiOcNWFpzXshYh6)
 # Desktop view
-[![](./.media/screen_2.png)](https://asciinema.org/a/xixWcDhLGiSiOcNWFpzXshYh6)
+[![](./.media/screen_2.png)](https://raw.githubusercontent.com/dvragulin/dotfiles-public/master/.media/screen_2.png)
