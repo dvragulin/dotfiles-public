@@ -7,7 +7,7 @@ exec xrandr --output DP1-3 --mode 2560x1440                                     
 
 exec_always --no-startup-id /home/dvragulin/.config/polybar/launch.sh                   # Launch Polybar
 exec_always setxkbmap -option grp:alt_shift_toggle "us,ru"                              # Set eng/ru keyboard layout
-exec_always feh --bg-scale /usr/share/backgrounds/Wallpaper-Desktop.jpg               # Set desktop background
+exec_always feh --bg-scale GIT/Projects_Home/dotfiles-public/roles/wallpapers/files/Wallpaper-Desktop.jpg
 
 # --- Applications ---
 exec --no-startup-id nm-applet --sm-disable                                             # Run Applet: NetworkManager
