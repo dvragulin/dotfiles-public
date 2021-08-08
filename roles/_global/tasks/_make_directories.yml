@@ -17,6 +17,7 @@
   - '$HOME/.config/i3'
   - '$HOME/.config/polybar'
   - '$HOME/.config/alacritty'
+  - '$HOME/.config/dunst'
   - '$HOME/.ssh'
   - '$HOME/.tmux'
   - '$HOME/.mutt'

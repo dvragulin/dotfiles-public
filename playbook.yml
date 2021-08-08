@@ -12,6 +12,7 @@
     - i3
     - polybar
     - alacritty
+    - dunst
     - zsh
     - bash
     - git

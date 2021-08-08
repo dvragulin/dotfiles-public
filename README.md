@@ -18,6 +18,7 @@ wget -c https://raw.githubusercontent.com/dvragulin/dotfiles-public/master/bin/b
   - i3
   - mc
   - polybar
+  - dunst
   - ranger
   - rofi
   - ssh

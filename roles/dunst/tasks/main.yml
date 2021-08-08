@@ -1,0 +1,9 @@
+---
+# tasks file for dunst
+
+- name: Link dunst config file
+  file:
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/roles/dunst/files/dunstrc"
+    dest: "$HOME/.config/dunst/dunstrc"
+    state: link
+    force: yes
