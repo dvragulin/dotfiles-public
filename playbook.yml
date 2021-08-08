@@ -9,17 +9,22 @@
   hosts: DESKTOP
   become: no
   roles:
-    - avatars
+    - i3
+    - polybar
+    - alacritty
+    - zsh
     - bash
-    - feedbro
     - git
     - ranger
     - rofi
-    - ssh
-    - tmux
     - vim
-    - xinit
-    - zsh 
     - mc
+    - ssh
     - zathura
+    - tmux
+    - xinit
+    - feedbro
+    - gtk
+    - avatars
+    - wallpapers
 
