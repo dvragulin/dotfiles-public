@@ -28,14 +28,14 @@ wget -c https://raw.githubusercontent.com/dvragulin/dotfiles-public/master/bin/b
   - zathura
   - zsh
 
+# Watch installation on asciinema
+[![Watch the video](./.media/screen_1.png)](https://asciinema.org/a/xixWcDhLGiSiOcNWFpzXshYh6)
+# Desktop view
+[![](./.media/screen_2.png)](https://raw.githubusercontent.com/dvragulin/dotfiles-public/master/.media/screen_2.png)
+
 #### TODO
 
 - [ ] Dotfiles:
     - [ ] vim  (auto-updates)
     - [ ] zsh  (auto-updates)
     - [ ] tmux (auto-updates)
-
-# Watch installation on asciinema
-[![Watch the video](./.media/screen_1.png)](https://asciinema.org/a/xixWcDhLGiSiOcNWFpzXshYh6)
-# Desktop view
-[![](./.media/screen_2.png)](https://raw.githubusercontent.com/dvragulin/dotfiles-public/master/.media/screen_2.png)
