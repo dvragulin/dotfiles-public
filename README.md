@@ -1,6 +1,6 @@
 # Dotfiles
 
-Personal ansible roles for aply i3/KDE configuration on Manjaro Linux KDE.
+Personal ansible roles for apply i3/KDE configuration on Manjaro Linux KDE.
 
 #### Usage
 ```
