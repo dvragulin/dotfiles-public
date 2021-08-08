@@ -1,10 +1,11 @@
 ---
-# tasks file for _applications
+# tasks file for _global
 
 - name: Upgrade all packages
   become: yes
   pacman:
     upgrade: yes
 
+- include_tasks: _make_directories.yml
 - include_tasks: _install_apps.yml
 - include_tasks: _make_links.yml

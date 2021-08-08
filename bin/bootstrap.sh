@@ -6,20 +6,6 @@ set -e
 if [ ! -d "$HOME/GIT" ]; then
   mkdir $HOME/GIT \
         $HOME/GIT/Projects_Home \
-        $HOME/GIT/Projects_Personal \
-        $HOME/GIT/Projects_Tests \
-        $HOME/GIT/Projects_OpenSource \
-        $HOME/.config \
-        $HOME/.config/rofi \
-        $HOME/.config/zathura \
-        $HOME/.config/i3 \
-        $HOME/.config/polybar \
-        $HOME/.config/alacritty \
-        $HOME/.ssh \
-        $HOME/.tmux \
-        $HOME/.mutt \
-        $HOME/.vim \
-        $HOME/.vim/autoload
 fi
 
 # --- Install yay (if not exist)  -------------------------------------------------------------------------------------

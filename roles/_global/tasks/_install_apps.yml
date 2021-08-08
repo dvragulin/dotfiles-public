@@ -1,5 +1,5 @@
 ---
-# tasks file for _applications
+# tasks file for _global
 
 - name: Install pacman packages
   pacman:

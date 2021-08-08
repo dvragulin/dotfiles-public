@@ -1,0 +1,24 @@
+---
+# tasks file for _global
+
+- name: Prepear directories
+  become: no
+  file:
+    path: '{{ item }}'
+    state: directory
+  loop:
+  - '$HOME/GIT/Projects_Personal'
+  - '$HOME/GIT/Projects_Tests'
+  - '$HOME/GIT/Projects_OpenSource'
+  - '$HOME/.config'
+  - '$HOME/.config/rofi'
+  - '$HOME/.config/ranger'
+  - '$HOME/.config/zathura'
+  - '$HOME/.config/i3'
+  - '$HOME/.config/polybar'
+  - '$HOME/.config/alacritty'
+  - '$HOME/.ssh'
+  - '$HOME/.tmux'
+  - '$HOME/.mutt'
+  - '$HOME/.vim'
+  - '$HOME/.vim/autoload'
