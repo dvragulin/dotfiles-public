@@ -23,7 +23,6 @@ wget -c https://raw.githubusercontent.com/dvragulin/dotfiles-public/master/bin/b
   - ssh
   - tmux
   - vim
-  - wallpapers
   - xinit
   - zathura
   - zsh
