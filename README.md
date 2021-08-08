@@ -31,7 +31,11 @@ wget -c https://raw.githubusercontent.com/dvragulin/dotfiles-public/master/bin/b
 #### TODO
 
 - [ ] Dotfiles:
-    - [ ] Make directories
     - [ ] vim  (auto-updates)
     - [ ] zsh  (auto-updates)
     - [ ] tmux (auto-updates)
+
+[comment]: <> ([![Watch the video]&#40;./.media/screen_1.png&#41;]&#40;https://asciinema.org/a/xixWcDhLGiSiOcNWFpzXshYh6&#41;)
+[![asciicast](https://asciinema.org/a/xixWcDhLGiSiOcNWFpzXshYh6)](https://asciinema.org/a/xixWcDhLGiSiOcNWFpzXshYh6)
+# Desktop view
+[![](./.media/screen_2.png)](https://asciinema.org/a/xixWcDhLGiSiOcNWFpzXshYh6)
