@@ -27,6 +27,8 @@
             xmlUrl="https://www.opennet.ru/opennews/opennews_6.rss" htmlUrl="https://www.opennet.ru/opennews/main.shtml"/>
       <outline text="Karen Tovmasyan" title="Karen Tovmasyan" type="rss" 
             xmlUrl="https://medium.com/feed/@karen-tovmasyan" htmlUrl="https://medium.com/@karen-tovmasyan?source=rss-6a26bdd5062b------2"/>
+      <outline text="DevPew" title="DevPew" type="rss" 
+            xmlUrl="https://devpew.com/index.xml" htmlUrl="http://devpew.com/"/>
   </outline>
   <outline title="Православие" text="Православие">
       <outline text="Православный журнал «Фома»" title="Православный журнал «Фома»" type="rss" 
@@ -183,6 +185,8 @@
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCrKUQBc3GMnhwzUlbZRssWA" htmlUrl="https://www.youtube.com/channel/UCrKUQBc3GMnhwzUlbZRssWA"/>
       <outline text="Delyagin TV" title="Delyagin TV" type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCASROq9xznjFpDUtf0ZWbpQ" htmlUrl="https://www.youtube.com/channel/UCASROq9xznjFpDUtf0ZWbpQ"/>
+      <outline text="Kazakevich Streaming (Remote Jobs)" title="Kazakevich Streaming (Remote Jobs)" type="rss" 
+            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCNPu61I6VSbrlO6Q8YbJnwg" htmlUrl="https://www.youtube.com/channel/UCNPu61I6VSbrlO6Q8YbJnwg"/>
   </outline>
   <outline title="Instagram" text="Instagram">
       <outline text="Профиль Лествица (@lestvitsa_sokol) в Instagram • 644 фото и видео" title="Профиль Лествица (@lestvitsa_sokol) в Instagram • 644 фото и видео" type="rss" 
