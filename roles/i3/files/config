@@ -17,6 +17,7 @@ exec --no-startup-id discord                                                    
 exec --no-startup-id whatsdesk                                                          # Run WhatsDesk
 exec --no-startup-id mattermost-desktop                                                 # Run Mattermost
 exec --no-startup-id telegram-desktop                                                   # Run Telegram
+exec --no-startup-id guake                                                              # Run Guake
 
 # --- HOTKEYS ------------------------------------------------------------------------------------------------------- #
 
