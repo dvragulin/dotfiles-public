@@ -5,7 +5,7 @@ set -e
 
 if [ ! -d "$HOME/GIT" ]; then
   mkdir $HOME/GIT \
-        $HOME/GIT/Projects_Home \
+        $HOME/GIT/Projects_Home
 fi
 
 # --- Install yay (if not exist)  -------------------------------------------------------------------------------------
