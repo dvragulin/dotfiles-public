@@ -47,3 +47,4 @@ echo $PW | chsh -s "$(which zsh)"
 
 echo
 echo "Bootstrap complete. Successfully set up environment."
+
