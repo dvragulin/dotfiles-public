@@ -1,11 +1,25 @@
 # Dotfiles
 
-Personal ansible roles for apply i3/KDE configuration on Manjaro Linux KDE.
+Personal Ansible roles for installing i3 on Manjaro KDE and applying my dotfiles. 
 
 #### Usage
 ```
 wget -c https://raw.githubusercontent.com/dvragulin/dotfiles-public/master/bin/bootstrap.sh && chmod +x ./bootstrap.sh && ./bootstrap.sh
 ```
+
+# Desktop view
+[![](./.media/screen_2.png)](https://raw.githubusercontent.com/dvragulin/dotfiles-public/master/.media/screen_2.png)
+
+# View installation on asciinema
+[![Watch the video](./.media/screen_1.png)](https://asciinema.org/a/xixWcDhLGiSiOcNWFpzXshYh6)
+
+#### Requirements
+
+  - OS Manjaro Linux KDE
+  - Private SSH Keys
+  - Git
+  - Wget
+
 #### Available roles
 
   - _global
@@ -27,22 +41,3 @@ wget -c https://raw.githubusercontent.com/dvragulin/dotfiles-public/master/bin/b
   - xinit
   - zathura
   - zsh
-
-#### Requirements
-
-    - OS Manjaro Linux KDE
-    - Private SSH Keys
-    - Git
-    - Wget
-
-# View installation on asciinema
-[![Watch the video](./.media/screen_1.png)](https://asciinema.org/a/xixWcDhLGiSiOcNWFpzXshYh6)
-# Desktop view
-[![](./.media/screen_2.png)](https://raw.githubusercontent.com/dvragulin/dotfiles-public/master/.media/screen_2.png)
-
-#### TODO
-
-- [ ] Dotfiles:
-    - [ ] vim  (auto-updates)
-    - [ ] zsh  (auto-updates)
-    - [ ] tmux (auto-updates)
