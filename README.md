@@ -4,7 +4,7 @@ Personal Ansible roles for installing i3 on Manjaro KDE and applying my dotfiles
 
 #### Usage
 ```
-wget -c https://raw.githubusercontent.com/dvragulin/dotfiles-public/master/bin/bootstrap.sh && chmod +x ./bootstrap.sh && ./bootstrap.sh
+bash -c "$(wget -O- https://raw.githubusercontent.com/dvragulin/dotfiles-public/master/bin/bootstrap.sh)"
 ```
 
 # Desktop view
