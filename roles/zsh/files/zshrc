@@ -6,7 +6,8 @@ ZSH_THEME="af-magic"
 DISABLE_AUTO_UPDATE="true"
 
 plugins=(
-    zsh-syntax-highlighting
+   sudo 
+   zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
