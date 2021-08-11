@@ -18,6 +18,7 @@ exec --no-startup-id whatsdesk                                                  
 exec --no-startup-id mattermost-desktop                                                 # Run Mattermost
 exec --no-startup-id telegram-desktop                                                   # Run Telegram
 exec --no-startup-id guake                                                              # Run Guake
+exec --no-startup-id spectacle                                                          # Run Print Screem programm
 
 # --- HOTKEYS ------------------------------------------------------------------------------------------------------- #
 
