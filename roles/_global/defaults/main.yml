@@ -67,7 +67,6 @@ snap_packages:
   - bitwarden
   - postman
   - whatsdesk
-  - mattermost-desktop
   - skype
 
 snap_classic_packages:
