@@ -113,7 +113,7 @@ i3_packages:
 
 packages_to_delete:
   - cantata
-  - gwebview
+  - gwenview
   - kate
   - skanlite
   - okular
