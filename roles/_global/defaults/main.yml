@@ -2,6 +2,11 @@
 # defaults file for _applications
 
 pacman_packages:
+  - base-devel
+  - vim
+  - vim-runtime
+  - vscode
+  - rofi
   - openssh
   - net-tools
   - rsync
@@ -10,7 +15,6 @@ pacman_packages:
   - vagrant
   - snappy
   - guake
-  - vim-runtime
   - ranger
   - tldr
   - tmux
@@ -23,7 +27,6 @@ pacman_packages:
   - jq
   - thunderbird
   - calibre
-  - pidgin
   - vlc
   - obs-studio
   - youtube-dl
@@ -61,6 +64,8 @@ aur_packages:
   - zoom
   - google-chrome
   - etcher
+  - ttf-unifont
+  - siji-git
 
 snap_packages:
   - discord
@@ -89,9 +94,7 @@ fonts_packages:
   - ttf-liberation
   - ttf-droid
   - ttf-roboto
-  - ttf-unifont
   - ttf-hack
-  - siji-git
   - noto-fonts
   - terminus-font
   - arc-gtk-theme
@@ -107,5 +110,18 @@ i3_packages:
   - lightdm-gtk-greeter
   - lxappearance
   - dunst
-  #  - gvfs
-  #  - udiskie
+
+packages_to_delete:
+  - cantata
+  - gwebview
+  - kate
+  - skanlite
+  - okular
+  - steam-manjaro
+  - konversation
+  - qbittorrent
+  - pidgin
+  - k3b
+  - yakuake
+  - kfind
+  - kdeconnect

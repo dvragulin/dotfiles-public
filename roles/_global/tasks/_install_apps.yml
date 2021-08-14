@@ -31,7 +31,7 @@
   aur:
     name: "{{ item }}"
     state: latest
-  loop: "{{ aur_packages }}"                   
+  loop: "{{ aur_packages }}"
 
 - name: Install i3 packages
   aur:
@@ -44,3 +44,9 @@
     name: '{{ item }}'
     state: present
   loop: "{{ fonts_packages }}"
+
+- name: Remove packages
+  pacman:
+    name: '{{ item }}'
+    state: absent
+  loop: "{{ packages_to_delete }}"

@@ -18,6 +18,7 @@
   - '$HOME/.config/polybar'
   - '$HOME/.config/alacritty'
   - '$HOME/.config/dunst'
+  - '$HOME/.config/mc'
   - '$HOME/.ssh'
   - '$HOME/.tmux'
   - '$HOME/.mutt'
