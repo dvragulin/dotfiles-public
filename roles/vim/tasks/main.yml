@@ -17,4 +17,5 @@
 
 - name: Install vim pluggins
   command: "vim +PlugInstall +qall"
-
+  args:
+    stdin: "\n"
