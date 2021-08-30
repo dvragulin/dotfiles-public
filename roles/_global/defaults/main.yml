@@ -48,6 +48,8 @@ pacman_packages:
   - alacritty
   - zsh
   - pcmanfm
+  - traceroute
+  - ueberzug
 
 aur_packages:
   - network-manager-applet 
