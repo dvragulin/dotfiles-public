@@ -20,9 +20,9 @@ fi
 
 # --- Install yay (if not exist)  -------------------------------------------------------------------------------------
 if ! [ -x "$(command -v yay)" ]; then
-  yes | sudo pacman -S --needed yajl python3
+  sudo pacman -Syu yajl python3 base-devel
   cd /tmp
-  git clone https://aur.archlinux.org/yay-git.git && cd yay/
+  git clone https://aur.archlinux.org/yay-git.git && cd yay-git/
   makepkg -si
 fi
 
