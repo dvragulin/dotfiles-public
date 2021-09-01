@@ -50,6 +50,7 @@ pacman_packages:
   - pcmanfm
   - traceroute
   - ueberzug
+  - putty
 
 aur_packages:
   - network-manager-applet 
