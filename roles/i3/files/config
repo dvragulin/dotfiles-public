@@ -3,11 +3,11 @@
 
 # --- Settings ---
 exec xrandr --output eDP1 --off                                                         # Disable laptop eDP1 mon
-exec xrandr --output DP1-3 --mode 2560x1440                                             # Set settings for DP1-3 mon
+exec xrandr --output HDMI-1 --mode 2560x1440                                            # Set settings for HDMI-1 mon
 
 exec_always --no-startup-id /home/dvragulin/.config/polybar/launch.sh                   # Launch Polybar
 exec_always setxkbmap -option grp:alt_shift_toggle "us,ru"                              # Set eng/ru keyboard layout
-exec_always feh --bg-scale GIT/Projects_Home/dotfiles-public/roles/wallpapers/files/Wallpaper-Desktop.jpg
+exec_always feh --bg-scale GIT/Projects_Home/dotfiles-public/roles/wallpapers/files/Wallpaper-Desktop-02.jpg
 
 # --- Applications ---
 exec --no-startup-id nm-applet --sm-disable                                             # Run Applet: NetworkManager
