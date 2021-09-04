@@ -13,6 +13,7 @@ exec_always feh --bg-scale GIT/Projects_Home/dotfiles-public/roles/wallpapers/fi
 exec --no-startup-id nm-applet --sm-disable                                             # Run Applet: NetworkManager
 exec --no-startup-id zoom                                                               # Run Zoom
 exec --no-startup-id skype                                                              # Run Skype
+exec --no-startup-id slack                                                              # Run Skype
 exec --no-startup-id discord                                                            # Run Discord
 exec --no-startup-id whatsdesk                                                          # Run WhatsDesk
 exec --no-startup-id mattermost-desktop                                                 # Run Mattermost
