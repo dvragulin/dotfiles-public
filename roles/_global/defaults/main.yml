@@ -51,6 +51,7 @@ pacman_packages:
   - traceroute
   - ueberzug
   - putty
+  - httpie
 
 aur_packages:
   - network-manager-applet 
