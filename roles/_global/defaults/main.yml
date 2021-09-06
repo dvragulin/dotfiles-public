@@ -52,6 +52,12 @@ pacman_packages:
   - ueberzug
   - putty
   - httpie
+  - keepassxc
+  - aws-cli
+  - kubectl
+  - postgresql
+  - phpmyadmin
+  - mysql-workbench
 
 aur_packages:
   - network-manager-applet 
@@ -70,6 +76,9 @@ aur_packages:
   - etcher
   - ttf-unifont
   - siji-git
+  - tfswitch
+  - lens-bin
+  - yandex-cloud-bin
 
 snap_packages:
   - discord

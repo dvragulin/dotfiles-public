@@ -12,7 +12,7 @@ rofi.color-normal: #252525, #c1c1c1, #252525, #383838, #ffffff
 rofi.color-active: #252525, #80cbc4, #252525, #383838, #80cbc4
 rofi.color-urgent: #252525, #ff1844, #252525, #383838, #ff1844
 
-rofi.terminal: guake
+rofi.terminal: alacritty
 rofi.ssh-client: ssh
 rofi.separator-style: solid
 rofi.hide-scrollbar: true
