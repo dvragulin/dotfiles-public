@@ -33,6 +33,7 @@ pacman_packages:
   - pgadmin4
   - python-pip
   - llvm
+  - tree
   - make
   - htop
   - dolphin
@@ -79,6 +80,7 @@ aur_packages:
   - tfswitch
   - lens-bin
   - yandex-cloud-bin
+  - clickhouse-client-bin
 
 snap_packages:
   - discord

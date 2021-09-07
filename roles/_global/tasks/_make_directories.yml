@@ -10,6 +10,8 @@
   - '$HOME/GIT/Projects_Personal'
   - '$HOME/GIT/Projects_Tests'
   - '$HOME/GIT/Projects_OpenSource'
+  - '$HOME/GIT/Projects_SCM'
+  - '$HOME/GIT/Projects_Work'
   - '$HOME/.config'
   - '$HOME/.config/rofi'
   - '$HOME/.config/ranger'
