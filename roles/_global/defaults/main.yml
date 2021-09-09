@@ -59,6 +59,9 @@ pacman_packages:
   - postgresql
   - phpmyadmin
   - mysql-workbench
+  - gtk3
+  - gobject-introspection
+  - webkit2gtk
 
 aur_packages:
   - network-manager-applet 
@@ -81,6 +84,8 @@ aur_packages:
   - lens-bin
   - yandex-cloud-bin
   - clickhouse-client-bin
+  - gp-saml-gui
+  - globalprotect-openconnect
 
 snap_packages:
   - discord

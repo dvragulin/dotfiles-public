@@ -21,6 +21,7 @@ exec --no-startup-id mattermost-desktop                                         
 exec --no-startup-id telegram-desktop                                                   # Run Telegram
 exec --no-startup-id guake                                                              # Run Guake
 exec --no-startup-id spectacle                                                          # Run Print Screem programm
+exec --no-startup-id gpclient                                                           # Run VPN Client
 
 # --- HOTKEYS ------------------------------------------------------------------------------------------------------- #
 
