@@ -75,6 +75,7 @@ aur_packages:
   - gtk2-perl
   - asbru-cm
   - trello
+  - werf
   - zoom
   - google-chrome
   - etcher
