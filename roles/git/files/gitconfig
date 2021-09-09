@@ -1,7 +1,7 @@
 [init]
 	defaultBranch = master
 [user]
-	name = Ragulin Dmitry
+	name = Dmitry Ragulin
 	email = dvragulin@gmail.com
 [core]
     editor = vim
@@ -25,6 +25,7 @@
   autosetupmerge = always
   autosetuprebase = always
 [pager] # https://github.com/dandavison/delta
+ # https://github.com/dandavison/delta
   diff = delta
   log = delta
   reflog = delta
