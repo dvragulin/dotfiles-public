@@ -47,6 +47,7 @@ pacman_packages:
   - zathura-djvu
   - zathura-ps
   - alacritty
+  - discord
   - zsh
   - pcmanfm
   - traceroute
@@ -89,7 +90,6 @@ aur_packages:
   - globalprotect-openconnect
 
 snap_packages:
-  - discord
   - bitwarden
   - postman
   - whatsdesk
