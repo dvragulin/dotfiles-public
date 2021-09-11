@@ -22,6 +22,7 @@ pacman_packages:
   - firefox
   - mc
   - gnupg
+  - pass
   - fd
   - bat
   - exa

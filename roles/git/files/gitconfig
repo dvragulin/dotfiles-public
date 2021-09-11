@@ -3,6 +3,7 @@
 [user]
 	name = Dmitry Ragulin
 	email = dvragulin@gmail.com
+	signingKey = dvragulin@gmail.com
 [core]
     editor = vim
 	autocrlf = input
@@ -24,8 +25,7 @@
 [branch]
   autosetupmerge = always
   autosetuprebase = always
-[pager] # https://github.com/dandavison/delta
- # https://github.com/dandavison/delta
+[pager]
   diff = delta
   log = delta
   reflog = delta
@@ -47,7 +47,7 @@
   diffFilter = delta --color-only
 [alias]
   home = config user.email \"dvragulin@gmail.com\"
-  work = config user.email \"dragulin@ptsecurity.com\"
+  work = config user.email \"dmitriy.ragulin@sbermarket.ru\"
 ;   st = status -s
 ;   sts = status
 ;   p = push
@@ -91,3 +91,7 @@
 ;   rbi = rebase -i
 ;   st = status -s
 ;   sts = status
+[commit]
+	gpgSign = true
+[tag]
+	forceSignAnnotated = true
