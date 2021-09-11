@@ -21,6 +21,7 @@ pacman_packages:
   - ncdu
   - firefox
   - mc
+  - gnupg
   - fd
   - bat
   - exa
