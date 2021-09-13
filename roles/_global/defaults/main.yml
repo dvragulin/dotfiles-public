@@ -92,7 +92,6 @@ aur_packages:
   - globalprotect-openconnect
 
 snap_packages:
-  - bitwarden
   - postman
   - whatsdesk
   - skype
