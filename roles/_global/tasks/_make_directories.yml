@@ -26,3 +26,4 @@
   - '$HOME/.mutt'
   - '$HOME/.vim'
   - '$HOME/.vim/autoload'
+  - '$HOME/Library'
