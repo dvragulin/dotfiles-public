@@ -1,0 +1,18 @@
+---
+# tasks file for keychron keyboard
+
+- name: Link hid_apple.conf
+  file:
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/hid_apple.conf"
+    dest: "/etc/modprobe.d/hid_apple.conf"
+    state: link
+    force: yes
+
+
+- name: Link fnmode
+  file:
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/fnmode"
+    dest: "/sys/module/hid_apple/parameters/fnmode"
+    state: link
+    force: yes
+
