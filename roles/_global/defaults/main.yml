@@ -89,6 +89,7 @@ aur_packages:
   - clickhouse-client-bin
   - gp-saml-gui
   - globalprotect-openconnect
+  - yandex-music-player
 
 snap_packages:
   - postman
