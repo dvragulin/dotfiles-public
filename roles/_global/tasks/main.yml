@@ -9,3 +9,4 @@
 - include_tasks: _make_directories.yml
 - include_tasks: _install_apps.yml
 - include_tasks: _make_links.yml
+- include_tasks: _make_secrets.yml
