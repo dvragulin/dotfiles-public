@@ -3,16 +3,16 @@
 
 - name: Link hid_apple.conf
   file:
-    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/hid_apple.conf"
+    src: "/home/dvragulin/GIT/Projects_Home/dotfiles-public/roles/keychron/files/hid_config.conf"
     dest: "/etc/modprobe.d/hid_apple.conf"
     state: link
     force: yes
+  become: yes
 
-
-- name: Link fnmode
-  file:
-    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/fnmode"
-    dest: "/sys/module/hid_apple/parameters/fnmode"
-    state: link
-    force: yes
-
+#- name: Link fnmode
+#  file:
+#    src: "/home/dvragulin/GIT/Projects_Home/dotfiles-public/roles/keychron/files/fnmode"
+#    dest: "/sys/module/hid_apple/parameters/fnmode"
+#    state: link
+#    force: yes
+#  become: yes
