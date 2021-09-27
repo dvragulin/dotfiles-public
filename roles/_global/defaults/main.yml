@@ -90,6 +90,7 @@ aur_packages:
   - gp-saml-gui
   - globalprotect-openconnect
   - yandex-music-player
+  - btop
 
 snap_packages:
   - postman
