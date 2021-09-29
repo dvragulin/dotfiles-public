@@ -91,6 +91,7 @@ aur_packages:
   - globalprotect-openconnect
   - yandex-music-player
   - btop
+  - notion-app-enhanced
 
 snap_packages:
   - postman
