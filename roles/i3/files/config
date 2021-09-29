@@ -19,7 +19,6 @@ exec --no-startup-id telegram-desktop                                           
 exec --no-startup-id spectacle                                                          # Run Print Screem programm
 exec --no-startup-id keepassxc                                                          # Run Password manager
 exec --no-startup-id gpclient                                                           # Run VPN Client
-exec --no-startup-id notion-app-enhanced                                                # Run Notion Client
 exec --no-startup-id guake                                                              # Run Guake
 
 #exec --no-startup-id zoom                                                               # Run Zoom
