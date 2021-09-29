@@ -22,6 +22,7 @@
   - '$HOME/.config/dunst'
   - '$HOME/.config/mc'
   - '$HOME/.ssh'
+  - '$HOME/.ssh/config.d'
   - '$HOME/.tmux'
   - '$HOME/.mutt'
   - '$HOME/.vim'
