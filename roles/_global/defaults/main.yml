@@ -90,7 +90,9 @@ aur_packages:
   - gp-saml-gui
   - globalprotect-openconnect
   - yandex-music-player
-  - btop
+  - gitkraken
+  - terraformer
+  - duck
 
 snap_packages:
   - postman
@@ -98,7 +100,6 @@ snap_packages:
   - skype
 
 snap_classic_packages:
-  - gitkraken
   - powershell
   - pycharm-community
   - slack
