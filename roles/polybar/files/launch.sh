@@ -11,4 +11,6 @@ polybar dvragulin &
 dunst -config ~/.config/dunst/dunstrc &
 
 notify-send -a "Polybar" -u normal "Polybar running..."
+xrandr --output eDP-1 --off
+notify-send -a "xrandr" -u normal "Xrandr updated..."
 
