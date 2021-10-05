@@ -2,8 +2,10 @@
 # --- AUTOLOAD ------------------------------------------------------------------------------------------------------ #
 
 # --- Settings ---
-exec xrandr --output eDP1 --off                                                         # Disable laptop eDP1 mon
-exec xrandr --output HDMI-1 --mode 2560x1440                                            # Set settings for HDMI-1 mon
+exec_always xrandr --output eDP-1 --off
+exec_always xrandr --output DP-3-3 --mode 2560x1440  --primary
+
+# exec xrandr --output HDMI-1 --mode 2560x1440                                            # Set settings for HDMI-1 mon
 
 exec_always --no-startup-id /home/dvragulin/.config/polybar/launch.sh                   # Launch Polybar
 exec_always setxkbmap -option grp:alt_shift_toggle "us,ru"                              # Set eng/ru keyboard layout
@@ -34,12 +36,12 @@ bindsym XF86AudioLowerVolume    exec amixer -q sset Master 3%-      # Sound -
 bindsym XF86AudioMute           exec pactl set-sink-mute 0 toggle   # mute sound
 
 # --- Examples ---
-bindcode $mod+110   exec ./some_script1.sh                          # win+PgUp
-bindcode $mod+115   exec ./some_script2.sh                          # win+PgDown
-bindcode $mod+118   exec ./some_script3.sh                          # win+ins
-bindcode $mod+34    exec ./some_script4.sh                          # mod+[
-bindcode $mod+35    exec ./some_script5.sh                          # mod+]
-bindsym  $mod+l     exec "./some_script5.sh"                        # Lock screen
+#bindcode $mod+110   exec ./some_script1.sh                          # win+PgUp
+#bindcode $mod+115   exec ./some_script2.sh                          # win+PgDown
+#bindcode $mod+118   exec ./some_script3.sh                          # win+ins
+#bindcode $mod+34    exec ./some_script4.sh                          # mod+[
+#bindcode $mod+35    exec ./some_script5.sh                          # mod+]
+#bindsym  $mod+l     exec "./some_script5.sh"                        # Lock screen
 
 # --- HOTKEYS COMMON ------------------------------------------------------------------------------------------------ #
 
