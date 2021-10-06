@@ -22,6 +22,7 @@ exec --no-startup-id spectacle                                                  
 exec --no-startup-id keepassxc                                                          # Run Password manager
 exec --no-startup-id gpclient                                                           # Run VPN Client
 exec --no-startup-id guake                                                              # Run Guake
+exec --no-startup-id optimus-manager-qt                                                 # Run Optimus Manager
 
 #exec --no-startup-id zoom                                                               # Run Zoom
 #exec --no-startup-id skype                                                              # Run Skype

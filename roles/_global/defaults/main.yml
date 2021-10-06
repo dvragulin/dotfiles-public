@@ -93,6 +93,8 @@ aur_packages:
   - gitkraken
   - terraformer
   - duck
+  - optimus-manager
+  - oprimus-manager-qt
 
 snap_packages:
   - postman
