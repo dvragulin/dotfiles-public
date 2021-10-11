@@ -30,4 +30,5 @@
   - '$HOME/.mutt'
   - '$HOME/.vim'
   - '$HOME/.vim/autoload'
+  - '$HOME/.ansible_vault'
   - '$HOME/Library'
