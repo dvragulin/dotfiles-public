@@ -18,3 +18,7 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
   export EDITOR='vim'
 fi
+
+# k8s aliases
+[ -f ~/.kubectl_aliases ] && source ~/.kubectl_aliases
+

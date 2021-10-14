@@ -1,0 +1,10 @@
+---
+# tasks file for k9s
+
+- name: Link k8s aliases | .kubectl_aliases
+  file:
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/k8s/files/kubectl_aliases"
+    dest: "$HOME/.kubectl_aliases"
+    state: link
+    force: yes
+

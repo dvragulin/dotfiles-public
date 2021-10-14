@@ -1,0 +1,5 @@
+# More info on https://raw.githubusercontent.com/ahmetb/kubectl-alias/master/.kubectl_aliases
+
+
+alias k='kubectl'
+
