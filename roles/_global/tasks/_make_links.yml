@@ -1,6 +1,14 @@
 ---
 # tasks file for _global
                                                                             
+- name: Link top to btop
+  become: yes
+  file:
+    src: "/usr/bin/btop"
+    dest: "/bin/top"
+    state: link
+    force: yes
+
 - name: Link cat to bat
   become: yes
   file:

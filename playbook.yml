@@ -19,6 +19,7 @@
     - git
     - ranger
     - rofi
+    - btop
     - vim
     - mc
     - ssh
