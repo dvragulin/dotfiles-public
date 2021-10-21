@@ -22,3 +22,5 @@ fi
 # k8s aliases
 [ -f ~/.kubectl_aliases ] && source ~/.kubectl_aliases
 
+# mutt aliases
+alias email="neomutt"
