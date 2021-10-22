@@ -58,6 +58,7 @@ pacman_packages:
   - traceroute
   - ueberzug
   - putty
+  - terraform
   - httpie
   - keepassxc
   - aws-cli
