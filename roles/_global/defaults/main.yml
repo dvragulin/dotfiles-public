@@ -110,6 +110,7 @@ snap_packages:
   - postman
   - whatsdesk
   - skype
+  - todoist
 
 snap_classic_packages:
   - powershell
