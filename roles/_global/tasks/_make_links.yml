@@ -40,3 +40,12 @@
     dest: "/etc/sysctl.d/50-max_user_watches.conf"
     state: link
     force: yes
+
+- name: Link todoist-cli to todo
+  become: yes
+  file:
+    src: "/usr/bin/todoist"
+    dest: "/usr/bin/todo"
+    state: link
+    force: yes
+

@@ -105,6 +105,7 @@ aur_packages:
   - urlview
   - docker
   - docker-compose
+  - todoist
 
 snap_packages:
   - postman
