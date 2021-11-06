@@ -178,4 +178,3 @@ packages_to_delete:
   - virtualbox
   - virtualbox-host-dkms
   - virtualbox-sdk
-  - libcaca

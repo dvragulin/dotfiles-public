@@ -49,6 +49,7 @@ fi
 cd $HOME/GIT/Projects_Home/
 git clone git@github.com:dvragulin/dotfiles-public.git 2>/dev/null || true
 git clone git@github.com:dvragulin/dotfiles-private.git 2>/dev/null || true
+git clone git@github.com:dvragulin/CommonScripts.git 2>/dev/null || true
 cd $HOME/GIT/Projects_Home/dotfiles-public
 
 
