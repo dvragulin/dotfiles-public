@@ -113,6 +113,9 @@ aur_packages:
   - docker
   - docker-compose
   - todoist
+  - cointop-bin
+  - fzf
+  - fx
 
 snap_packages:
   - postman
@@ -131,8 +134,8 @@ pip_packages:
   - flake8
   - prettytable
   - gitpython
-  - tg
   - pipenv
+  - jira
 
 fonts_packages:
   - ttf-ubuntu-font-family
@@ -175,3 +178,4 @@ packages_to_delete:
   - virtualbox
   - virtualbox-host-dkms
   - virtualbox-sdk
+  - libcaca
