@@ -16,13 +16,13 @@
       <outline text="JetBrains Blog" title="JetBrains Blog" type="rss" 
             xmlUrl="https://blog.jetbrains.com/feed/" htmlUrl="https://blog.jetbrains.com"/>
       <outline text="Docker Blog" title="Docker Blog" type="rss" 
-            xmlUrl="http://blog.docker.io/feed/" htmlUrl="https://www.docker.com/blog"/>
+            xmlUrl="http://blog.docker.io/feed/"/>
       <outline text="linux-notes.org » Лента" title="linux-notes.org » Лента" type="rss" 
             xmlUrl="https://linux-notes.org/feed/" htmlUrl="https://linux-notes.org"/>
       <outline text="Notion Articles - Red Gregory" title="Notion Articles - Red Gregory" type="rss" 
             xmlUrl="https://www.redgregory.com/notion?format=rss" htmlUrl="https://www.redgregory.com/notion/"/>
       <outline text="linkmeup" title="linkmeup" type="rss" 
-            xmlUrl="https://linkmeup.ru/rss/index/" htmlUrl="https://linkmeup.ru"/>
+            xmlUrl="https://linkmeup.ru/rss/index/"/>
       <outline text="OpenNews RSS: главные новости" title="OpenNews RSS: главные новости" type="rss" 
             xmlUrl="https://www.opennet.ru/opennews/opennews_6.rss" htmlUrl="https://www.opennet.ru/opennews/main.shtml"/>
       <outline text="Karen Tovmasyan" title="Karen Tovmasyan" type="rss" 
@@ -30,50 +30,12 @@
       <outline text="DevPew" title="DevPew" type="rss" 
             xmlUrl="https://devpew.com/index.xml" htmlUrl="http://devpew.com/"/>
   </outline>
-  <outline title="Православие" text="Православие">
-      <outline text="Православный журнал «Фома»" title="Православный журнал «Фома»" type="rss" 
-            xmlUrl="https://foma.ru//feed" htmlUrl="https://foma.ru"/>
-      <outline text="Православие Ру" title="Православие Ру" type="rss" 
-            xmlUrl="https://pravoslavie.ru/xml/full.xml" htmlUrl="http://www.pravoslavie.ru/"/>
-      <outline text="Храм Всех Святых на Соколе » Лента" title="Храм Всех Святых на Соколе » Лента" type="rss" 
-            xmlUrl="https://hramsokol.ru/feed/" htmlUrl="https://hramsokol.ru"/>
-      <outline text="Храм Всех Святых на Соколе" title="Atom Храм Всех Святых на Соколе" type="rss" 
-            xmlUrl="https://hram-sokol.livejournal.com/data/atom" htmlUrl="https://hram-sokol.livejournal.com/"/>
-  </outline>
   <outline title="YouTube" text="YouTube">
       <outline text="Протоиерей Андрей Ткачёв" title="Протоиерей Андрей Ткачёв" type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCiXFDtLgmHpSbZ8rjk_TJtQ" htmlUrl="https://www.youtube.com/channel/UCiXFDtLgmHpSbZ8rjk_TJtQ"/>
-      <outline text="
-  
-    Павел Иванов
-  
-  
-
-
-" title="
-  
-    Павел Иванов
-  
-  
-
-
-" type="rss" 
+      <outline text="        Павел Иванов         " title="        Павел Иванов         " type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC2KPugVH-BPDAwxTDMdMcug" htmlUrl="https://www.youtube.com/channel/UC2KPugVH-BPDAwxTDMdMcug"/>
-      <outline text="
-  
-    Аудио статьи
-  
-  
-
-
-" title="
-  
-    Аудио статьи
-  
-  
-
-
-" type="rss" 
+      <outline text="        Аудио статьи         " title="        Аудио статьи         " type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCpNkrOqyrBb7BFybfmRFItg" htmlUrl="https://www.youtube.com/channel/UCpNkrOqyrBb7BFybfmRFItg"/>
       <outline text="Andrey Kurpatov" title="Andrey Kurpatov" type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCX_isCsPV3HOg95qodqIdLQ" htmlUrl="https://www.youtube.com/channel/UCX_isCsPV3HOg95qodqIdLQ"/>
@@ -91,8 +53,6 @@
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC4KSVWwjAbpCQn-Z0M0JtvQ" htmlUrl="https://www.youtube.com/channel/UC4KSVWwjAbpCQn-Z0M0JtvQ"/>
       <outline text="Английский на слух" title="RSS" type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCRGfRS5bu-U4xpMN6HBALVw" htmlUrl="https://www.youtube.com/channel/UCRGfRS5bu-U4xpMN6HBALVw"/>
-      <outline text="Доктор Петрик" title="Доктор Петрик" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC8k2L8NWKFOk6eFMUUpoCEw" htmlUrl="https://www.youtube.com/channel/UC8k2L8NWKFOk6eFMUUpoCEw"/>
       <outline text="Михаил Богданов" title="Михаил Богданов" type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCE0vJm7Q2cIm1zK1SP-S4yw" htmlUrl="https://www.youtube.com/channel/UCE0vJm7Q2cIm1zK1SP-S4yw"/>
       <outline text="Киберпоп ТВ" title="Киберпоп ТВ" type="rss" 
@@ -113,8 +73,6 @@
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCL4BwOrBEKggPyqsdVpraFg" htmlUrl="https://www.youtube.com/channel/UCL4BwOrBEKggPyqsdVpraFg"/>
       <outline text="Wolfgang&#39;s Channel" title="Wolfgang&#39;s Channel" type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCsnGwSIHyoYN0kiINAGUKxg" htmlUrl="https://www.youtube.com/channel/UCsnGwSIHyoYN0kiINAGUKxg"/>
-      <outline text="Positive Technologies" title="Positive Technologies" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC0-ELAiligc7HYUyAtIJMQg" htmlUrl="https://www.youtube.com/channel/UC0-ELAiligc7HYUyAtIJMQg"/>
       <outline text="Иерей Константин Корепанов" title="RSS" type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCQJd0xymUwo2HC8Y2sLU0AQ" htmlUrl="https://www.youtube.com/channel/UCQJd0xymUwo2HC8Y2sLU0AQ"/>
       <outline text="АйТиБорода" title="RSS" type="rss" 
@@ -151,6 +109,8 @@
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCIR5HwqIg_oXiOIe-I4CuIQ" htmlUrl="https://www.youtube.com/channel/UCIR5HwqIg_oXiOIe-I4CuIQ"/>
       <outline text="БесогонTV" title="БесогонTV" type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCiwIy5q59aD-Nph5f-Zvp2A" htmlUrl="https://www.youtube.com/channel/UCiwIy5q59aD-Nph5f-Zvp2A"/>
+      <outline text="Доктор Петрик" title="Доктор Петрик" type="rss" 
+            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC8k2L8NWKFOk6eFMUUpoCEw" htmlUrl="https://www.youtube.com/channel/UC8k2L8NWKFOk6eFMUUpoCEw"/>
       <outline text="Доктор Вивек" title="Доктор Вивек" type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC0j_9poboewUN7WHoSFXQEw" htmlUrl="https://www.youtube.com/channel/UC0j_9poboewUN7WHoSFXQEw"/>
       <outline text="Leonid Firstov (English)" title="Leonid Firstov (English)" type="rss" 
@@ -183,10 +143,10 @@
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCi8Dw_Kc5hKyK83xCW0jVfQ" htmlUrl="https://www.youtube.com/channel/UCi8Dw_Kc5hKyK83xCW0jVfQ"/>
       <outline text="Степан Береговой" title="Степан Береговой" type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCrKUQBc3GMnhwzUlbZRssWA" htmlUrl="https://www.youtube.com/channel/UCrKUQBc3GMnhwzUlbZRssWA"/>
-      <outline text="Delyagin TV" title="Delyagin TV" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCASROq9xznjFpDUtf0ZWbpQ" htmlUrl="https://www.youtube.com/channel/UCASROq9xznjFpDUtf0ZWbpQ"/>
       <outline text="Kazakevich Streaming (Remote Jobs)" title="Kazakevich Streaming (Remote Jobs)" type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCNPu61I6VSbrlO6Q8YbJnwg" htmlUrl="https://www.youtube.com/channel/UCNPu61I6VSbrlO6Q8YbJnwg"/>
+      <outline text="Слёрм" title="Слёрм" type="rss" 
+            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCK5MedKoNJ5aRahfGOIGx6g" htmlUrl="https://www.youtube.com/channel/UCK5MedKoNJ5aRahfGOIGx6g"/>
   </outline>
   <outline title="Instagram" text="Instagram">
       <outline text="Профиль Лествица (@lestvitsa_sokol) в Instagram • 644 фото и видео" title="Профиль Лествица (@lestvitsa_sokol) в Instagram • 644 фото и видео" type="rss" 
@@ -199,8 +159,6 @@
             xmlUrl="https://www.instagram.com/olegsteniaev/" htmlUrl="https://www.instagram.com/olegsteniaev/"/>
       <outline text="Храм Черкизово" title="Храм Черкизово" type="rss" 
             xmlUrl="https://www.instagram.com/hramcherkizovo/" htmlUrl="https://www.instagram.com/hramcherkizovo/"/>
-      <outline text="Ferzini" title="Ferzini" type="rss" 
-            xmlUrl="https://www.instagram.com/ferzescu/" htmlUrl="https://www.instagram.com/ferzescu/"/>
       <outline text="Pinyagin Sergey" title="Pinyagin Sergey" type="rss" 
             xmlUrl="https://www.instagram.com/ulica_kaminskogo123/" htmlUrl="https://www.instagram.com/ulica_kaminskogo123/"/>
       <outline text="Михаил Делягин" title="Михаил Делягин" type="rss" 
@@ -211,10 +169,12 @@
             xmlUrl="https://t.me/s/PositiveBlogs" htmlUrl="https://t.me/s/PositiveBlogs"/>
       <outline text="IT&#39;s positive investing – Telegram" title="IT&#39;s positive investing – Telegram" type="rss" 
             xmlUrl="https://t.me/s/positive_investing" htmlUrl="https://t.me/s/positive_investing"/>
+      <outline text="DevOps&#38;SRE Library – Telegram" title="DevOps&#38;SRE Library – Telegram" type="rss" 
+            xmlUrl="https://t.me/s/devopslibrary" htmlUrl="https://t.me/s/devopslibrary"/>
   </outline>
   <outline title="Vkontakte" text="Vkontakte">
   </outline>
-  <outline title="Service Statuses" text="Service Statuses">
+  <outline title="External Service Statuses" text="External Service Statuses">
       <outline text="GitHub Status" title="GitHub Status History - RSS Feed" type="rss" 
             xmlUrl="https://www.githubstatus.com/history.rss" htmlUrl="https://www.githubstatus.com"/>
       <outline text="Notion Status" title="Notion Status" type="rss" 
