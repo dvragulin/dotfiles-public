@@ -20,6 +20,7 @@ Plug 'vim-airline/vim-airline',                          " Airline
 Plug 'vim-airline/vim-airline-themes',                   " Airline themes
 Plug 'miyakogi/conoline.vim'                             " Cursor colors scheme
 Plug 'JamshedVesuna/vim-markdown-preview'                " Preview markdown files
+Plug 'junegunn/fzf.vim'                                  " Fzf
 
 
 " --- Pluggins for Python ------------------------------------ 
