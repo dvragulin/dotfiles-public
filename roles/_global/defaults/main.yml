@@ -12,6 +12,7 @@ pacman_packages:
   - rsync
   - ntfs-3g
   - vagrant
+  - tcpdump
   - snappy
   - pulsemixer
   - guake
