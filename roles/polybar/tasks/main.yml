@@ -42,3 +42,14 @@
     dest: "$HOME/.config/polybar/weather-openmap.sh"
     state: link
     force: yes
+
+- name: Link todoist.sh script
+  file:
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/polybar/files/todoist.sh"
+    dest: "$HOME/.config/polybar/todoist.sh"
+    state: link
+    force: yes
+
+
+
+
