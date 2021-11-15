@@ -437,7 +437,7 @@ type = custom/script
 exec = /home/dvragulin/.config/polybar/todoist.sh
 click-left = todoist
 
-interval = 600
+interval = 120
 label = %{T4}%{T-} %output%
 
 
