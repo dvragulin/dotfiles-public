@@ -117,6 +117,7 @@ aur_packages:
   - cointop-bin
   - fzf
   - fx
+  - kcharselect
 
 snap_packages:
   - postman
