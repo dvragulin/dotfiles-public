@@ -1,4 +1,5 @@
 #!/usr/bin/bash
+todo s
 
 #ALL_TASKS=$(todo l | awk ' {print $1} ' | wc -l)
 TODAY_TASKS=$(todo l | awk ' {print $3} ' | rg / | wc -l)
