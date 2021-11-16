@@ -1,5 +1,13 @@
 ---
 # tasks file for _global
+
+- name: Link bootstrap
+  become: yes
+  file:
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/bin/bootstrap.sh"
+    dest: "/usr/bin/bootstrap"
+    state: link
+    force: yes
                                                                             
 - name: Link top to btop
   become: yes
@@ -29,7 +37,7 @@
   become: yes
   file:
     src: "/usr/bin/lazydocker"
-    dest: "/usr/bin/ldocker"
+    dest: "/usr/bin/lzd"
     state: link
     force: yes
 
@@ -38,14 +46,6 @@
   file:
     src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/_global/files/50-max_user_watches.conf"
     dest: "/etc/sysctl.d/50-max_user_watches.conf"
-    state: link
-    force: yes
-
-- name: Link todoist-cli to todo
-  become: yes
-  file:
-    src: "/usr/bin/todoist-cli"
-    dest: "/usr/bin/todo"
     state: link
     force: yes
 

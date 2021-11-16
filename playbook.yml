@@ -9,6 +9,7 @@
   hosts: DESKTOP
   become: no
   roles:
+    - todoist
     - i3
     - polybar
     - alacritty

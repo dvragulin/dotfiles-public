@@ -113,7 +113,6 @@ aur_packages:
   - urlview
   - docker
   - docker-compose
-  - todoist
   - cointop-bin
   - fzf
   - fx
@@ -123,7 +122,6 @@ snap_packages:
   - postman
   - whatsdesk
   - skype
-  - todoist
 
 snap_classic_packages:
   - powershell
@@ -180,5 +178,4 @@ packages_to_delete:
   - virtualbox
   - virtualbox-host-dkms
   - virtualbox-sdk
-  - gucharmap 
 

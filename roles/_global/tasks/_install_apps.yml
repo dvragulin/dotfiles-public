@@ -6,12 +6,14 @@
     name: '{{ item }}'
     state: present
   loop: "{{ pacman_packages }}"
+  ignore_errors: yes
 
 - name: Install Snap packages
   snap:
     name: '{{ item }}'
     state: present
   loop: "{{ snap_packages }}"
+  ignore_errors: yes
 
 - name: Install Snap classic packages
   snap:
@@ -19,12 +21,14 @@
     classic: yes
     state: present
   loop: "{{ snap_classic_packages }}"
+  ignore_errors: yes
 
 - name: Install PIP packages
   pip:
     name: '{{ item }}'
     state: latest
   loop: "{{ pip_packages }}"
+  ignore_errors: yes
 
 - name: Install AUR packages
   become: false
@@ -32,21 +36,25 @@
     name: "{{ item }}"
     state: latest
   loop: "{{ aur_packages }}"
+  ignore_errors: yes
 
 - name: Install i3 packages
   aur:
     name: '{{ item }}'
     state: present
   loop: "{{ i3_packages }}"
+  ignore_errors: yes
 
 - name: Install Fonts packages
   aur:
     name: '{{ item }}'
     state: present
   loop: "{{ fonts_packages }}"
+  ignore_errors: yes
 
 - name: Remove packages
   pacman:
     name: '{{ item }}'
     state: absent
   loop: "{{ packages_to_delete }}"
+  ignore_errors: yes

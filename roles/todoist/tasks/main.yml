@@ -1,0 +1,50 @@
+---
+# tasks file for todoist
+
+- name: Checking if todo exists
+  stat:
+    path: "/usr/bin/todo"
+  register: file_data
+
+- name: Install todoist from AUR
+  become: false
+  aur:
+    name: "todoist"
+    state: latest
+  when: not file_data.stat.exists
+
+- name: Move todoist-cli
+  become: yes
+  copy:
+    src: /usr/bin/todoist
+    dest: /usr/bin/todoist-cli
+  when: not file_data.stat.exists
+
+- name: Allow run todoist-cli
+  become: yes
+  file:
+    path: /usr/bin/todoist-cli
+    mode: 0755
+  when: not file_data.stat.exists
+
+- name: Remove todoist (cli)
+  become: yes
+  file:
+    path: /usr/bin/todoist
+    state: absent
+  when: not file_data.stat.exists
+
+- name: Link todoist-cli to todo
+  become: yes
+  file:
+    src: "/usr/bin/todoist-cli"
+    dest: "/usr/bin/todo"
+    state: link
+    force: yes
+
+- name: Install Snap packages
+  become: yes
+  snap:
+    name: 'todoist'
+    state: present
+
