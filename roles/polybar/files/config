@@ -40,6 +40,7 @@ font-1               = Siji:size=10;3
 font-2               = Siji:style=Solid:pixelsize=10
 font-3               = FontAwesome5Free:style=Solid:pixelsize=10;3
 font-4               = FontAewesome5Brands:style=Solid:pixelsize=10
+font-5               = "Font Awesome 5 Brands:pixelsize=10;3"
 
 tray-position        = right
 tray-padding         = 0
@@ -67,7 +68,7 @@ cursor-click          = pointer
 
 modules-left         = i3 sp2 xwindow
 ;modules-center      =
-modules-right        = netspdeth sp1 updates-pac-yay sp2 trash sp2 filesystem_custom sp2 todoist sp2 volume sp2 xkeyboard sp2 battery0 sp2 date sp2 powermenu sp2
+modules-right        = netspdeth sp1 updates-pac-yay sp2 trash sp2 filesystem_custom sp2 todoist sp2 git_count sp2 volume sp2 xkeyboard sp2 battery0 sp2 date sp2 powermenu sp2
 
 ; Used:
 ;   [module/sp1]
@@ -438,7 +439,19 @@ exec = /home/dvragulin/.config/polybar/todoist.sh
 click-left = todoist
 
 interval = 120
-label = %{T4}%{T-} %output%
+label = %{T5}%{T-} %output%
+
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/git_count]
+type = custom/script
+exec = /home/dvragulin/.config/polybar/git_count.sh
+;click-left = 
+
+interval = 600
+label = %{T5} %{T-} %output%
+;label = %{T5} %{T-} %output%
+
 
 
 ; ---------------------------------------------------------------------------------------------------------------------

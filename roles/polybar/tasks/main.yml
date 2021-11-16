@@ -50,6 +50,10 @@
     state: link
     force: yes
 
-
-
+- name: Link git_count.sh script
+  file:
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/polybar/files/git_count.sh"
+    dest: "$HOME/.config/polybar/git_count.sh"
+    state: link
+    force: yes
 
