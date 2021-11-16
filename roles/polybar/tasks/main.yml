@@ -57,3 +57,10 @@
     state: link
     force: yes
 
+- name: Link git_mr.py script
+  file:
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/polybar/files/git_mr.py"
+    dest: "$HOME/.config/polybar/git_mr.py"
+    state: link
+    force: yes
+
