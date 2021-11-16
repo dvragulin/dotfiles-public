@@ -117,7 +117,7 @@ aur_packages:
   - cointop-bin
   - fzf
   - fx
-  - kcharselect
+  - gucharmap 
 
 snap_packages:
   - postman
@@ -180,3 +180,5 @@ packages_to_delete:
   - virtualbox
   - virtualbox-host-dkms
   - virtualbox-sdk
+  - gucharmap 
+
