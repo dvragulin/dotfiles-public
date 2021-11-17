@@ -79,6 +79,7 @@ pacman_packages:
   - dnsmasq
   - bridge-utils
   - openbsd-netcat
+  - dbeaver
 
 aur_packages:
   - network-manager-applet 
