@@ -15,5 +15,5 @@ rw_response = requests.get(url=rw_URL)
 mr_body = json.loads(mr_response.content.decode('utf-8'))
 rw_body = json.loads(rw_response.content.decode('utf-8'))
 
-print(f"{len(mr_body)}/{len(rw_body)}")
+print(f"{len(mr_body)}/{len(rw_body)} ")
 
