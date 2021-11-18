@@ -251,7 +251,7 @@ format-padding = 0
 
 ;label = "  %title:0:60:...% "
 label = "  %title%"
-label-maxlen = 100
+label-maxlen = 30
 label-foreground = ${colors.foreground-alt}
 label-background = ${colors.background-alt}
 ;label-underline = ${colors.foreground}
