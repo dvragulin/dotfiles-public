@@ -480,7 +480,7 @@ label = %{T5} %{T-} %output%
 type = custom/script
 exec = docker ps -aq | wc -l
 click-left = docker rm -vf $(docker ps -aq)
-click-right = docker image prune -a
+click-right = echo y | docker image prune -a
 interval = 600
 label =   %output%
 
