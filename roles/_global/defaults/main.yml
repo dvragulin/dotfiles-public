@@ -101,7 +101,6 @@ aur_packages:
   - tfswitch
   - lens-bin
   - yandex-cloud-bin
-  - clickhouse-client-bin
   - gp-saml-gui
   - globalprotect-openconnect
   - yandex-music-player
@@ -121,7 +120,6 @@ aur_packages:
   - dive
 
 snap_packages:
-  - postman
   - whatsdesk
   - skype
 

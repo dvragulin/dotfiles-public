@@ -12,27 +12,24 @@
     geometry               = "500x10-0+35"
     transparency           = 0
     idle_threshold         = 120
+    frame_width            = 1
     monitor                = 0
     follow                 = keyboard
     sticky_history         = yes
     line_height            = 0
-    separator_height       = 2
+    separator_height       = 1
     padding                = 8
     horizontal_padding     = 8
-    separator_color        = frame
+    separator_color        = "#595959"
     startup_notification   = false
     browser                = /usr/bin/firefox -new-tab
-    max_icon_size          = 80
+    max_icon_size          = 60
 
 [shortcuts]
     close                  = mod4+m       # close notification
     close_all              = mod4+shift+m # close all notifications
     history                = mod4+n       # redisplay last message(s)
     context                = mod4+shift+i # context menu
-
-[frame]
-    width                  = 1
-    color                  = "#595959"
 
 [urgency_critical]
     background             = "#2B2B2B"
