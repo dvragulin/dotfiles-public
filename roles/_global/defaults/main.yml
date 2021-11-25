@@ -118,6 +118,7 @@ aur_packages:
   - fzf
   - fx
   - gucharmap 
+  - dive
 
 snap_packages:
   - postman
