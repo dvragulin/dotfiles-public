@@ -118,6 +118,7 @@ aur_packages:
   - fx
   - gucharmap 
   - dive
+  - wuzz
 
 snap_packages:
   - whatsdesk
