@@ -92,7 +92,6 @@ aur_packages:
   - vte3
   - gtk2-perl
   - asbru-cm
-  - trello
   - zoom
   - google-chrome
   - etcher
