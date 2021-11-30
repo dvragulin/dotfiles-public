@@ -139,3 +139,5 @@ ex ()
 }
 export EDITOR='vim'
 export VISUAL='vim'
+
+tmux
