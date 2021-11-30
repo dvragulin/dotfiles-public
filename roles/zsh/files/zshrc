@@ -1,8 +1,8 @@
+export BAT_THEME="ansi"
 export ZSH="$HOME/.oh-my-zsh"
 export VISUAL=vim;
 export EDITOR=vim;
-GOPATH=/home/dvragulin/.go
-export GOPATH
+export GOPATH="/home/dvragulin/.go"
 PATH=$PATH:$GOPATH/bin # Add GOPATH/bin to PATH for scripting
 
 
@@ -29,3 +29,4 @@ fi
 # Other aliases
 alias mk="minikube"
 alias email="neomutt"
+
