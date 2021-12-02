@@ -1,9 +1,10 @@
-export BAT_THEME="ansi"
 export ZSH="$HOME/.oh-my-zsh"
 export VISUAL=vim;
 export EDITOR=vim;
 export GOPATH="/home/dvragulin/.go"
 PATH=$PATH:$GOPATH/bin # Add GOPATH/bin to PATH for scripting
+export FZF_DEFAULT_OPTS="--ansi --preview-window 'right:60%' --preview 'bat --color=always --style=full --line-range :300 {}'"
+export BAT_THEME="ansi"
 
 
 ZSH_THEME="af-magic"
@@ -29,4 +30,5 @@ fi
 # Other aliases
 alias mk="minikube"
 alias email="neomutt"
+alias vf='vim $(fzf)'
 
