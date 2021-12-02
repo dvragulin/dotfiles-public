@@ -17,39 +17,39 @@
 [submodule]
 	recurse = true
 [pull]
-  rebase = true
+    rebase = true
 [push]
-  default = current
-  followTags = true
+	default = current
+    followTags = true
 [fetch]
-  prune = true
+    prune = true
 [branch]
-  autosetupmerge = always
-  autosetuprebase = always
+    autosetupmerge = always
+    autosetuprebase = always
 [pager]
-  diff = delta
-  log = delta
-  reflog = delta
-  show = delta
+    diff = delta
+    log = delta
+    reflog = delta
+    show = delta
 [delta]
-  plus-style = "syntax #012800"
-  minus-style = "syntax #340001"
-  navigate = true
-  line-numbers = true
-  side-by-side = true
-  syntax-theme = Nord
-  file-added-label = [+]
-  file-copied-label = [C]
-  file-modified-label = [M]
-  file-removed-label = [-]
-  file-renamed-label = [R]
-  line-numbers-zero-style = "#545474"# italic
+    plus-style = "syntax #012800"
+    minus-style = "syntax #340001"
+    navigate = true
+    line-numbers = true
+    side-by-side = true
+    syntax-theme = Nord
+    file-added-label = [+]
+    file-copied-label = [C]
+    file-modified-label = [M]
+    file-removed-label = [-]
+    file-renamed-label = [R]
+    line-numbers-zero-style = "#545474"# italic
 [interactive]
-  diffFilter = delta --color-only
+    diffFilter = delta --color-only
 [commit]
 	gpgSign = true
 [tag]
 	forceSignAnnotated = true
 [alias]
-  home = ! ln -sf $HOME/.gitconfig.home $HOME/.gitconfig && echo ' gitconfig.home has been successfully applied!  ' && echo " " > $HOME/.gitconfig.status ; = U+F7DD
-  work = ! ln -sf $HOME/.gitconfig.work $HOME/.gitconfig && echo ' gitconfig.work has been successfully applied!  ' && echo " " > $HOME/.gitconfig.status ; = U+F6D6
+    home = ! ln -sf $HOME/.gitconfig.home $HOME/.gitconfig && echo ' gitconfig.home has been successfully applied!  ' && echo " " > $HOME/.gitconfig.status ; = U+F7DD
+    work = ! ln -sf $HOME/.gitconfig.work $HOME/.gitconfig && echo ' gitconfig.work has been successfully applied!  ' && echo " " > $HOME/.gitconfig.status ; = U+F6D6
