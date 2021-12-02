@@ -1,10 +1,29 @@
 ---
 # tasks file for git
                                                                             
-- name: Link git config file | gitconfig
+- name: Link git config file | gitconfig home
   file:
-    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/git/files/gitconfig"
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/git/files/gitconfig.home"
+    dest: "$HOME/.gitconfig.home"
+    state: link
+    force: yes
+
+- name: Link default git config file | gitconfig home
+  file:
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/git/files/gitconfig.home"
     dest: "$HOME/.gitconfig"
     state: link
     force: yes
 
+- name: Link git config file | gitconfig work
+  file:
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/git/files/gitconfig.work"
+    dest: "$HOME/.gitconfig.work"
+    state: link
+    force: yes
+
+- name: Link default git config file | gitconfig home
+  copy:
+    src: "/home/dvragulin/GIT/Projects_Home/dotfiles-public/roles/git/files/gitconfig.status"
+    dest: "/home/dvragulin/.gitconfig.status"
+    force: yes

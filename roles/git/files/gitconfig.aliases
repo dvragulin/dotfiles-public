@@ -1,59 +1,9 @@
-[init]
-	defaultBranch = master
-[user]
-	name = Dmitry Ragulin
-	email = dvragulin@gmail.com
-	signingKey = dvragulin@gmail.com
-[core]
-    editor = vim
-	autocrlf = input
-[http]
-	sslVerify = false
-[credential]
-	help = cache
-[help]
-	autocorrect = 5
-[submodule]
-	recurse = true
-[pull]
-  rebase = true
-[push]
-  default = current
-  followTags = true
-[fetch]
-  prune = true
-[branch]
-  autosetupmerge = always
-  autosetuprebase = always
-[pager]
-  diff = delta
-  log = delta
-  reflog = delta
-  show = delta
-[delta]
-  plus-style = "syntax #012800"
-  minus-style = "syntax #340001"
-  navigate = true
-  line-numbers = true
-  side-by-side = true
-  syntax-theme = Nord
-  file-added-label = [+]
-  file-copied-label = [C]
-  file-modified-label = [M]
-  file-removed-label = [-]
-  file-renamed-label = [R]
-  line-numbers-zero-style = "#545474"# italic
-[interactive]
-  diffFilter = delta --color-only
-[alias]
-  home = config user.email \"dvragulin@gmail.com\"
-  work = config user.email \"dmitriy.ragulin@sbermarket.ru\"
+; --- aliases -------------------------------------------------------------------
 ;   st = status -s
 ;   sts = status
 ;   p = push
 ;   pr = pull -r
 ;   pushf = push --force-with-leas
-;   s = status
 ;   rb = rebase
 ;   rbc = rebase --continue
 ;   rbs = rebase --skip
@@ -91,7 +41,3 @@
 ;   rbi = rebase -i
 ;   st = status -s
 ;   sts = status
-[commit]
-	gpgSign = true
-[tag]
-	forceSignAnnotated = true
