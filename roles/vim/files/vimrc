@@ -10,7 +10,6 @@ call plug#begin('~/.vim/plugged')
 " --- Pluggins for VIM ---------------------------------------
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }  " Folder Tree
 Plug 'blueshirts/darcula',                               " Main color scheme
-Plug 'ycm-core/YouCompleteMe',                           " code-completion
 Plug 'jiangmiao/auto-pairs',                             " Auto pairs
 Plug 'tpope/vim-fugitive',                               " Helper for work with GIT 
 Plug 'airblade/vim-gitgutter'                            " Git left side lines
@@ -21,6 +20,7 @@ Plug 'vim-airline/vim-airline-themes',                   " Airline themes
 Plug 'miyakogi/conoline.vim'                             " Cursor colors scheme
 Plug 'JamshedVesuna/vim-markdown-preview'                " Preview markdown files
 Plug 'junegunn/fzf.vim'                                  " Fzf
+"Plug 'ycm-core/YouCompleteMe',                           " code-completion
 
 
 " --- Pluggins for Python ------------------------------------ 
