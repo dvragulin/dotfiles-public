@@ -1,7 +1,4 @@
 ; --- aliases -------------------------------------------------------------------
-;   st = status -s
-;   sts = status
-;   p = push
 ;   pr = pull -r
 ;   pushf = push --force-with-leas
 ;   rb = rebase
@@ -29,15 +26,8 @@
 ;   cpa = cherry-pick --abort
 ;   cpc = cherry-pick --continue
 ;   dc = diff --cached
-;   lf   = log --name-only --oneline
-;   lg   = log --graph --oneline --decorate
-;   lga  = log --graph --oneline --decorate --all
-;   lp  = log -p
-;   ls = log --pretty=format:'%h %an: %s' --graph --decorate
 ;   please = push --force-with-lease
 ;   r  = remote -v
 ;   rba = rebase --abort
 ;   rbc = rebase --continue
 ;   rbi = rebase -i
-;   st = status -s
-;   sts = status
