@@ -20,8 +20,6 @@
 ;   ciamno = commit --amend --no-edit
 ;   ciamnop = !git commit --amend --no-edit && git push --force-with-lease
 ;   check = diff --check
-;   co = checkout
-;   cm = ! git checkout master && git pull || git pull
 ;   cp = cherry-pick
 ;   cpa = cherry-pick --abort
 ;   cpc = cherry-pick --continue
