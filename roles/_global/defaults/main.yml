@@ -118,6 +118,7 @@ aur_packages:
   - gucharmap 
   - dive
   - wuzz
+  - s3cmd
 
 snap_packages:
   - whatsdesk

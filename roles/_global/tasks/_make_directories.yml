@@ -11,6 +11,7 @@
   - '$HOME/GIT/Projects_OpenSource'
   - '$HOME/GIT/Projects_Work'
   - '$HOME/GIT/Projects_Tests'
+  - '$HOME/GIT/Projects_Products'
   - '$HOME/.config'
   - '$HOME/.config/rofi'
   - '$HOME/.config/ranger'
