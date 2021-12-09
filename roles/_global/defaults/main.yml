@@ -119,6 +119,7 @@ aur_packages:
   - dive
   - wuzz
   - s3cmd
+  - ytfzf
 
 snap_packages:
   - whatsdesk

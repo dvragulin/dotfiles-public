@@ -31,4 +31,5 @@ fi
 alias mk="minikube"
 alias email="neomutt"
 alias vf='vim $(fzf)'
+alias yt='ytfzf'
 
