@@ -80,6 +80,7 @@ pacman_packages:
   - bridge-utils
   - openbsd-netcat
   - dbeaver
+  - dnsutils
 
 aur_packages:
   - network-manager-applet 
@@ -120,6 +121,8 @@ aur_packages:
   - wuzz
   - s3cmd
   - ytfzf
+  - termshark
+  - markdown
 
 snap_packages:
   - whatsdesk
@@ -138,6 +141,7 @@ pip_packages:
   - gitpython
   - pipenv
   - jira
+  - grip
 
 fonts_packages:
   - ttf-ubuntu-font-family

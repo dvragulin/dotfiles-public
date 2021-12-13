@@ -1,11 +1,1 @@
-configuration {
-    theme: "dvragulin"; 
-  timeout {
-      action: "kb-cancel";
-      delay:  0;
-  }
-  filebrowser {
-      directories-first: true;
-      sorting-method:    "name";
-  }
-}
+@theme "dvragulin"
