@@ -33,7 +33,7 @@ alias email="neomutt"
 alias vf='vim $(fzf)'
 alias yt='ytfzf'
 alias h='history'
-
+alias r='ranger'
 
 # Extract anything alias
 extract () {
