@@ -70,6 +70,7 @@ pacman_packages:
   - gobject-introspection
   - webkit2gtk
   - mpv
+  - unzip
   - ripgrep
   - minikube
   - virt-manager
