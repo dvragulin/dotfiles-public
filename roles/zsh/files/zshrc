@@ -34,6 +34,8 @@ alias vf='vim $(fzf)'
 alias yt='ytfzf'
 alias h='history'
 alias r='ranger'
+alias tf='terraform'
+alias tfm='terraformer'
 
 # Extract anything alias
 extract () {
