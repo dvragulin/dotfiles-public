@@ -36,6 +36,7 @@ alias h='history'
 alias r='ranger'
 alias tf='terraform'
 alias tfm='terraformer'
+alias kp='keepassxc'
 
 # Extract anything alias
 extract () {
