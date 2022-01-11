@@ -32,7 +32,6 @@ pacman_packages:
   - calibre
   - vlc
   - obs-studio
-  - youtube-dl
   - pgadmin4
   - python-pip
   - llvm
@@ -82,6 +81,7 @@ pacman_packages:
   - openbsd-netcat
   - dbeaver
   - dnsutils
+  - yt-dlp
 
 aur_packages:
   - network-manager-applet 

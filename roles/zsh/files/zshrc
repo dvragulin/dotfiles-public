@@ -37,6 +37,9 @@ alias r='ranger'
 alias tf='terraform'
 alias tfm='terraformer'
 alias kp='keepassxc'
+alias youtube-watch='yt'
+alias youtube-download-audio='yt-dlp -x --audio-format mp3'
+alias youtube-download-video='yt-dlp -f mp4'
 
 # Extract anything alias
 extract () {
