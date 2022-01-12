@@ -79,9 +79,6 @@ pacman_packages:
   - dnsmasq
   - bridge-utils
   - openbsd-netcat
-  - dbeaver
-  - dnsutils
-  - yt-dlp
 
 aur_packages:
   - network-manager-applet 
@@ -107,6 +104,7 @@ aur_packages:
   - yandex-music-player
   - gitkraken
   - terraformer
+  - helm
   - duck
   - k9s
   - multiwerf-bin
@@ -124,6 +122,9 @@ aur_packages:
   - ytfzf
   - termshark
   - markdown
+  - dbeaver
+  - dnsutils
+  - yt-dlp
 
 snap_packages:
   - whatsdesk
@@ -143,6 +144,9 @@ pip_packages:
   - pipenv
   - jira
   - grip
+  - google-api-python-client
+  - google-auth-httplib2
+  - google-auth-oauthlib
 
 fonts_packages:
   - ttf-ubuntu-font-family

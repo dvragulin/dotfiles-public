@@ -31,6 +31,7 @@ fi
 alias mk="minikube"
 alias email="neomutt"
 alias vf='vim $(fzf)'
+alias cf='cat $(fzf)'
 alias yt='ytfzf'
 alias h='history'
 alias r='ranger'
