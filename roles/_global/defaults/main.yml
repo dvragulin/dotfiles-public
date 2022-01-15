@@ -20,6 +20,7 @@ pacman_packages:
   - tldr
   - tmux
   - ncdu
+  - duf
   - firefox
   - mc
   - gnupg
@@ -75,10 +76,10 @@ pacman_packages:
   - virt-manager
   - qemu
   - vde2
-  - ebtables
   - dnsmasq
   - bridge-utils
   - openbsd-netcat
+  - gpg-tui
 
 aur_packages:
   - network-manager-applet 
@@ -125,6 +126,7 @@ aur_packages:
   - dbeaver
   - dnsutils
   - yt-dlp
+  - goaccess
 
 snap_packages:
   - whatsdesk
