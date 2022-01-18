@@ -127,6 +127,7 @@ aur_packages:
   - dnsutils
   - yt-dlp
   - goaccess
+  - postman-bin
 
 snap_packages:
   - whatsdesk
