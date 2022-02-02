@@ -129,6 +129,7 @@ aur_packages:
   - goaccess
   - postman-bin
   - ethr
+  - makepasswd
 
 snap_packages:
   - whatsdesk
