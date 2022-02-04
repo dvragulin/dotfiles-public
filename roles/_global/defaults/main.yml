@@ -86,7 +86,6 @@ aur_packages:
   - chromedriver
   - git-delta
   - wakeonlan
-  - woeusb-gui
   - lazydocker
   - hstr
   - vte3
