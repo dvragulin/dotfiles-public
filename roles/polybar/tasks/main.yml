@@ -31,8 +31,8 @@
 
 - name: Link updates.sh script
   file:
-    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/polybar/files/updates.sh"
-    dest: "$HOME/.config/polybar/updates.sh"
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/polybar/files/git_update.sh"
+    dest: "$HOME/.config/polybar/git_update.sh"
     state: link
     force: yes
 
