@@ -1,4 +1,3 @@
 .idea
 /temp/
-roles/btop/files/btop.conf
-
+!/roles/btop/files/btop.conf
