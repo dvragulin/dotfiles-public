@@ -64,6 +64,14 @@
     state: link
     force: yes
 
+- name: Link git_update.sh script
+  file:
+    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/polybar/files/git_uodate.py"
+    dest: "$HOME/.config/polybar/git_update.py"
+    state: link
+    force: yes
+
+-
 - name: Link jira_get_issues.py
   file:
     src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/polybar/files/jira_get_issues.py"

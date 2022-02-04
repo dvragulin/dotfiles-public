@@ -459,7 +459,8 @@ label = : %output%
 [module/git_count]
 type = custom/script
 exec = /home/dvragulin/.config/polybar/git_count.sh
-;click-left = 
+click-left = /home/dvragulin/.config/polybar/git_update.sh
+click-right = /home/dvragulin/.config/polybar/git_update.sh
 
 interval = 30
 label = %{T5}%{T-}%output%
