@@ -54,7 +54,7 @@ font:
     style: Italic
   size: 9.5
 
-background_opacity: 1
+windows.opacity: 1
 
 mouse:
   hints:
