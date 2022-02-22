@@ -417,14 +417,14 @@ type = custom/script
 exec = /home/dvragulin/.config/polybar/trash.sh
 interval = 1
 label = %output%
-format-prefix = "%{T4}%{T-} "
+format-prefix = "%{T5}%{T-} "
 format-prefix-padding-left = 0
 format-prefix-padding-right = 0
 ;format-prefix-foreground = ${colors.foreground}
 label-padding = 0
 ;label-foreground = ${colors.foreground}
 click-left = pcmanfm -n ~/.local/share/Trash/files
-click-right = rm -rf ~/.local/share/Trash/files/* exec notify-send 'Trash cleaned'
+click-right = rm -rf ~/.local/share/Trash/files/* && notify-send -a "Trash:" -u normal "Trash cleaned"
 
 ; --- Module ----------------------------------------------------------------------------------------------------------
 [module/filesystem_custom]
@@ -439,18 +439,18 @@ label = %{T4} %{T-} %output%
 [module/todoist]
 type = custom/script
 exec = /home/dvragulin/.config/polybar/todoist.sh
-click-left = todoist
+click-left = todoist && notify-send -a "Todoist:" -u normal "Todoist opened"
 
 interval = 120
-label = %{T5}%{T-} %output%
+label = %{T5}%{T-} %output%
 
 
 ; --- Module ----------------------------------------------------------------------------------------------------------
 [module/git_wh]
 type = custom/script
 exec = cat /home/dvragulin/.gitconfig.status
-click-left = git home
-click-right = git work
+click-left = git home && notify-send -a "Git:" -u normal "gitconfig home applied!"
+click-right = git work && notify-send -a "Git:" -u normal "gitconfig work applied!"
 
 interval = 1
 label = : %output%
@@ -479,8 +479,8 @@ label = %{T5} %{T-} %output%
 [module/jira_issues]
 type = custom/script
 exec = /home/dvragulin/.config/polybar/jira_get_issues.py
-click-left = firefox $JIRA_WORK/jira/people/612f19237c4e7900711fee2d/boards/348
-click-right = firefox $JIRA_WORK/jira/dashboards/10181
+click-left = firefox $JIRA_WORK/jira/people/612f19237c4e7900711fee2d/boards/348  && notify-send -a "Firefox:" -u normal "Open Jira board"
+click-right = firefox $JIRA_WORK/jira/dashboards/10181 && notify-send -a "Firefox:" -u normal "Open Jira backlog"
 
 interval = 1600
 label = %{T5} %{T-} %output%
@@ -489,10 +489,10 @@ label = %{T5} %{T-} %output%
 [module/docker]
 type = custom/script
 exec = docker ps -aq | wc -l
-click-left = docker rm -vf $(docker ps -aq)
-click-right = echo y | docker image prune -a
+click-left = notify-send -a "Docker:" -u normal "docker remove" && docker rm -vf $(docker ps -aq)
+click-right = notify-send -a "Docker:" -u normal "docker prune" && echo y | docker image prune -a
 interval = 120
-label =   %output%
+label =   %output%
 
 ; ---------------------------------------------------------------------------------------------------------------------
 ; --- UnUsed Modules --------------------------------------------------------------------------------------------------
