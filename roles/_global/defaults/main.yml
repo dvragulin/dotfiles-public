@@ -151,6 +151,7 @@ pip_packages:
   - google-api-python-client
   - google-auth-httplib2
   - google-auth-oauthlib
+  - notion-backup
 
 fonts_packages:
   - ttf-ubuntu-font-family
