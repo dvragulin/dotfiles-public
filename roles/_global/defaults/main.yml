@@ -129,6 +129,7 @@ aur_packages:
   - postman-bin
   - ethr
   - makepasswd
+  - grpcurl
 
 snap_packages:
   - whatsdesk
