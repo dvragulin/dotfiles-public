@@ -43,6 +43,7 @@ alias youtube-watch='yt'
 alias youtube-download-audio='yt-dlp -x --audio-format mp3 --cookies-from-browser firefox'
 alias youtube-download-video='yt-dlp -f mp4 --cookies-from-browser firefox'
 alias vpn='gp-saml-gui --gateway --clientos=Linux ra-yc01.sbermarket.tech'
+alias td="todo q "
 
 # Extract anything alias
 extract () {
