@@ -134,6 +134,7 @@ aur_packages:
 snap_packages:
   - whatsdesk
   - skype
+  - mattermost
 
 snap_classic_packages:
   - powershell
