@@ -29,7 +29,7 @@ exec --no-startup-id nm-applet --sm-disable                                     
 exec --no-startup-id slack                                                              # Run Slack
 exec --no-startup-id discord                                                            # Run Discord
 exec --no-startup-id whatsdesk                                                          # Run WhatsDesk
-exec --no-startup-id mattermost-desktop                                                 # Run Mattermost
+#exec --no-startup-id mattermost-desktop                                                 # Run Mattermost
 exec --no-startup-id telegram-desktop                                                   # Run Telegram
 exec --no-startup-id spectacle                                                          # Run Print Screem programm
 exec --no-startup-id keepassxc                                                          # Run Password manager
