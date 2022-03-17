@@ -484,7 +484,7 @@ click-left = firefox $JIRA_WORK/jira/people/612f19237c4e7900711fee2d/boards/348 
 click-right = firefox $JIRA_WORK/jira/dashboards/10181 && notify-send -a "Firefox:" -u normal "Open Jira backlog"
 
 interval = 1600
-label = %{T5} %{T-} %output%
+label = %{T5} %{T-}%output%
 
 ; --- Module ----------------------------------------------------------------------------------------------------------
 [module/docker]

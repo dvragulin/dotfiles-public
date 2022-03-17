@@ -32,6 +32,7 @@ pacman_packages:
   - thunderbird
   - calibre
   - vlc
+  - rhythmbox
   - obs-studio
   - pgadmin4
   - python-pip
@@ -130,6 +131,7 @@ aur_packages:
   - ethr
   - makepasswd
   - grpcurl
+  - yandex-disk
 
 snap_packages:
   - whatsdesk
@@ -154,6 +156,7 @@ pip_packages:
   - google-auth-httplib2
   - google-auth-oauthlib
   - notion-backup
+  - yandex-music
 
 fonts_packages:
   - ttf-ubuntu-font-family
