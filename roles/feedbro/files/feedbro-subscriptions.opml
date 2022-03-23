@@ -13,54 +13,64 @@
             xmlUrl="https://habr.com/ru/rss/all/all/?fl=ru" htmlUrl="https://habr.com/ru/all/"/>
       <outline text="GitLab" title="GitLab" type="rss" 
             xmlUrl="https://about.gitlab.com/atom.xml"/>
-      <outline text="JetBrains Blog" title="JetBrains Blog" type="rss" 
-            xmlUrl="https://blog.jetbrains.com/feed/" htmlUrl="https://blog.jetbrains.com"/>
-      <outline text="Docker Blog" title="Docker Blog" type="rss" 
-            xmlUrl="http://blog.docker.io/feed/"/>
-      <outline text="linux-notes.org » Лента" title="linux-notes.org » Лента" type="rss" 
-            xmlUrl="https://linux-notes.org/feed/" htmlUrl="https://linux-notes.org"/>
       <outline text="Notion Articles - Red Gregory" title="Notion Articles - Red Gregory" type="rss" 
             xmlUrl="https://www.redgregory.com/notion?format=rss" htmlUrl="https://www.redgregory.com/notion/"/>
       <outline text="linkmeup" title="linkmeup" type="rss" 
             xmlUrl="https://linkmeup.ru/rss/index/"/>
       <outline text="OpenNews RSS: главные новости" title="OpenNews RSS: главные новости" type="rss" 
             xmlUrl="https://www.opennet.ru/opennews/opennews_6.rss" htmlUrl="https://www.opennet.ru/opennews/main.shtml"/>
-      <outline text="Karen Tovmasyan" title="Karen Tovmasyan" type="rss" 
-            xmlUrl="https://medium.com/feed/@karen-tovmasyan" htmlUrl="https://medium.com/@karen-tovmasyan?source=rss-6a26bdd5062b------2"/>
       <outline text="DevPew" title="DevPew" type="rss" 
             xmlUrl="https://devpew.com/index.xml" htmlUrl="http://devpew.com/"/>
+      <outline text="Master Feed (All Shows)" title="Master Feed (All Shows)" type="rss" 
+            xmlUrl="https://changelog.com/master/feed" htmlUrl="https://changelog.com/master"/>
+      <outline text="The Changelog Podcast Feed" title="The Changelog Podcast Feed" type="rss" 
+            xmlUrl="https://changelog.com/podcast/feed" htmlUrl="https://changelog.com/podcast"/>
+      <outline text="Go Time Podcast Feed" title="Go Time Podcast Feed" type="rss" 
+            xmlUrl="https://changelog.com/gotime/feed" htmlUrl="https://changelog.com/gotime"/>
+      <outline text="Golang Weekly" title="Golang Weekly" type="rss" 
+            xmlUrl="https://cprss.s3.amazonaws.com/golangweekly.com.xml" htmlUrl="https://golangweekly.com/"/>
+  </outline>
+  <outline title="Telegram" text="Telegram">
+      <outline text="Новости Москвы" title="Новости Москвы – Telegram" type="rss" 
+            xmlUrl="https://t.me/s/moscowmap" htmlUrl="https://t.me/s/moscowmap"/>
+      <outline text="DELYAGIN&#39;s special" title="DELYAGIN&#39;s special – Telegram" type="rss" 
+            xmlUrl="https://t.me/s/delyagin" htmlUrl="https://t.me/s/delyagin"/>
+      <outline text="Аудио статьи" title="Аудио статьи – Telegram" type="rss" 
+            xmlUrl="https://t.me/s/a_articles" htmlUrl="https://t.me/s/a_articles"/>
+      <outline text="Digital Доктор – Telegram" title="Digital Доктор – Telegram" type="rss" 
+            xmlUrl="https://t.me/s/tlgdoc" htmlUrl="https://t.me/s/tlgdoc"/>
+      <outline text="Ополчение Новороссии" title="Z 🔥Сводки ополчения Новороссии (ДНР, ЛНР, Украина, Война) – Telegram" type="rss" 
+            xmlUrl="https://t.me/s/swodki" htmlUrl="https://t.me/s/swodki"/>
+      <outline text="IT&#39;s positive investing" title="IT&#39;s positive investing – Telegram" type="rss" 
+            xmlUrl="https://t.me/s/positive_investing" htmlUrl="https://t.me/s/positive_investing"/>
+      <outline text="Джастас Уолкер" title="Джастас Уолкер – Telegram" type="rss" 
+            xmlUrl="https://t.me/s/JustusWalker" htmlUrl="https://t.me/s/JustusWalker"/>
+      <outline text="Балетная школа Реверанс" title="Балетная школа Реверанс – Telegram" type="rss" 
+            xmlUrl="https://t.me/s/BalletSchoolReverence" htmlUrl="https://t.me/s/BalletSchoolReverence"/>
+      <outline text="Antipov" title="Antipov – Telegram" type="rss" 
+            xmlUrl="https://t.me/s/antipov" htmlUrl="https://t.me/s/antipov"/>
+      <outline text="Адвокат Егоров" title="Адвокат Егоров – Telegram" type="rss" 
+            xmlUrl="https://t.me/s/advocatEgorov" htmlUrl="https://t.me/s/advocatEgorov"/>
+      <outline text="Позитивные блоги" title="Позитивные блоги – Telegram" type="rss" 
+            xmlUrl="https://t.me/s/PositiveBlogs" htmlUrl="https://t.me/s/PositiveBlogs"/>
+      <outline text="Канал ЖК &#34;Северный&#34;" title="Канал ЖК &#34;Северный&#34; – Telegram" type="rss" 
+            xmlUrl="https://t.me/s/severny_124a" htmlUrl="https://t.me/s/severny_124a"/>
+      <outline text="COLLAPSE" title="COLLAPSE – Telegram" type="rss" 
+            xmlUrl="https://t.me/s/collapse_by" htmlUrl="https://t.me/s/collapse_by"/>
+      <outline text="Родители Москвы (Образцы документов)" title="🕊 ОБРАЗЦЫ документов - Родители Москвы – Telegram" type="rss" 
+            xmlUrl="https://t.me/s/odrm_doc" htmlUrl="https://t.me/s/odrm_doc"/>
+  </outline>
+  <outline title="News" text="News">
   </outline>
   <outline title="YouTube" text="YouTube">
-      <outline text="Протоиерей Андрей Ткачёв" title="Протоиерей Андрей Ткачёв" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCiXFDtLgmHpSbZ8rjk_TJtQ" htmlUrl="https://www.youtube.com/channel/UCiXFDtLgmHpSbZ8rjk_TJtQ"/>
-      <outline text="        Павел Иванов         " title="        Павел Иванов         " type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC2KPugVH-BPDAwxTDMdMcug" htmlUrl="https://www.youtube.com/channel/UC2KPugVH-BPDAwxTDMdMcug"/>
-      <outline text="        Аудио статьи         " title="        Аудио статьи         " type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCpNkrOqyrBb7BFybfmRFItg" htmlUrl="https://www.youtube.com/channel/UCpNkrOqyrBb7BFybfmRFItg"/>
-      <outline text="Andrey Kurpatov" title="Andrey Kurpatov" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCX_isCsPV3HOg95qodqIdLQ" htmlUrl="https://www.youtube.com/channel/UCX_isCsPV3HOg95qodqIdLQ"/>
       <outline text="Justus Walker" title="Justus Walker" type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCm7SCpAUHK_9A8XlCQOAehg" htmlUrl="https://www.youtube.com/channel/UCm7SCpAUHK_9A8XlCQOAehg" entryContent="3"/>
-      <outline text="Инстаграм Курпатова" title="Инстаграм Курпатова" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCXYLIFmTDW94hu70G_dRkOQ" htmlUrl="https://www.youtube.com/channel/UCXYLIFmTDW94hu70G_dRkOQ"/>
-      <outline text="Доктор Боровских" title="Доктор Боровских" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC5MXYdXHgyvOGMFPfCNS4SA" htmlUrl="https://www.youtube.com/channel/UC5MXYdXHgyvOGMFPfCNS4SA"/>
-      <outline text="Алексей Ильич Осипов" title="Алексей Ильич Осипов" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCytMgKeZbNOzs-dpc1CSuJw" htmlUrl="https://www.youtube.com/channel/UCytMgKeZbNOzs-dpc1CSuJw"/>
       <outline text="ДЕНЬГИ 2.0" title="ДЕНЬГИ 2.0" type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCnvtYPrCPIKx5sXe4_pwD5Q" htmlUrl="https://www.youtube.com/channel/UCnvtYPrCPIKx5sXe4_pwD5Q"/>
       <outline text="Real Delyagin" title="Real Delyagin" type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC4KSVWwjAbpCQn-Z0M0JtvQ" htmlUrl="https://www.youtube.com/channel/UC4KSVWwjAbpCQn-Z0M0JtvQ"/>
-      <outline text="Английский на слух" title="RSS" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCRGfRS5bu-U4xpMN6HBALVw" htmlUrl="https://www.youtube.com/channel/UCRGfRS5bu-U4xpMN6HBALVw"/>
       <outline text="Михаил Богданов" title="Михаил Богданов" type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCE0vJm7Q2cIm1zK1SP-S4yw" htmlUrl="https://www.youtube.com/channel/UCE0vJm7Q2cIm1zK1SP-S4yw"/>
-      <outline text="Киберпоп ТВ" title="Киберпоп ТВ" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCyt4Uriznp9Y6H0JkOZfcHA" htmlUrl="https://www.youtube.com/channel/UCyt4Uriznp9Y6H0JkOZfcHA"/>
-      <outline text="Иерей Георгий Максимов" title="Иерей Георгий Максимов" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCLt3pD7jkD6jo7R-5Krchuw" htmlUrl="https://www.youtube.com/channel/UCLt3pD7jkD6jo7R-5Krchuw"/>
-      <outline text="Константин Пархоменко" title="Священник Константин Пархоменко" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCYkrLa9ooC95td-r6sHM7WA" htmlUrl="https://www.youtube.com/channel/UCYkrLa9ooC95td-r6sHM7WA"/>
       <outline text="Вастрик Клуб" title="Вастрик Клуб" type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCT2OIXoOGF1z9xWXiY00nkQ" htmlUrl="https://www.youtube.com/channel/UCT2OIXoOGF1z9xWXiY00nkQ"/>
       <outline text="Наука Побеждать" title="Наука Побеждать" type="rss" 
@@ -71,116 +81,66 @@
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC9MK8SybZcrHR3CUV4NMy2g" htmlUrl="https://www.youtube.com/channel/UC9MK8SybZcrHR3CUV4NMy2g"/>
       <outline text="Johe News" title="Johe News" type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCL4BwOrBEKggPyqsdVpraFg" htmlUrl="https://www.youtube.com/channel/UCL4BwOrBEKggPyqsdVpraFg"/>
-      <outline text="Wolfgang&#39;s Channel" title="Wolfgang&#39;s Channel" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCsnGwSIHyoYN0kiINAGUKxg" htmlUrl="https://www.youtube.com/channel/UCsnGwSIHyoYN0kiINAGUKxg"/>
-      <outline text="Иерей Константин Корепанов" title="RSS" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCQJd0xymUwo2HC8Y2sLU0AQ" htmlUrl="https://www.youtube.com/channel/UCQJd0xymUwo2HC8Y2sLU0AQ"/>
       <outline text="АйТиБорода" title="RSS" type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCeObZv89Stb2xLtjLJ0De3Q" htmlUrl="https://www.youtube.com/channel/UCeObZv89Stb2xLtjLJ0De3Q"/>
-      <outline text="Moscow Python Podcast" title="RSS" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC-OVMPlMA3-YCIeg4z5z23A" htmlUrl="https://www.youtube.com/channel/UC-OVMPlMA3-YCIeg4z5z23A"/>
-      <outline text=" Senior Software Vlogger" title="RSS" type="rss" 
+      <outline text="Senior Software Vlogger" title="RSS" type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCX3w3jB05SHLbGjZPR0PM6g" htmlUrl="https://www.youtube.com/channel/UCX3w3jB05SHLbGjZPR0PM6g"/>
       <outline text="Вдумчиво обо всем" title="ВДУМЧИВО ОБО ВСЁМ. Авторский блог Назара Илишева" type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCgrT1U-Z0XmnO3swORI9ymg" htmlUrl="https://www.youtube.com/channel/UCgrT1U-Z0XmnO3swORI9ymg"/>
-      <outline text="Nicholas Renotte" title="Nicholas Renotte" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCHXa4OpASJEwrHrLeIzw7Yg" htmlUrl="https://www.youtube.com/channel/UCHXa4OpASJEwrHrLeIzw7Yg"/>
-      <outline text="Основание" title="ОСНОВАНИЕ" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCXOzPAwI8ChKpGjRXE4E7ew" htmlUrl="https://www.youtube.com/channel/UCXOzPAwI8ChKpGjRXE4E7ew"/>
       <outline text="FIT4LIFE" title="FIT4LIFE" type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCgGMKF6EFWrB0agBBPt2V3w" htmlUrl="https://www.youtube.com/channel/UCgGMKF6EFWrB0agBBPt2V3w"/>
       <outline text="Luke Smith" title="Luke Smith" type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA" htmlUrl="https://www.youtube.com/channel/UC2eYFnH61tmytImy1mTYvhA"/>
-      <outline text="Отец Георгий" title="Отец Георгий" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCDyllB6ku7tljuuOKFa83ZQ" htmlUrl="https://www.youtube.com/channel/UCDyllB6ku7tljuuOKFa83ZQ"/>
       <outline text="Олег Молчанов" title="Олег Молчанов" type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCD5_waDcGBhof9xuA1qovTQ" htmlUrl="https://www.youtube.com/channel/UCD5_waDcGBhof9xuA1qovTQ"/>
       <outline text="Heisenbug" title="Heisenbug" type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCX6fjZa167tSy_4ryTLcOBw" htmlUrl="https://www.youtube.com/channel/UCX6fjZa167tSy_4ryTLcOBw"/>
       <outline text="DevOps Channel" title="DevOps Channel" type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC1nDIT9thqoFSSxvLyPHF5w" htmlUrl="https://www.youtube.com/channel/UC1nDIT9thqoFSSxvLyPHF5w"/>
-      <outline text="Лествица" title="Лествица" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCBw12KKTLAFuPQlHZBe7sGw" htmlUrl="https://www.youtube.com/channel/UCBw12KKTLAFuPQlHZBe7sGw"/>
-      <outline text="Varlamov" title="Varlamov" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC101o-vQ2iOj9vr00JUlyKw" htmlUrl="https://www.youtube.com/channel/UC101o-vQ2iOj9vr00JUlyKw"/>
-      <outline text="Мужская кулинария. Рецепты" title="Мужская кулинария. Рецепты" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCu420Wa_o5PFLwPHpAErpsQ" htmlUrl="https://www.youtube.com/channel/UCu420Wa_o5PFLwPHpAErpsQ"/>
-      <outline text="Тёмный Лес" title="Тёмный Лес" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCIR5HwqIg_oXiOIe-I4CuIQ" htmlUrl="https://www.youtube.com/channel/UCIR5HwqIg_oXiOIe-I4CuIQ"/>
       <outline text="БесогонTV" title="БесогонTV" type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCiwIy5q59aD-Nph5f-Zvp2A" htmlUrl="https://www.youtube.com/channel/UCiwIy5q59aD-Nph5f-Zvp2A"/>
-      <outline text="Доктор Петрик" title="Доктор Петрик" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC8k2L8NWKFOk6eFMUUpoCEw" htmlUrl="https://www.youtube.com/channel/UC8k2L8NWKFOk6eFMUUpoCEw"/>
-      <outline text="Доктор Вивек" title="Доктор Вивек" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC0j_9poboewUN7WHoSFXQEw" htmlUrl="https://www.youtube.com/channel/UC0j_9poboewUN7WHoSFXQEw"/>
-      <outline text="Leonid Firstov (English)" title="Leonid Firstov (English)" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCL1YPFdAqbyR2N-LeYIbW1A" htmlUrl="https://www.youtube.com/channel/UCL1YPFdAqbyR2N-LeYIbW1A"/>
       <outline text="Nick Chernobaev" title="Nick Chernobaev" type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC3Xbp3NcAtiq0XHOcU3QdOA" htmlUrl="https://www.youtube.com/channel/UC3Xbp3NcAtiq0XHOcU3QdOA"/>
-      <outline text="mattsbeamer" title="mattsbeamer" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCiRdTl0_YxviJZ_Xkv3WF9g" htmlUrl="https://www.youtube.com/channel/UCiRdTl0_YxviJZ_Xkv3WF9g"/>
-      <outline text="Павел Островский" title="Павел Островский" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCN66wchq962QSxBoUEPcVLA" htmlUrl="https://www.youtube.com/channel/UCN66wchq962QSxBoUEPcVLA"/>
-      <outline text="The Люди" title="The Люди" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCwPzq5yQwczLmivBX8zq7Mw" htmlUrl="https://www.youtube.com/channel/UCwPzq5yQwczLmivBX8zq7Mw"/>
       <outline text="ADV-IT" title="ADV-IT" type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC-sAMvDe7gTmBbub-rWljZg" htmlUrl="https://www.youtube.com/channel/UC-sAMvDe7gTmBbub-rWljZg"/>
-      <outline text="Python Channel" title="Python Channel" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCqC1iSQnRIDz_rOy8LHe69g" htmlUrl="https://www.youtube.com/channel/UCqC1iSQnRIDz_rOy8LHe69g"/>
-      <outline text="DevOps Moscow" title="DevOps Moscow" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC-oN4D4sUut8-FTcP5Opp_A" htmlUrl="https://www.youtube.com/channel/UC-oN4D4sUut8-FTcP5Opp_A"/>
-      <outline text="DevOpsMinsk" title="DevOpsMinsk" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC3UB8hAvJ9QPLgP7ql9dE6w" htmlUrl="https://www.youtube.com/channel/UC3UB8hAvJ9QPLgP7ql9dE6w"/>
-      <outline text="linux life" title="linux life" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC_asLJCctWNy0RwQLUwn77g" htmlUrl="https://www.youtube.com/channel/UC_asLJCctWNy0RwQLUwn77g"/>
-      <outline text="Kirill Semaev" title="Kirill Semaev" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCemtVTjKhD_GcEOQ_rNOrRw" htmlUrl="https://www.youtube.com/channel/UCemtVTjKhD_GcEOQ_rNOrRw"/>
-      <outline text="NetSkills. Видеоуроки" title="NetSkills. Видеоуроки" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCKdRgZWgy42YxoFcTJ30LTA" htmlUrl="https://www.youtube.com/channel/UCKdRgZWgy42YxoFcTJ30LTA"/>
       <outline text="HighLoad Channel" title="HighLoad Channel" type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCwHL6WHUarjGfUM_586me8w" htmlUrl="https://www.youtube.com/channel/UCwHL6WHUarjGfUM_586me8w"/>
       <outline text="linkmeup" title="linkmeup" type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCi8Dw_Kc5hKyK83xCW0jVfQ" htmlUrl="https://www.youtube.com/channel/UCi8Dw_Kc5hKyK83xCW0jVfQ"/>
-      <outline text="Степан Береговой" title="Степан Береговой" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCrKUQBc3GMnhwzUlbZRssWA" htmlUrl="https://www.youtube.com/channel/UCrKUQBc3GMnhwzUlbZRssWA"/>
-      <outline text="Kazakevich Streaming (Remote Jobs)" title="Kazakevich Streaming (Remote Jobs)" type="rss" 
-            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCNPu61I6VSbrlO6Q8YbJnwg" htmlUrl="https://www.youtube.com/channel/UCNPu61I6VSbrlO6Q8YbJnwg"/>
       <outline text="Слёрм" title="Слёрм" type="rss" 
             xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCK5MedKoNJ5aRahfGOIGx6g" htmlUrl="https://www.youtube.com/channel/UCK5MedKoNJ5aRahfGOIGx6g"/>
   </outline>
-  <outline title="Instagram" text="Instagram">
-      <outline text="Профиль Лествица (@lestvitsa_sokol) в Instagram • 644 фото и видео" title="Профиль Лествица (@lestvitsa_sokol) в Instagram • 644 фото и видео" type="rss" 
-            xmlUrl="https://www.instagram.com/lestvitsa_sokol/" htmlUrl="https://www.instagram.com/lestvitsa_sokol/"/>
-      <outline text="Павел Островский" title="Павел Островский" type="rss" 
-            xmlUrl="https://www.instagram.com/pavelostrovski/" htmlUrl="https://www.instagram.com/pavelostrovski/"/>
-      <outline text="Павел Островский (live)" title="Павел Островский (live)" type="rss" 
-            xmlUrl="https://www.instagram.com/pavelostrovski.live/" htmlUrl="https://www.instagram.com/pavelostrovski.live/"/>
-      <outline text="Олег Стеняев" title="Олег Стеняев" type="rss" 
-            xmlUrl="https://www.instagram.com/olegsteniaev/" htmlUrl="https://www.instagram.com/olegsteniaev/"/>
-      <outline text="Храм Черкизово" title="Храм Черкизово" type="rss" 
-            xmlUrl="https://www.instagram.com/hramcherkizovo/" htmlUrl="https://www.instagram.com/hramcherkizovo/"/>
-      <outline text="Pinyagin Sergey" title="Pinyagin Sergey" type="rss" 
-            xmlUrl="https://www.instagram.com/ulica_kaminskogo123/" htmlUrl="https://www.instagram.com/ulica_kaminskogo123/"/>
-      <outline text="Михаил Делягин" title="Михаил Делягин" type="rss" 
-            xmlUrl="https://www.instagram.com/m_delyagin/" htmlUrl="https://www.instagram.com/m_delyagin/"/>
-  </outline>
-  <outline title="Telegram" text="Telegram">
-      <outline text="Positive Blogs" title="Positive Blogs" type="rss" 
-            xmlUrl="https://t.me/s/PositiveBlogs" htmlUrl="https://t.me/s/PositiveBlogs"/>
-      <outline text="IT&#39;s positive investing – Telegram" title="IT&#39;s positive investing – Telegram" type="rss" 
-            xmlUrl="https://t.me/s/positive_investing" htmlUrl="https://t.me/s/positive_investing"/>
-      <outline text="DevOps&#38;SRE Library – Telegram" title="DevOps&#38;SRE Library – Telegram" type="rss" 
-            xmlUrl="https://t.me/s/devopslibrary" htmlUrl="https://t.me/s/devopslibrary"/>
-  </outline>
-  <outline title="Vkontakte" text="Vkontakte">
+  <outline title="Православие" text="Православие">
+      <outline text="Лествица" title="Лествица – Telegram" type="rss" 
+            xmlUrl="https://t.me/s/lestvitsa_sokol" htmlUrl="https://t.me/s/lestvitsa_sokol"/>
+      <outline text="Храм Рождества Христова в Черкизово" title="Храм Рождества Христова в Черкизово – Telegram" type="rss" 
+            xmlUrl="https://t.me/s/hramcherkizovo" htmlUrl="https://t.me/s/hramcherkizovo"/>
+      <outline text="Доктор Боровских" title="Доктор Боровских – Telegram" type="rss" 
+            xmlUrl="https://t.me/s/DoctorBorovskih" htmlUrl="https://t.me/s/DoctorBorovskih"/>
+      <outline text="Доктор Боровских" title="Доктор Боровских" type="rss" 
+            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UC5MXYdXHgyvOGMFPfCNS4SA" htmlUrl="https://www.youtube.com/channel/UC5MXYdXHgyvOGMFPfCNS4SA"/>
+      <outline text="Протоиерей Андрей Ткачев" title="Протоиерей Андрей Ткачев – Telegram" type="rss" 
+            xmlUrl="https://t.me/s/videotca_Andrea" htmlUrl="https://t.me/s/videotca_Andrea"/>
+      <outline text="Протоиерей Андрей Ткачёв" title="Протоиерей Андрей Ткачёв" type="rss" 
+            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCiXFDtLgmHpSbZ8rjk_TJtQ" htmlUrl="https://www.youtube.com/channel/UCiXFDtLgmHpSbZ8rjk_TJtQ"/>
+      <outline text="Павел Островский" title="pavelostrovski – Telegram" type="rss" 
+            xmlUrl="https://t.me/s/pavelostrovski" htmlUrl="https://t.me/s/pavelostrovski"/>
+      <outline text="Павел Островский" title="Павел Островский" type="rss" 
+            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCN66wchq962QSxBoUEPcVLA" htmlUrl="https://www.youtube.com/channel/UCN66wchq962QSxBoUEPcVLA"/>
+      <outline text="Константин Пархоменко" title="Священник Константин Пархоменко" type="rss" 
+            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCYkrLa9ooC95td-r6sHM7WA" htmlUrl="https://www.youtube.com/channel/UCYkrLa9ooC95td-r6sHM7WA"/>
+      <outline text="Иерей Константин Корепанов" title="RSS" type="rss" 
+            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCQJd0xymUwo2HC8Y2sLU0AQ" htmlUrl="https://www.youtube.com/channel/UCQJd0xymUwo2HC8Y2sLU0AQ"/>
+      <outline text="Иерей Георгий Максимов" title="Иерей Георгий Максимов" type="rss" 
+            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCLt3pD7jkD6jo7R-5Krchuw" htmlUrl="https://www.youtube.com/channel/UCLt3pD7jkD6jo7R-5Krchuw"/>
+      <outline text="Киберпоп ТВ" title="Киберпоп ТВ" type="rss" 
+            xmlUrl="https://www.youtube.com/feeds/videos.xml?channel_id=UCyt4Uriznp9Y6H0JkOZfcHA" htmlUrl="https://www.youtube.com/channel/UCyt4Uriznp9Y6H0JkOZfcHA"/>
   </outline>
   <outline title="External Service Statuses" text="External Service Statuses">
       <outline text="GitHub Status" title="GitHub Status History - RSS Feed" type="rss" 
             xmlUrl="https://www.githubstatus.com/history.rss" htmlUrl="https://www.githubstatus.com"/>
       <outline text="Notion Status" title="Notion Status" type="rss" 
             xmlUrl="https://twitter.com/NotionStatus" htmlUrl="https://twitter.com/NotionStatus"/>
-  </outline>
-  <outline title="News" text="News">
   </outline>
 </body>
 </opml>
