@@ -1,8 +1,10 @@
-
 # --- AUTOLOAD ------------------------------------------------------------------------------------------------------ #
+
 set $monL DP-3-2
 set $monR DP-3-3
+
 # --- Settings ---
+
 exec_always xrandr --output eDP-1 --off
 exec_always xrandr --output $monL --mode 2560x1440 --pos 0x0 --primary
 exec_always xrandr --output $monR --mode 2560x1440 --pos 2560x0
@@ -18,29 +20,29 @@ workspace 8 output $monR
 workspace 9 output $monR
 workspace 10 output $monR
 
-# exec xrandr --output HDMI-1 --mode 2560x1440                                            # Set settings for HDMI-1 mon
-
 exec_always --no-startup-id /home/dvragulin/.config/polybar/launch.sh                   # Launch Polybar
 exec_always setxkbmap -option grp:alt_shift_toggle "us,ru"                              # Set eng/ru keyboard layout
 exec_always feh --bg-scale GIT/Projects_Home/dotfiles-public/roles/wallpapers/files/Wallpaper-Desktop-02.jpg
 
-# --- Applications ---
+# --- Applications -------------------------------------------------------------------------------------------------- #
+
 exec --no-startup-id nm-applet --sm-disable                                             # Run Applet: NetworkManager
-exec --no-startup-id slack                                                              # Run Slack
 exec --no-startup-id discord                                                            # Run Discord
-#exec --no-startup-id whatsdesk                                                          # Run WhatsDesk
-#exec --no-startup-id mattermost-desktop                                                 # Run Mattermost
+exec --no-startup-id mattermost-desktop                                                 # Run Mattermost
 exec --no-startup-id telegram-desktop                                                   # Run Telegram
 exec --no-startup-id spectacle                                                          # Run Print Screem programm
 exec --no-startup-id keepassxc                                                          # Run Password manager
 exec --no-startup-id gpclient                                                           # Run VPN Client
 exec --no-startup-id guake                                                              # Run Guake
 exec --no-startup-id optimus-manager-qt                                                 # Run Optimus Manager
-exec --no-startup-id todoist                                                            # Run Todoist task manager
-
-#exec --no-startup-id zoom                                                               # Run Zoom
-#exec --no-startup-id skype                                                              # Run Skype
-#exec --no-startup-id open-lens                                                          # Run Lens
+exec --no-startup-id firefox                                                            # Run Web Browser
+exec --no-startup-id rememberthemilk                                                    # Run Todoist task manager
+# exec --no-startup-id todoist                                                          # Run Todoist task manager
+# exec --no-startup-id slack                                                            # Run Slack
+# exec --no-startup-id whatsdesk                                                        # Run WhatsDesk
+# exec --no-startup-id zoom                                                             # Run Zoom
+# exec --no-startup-id skype                                                            # Run Skype
+# exec --no-startup-id open-lens                                                        # Run Lens
 
 # --- HOTKEYS ------------------------------------------------------------------------------------------------------- #
 
@@ -184,7 +186,7 @@ bindsym $mod+Shift+c reload
 # Restart i3 inplace
 bindsym $mod+Shift+r restart
 
-# exit i3
+# Exit i3
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you really want to exit i3?' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # --- Common Settings ------------------------------------------------------------------------------------------------#
@@ -249,4 +251,3 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-#---#----#----#----#----#----#----#----#----#----#----#----#----#----#----#----#----#----#----#----#----#----#----#---#
