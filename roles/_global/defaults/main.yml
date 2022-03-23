@@ -103,7 +103,6 @@ aur_packages:
   - gp-saml-gui
   - globalprotect-openconnect
   - yandex-music-player
-  - gitkraken
   - terraformer
   - helm
   - duck
@@ -132,6 +131,8 @@ aur_packages:
   - makepasswd
   - grpcurl
   - yandex-disk
+  - rememberthemilk
+  - smartgit
 
 snap_packages:
   - whatsdesk
@@ -141,7 +142,6 @@ snap_packages:
 snap_classic_packages:
   - powershell
   - pycharm-community
-  - slack
 
 pip_packages:
   - requests
