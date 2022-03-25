@@ -91,6 +91,7 @@ aur_packages:
   - hstr
   - vte3
   - gtk2-perl
+  - dockle
   - asbru-cm
   - zoom
   - google-chrome
@@ -137,7 +138,9 @@ aur_packages:
 snap_packages:
   - whatsdesk
   - skype
+  - core20
   - mattermost
+  - matterhorn
 
 snap_classic_packages:
   - powershell
