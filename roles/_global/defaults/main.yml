@@ -132,7 +132,6 @@ aur_packages:
   - makepasswd
   - grpcurl
   - yandex-disk
-  - rememberthemilk
   - smartgit
 
 snap_packages:

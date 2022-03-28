@@ -36,8 +36,7 @@ exec --no-startup-id gpclient                                                   
 exec --no-startup-id guake                                                              # Run Guake
 exec --no-startup-id optimus-manager-qt                                                 # Run Optimus Manager
 exec --no-startup-id firefox                                                            # Run Web Browser
-exec --no-startup-id rememberthemilk                                                    # Run Todoist task manager
-# exec --no-startup-id todoist                                                          # Run Todoist task manager
+exec --no-startup-id todoist                                                            # Run Todoist task manager
 # exec --no-startup-id slack                                                            # Run Slack
 # exec --no-startup-id whatsdesk                                                        # Run WhatsDesk
 # exec --no-startup-id zoom                                                             # Run Zoom
