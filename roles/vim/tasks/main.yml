@@ -3,14 +3,14 @@
                                                                             
 - name: Link vim config file | .vimrc
   file:
-    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/vim/files/vimrc"
+    src: "$HOME/GIT/projects_home/dotfiles-public/roles/vim/files/vimrc"
     dest: "$HOME/.vimrc"
     state: link
     force: yes
 
 - name: Link vim pluggins config file | plug.vim
   file:
-    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/vim/files/plug.vim"
+    src: "$HOME/GIT/projects_home/dotfiles-public/roles/vim/files/plug.vim"
     dest: "$HOME/.vim/autoload/plug.vim"
     state: link
     force: yes

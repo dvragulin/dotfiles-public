@@ -3,14 +3,14 @@
                                                                             
 - name: Link bash config file | tmux.conf
   file:
-    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/tmux/files/tmux.conf"
+    src: "$HOME/GIT/projects_home/dotfiles-public/roles/tmux/files/tmux.conf"
     dest: "$HOME/.tmux.conf"
     state: link
     force: yes
 
 - name: Link bash config file | .tmux.conf.local
   file:
-    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/tmux/files/tmux.conf.local"
+    src: "$HOME/GIT/projects_home/dotfiles-public/roles/tmux/files/tmux.conf.local"
     dest: "$HOME/.tmux.conf.local"
     state: link
     force: yes

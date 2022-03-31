@@ -3,7 +3,7 @@
 
 - name: Link zsh config file | .zshrc
   file:
-    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/zsh/files/zshrc"
+    src: "$HOME/GIT/projects_home/dotfiles-public/roles/zsh/files/zshrc"
     dest: "$HOME/.zshrc"
     state: link
     force: yes

@@ -3,7 +3,7 @@
 
 - name: Link i3 config file
   file:
-    src: "$HOME/GIT/Projects_Home/dotfiles-public/roles/i3/files/config"
+    src: "$HOME/GIT/projects_home/dotfiles-public/roles/i3/files/config"
     dest: "$HOME/.config/i3/config"
     state: link
     force: yes
