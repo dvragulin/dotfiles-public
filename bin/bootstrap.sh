@@ -2,7 +2,7 @@
 
 # A simple script for preparing the environment for PlayBook running
 
-read -sp "Please enter your sudo password: " PW ; echo
+read -sp "[sudo] пароль для $USER: " PW ; echo
 
 
 # --- Change mod for id_rsa -------------------------------------------------------------------------------------------
@@ -14,7 +14,7 @@ fi
 # --- Make GIT directory ----------------------------------------------------------------------------------------------
 if [ ! -d "$HOME/GIT" ]; then
   mkdir $HOME/GIT \
-        $HOME/GIT/Projects_Home
+        $HOME/GIT/projects_home
 fi
 
 
@@ -46,11 +46,10 @@ fi
 
 
 # --- Download Dotfiles from GitHub -----------------------------------------------------------------------------------
-cd $HOME/GIT/Projects_Home/
+cd $HOME/GIT/projects_home/
 git clone git@github.com:dvragulin/dotfiles-public.git 2>/dev/null || true
-git clone git@github.com:dvragulin/dotfiles-private.git 2>/dev/null || true
-git clone git@github.com:dvragulin/CommonScripts.git 2>/dev/null || true
-cd $HOME/GIT/Projects_Home/dotfiles-public
+git clone git@github.com:dvragulin/common-scripts.git 2>/dev/null || true
+cd $HOME/GIT/projects_home/dotfiles-public
 
 
 # --- Run Ansible playbook --------------------------------------------------------------------------------------------
@@ -62,7 +61,7 @@ echo $PW | chsh -s "$(which zsh)"
 
 
 # --- Finaly ----------------------------------------------------------------------------------------------------------
-echo
+git home
 echo "Bootstrap complete. Successfully set up environment."
 echo
 
