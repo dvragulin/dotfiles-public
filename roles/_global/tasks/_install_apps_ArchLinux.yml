@@ -1,0 +1,68 @@
+---
+# tasks file for _global
+
+- name: ArchLinux Install pacman packages
+  pacman:
+    name: '{{ item }}'
+    state: present
+  loop: "{{ archlinux_pacman_packages }}"
+  ignore_errors: yes
+  when: ansible_os_family == "Archlinux"
+
+- name: ArchLinux Install Snap packages
+  snap:
+    name: '{{ item }}'
+    state: present
+  loop: "{{ archlinux_snap_packages }}"
+  ignore_errors: yes
+  when: ansible_os_family == "Archlinux"
+
+- name: ArchLinux Install Snap classic packages
+  snap:
+    name: '{{ item }}'
+    classic: yes
+    state: present
+  loop: "{{ archlinux_snap_classic_packages }}"
+  ignore_errors: yes
+  when: ansible_os_family == "Archlinux"
+
+- name: ArchLinux Install PIP packages
+  pip:
+    name: '{{ item }}'
+    state: latest
+  loop: "{{ archlinux_pip_packages }}"
+  ignore_errors: yes
+  when: ansible_os_family == "Archlinux"
+
+- name: ArchLinux Install AUR packages
+  become: false
+  aur:
+    name: "{{ item }}"
+    state: latest
+  loop: "{{ archlinux_aur_packages }}"
+  ignore_errors: yes
+  when: ansible_os_family == "Archlinux"
+
+- name: ArchLinux Install i3 packages
+  aur:
+    name: '{{ item }}'
+    state: present
+  loop: "{{ archlinux_i3_packages }}"
+  ignore_errors: yes
+  when: ansible_os_family == "Archlinux"
+
+- name: ArchLinux Install Fonts packages
+  aur:
+    name: '{{ item }}'
+    state: present
+  loop: "{{ archlinux_fonts_packages }}"
+  ignore_errors: yes
+  when: ansible_os_family == "Archlinux"
+
+- name: ArchLinux Remove packages
+  pacman:
+    name: '{{ item }}'
+    state: absent
+  loop: "{{ archlinux_packages_to_delete }}"
+  ignore_errors: yes
+  when: ansible_os_family == "Archlinux"

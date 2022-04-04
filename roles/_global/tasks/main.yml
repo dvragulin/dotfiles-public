@@ -5,7 +5,9 @@
   become: yes
   pacman:
     upgrade: yes
+  when: ansible_os_family == "Archlinux"
 
 - include_tasks: _make_directories.yml
-- include_tasks: _install_apps.yml
+- include_tasks: _install_apps_Ubuntu.yml
+- include_tasks: _install_apps_ArchLinux.yml
 - include_tasks: _make_links.yml

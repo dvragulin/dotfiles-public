@@ -4,7 +4,7 @@
 - name: Link bootstrap
   become: yes
   file:
-    src: "$HOME/GIT/projects_home/dotfiles-public/bin/bootstrap.sh"
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/bin/bootstrap.sh"
     dest: "/usr/bin/bootstrap"
     state: link
     force: yes
@@ -44,7 +44,7 @@
 - name: Link max user watches
   become: yes
   file:
-    src: "$HOME/GIT/projects_home/dotfiles-public/roles/_global/files/50-max_user_watches.conf"
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/_global/files/50-max_user_watches.conf"
     dest: "/etc/sysctl.d/50-max_user_watches.conf"
     state: link
     force: yes

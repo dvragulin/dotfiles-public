@@ -1,7 +1,7 @@
 ---
 # defaults file for _applications
 
-pacman_packages:
+archlinux_pacman_packages:
   - base-devel
   - vim
   - vim-runtime
@@ -82,7 +82,7 @@ pacman_packages:
   - openbsd-netcat
   - gpg-tui
 
-aur_packages:
+archlinux_aur_packages:
   - network-manager-applet 
   - chromedriver
   - git-delta
@@ -134,18 +134,18 @@ aur_packages:
   - yandex-disk
   - smartgit
 
-snap_packages:
+archlinux_snap_packages:
   - whatsdesk
   - skype
   - core20
   - mattermost
   - matterhorn
 
-snap_classic_packages:
+archlinux_snap_classic_packages:
   - powershell
   - pycharm-community
 
-pip_packages:
+archlinux_pip_packages:
   - requests
   - jinja2
   - flake8
@@ -160,7 +160,7 @@ pip_packages:
   - notion-backup
   - yandex-music
 
-fonts_packages:
+archlinux_fonts_packages:
   - ttf-ubuntu-font-family
   - ttf-font-awesome
   - ttf-freefont
@@ -173,7 +173,7 @@ fonts_packages:
   - arc-gtk-theme
   - papirus-icon-theme
 
-i3_packages:
+archlinux_i3_packages:
   - i3-wm
   - i3status
   - polybar
@@ -184,7 +184,7 @@ i3_packages:
   - lxappearance
   - dunst
 
-packages_to_delete:
+archlinux_packages_to_delete:
   - cantata
   - gwenview
   - kate
@@ -202,3 +202,106 @@ packages_to_delete:
   - virtualbox-host-dkms
   - virtualbox-sdk
 
+ubuntu_apt_packages:
+  - vim
+  - ranger
+  - openssh-server
+  - ansible
+  - zsh
+  - vscode
+  - rofi
+  - openssh
+  - net-tools
+  - rsync
+  - ntfs-3g
+  - vagrant
+  - tcpdump
+  - snappy
+  - pulsemixer
+  - guake
+  - ranger
+  - tldr
+  - tmux
+  - ncdu
+  - duf
+  - firefox
+  - mc
+  - gnupg
+  - pass
+  - fd
+  - bat
+  - exa
+  - jq
+  - thunderbird
+  - calibre
+  - vlc
+  - rhythmbox
+  - obs-studio
+  - pgadmin4
+  - python-pip
+  - llvm
+  - tree
+  - make
+  - htop
+  - dolphin
+  - viewnior
+  - ipython
+  - speedtest-cli
+  - telegram-desktop
+  - lazygit
+  - asciinema
+  - zathura
+  - zathura-pdf-poppler
+  - zathura-djvu
+  - zathura-ps
+  - alacritty
+  - discord
+  - zsh
+  - w3m
+  - pcmanfm
+  - traceroute
+  - ueberzug
+  - putty
+  - terraform
+  - httpie
+  - keepassxc
+  - aws-cli
+  - kubectl
+  - postgresql
+  - phpmyadmin
+  - mysql-workbench
+  - gtk3
+  - gobject-introspection
+  - webkit2gtk
+  - mpv
+  - unzip
+  - ripgrep
+  - minikube
+  - virt-manager
+  - qemu
+  - vde2
+  - dnsmasq
+  - bridge-utils
+  - openbsd-netcat
+  - gpg-tui
+
+ubuntu_packages_to_delete:
+  - aisleriot
+  - evince
+  - evince-common
+
+
+ubuntu_snap_packages:
+  -
+
+ubuntu_snap_classic_packages:
+  -
+
+ubuntu_pip_packages:
+  -
+
+ubuntu_i3_packages:
+  -
+
+ubuntu_fonts_packages:
+  -

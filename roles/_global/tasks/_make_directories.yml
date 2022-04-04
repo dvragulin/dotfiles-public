@@ -15,6 +15,7 @@
   - '$HOME/GIT/projects_infra'
   - '$HOME/GIT/projects_paas'
   - '$HOME/GIT/projects_paas_products'
+  - '$HOME/GIT/projects_paas_sandbox'
   - '$HOME/.config'
   - '$HOME/.config/rofi'
   - '$HOME/.config/ranger'
