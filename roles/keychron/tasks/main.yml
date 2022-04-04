@@ -3,7 +3,7 @@
 
 - name: Link hid_apple.conf
   file:
-    src: "$HOME/GIT/projects_home/dotfiles-public/roles/keychron/files/hid_config.conf"
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/keychron/files/hid_config.conf"
     dest: "/etc/modprobe.d/hid_apple.conf"
     state: link
     force: yes
@@ -11,7 +11,7 @@
 
 #- name: Link fnmode
 #  file:
-#    src: "$HOME/GIT/projects_home/dotfiles-public/roles/keychron/files/fnmode"
+#    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/keychron/files/fnmode"
 #    dest: "/sys/module/hid_apple/parameters/fnmode"
 #    state: link
 #    force: yes
