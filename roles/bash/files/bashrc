@@ -140,3 +140,5 @@ ex ()
 export EDITOR='vim'
 export VISUAL='vim'
 
+export PATH="$HOME/.sbm-cli/usr/bin:$PATH"
+source /home/dvragulin/.sbm-cli/completion/bash/sbm-cli
