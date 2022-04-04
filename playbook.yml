@@ -1,9 +1,18 @@
 ---
+- name: Get distribution
+  hosts: localhost
+  gather_facts: yes
+  become: false
+  tasks:
+    - name: Distribution
+      debug: msg="{{ ansible_distribution }}"
+
 - name: Prepear Host
   hosts: DESKTOP
   become: yes
   roles:
     - _global
+
 
 - name: Apply dotfiles
   hosts: DESKTOP
