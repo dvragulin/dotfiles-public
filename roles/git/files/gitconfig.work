@@ -50,6 +50,8 @@
 	gpgSign = true
 [tag]
 	forceSignAnnotated = true
+[url "git@gitlab.sbermarket.tech:"]
+    insteadOf = https://gitlab.sbermarket.tech/
 [alias]
     home = ! ln -sf $HOME/.gitconfig.home $HOME/.gitconfig && echo ' gitconfig.home has been successfully applied! ' && echo " " > $HOME/.gitconfig.status ; = U+F7DD
     work = ! ln -sf $HOME/.gitconfig.work $HOME/.gitconfig && echo ' gitconfig.work has been successfully applied! ' && echo " " > $HOME/.gitconfig.status ; = U+F6D6
