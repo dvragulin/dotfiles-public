@@ -291,17 +291,29 @@ ubuntu_packages_to_delete:
   - evince-common
 
 
-ubuntu_snap_packages:
-  -
+#ubuntu_snap_packages:
+#  -
 
-ubuntu_snap_classic_packages:
-  -
+#ubuntu_snap_classic_packages:
+#  -
 
 ubuntu_pip_packages:
-  -
+  - requests
+  - jinja2
+  - flake8
+  - prettytable
+  - gitpython
+  - pipenv
+  - jira
+  - grip
+  - google-api-python-client
+  - google-auth-httplib2
+  - google-auth-oauthlib
+  - notion-backup
+  - yandex-music
 
-ubuntu_i3_packages:
-  -
+#ubuntu_i3_packages:
+#  -
 
-ubuntu_fonts_packages:
-  -
+#ubuntu_fonts_packages:
+#  -
