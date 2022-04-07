@@ -20,6 +20,8 @@ fi
 
 # --- Install yay (if not exist)  -------------------------------------------------------------------------------------
 if ! [ -x "$(command -v yay)" ]; then
+  sudo pacman-mirrors --fasttrack
+  sudo pacman -Syyu
   sudo pacman -Syu yajl python3 base-devel
   cd /tmp
   git clone https://aur.archlinux.org/yay-git.git && cd yay-git/
