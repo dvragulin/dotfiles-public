@@ -27,6 +27,7 @@
   - '$HOME/.config/mc'
   - '$HOME/.config/k9s'
   - '$HOME/.config/btop'
+  - '$HOME/.config/yandex-disk'
   - '$HOME/.ssh'
   - '$HOME/.ssh/config.d'
   - '$HOME/.tmux'
