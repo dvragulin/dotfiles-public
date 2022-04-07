@@ -132,12 +132,12 @@ aur_packages:
   - grpcurl
   - yandex-disk
   - smartgit
+  - mattermost
 
 snap_packages:
   - whatsdesk
   - skype
   - core20
-  - mattermost
   - matterhorn
 
 snap_classic_packages:

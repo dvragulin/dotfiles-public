@@ -32,6 +32,7 @@
   - '$HOME/.tmux'
   - '$HOME/.mutt'
   - '$HOME/.vim'
+  - '$HOME/.kube'
   - '$HOME/.vim/autoload'
   - '$HOME/.ansible_vault'
   - '$HOME/Library'
