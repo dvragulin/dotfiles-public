@@ -1,7 +1,7 @@
 ---
 # defaults file for _applications
 
-archlinux_pacman_packages:
+pacman_packages:
   - base-devel
   - vim
   - vim-runtime
@@ -81,8 +81,7 @@ archlinux_pacman_packages:
   - bridge-utils
   - openbsd-netcat
   - gpg-tui
-
-archlinux_aur_packages:
+aur_packages:
   - network-manager-applet 
   - chromedriver
   - git-delta
@@ -134,18 +133,18 @@ archlinux_aur_packages:
   - yandex-disk
   - smartgit
 
-archlinux_snap_packages:
+snap_packages:
   - whatsdesk
   - skype
   - core20
   - mattermost
   - matterhorn
 
-archlinux_snap_classic_packages:
+snap_classic_packages:
   - powershell
   - pycharm-community
 
-archlinux_pip_packages:
+pip_packages:
   - requests
   - jinja2
   - flake8
@@ -160,7 +159,7 @@ archlinux_pip_packages:
   - notion-backup
   - yandex-music
 
-archlinux_fonts_packages:
+fonts_packages:
   - ttf-ubuntu-font-family
   - ttf-font-awesome
   - ttf-freefont
@@ -173,7 +172,7 @@ archlinux_fonts_packages:
   - arc-gtk-theme
   - papirus-icon-theme
 
-archlinux_i3_packages:
+i3_packages:
   - i3-wm
   - i3status
   - polybar
@@ -184,7 +183,7 @@ archlinux_i3_packages:
   - lxappearance
   - dunst
 
-archlinux_packages_to_delete:
+packages_to_delete:
   - cantata
   - gwenview
   - kate
@@ -201,119 +200,3 @@ archlinux_packages_to_delete:
   - virtualbox
   - virtualbox-host-dkms
   - virtualbox-sdk
-
-ubuntu_apt_packages:
-  - vim
-  - ranger
-  - openssh-server
-  - ansible
-  - zsh
-  - vscode
-  - rofi
-  - openssh
-  - net-tools
-  - rsync
-  - ntfs-3g
-  - vagrant
-  - tcpdump
-  - snappy
-  - pulsemixer
-  - guake
-  - ranger
-  - tldr
-  - tmux
-  - ncdu
-  - duf
-  - firefox
-  - mc
-  - gnupg
-  - pass
-  - fd
-  - bat
-  - exa
-  - jq
-  - thunderbird
-  - calibre
-  - vlc
-  - rhythmbox
-  - obs-studio
-  - pgadmin4
-  - python-pip
-  - llvm
-  - tree
-  - make
-  - htop
-  - dolphin
-  - viewnior
-  - ipython
-  - speedtest-cli
-  - telegram-desktop
-  - lazygit
-  - asciinema
-  - zathura
-  - zathura-pdf-poppler
-  - zathura-djvu
-  - zathura-ps
-  - alacritty
-  - discord
-  - zsh
-  - w3m
-  - pcmanfm
-  - traceroute
-  - ueberzug
-  - putty
-  - terraform
-  - httpie
-  - keepassxc
-  - aws-cli
-  - kubectl
-  - postgresql
-  - phpmyadmin
-  - mysql-workbench
-  - gtk3
-  - gobject-introspection
-  - webkit2gtk
-  - mpv
-  - unzip
-  - ripgrep
-  - minikube
-  - virt-manager
-  - qemu
-  - vde2
-  - dnsmasq
-  - bridge-utils
-  - openbsd-netcat
-  - gpg-tui
-
-ubuntu_packages_to_delete:
-  - aisleriot
-  - evince
-  - evince-common
-
-
-#ubuntu_snap_packages:
-#  -
-
-#ubuntu_snap_classic_packages:
-#  -
-
-ubuntu_pip_packages:
-  - requests
-  - jinja2
-  - flake8
-  - prettytable
-  - gitpython
-  - pipenv
-  - jira
-  - grip
-  - google-api-python-client
-  - google-auth-httplib2
-  - google-auth-oauthlib
-  - notion-backup
-  - yandex-music
-
-#ubuntu_i3_packages:
-#  -
-
-#ubuntu_fonts_packages:
-#  -
