@@ -133,6 +133,7 @@ aur_packages:
   - yandex-disk
   - smartgit
   - mattermost
+  - yq
 
 snap_packages:
   - whatsdesk
