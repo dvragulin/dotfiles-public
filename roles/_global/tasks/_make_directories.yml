@@ -22,6 +22,7 @@
   - '$HOME/.config/zathura'
   - '$HOME/.config/i3'
   - '$HOME/.config/polybar'
+  - '$HOME/.config/polybar/gmail'
   - '$HOME/.config/alacritty'
   - '$HOME/.config/dunst'
   - '$HOME/.config/mc'
