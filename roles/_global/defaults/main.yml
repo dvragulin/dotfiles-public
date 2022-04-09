@@ -134,6 +134,7 @@ aur_packages:
   - smartgit
   - mattermost
   - yq
+  - pyradio
 
 snap_packages:
   - whatsdesk
