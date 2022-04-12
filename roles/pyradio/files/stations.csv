@@ -1,21 +1,35 @@
-Радио Вера,             http://radiovera.hostingradio.ru:8007/radiovera_128
-Bussiness FM,           https://bfm.hostingradio.ru:9075/fm
-Говорит Москва,         http://media.govoritmoskva.ru:8880/rufm.mp3
-Комсомольская Правда,   http://kpradio.hostingradio.ru:8000/128
-Auto Radio,             https://ic4.101.ru:8000/stream/air/mp3/256/100
-Rock FM,                http://nashe.streamr.ru/rock-128.mp3
-Like FM,                https://ic4.101.ru:8000/stream/air/mp3/256/219
-Maximum,                http://maximum.hostingradio.ru/maximum128.mp3
-Mission Control,        https://ice1.somafm.com/missioncontrol-128-mp3
-Def Con Radio,          https://ice4.somafm.com/defcon-128-mp3
-SF 10-33,               https://ice5.somafm.com/sf1033-128-mp3
-Space Channel,          https://graalradio.com:8128/space160
-Future Channel,         https://graalradio.com:8128/future160
-Chilled,                http://149.56.147.197:9083/stream?1649520989863
-Space Station,          https://ice5.somafm.com/spacestation-128-mp3
-Lush,                   https://ice5.somafm.com/lush-128-mp3
-Synphaera,              https://ice5.somafm.com/synphaera-128-mp3
-Drone Zone,             https://ice5.somafm.com/dronezone-128-mp3
-The Trip,               https://ice5.somafm.com/thetrip-128-mp3
-Seven Inch Soul,        https://ice6.somafm.com/7soul-128-mp3
-
+Relig: Радио Вера                                  , http://radiovera.hostingradio.ru:8007/radiovera_128
+Music: Mission Control                      , https://ice1.somafm.com/missioncontrol-128-mp3
+Music: Def Con Radio                        , https://ice4.somafm.com/defcon-128-mp3
+Music: SF 10-33                             , https://ice5.somafm.com/sf1033-128-mp3
+Music: Kidding Kurrys                       , http://datashat.net/music_for_programming_39-kidding_kurrys.mp3
+Music: Datasette                            , http://datashat.net/music_for_programming_3-datassette.mp3
+Music: Misc                                 , http://datashat.net/music_for_programming_50-misc.works.mp3
+Music: Inchindown                           , http://datashat.net/music_for_programming_52-inchindown.mp3
+Music: Space Channel                        , https://graalradio.com:8128/space160
+Music: Future Channel                       , https://graalradio.com:8128/future160
+Music: Chilled                              , http://149.56.147.197:9083/stream?1649520989863
+Music: Space Station                        , https://ice5.somafm.com/spacestation-128-mp3
+Music: Lush                                 , https://ice5.somafm.com/lush-128-mp3
+Music: Synphaera                            , https://ice5.somafm.com/synphaera-128-mp3
+Music: Drone Zone                           , https://ice5.somafm.com/dronezone-128-mp3 
+Music: The Trip                             , https://ice5.somafm.com/thetrip-128-mp3
+Music: PVR                                  , https://www.internet-radio.com/servers/tools/playlistgenerator/?u=http://www.partyviberadio.com:8004/listen.pls?sid=1&t=.pls
+Music: D&B Future Pressure Radio            , https://www.internet-radio.com/servers/tools/playlistgenerator/?u=http://uk3.internet-radio.com:8108/listen.pls&t=.pls
+Music: Ghost Anime                          , http://animeradio.su:8000/
+Music: Chillout                             , http://mp3channels.webradio.antenne.de/chillout
+Music: Like FM                              , https://ic4.101.ru:8000/stream/air/mp3/256/219
+Music: Rock FM Russian                      , http://nashe.streamr.ru/rock-128.mp3
+Music: Rock FM Japan                        , http://tachyon.shoutca.st:8298/;
+Music: Maximum                              , http://maximum.hostingradio.ru/maximum128.mp3
+News [Ru]: Bussiness FM                     , https://bfm.hostingradio.ru:9075/fm
+News [Ru]: Вести FM                         , https://icecast-vgtrk.cdnvideo.ru/vestifm_mp3_192kbps?382f
+News [Ru]: Говорит Москва                   , http://media.govoritmoskva.ru:8880/rufm.mp3
+News [Ru]: Комсомольская Правда             , http://kpradio.hostingradio.ru:8000/128
+News [En]: Air Progressive                  , http://airprogressive.org:8000/stream
+News [En]: WKSU News                        , http://66.225.205.8:8020
+News [En]: Fox News                         , https://streaming-ent.shoutcast.com/foxnews
+News [En]: Bloobmerg radio                  , https://15723.live.streamtheworld.com/WBBRAMAAC.aac?dist=onlineradiobox
+News [En]: BBC World Service News           , https://18363.live.streamtheworld.com/WBBRAMAAC.aac?dist=onlineradiobox
+News [En]: BBC Four                         , https://as-dash-ww-live.akamaized.net/pool_904/live/ww/bbc_radio_fourfm/bbc_radio_fourfm.isml/dash/bbc_radio_fourfm-audio=96000-257774409.m4s
+News [En]: Talking Alternative Broadcasting , https://sh.fl-us.audio-stream.com/proxy/talkradionyc?mp=/stream
