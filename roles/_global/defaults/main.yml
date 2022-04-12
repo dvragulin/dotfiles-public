@@ -135,21 +135,22 @@ aur_packages:
   - mattermost
   - yq
   - pyradio
-
+  - ctags
 snap_packages:
   - whatsdesk
   - skype
   - core20
   - matterhorn
-
 snap_classic_packages:
   - powershell
   - pycharm-community
-
 pip_packages:
   - requests
   - jinja2
   - flake8
+  - pyflakes
+  - pylint
+  - ipython
   - prettytable
   - gitpython
   - pipenv
@@ -160,7 +161,6 @@ pip_packages:
   - google-auth-oauthlib
   - notion-backup
   - yandex-music
-
 fonts_packages:
   - ttf-ubuntu-font-family
   - ttf-font-awesome
