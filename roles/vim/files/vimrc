@@ -20,12 +20,15 @@ Plug 'vim-airline/vim-airline-themes',                   " Airline themes
 Plug 'miyakogi/conoline.vim'                             " Cursor colors scheme
 Plug 'JamshedVesuna/vim-markdown-preview'                " Preview markdown files
 Plug 'junegunn/fzf.vim'                                  " Fzf
-"Plug 'ycm-core/YouCompleteMe',                           " code-completion
+Plug 'preservim/tagbar'                                  " Tagbar: a class outline viewer for Vim
+Plug 'hashivim/vim-terraform'                            " Vim Terraform plugin
+Plug 'ycm-core/YouCompleteMe',                           " code-completion
+Plug 'Xuyuanp/nerdtree-git-plugin'                       " A plugin of NERDTree showing git status flags.
 
 
 " --- Pluggins for Python ------------------------------------ 
 Plug 'python-mode/python-mode', { 'for': 'python' }      " Python IDE for vim
-
+"Plug 'dense-analysis/ale'                       " Asynchronous Lint Engine
 call plug#end()
 
 " ------------------------------------------------------------
@@ -37,6 +40,7 @@ colorscheme darcula
 let g:airline_theme='minimalist'
 let g:gitgutter_terminal_reports_focus=0                 " for git-gutter
 let g:conoline_auto_enable = 1                           " Enable conoline autostart
+let g:airline#extensions#tagbar#enabled = 1              " Enable/disable tagbar integration
 syntax enable
 syntax on                                                " Settings for on/off syntax
 set paste                                                " Fix paste to vim
@@ -56,6 +60,7 @@ set backspace=indent,eol,start
 
 :nmap <F1> :echo<CR>
 :imap <F1> <C-o>:echo<CR>
+map <F8> :TagbarToggle<CR>
 map <C-n> :NERDTreeToggle<CR>
 let g:mapleader=','
 map <silent> <C-h> :call WinMove('h')<CR>                " Call WinMove function
@@ -96,3 +101,61 @@ let vim_markdown_preview_use_xdg_open = 1                " Enable XDG providerfo
 let vim_markdown_preview_hotkey='<C-m>'                  " Enabke hot key
 let vim_markdown_preview_browser='Firefox'               " Set defautl browser for preview
 
+" --- TagBar settins -----------------------------------------
+" https://github.com/preservim/tagbar/wiki#overview
+
+let g:tagbar_type_ansible = {
+    \ 'ctagstype' : 'ansible',
+    \ 'kinds' : [
+        \ 't:tasks'
+    \ ],
+    \ 'sort' : 0
+\ }
+
+let g:tagbar_type_yaml = {
+    \ 'ctagstype' : 'yaml',
+    \ 'kinds' : [
+        \ 'a:anchors',
+        \ 's:section',
+        \ 'e:entry'
+    \ ],
+  \ 'sro' : '.',
+    \ 'scope2kind': {
+      \ 'section': 's',
+      \ 'entry': 'e'
+    \ },
+    \ 'kind2scope': {
+      \ 's': 'section',
+      \ 'e': 'entry'
+    \ },
+    \ 'sort' : 0
+    \ }
+
+let g:tagbar_type_terraform = {
+  \ 'ctagstype': 'terraform',
+  \ 'kinds': [
+    \ 'r:resource',
+    \ 'R:Resource',
+    \ 'd:data',
+    \ 'D:Data',
+    \ 'v:variable',
+    \ 'V:Variable',
+    \ 'p:provider',
+    \ 'P:Provider',
+    \ 'm:module',
+    \ 'M:Module',
+    \ 'o:output',
+    \ 'O:Output',
+    \ 'f:tfvar',
+    \ 'F:TFVar'
+  \ ]
+\ }
+
+let g:tagbar_type_sh = {  
+    \ 'kinds':[
+    \ 'f:functions',
+    \ 'c:constants'
+    \ ]
+    \}
+
+" ------------------------------------------------------------
