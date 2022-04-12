@@ -43,7 +43,7 @@
     file-modified-label = [M]
     file-removed-label = [-]
     file-renamed-label = [R]
-    line-numbers-zero-style = "#545474"# italic
+    line-numbers-zero-style = "#545474" # italic
 [interactive]
     diffFilter = delta --color-only
 [commit]
@@ -51,8 +51,8 @@
 [tag]
 	forceSignAnnotated = true
 [alias]
-    home = ! ln -sf $HOME/.gitconfig.home $HOME/.gitconfig && echo ' gitconfig.home has been successfully applied! ' && echo " " > $HOME/.gitconfig.status ; = U+F7DD
-    work = ! ln -sf $HOME/.gitconfig.work $HOME/.gitconfig && echo ' gitconfig.work has been successfully applied! ' && echo " " > $HOME/.gitconfig.status ; = U+F6D6
+    home = ! ln -sf $HOME/.gitconfig.home $HOME/.gitconfig && echo ' gitconfig.home has been successfully applied! ' && echo   > $HOME/.gitconfig.status ; = U+F7DD
+    work = ! ln -sf $HOME/.gitconfig.work $HOME/.gitconfig && echo ' gitconfig.work has been successfully applied! ' && echo   > $HOME/.gitconfig.status ; = U+F6D6
     lg = log --graph --abbrev-commit --decorate --format=format:'%C(blue)%h%C(reset)%C(white) %C(reset)%C(green)%cs%C(reset)%C(white) %C(reset)%C(white)%s%C(reset) %C(dim white) %an%C(reset)%C(dim cyan)%d%C(reset)' --all -35
     lp = log -p
     st = status -s
@@ -60,3 +60,5 @@
     cm = commit -m
     co = checkout
     gm = ! git checkout master && git pull || git pull
+[gc]
+	autoDetach = false
