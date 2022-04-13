@@ -1,4 +1,4 @@
-Relig: Радио Вера                                  , http://radiovera.hostingradio.ru:8007/radiovera_128
+Relig: Радио Вера                           , http://radiovera.hostingradio.ru:8007/radiovera_128
 Music: Mission Control                      , https://ice1.somafm.com/missioncontrol-128-mp3
 Music: Def Con Radio                        , https://ice4.somafm.com/defcon-128-mp3
 Music: SF 10-33                             , https://ice5.somafm.com/sf1033-128-mp3
@@ -8,17 +8,26 @@ Music: Misc                                 , http://datashat.net/music_for_prog
 Music: Inchindown                           , http://datashat.net/music_for_programming_52-inchindown.mp3
 Music: Space Channel                        , https://graalradio.com:8128/space160
 Music: Future Channel                       , https://graalradio.com:8128/future160
+Music: Drone Zone                           , https://ice5.somafm.com/dronezone-128-mp3 
+Music: Ambient                              , https://hls-01-radiorecord.hostingradio.ru/record-ambient/playlist.m3u8
+Music: Synphaera                            , https://ice5.somafm.com/synphaera-128-mp3
+Music: lofi                                 , https://hls-01-radiorecord.hostingradio.ru/record-lofi/playlist.m3u8
 Music: Chilled                              , http://149.56.147.197:9083/stream?1649520989863
+Music: Chill-Out                            , https://hls-01-radiorecord.hostingradio.ru/record-chil/96/playlist.m3u8
+Music: EDM                                  , https://hls-01-radiorecord.hostingradio.ru/record-lofi/playlist.m3u8
 Music: Space Station                        , https://ice5.somafm.com/spacestation-128-mp3
 Music: Lush                                 , https://ice5.somafm.com/lush-128-mp3
-Music: Synphaera                            , https://ice5.somafm.com/synphaera-128-mp3
-Music: Drone Zone                           , https://ice5.somafm.com/dronezone-128-mp3 
 Music: The Trip                             , https://ice5.somafm.com/thetrip-128-mp3
-Music: PVR                                  , https://www.internet-radio.com/servers/tools/playlistgenerator/?u=http://www.partyviberadio.com:8004/listen.pls?sid=1&t=.pls
-Music: D&B Future Pressure Radio            , https://www.internet-radio.com/servers/tools/playlistgenerator/?u=http://uk3.internet-radio.com:8108/listen.pls&t=.pls
 Music: Ghost Anime                          , http://animeradio.su:8000/
 Music: Chillout                             , http://mp3channels.webradio.antenne.de/chillout
+Music: Pirate Station                       , https://hls-01-radiorecord.hostingradio.ru/record-ps/96/playlist.m3u8
+Music: Progressive                          , https://hls-01-radiorecord.hostingradio.ru/record-progr/96/playlist.m3u8
+Music: Dubstep                              , https://hls-01-radiorecord.hostingradio.ru/record-dub/96/playlist.m3u8
+Music: PVR                                  , https://www.internet-radio.com/servers/tools/playlistgenerator/?u=http://www.partyviberadio.com:8004/listen.pls?sid=1&t=.pls
+Music: D&B Future Pressure Radio            , https://www.internet-radio.com/servers/tools/playlistgenerator/?u=http://uk3.internet-radio.com:8108/listen.pls&t=.pls
 Music: Like FM                              , https://ic4.101.ru:8000/stream/air/mp3/256/219
+Music: LiveDJsets                           , https://hls-01-radiorecord.hostingradio.ru/record-livedjsets/playlist.m3u8
+Music: Record Rock                          , https://hls-01-radiorecord.hostingradio.ru/record-rock/96/playlist.m3u8 
 Music: Rock FM Russian                      , http://nashe.streamr.ru/rock-128.mp3
 Music: Rock FM Japan                        , http://tachyon.shoutca.st:8298/;
 Music: Maximum                              , http://maximum.hostingradio.ru/maximum128.mp3
