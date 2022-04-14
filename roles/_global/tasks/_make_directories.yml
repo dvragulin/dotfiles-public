@@ -37,4 +37,5 @@
   - '$HOME/.kube'
   - '$HOME/.vim/autoload'
   - '$HOME/.ansible_vault'
+  - '$HOME/.docker'
   - '$HOME/Library'
