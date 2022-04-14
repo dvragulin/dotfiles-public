@@ -62,3 +62,6 @@
     cm = commit -m
     co = checkout
     gm = ! git checkout master && git pull || git pull
+    rb = rebase
+[gc]
+    autoDetach = false
