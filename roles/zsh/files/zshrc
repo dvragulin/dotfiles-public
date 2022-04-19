@@ -42,8 +42,10 @@ alias pwg='makepasswd --chars=32 --count=5'
 alias youtube-watch='yt'
 alias youtube-download-audio='yt-dlp -x --audio-format mp3 --cookies-from-browser firefox'
 alias youtube-download-video='yt-dlp -f mp4 --cookies-from-browser firefox'
-alias vpn='gp-saml-gui --gateway --clientos=Linux ra-yc01.sbermarket.tech'
+alias vpn='sudo openconnect --protocol=gp --user=$ADFS_USER_WORK --os=linux-64 ra-yc01.sbermarket.tech'
 alias td="todo q "
+alias radio="pyradio --play"
+alias systemctl-f="sysz"
 
 # Extract anything alias
 extract () {
@@ -66,5 +68,7 @@ extract () {
   fi
 }
 
+# Update smb-cli
 autoload -U compinit; compinit
 source /home/dvragulin/.sbm-cli/completion/zsh/sbm-cli
+

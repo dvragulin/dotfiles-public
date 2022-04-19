@@ -137,6 +137,8 @@ aur_packages:
   - pyradio
   - ctags
   - flog
+  - sysz
+  - grv
 snap_packages:
   - whatsdesk
   - skype

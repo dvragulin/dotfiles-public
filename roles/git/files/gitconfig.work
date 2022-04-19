@@ -63,5 +63,6 @@
     co = checkout
     gm = ! git checkout master && git pull || git pull
     rb = rebase
+    dash = ! grv
 [gc]
     autoDetach = false
