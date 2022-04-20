@@ -562,7 +562,7 @@ label-background = ${colors.background-alt}
 [module/gmail]
 type = custom/script
 tail = true
-exec = echo """
+exec = echo " "
 click-left = xdg-open https://mail.google.com
 
 ; --- Module ----------------------------------------------------------------------------------------------------------
