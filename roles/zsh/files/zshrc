@@ -46,6 +46,7 @@ alias vpn='sudo openconnect --protocol=gp --user=$ADFS_USER_WORK --os=linux-64 r
 alias td="todo q "
 alias radio="pyradio --play"
 alias systemctl-f="sysz"
+alias wtf="wtfutil"
 
 # Extract anything alias
 extract () {
