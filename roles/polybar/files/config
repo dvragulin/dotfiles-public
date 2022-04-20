@@ -561,8 +561,8 @@ label-background = ${colors.background-alt}
 ; --- Module ----------------------------------------------------------------------------------------------------------
 [module/gmail]
 type = custom/script
-exec = ~/.config/polybar/gmail/launch.py
 tail = true
+exec = echo """
 click-left = xdg-open https://mail.google.com
 
 ; --- Module ----------------------------------------------------------------------------------------------------------
