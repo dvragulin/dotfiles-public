@@ -139,6 +139,8 @@ aur_packages:
   - flog
   - sysz
   - grv
+  - flameshot
+  - browsh
 snap_packages:
   - whatsdesk
   - skype
