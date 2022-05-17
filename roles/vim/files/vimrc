@@ -28,7 +28,11 @@ Plug 'Xuyuanp/nerdtree-git-plugin'                       " A plugin of NERDTree 
 
 " --- Pluggins for Python ------------------------------------ 
 Plug 'python-mode/python-mode', { 'for': 'python' }      " Python IDE for vim
-"Plug 'dense-analysis/ale'                       " Asynchronous Lint Engine
+"Plug 'dense-analysis/ale'                               " Asynchronous Lint Engine
+
+" --- Pluggins for Go ---------------------------------------- 
+Plug 'fatih/vim-go'                                      " Python IDE for vim
+
 call plug#end()
 
 " ------------------------------------------------------------
