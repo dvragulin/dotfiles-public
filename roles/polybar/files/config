@@ -473,7 +473,7 @@ click-left = firefox $GITLAB_WORK/dashboard/merge_requests?assignee_username=dmi
 click-right = firefox $GITLAB_WORK/dashboard/merge_requests?reviewer_username=dmitriy.ragulin
 
 interval = 600
-label = %{T5} %{T-} %output%
+label = %{T5} %{T-} %output%
 
 ; --- Module ----------------------------------------------------------------------------------------------------------
 [module/docker]
