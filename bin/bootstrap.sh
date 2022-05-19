@@ -59,7 +59,7 @@ cd $HOME/GIT/projects_home/dotfiles-public
 ansible-playbook playbook.yml --extra-vars "ansible_sudo_pass=$PW"
 
 # --- Run go for intall custom apps -----------------------------------------------------------------------------------
-go install github.com/fedeztk/got/cmd/got@latest
+#go install github.com/fedeztk/got/cmd/got@latest
 
 
 # --- Change shell to ZSH ---------------------------------------------------------------------------------------------
