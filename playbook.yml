@@ -18,7 +18,9 @@
   hosts: DESKTOP
   become: no
   roles:
+    - git
     - todoist
+    - newsboat
     - i3
     - polybar
     - alacritty
@@ -27,7 +29,6 @@
     - k8s
     - k9s
     - bash
-    - git
     - ranger
     - rofi
     - btop
@@ -39,6 +40,7 @@
     - xinit
     - feedbro
     - gtk
+    - got
     - avatars
     - keychron
 
