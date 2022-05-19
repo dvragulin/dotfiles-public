@@ -81,13 +81,18 @@ pacman_packages:
   - bridge-utils
   - openbsd-netcat
   - gpg-tui
+  - newsboat
+  - lynx
 aur_packages:
+  - termdbms
   - network-manager-applet 
+  - ncurses
   - chromedriver
   - git-delta
   - wakeonlan
   - lazydocker
   - hstr
+  - bottom
   - vte3
   - gtk2-perl
   - dockle
@@ -166,6 +171,7 @@ pip_packages:
   - google-auth-oauthlib
   - notion-backup
   - yandex-music
+  - oauth2client
 fonts_packages:
   - ttf-ubuntu-font-family
   - ttf-font-awesome
