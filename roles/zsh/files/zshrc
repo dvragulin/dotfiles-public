@@ -47,6 +47,8 @@ alias td="todo q "
 alias radio="pyradio --play"
 alias systemctl-f="sysz"
 alias wtf="wtfutil"
+alias news="newsboat"
+
 
 # Extract anything alias
 extract () {
