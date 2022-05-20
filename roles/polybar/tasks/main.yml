@@ -43,13 +43,6 @@
     state: link
     force: yes
 
-- name: Link weather-openmap.sh script
-  file:
-    src: "$HOME/GIT/projects_home/dotfiles-public/roles/polybar/files/weather-openmap.sh"
-    dest: "$HOME/.config/polybar/weather-openmap.sh"
-    state: link
-    force: yes
-
 - name: Link todoist.sh script
   file:
     src: "$HOME/GIT/projects_home/dotfiles-public/roles/polybar/files/todoist.sh"
@@ -70,42 +63,4 @@
     dest: "$HOME/.config/polybar/git_mr.py"
     state: link
     force: yes
-
-- name: Link git_update.sh script
-  file:
-    src: "$HOME/GIT/projects_home/dotfiles-public/roles/polybar/files/git_uodate.py"
-    dest: "$HOME/.config/polybar/git_update.py"
-    state: link
-    force: yes
-
-- name: Link jira_get_issues.py
-  file:
-    src: "$HOME/GIT/projects_home/dotfiles-public/roles/polybar/files/jira_get_issues.py"
-    dest: "$HOME/.config/polybar/jira_get_issues.py"
-    state: link
-    force: yes
-
-- name: Link auth.py
-  file:
-    src: "$HOME/GIT/projects_home/dotfiles-public/roles/polybar/files/gmail/auth.py"
-    dest: "$HOME/.config/polybar/gmail/auth.py"
-    state: link
-    force: yes
-
-- name: Link list labels.py
-  file:
-    src: "$HOME/GIT/projects_home/dotfiles-public/roles/polybar/files/gmail/list_labels.py"
-    dest: "$HOME/.config/polybar/gmail/list_labels.py"
-    state: link
-    force: yes
-
-- name: Link launch.py
-  file:
-    src: "$HOME/GIT/projects_home/dotfiles-public/roles/polybar/files/gmail/launch.py"
-    dest: "$HOME/.config/polybar/gmail/launch.py"
-    state: link
-    force: yes
-
-
-
 
