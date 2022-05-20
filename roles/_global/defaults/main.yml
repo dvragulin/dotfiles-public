@@ -122,6 +122,7 @@ aur_packages:
   - fx
   - gucharmap 
   - dive
+  - rtv
   - wuzz
   - s3cmd
   - ytfzf
