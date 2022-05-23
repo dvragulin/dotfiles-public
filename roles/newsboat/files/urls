@@ -14,6 +14,7 @@ https://linkmeup.ru/rss/index/                                                  
 https://changelog.com/master/feed                                               ChLg    "~ChangeLog: master"
 https://changelog.com/podcast/feed                                              ChLg    "~ChangeLog: podcast"
 https://changelog.com/gotime/feed                                               ChLg    "~ChangeLog: gotime"
+https://devopsweeklyarchive.com/feed.xml                                        ChLg    "~Weekly: DevOps"
 https://cprss.s3.amazonaws.com/golangweekly.com.xml                             ChLg    "~Weekly: Golang"
 https://pycoders.com/feed/wDVNUnK6                                              ChLg    "~Weekly: Pycoders"
 https://us2.campaign-archive.com/feed?u=e2e180baf855ac797ef407fc7&id=9e26887fc5 ChLg    "~Weekly: Python"
