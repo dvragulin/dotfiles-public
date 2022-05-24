@@ -49,6 +49,8 @@ alias systemctl-f="sysz"
 alias wtf="wtfutil"
 alias news="newsboat"
 alias curl_response_time="curl -s -w '\nLookup time:\t%{time_namelookup}\nConnect time:\t%{time_connect}\nPreXfer time:\t%{time_pretransfer}\nStartXfer time:\t%{time_starttransfer}\n\nTotal time:\t%{time_total}\n' -o /dev/null "
+alias cls="/bin/ls"
+alias ls="exa --header --icons --git --tree --level=1"
 
 
 # Extract anything alias
