@@ -30,7 +30,6 @@ exec --no-startup-id nm-applet --sm-disable                                     
 exec --no-startup-id discord                                                            # Run Discord
 exec --no-startup-id mattermost-desktop                                                 # Run Mattermost
 exec --no-startup-id telegram-desktop                                                   # Run Telegram
-exec --no-startup-id spectacle                                                          # Run Print Screem programm
 exec --no-startup-id keepassxc                                                          # Run Password manager
 exec --no-startup-id gpclient                                                           # Run VPN Client
 exec --no-startup-id guake                                                              # Run Guake
@@ -38,6 +37,7 @@ exec --no-startup-id optimus-manager-qt                                         
 exec --no-startup-id firefox                                                            # Run Web Browser
 exec --no-startup-id todoist                                                            # Run Todoist task manager
 exec --no-startup-id flameshot                                                          # Run Screenshot software
+# exec --no-startup-id spectacle                                                        # Run Screenshot software
 # exec --no-startup-id slack                                                            # Run Slack
 # exec --no-startup-id whatsdesk                                                        # Run WhatsDesk
 # exec --no-startup-id zoom                                                             # Run Zoom
