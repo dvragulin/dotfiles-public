@@ -49,3 +49,11 @@
     state: link
     force: yes
 
+- name: Link Documents/Pictures to Pictures
+  become: yes
+  file:
+    src: "/home/dvragulin/Documents/Pictures"
+    dest: "/home/dvragulin/Pictures"
+    state: link
+    force: yes
+

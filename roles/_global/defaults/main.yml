@@ -95,6 +95,7 @@ aur_packages:
   - bottom
   - vte3
   - gtk2-perl
+  - glab
   - dockle
   - asbru-cm
   - zoom
@@ -167,12 +168,12 @@ pip_packages:
   - pipenv
   - jira
   - grip
-  - google-api-python-client
   - google-auth-httplib2
   - google-auth-oauthlib
   - notion-backup
   - yandex-music
   - oauth2client
+#  - google-api-python-client
 fonts_packages:
   - ttf-ubuntu-font-family
   - ttf-font-awesome

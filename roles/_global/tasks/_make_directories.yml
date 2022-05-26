@@ -7,6 +7,15 @@
     path: '{{ item }}'
     state: directory
   loop:
+  - '$HOME/Desktop'
+  - '$HOME/Documents'
+  - '$HOME/Documents/Pictures'
+  - '$HOME/Downloads'
+  - '$HOME/Icons'
+  - '$HOME/Library'
+  - '$HOME/Music'
+  - '$HOME/Library'
+  - '$HOME/GIT'
   - '$HOME/GIT/projects_home'
   - '$HOME/GIT/projects_open_source'
   - '$HOME/GIT/projects_work'
@@ -22,7 +31,6 @@
   - '$HOME/.config/zathura'
   - '$HOME/.config/i3'
   - '$HOME/.config/polybar'
-  - '$HOME/.config/polybar/gmail'
   - '$HOME/.config/alacritty'
   - '$HOME/.config/dunst'
   - '$HOME/.config/mc'
@@ -38,4 +46,3 @@
   - '$HOME/.vim/autoload'
   - '$HOME/.ansible_vault'
   - '$HOME/.docker'
-  - '$HOME/Library'
