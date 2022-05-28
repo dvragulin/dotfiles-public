@@ -148,6 +148,7 @@ aur_packages:
   - grv
   - flameshot
   - browsh
+  - taskwarrior-tui
 snap_packages:
   - whatsdesk
   - skype

@@ -57,7 +57,7 @@ alias cat="/usr/bin/bat"
 alias lg="/usr/bin/lazygit"
 alias ld="/usr/bin/lazydocker"
 alias bootstrap="$HOME/GIT/projects_home/dotfiles-public/bin/bootstrap.sh"
-
+alias tw="taskwarrior-tui"
 
 # Extract anything alias
 extract () {
