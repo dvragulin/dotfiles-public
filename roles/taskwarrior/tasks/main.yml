@@ -1,0 +1,9 @@
+---
+# tasks file for rofi
+                                                                            
+- name: Link taskwarrior config file | taskrc
+  file:
+    src: "$HOME/GIT/projects_home/dotfiles-public/roles/taskwarrior/files/taskrc"
+    dest: "$HOME/.taskrc"
+    state: link
+    force: yes

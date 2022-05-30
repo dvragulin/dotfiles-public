@@ -25,6 +25,7 @@
     - rtv
     - polybar
     - alacritty
+    - taskwarrior
     - dunst
     - zsh
     - k8s
