@@ -134,6 +134,7 @@ aur_packages:
   - yt-dlp
   - goaccess
   - postman-bin
+  - kafkacat-git
   - ethr
   - makepasswd
   - grpcurl
@@ -149,6 +150,7 @@ aur_packages:
   - flameshot
   - browsh
   - taskwarrior-tui
+  - vit
 snap_packages:
   - whatsdesk
   - skype
