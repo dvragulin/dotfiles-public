@@ -52,12 +52,14 @@ alias curl_response_time="curl -s -w '\nLookup time:\t%{time_namelookup}\nConnec
 alias cls="/bin/ls"
 alias ls="exa --header --icons --git --tree --level=1"
 alias l="ls"
+alias ll="ls -all"
 alias top="/usr/bin/btop"
 alias cat="/usr/bin/bat"
 alias lg="/usr/bin/lazygit"
 alias ld="/usr/bin/lazydocker"
 alias bootstrap="$HOME/GIT/projects_home/dotfiles-public/bin/bootstrap.sh"
 alias tw="taskwarrior-tui"
+alias kafkacat="kcat"
 
 # Extract anything alias
 extract () {
