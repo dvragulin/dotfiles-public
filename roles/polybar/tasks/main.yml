@@ -64,3 +64,10 @@
     state: link
     force: yes
 
+- name: Link jira_get_issues.py script
+  file:
+    src: "$HOME/GIT/projects_home/dotfiles-public/roles/polybar/files/jira_get_issues.py"
+    dest: "$HOME/.config/polybar/jira_get_issues.py"
+    state: link
+    force: yes
+
