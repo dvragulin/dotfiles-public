@@ -202,6 +202,7 @@ i3_packages:
   - dunst
 
 packages_to_delete:
+  - spectacle
   - cantata
   - gwenview
   - kate
