@@ -4,7 +4,7 @@
 #auto-reload yes
 max-items 200
 
-external-url-viewer "urlscan -dc -r 'linkhandler {}'"
+external-url-viewer "urlscan -dc -r 'firefox {}'"
 
 bind-key j down
 bind-key k up
@@ -61,13 +61,13 @@ feedlist-format "%?T? %4i %n %8u (%T) %t &  --- %t?"
 
 browser firefox
 macro , open-in-browser
-macro t set browser "tsp youtube-dl --add-metadata -ic" ; open-in-browser ; set browser linkhandler
-macro a set browser "tsp youtube-dl --add-metadata -xic -f bestaudio/best" ; open-in-browser ; set browser linkhandler
+macro t set browser "tsp youtube-dl --add-metadata -ic" ; open-in-browser ; set browser firefox
+macro a set browser "tsp youtube-dl --add-metadata -xic -f bestaudio/best" ; open-in-browser ; set browser firefox
 macro v set browser "setsid -f vlc --width 640 --height 480" ; open-in-browser ; set browser firefox
 macro m set browser "setsid -f mpv --width 640 --height 480" ; open-in-browser ; set browser firefox
-macro w set browser "w3m" ; open-in-browser ; set browser linkhandler
-macro p set browser "dmenuhandler" ; open-in-browser ; set browser linkhandler
-macro c set browser "xsel -b <<<" ; open-in-browser ; set browser linkhandler
+macro w set browser "w3m" ; open-in-browser ; set browser firefox
+macro p set browser "dmenuhandler" ; open-in-browser ; set browser firefox
+macro c set browser "xsel -b <<<" ; open-in-browser ; set browser firefox
 macro r set browser "ttrv" ; open-in-browser
 
 # Podboat items
