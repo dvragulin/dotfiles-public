@@ -88,28 +88,29 @@ aur_packages:
   - network-manager-applet 
   - ncurses
   - chromedriver
-  - git-delta
+  - git-delta                   # Diff tool
   - wakeonlan
-  - lazydocker
-  - hstr
+  - lazydocker                  # TUI for Docker 
+  - hstr        
   - bottom
   - vte3
   - gtk2-perl
-  - glab
+  - glab                        # GitLab cli
   - dockle
-  - asbru-cm
-  - zoom
-  - google-chrome
-  - etcher
-  - ttf-unifont
-  - siji-git
+  - asbru-cm                    # SSH GUI Client
+  - zoom                        # Voice/Video chat
+  - google-chrome               # Web browser
+  - etcher                      # USB boot
+  - ttf-unifont                 # Fonts
+  - siji-git                    # Fonts
   - tfswitch
-  - lens-bin
-  - yandex-cloud-bin
-  - gp-saml-gui
-  - globalprotect-openconnect
-  - yandex-music-player
+  - lens-bin                    # k8s GUI cloent
+  - yandex-cloud-bin            # Yandex Cloud CLI
+  - gp-saml-gui                 # VPN Software
+  - globalprotect-openconnect   # VPN Software
+  - yandex-music-player         # Music player
   - terraformer
+  - transmission-remote-tui-git # Torrent client
   - helm
   - duck
   - k9s
@@ -169,6 +170,7 @@ pip_packages:
   - prettytable
   - gitpython
   - pipenv
+  - pendulum
   - jira
   - grip
   - google-auth-httplib2
