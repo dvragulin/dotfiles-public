@@ -71,3 +71,16 @@
     state: link
     force: yes
 
+- name: Link mount_nas.sh script
+  file:
+    src: "$HOME/GIT/projects_home/dotfiles-public/roles/polybar/files/mount_nas.sh"
+    dest: "$HOME/.config/polybar/mount_nas.sh"
+    state: link
+    force: yes
+
+- name: Link taskwarrior.sh script
+  file:
+    src: "$HOME/GIT/projects_home/dotfiles-public/roles/polybar/files/taskwarrior.sh"
+    dest: "$HOME/.config/polybar/taskwarrior.sh"
+    state: link
+    force: yes
