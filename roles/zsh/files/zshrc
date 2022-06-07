@@ -29,7 +29,8 @@ fi
 
 # Other aliases
 alias mk="minikube"
-alias email="neomutt"
+alias mail="aerc"
+alias email="aerc"
 alias vf='vim $(fzf)'
 alias cf='cat $(fzf)'
 alias yt='ytfzf'
