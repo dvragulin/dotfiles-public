@@ -84,3 +84,11 @@
     dest: "$HOME/.config/polybar/taskwarrior.sh"
     state: link
     force: yes
+
+- name: Link vpn.sh script
+  file:
+    src: "$HOME/GIT/projects_home/dotfiles-public/roles/polybar/files/vpn.sh"
+    dest: "$HOME/.config/polybar/vpn.sh"
+    state: link
+    force: yes
+
