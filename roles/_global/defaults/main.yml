@@ -55,6 +55,8 @@ pacman_packages:
   - discord
   - zsh
   - w3m
+  - w3m-imgcat
+  - aerc
   - pcmanfm
   - traceroute
   - ueberzug
@@ -84,6 +86,7 @@ pacman_packages:
   - newsboat
   - lynx
 aur_packages:
+  - rxvt
   - termdbms
   - network-manager-applet 
   - ncurses
