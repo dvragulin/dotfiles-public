@@ -1,6 +1,6 @@
 #!/bin/bash
 
-task count due:today
+task count due:today status:pending
 
 
 #most_urgent_desc=`task rc.verbose: rc.report.next.columns:description rc.report.next.labels:1 limit:1 next`
