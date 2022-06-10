@@ -22,7 +22,7 @@ workspace 10 output $monR
 
 exec_always --no-startup-id /home/dvragulin/.config/polybar/launch.sh                   # Launch Polybar
 exec_always setxkbmap -option grp:alt_shift_toggle "us,ru"                              # Set eng/ru keyboard layout
-exec_always feh --bg-scale $HOME/GIT/projects_home/dotfiles-public/roles/wallpapers/files/Wallpaper-Desktop-02.jpg
+exec_always feh --bg-scal --no-xinerama $HOME/GIT/projects_home/dotfiles-public/roles/wallpapers/files/Wallpaper-Desktop-10.jpg
 
 # --- Applications -------------------------------------------------------------------------------------------------- #
 
