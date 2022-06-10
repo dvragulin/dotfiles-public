@@ -17,39 +17,6 @@
     state: link
     force: yes
                                                                             
--                                                                           
-- name: Link top to btop
-  become: yes
-  file:
-    src: "/usr/bin/btop"
-    dest: "/bin/top"
-    state: link
-    force: yes
-
-- name: Link cat to bat
-  become: yes
-  file:
-    src: "/usr/bin/bat"
-    dest: "/bin/cat"
-    state: link
-    force: yes
-
-- name: Link lazygit to lg
-  become: yes
-  file:
-    src: "/usr/bin/lazygit"
-    dest: "/usr/bin/lg"
-    state: link
-    force: yes
-
-- name: Link lazydocker to ldocker
-  become: yes
-  file:
-    src: "/usr/bin/lazydocker"
-    dest: "/usr/bin/lzd"
-    state: link
-    force: yes
-
 - name: Link max user watches
   become: yes
   file:
