@@ -47,12 +47,12 @@ pacman_packages:
   - telegram-desktop
   - lazygit
   - asciinema
-  - zathura
-  - zathura-pdf-poppler
-  - zathura-djvu
-  - zathura-ps
-  - alacritty
-  - discord
+  - zathura               # PDF Reader
+  - zathura-pdf-poppler   # PDF Reader plugin
+  - zathura-djvu          # PDF Reader plugin
+  - zathura-ps            # PDF Reader plugin
+  - alacritty             # Best terminal
+  - discord               # Voice chat
   - zsh
   - w3m
   - w3m-imgcat
@@ -83,23 +83,23 @@ pacman_packages:
   - bridge-utils
   - openbsd-netcat
   - gpg-tui
-  - newsboat
+  - newsboat                    # Rss reader
   - lynx
 aur_packages:
-  - rxvt
+  - rxvt                        # Terminal
   - termdbms
-  - network-manager-applet 
-  - ncurses
-  - chromedriver
+  - network-manager-applet      # Applet for network manager
+  - ncurses                     # Libs
+  - chromedriver                # Chromedriver
   - git-delta                   # Diff tool
-  - wakeonlan
+  - wakeonlan                   # Tool for send wakeup
   - lazydocker                  # TUI for Docker 
-  - hstr        
+  - hstr                        # History tool
   - bottom
   - vte3
   - gtk2-perl
   - glab                        # GitLab cli
-  - dockle
+  - dockle                      # Container diagnostic tool
   - asbru-cm                    # SSH GUI Client
   - zoom                        # Voice/Video chat
   - google-chrome               # Web browser
@@ -114,16 +114,15 @@ aur_packages:
   - yandex-music-player         # Music player
   - terraformer
   - transmission-remote-tui-git # Torrent client
-  - helm
+  - helm                        # k8s deploy tool
   - duck
-  - k9s
+  - k9s                         # k8s tui tool
   - multiwerf-bin
-  - neomutt
   - urlview
   - docker
   - docker-compose
   - cointop-bin
-  - fzf
+  - fzf                         # Fuzzy finder
   - fx
   - gucharmap 
   - dive
@@ -146,15 +145,14 @@ aur_packages:
   - smartgit
   - mattermost
   - yq
-  - pyradio
+  - pyradio                     # Tool for radio
   - ctags
   - flog
   - sysz
   - grv
   - flameshot
   - browsh
-  - taskwarrior-tui
-  - vit
+  - taskwarrior-tui             # Todo manager tui
 snap_packages:
   - whatsdesk
   - skype
@@ -179,7 +177,7 @@ pip_packages:
   - google-auth-httplib2
   - google-auth-oauthlib
   - notion-backup
-  - yandex-music
+  - yandex-music                 # Client for Yandex Music
   - oauth2client
 #  - google-api-python-client
 fonts_packages:
