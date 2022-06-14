@@ -69,7 +69,7 @@ cursor-click          = pointer
 
 ;modules-center      =
 modules-left         = i3 sp2 xwindow
-modules-right        = sp1 cpu sp2 memory sp2 temperature sp2 updates-pac-yay sp2 trash sp2 filesystem_custom sp2 taskwarrior todoist jira_issues sp2 git_count git_mr git_wh sp2 docker sp2 gmail sp2 volume sp2 battery0 sp2 xkeyboard sp2 date sp2 mount_nas sp2 vpn sp2
+modules-right        = sp1 cpu sp2 memory sp2 temperature sp2 updates-pac-yay sp2 trash sp2 filesystem_custom sp2 taskwarrior todoist jira_issues sp2 git_count git_mr git_wh sp2 docker sp2 gmail sp2 volume sp2 battery0 sp2 xkeyboard sp2 date sp2 mount_nas sp2
 
 ; Used:
 ;   [module/sp1]
@@ -495,15 +495,6 @@ exec = /home/dvragulin/.config/polybar/mount_nas.sh
 click-left = sshfs root@192.168.1.3:/volume1 ~/NAS
 click-right = umount ~/NAS
 interval = 1
-
-; --- Module ----------------------------------------------------------------------------------------------------------
-[module/vpn]
-type = custom/script
-exec = /home/dvragulin/.config/polybar/vpn.sh
-;click-left = 
-;click-right =
-interval = 1
-
 
 ; --- Module ----------------------------------------------------------------------------------------------------------
 [module/jira_issues]
