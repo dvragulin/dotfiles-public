@@ -85,6 +85,13 @@
     state: link
     force: yes
 
+- name: Link weather.py script
+  file:
+    src: "$HOME/GIT/projects_home/dotfiles-public/roles/polybar/files/weather.py"
+    dest: "$HOME/.config/polybar/weather.py"
+    state: link
+    force: yes
+
 - name: Link vpn.sh script
   file:
     src: "$HOME/GIT/projects_home/dotfiles-public/roles/polybar/files/vpn.sh"

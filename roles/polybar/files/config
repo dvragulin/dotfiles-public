@@ -69,7 +69,7 @@ cursor-click          = pointer
 
 ;modules-center      =
 modules-left         = i3 sp2 xwindow
-modules-right        = sp1 cpu sp2 memory sp2 temperature sp2 updates-pac-yay sp2 trash sp2 filesystem_custom sp2 taskwarrior todoist jira_issues sp2 git_count git_mr git_wh sp2 docker sp2 gmail sp2 volume sp2 battery0 sp2 xkeyboard sp2 date sp2 mount_nas sp2
+modules-right        = sp1 cpu sp2 memory sp2 temperature sp2 updates-pac-yay sp2 trash sp2 filesystem_custom sp2 taskwarrior todoist jira_issues sp2 git_count git_mr git_wh sp2 docker sp2 gmail sp2 volume sp2 battery0 sp2 xkeyboard sp2 weather sp2 date sp2 mount_nas sp2
 
 ; Used:
 ;   [module/sp1]
@@ -516,6 +516,14 @@ format = <label>
 format-prefix = " "
 ;click-left = task "$((`cat /tmp/tw_polybar_id`))" done
 
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/weather]
+type = custom/script
+click-left = firefox https://yandex.ru/pogoda/moscow?lat=55.917238&lon=37.549502
+exec = $HOME/.config/polybar/weather.py
+interval = 1800
+label-font = 3
 
 ; ---------------------------------------------------------------------------------------------------------------------
 ; --- UnUsed Modules --------------------------------------------------------------------------------------------------
