@@ -105,6 +105,7 @@ aur_packages:
   - google-chrome               # Web browser
   - etcher                      # USB boot
   - ttf-unifont                 # Fonts
+  - ttf-weather-icons           # Weather
   - siji-git                    # Fonts
   - tfswitch
   - lens-bin                    # k8s GUI cloent
