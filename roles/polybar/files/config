@@ -521,6 +521,7 @@ format-prefix = " "
 [module/weather]
 type = custom/script
 click-left = firefox https://yandex.ru/pogoda/moscow?lat=55.917238&lon=37.549502
+click-right = firefox https://yandex.ru/pogoda/maps/nowcast
 exec = $HOME/.config/polybar/weather.py
 interval = 1800
 label-font = 3
