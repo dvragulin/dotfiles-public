@@ -181,6 +181,7 @@ pip_packages:
   - notion-backup
   - yandex-music                 # Client for Yandex Music
   - oauth2client
+  - todoist-api-python           # Lib for todoist
 #  - google-api-python-client
 fonts_packages:
   - ttf-ubuntu-font-family

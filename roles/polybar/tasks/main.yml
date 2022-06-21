@@ -43,10 +43,10 @@
     state: link
     force: yes
 
-- name: Link todoist.sh script
+- name: Link todoist.py script
   file:
-    src: "$HOME/GIT/projects_home/dotfiles-public/roles/polybar/files/todoist.sh"
-    dest: "$HOME/.config/polybar/todoist.sh"
+    src: "$HOME/GIT/projects_home/dotfiles-public/roles/polybar/files/todoist.py"
+    dest: "$HOME/.config/polybar/todoist.py"
     state: link
     force: yes
 

@@ -442,10 +442,10 @@ label = %{T4} %{T-} %output%
 ; --- Module ----------------------------------------------------------------------------------------------------------
 [module/todoist]
 type = custom/script
-exec = /home/dvragulin/.config/polybar/todoist.sh
+exec = /home/dvragulin/.config/polybar/todoist.py
 click-left = todoist && notify-send -a "Todoist:" -u normal "Todoist opened"
 
-interval = 240
+interval = 300
 label = %{T5}%{T-} %output%
 
 
