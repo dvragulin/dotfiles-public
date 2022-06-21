@@ -19,7 +19,7 @@ def main(token):
         for task in tasks:
             if task.project_id == 2161168161:
                 inbox_count += 1
-            if task.priority == 1:
+            if task.priority == 4:
                 priority_count += 1
             try:
                 if task.due.string == "today":
