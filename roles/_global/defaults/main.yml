@@ -8,6 +8,7 @@ pacman_packages:
   - vscode
   - rofi
   - openssh
+  - gparted
   - net-tools
   - rsync
   - ntfs-3g
