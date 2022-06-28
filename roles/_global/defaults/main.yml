@@ -21,6 +21,7 @@ pacman_packages:
   - tldr
   - tmux
   - ncdu
+  - qbittorrent
   - duf
   - firefox
   - mc
@@ -147,6 +148,7 @@ aur_packages:
   - smartgit
   - mattermost
   - yq
+  - jmtpfs
   - pyradio                     # Tool for radio
   - ctags
   - flog
@@ -225,3 +227,4 @@ packages_to_delete:
   - virtualbox
   - virtualbox-host-dkms
   - virtualbox-sdk
+  - kget
