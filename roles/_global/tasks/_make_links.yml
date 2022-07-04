@@ -33,3 +33,11 @@
     state: link
     force: yes
 
+- name: Link lazygit
+  become: yes
+  file:
+    src: "/usr/bin/lazygit"
+    dest: "/usr/bin/lg"
+    state: link
+    force: yes
+

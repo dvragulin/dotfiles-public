@@ -146,7 +146,6 @@ aur_packages:
   - grpcurl
   - yandex-disk
   - smartgit
-  - mattermost
   - yq
   - jmtpfs
   - pyradio                     # Tool for radio
@@ -158,6 +157,7 @@ aur_packages:
   - browsh
   - taskwarrior-tui             # Todo manager tui
 snap_packages:
+  - mattermost-desktop
   - whatsdesk
   - skype
   - core20

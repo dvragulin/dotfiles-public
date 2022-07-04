@@ -60,6 +60,9 @@ ansible-playbook playbook.yml --extra-vars "ansible_sudo_pass=$PW"
 
 # --- Run go for intall custom apps -----------------------------------------------------------------------------------
 #go install github.com/fedeztk/got/cmd/got@latest
+#sudo gpasswd -a $USER docker
+#sudo systemctl start docker
+#sudo chmod 666 /var/run/docker.sock
 
 
 # --- Change shell to ZSH ---------------------------------------------------------------------------------------------

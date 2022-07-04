@@ -33,6 +33,8 @@
   - '$HOME/.config/alacritty'
   - '$HOME/.config/dunst'
   - '$HOME/.config/mc'
+  - '$HOME/.config/newsboat'
+  - '$HOME/.config/rtv'
   - '$HOME/.config/k9s'
   - '$HOME/.config/btop'
   - '$HOME/.config/yandex-disk'
