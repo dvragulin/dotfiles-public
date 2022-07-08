@@ -41,6 +41,7 @@
     - tmux
     - xinit
     - feedbro
+    - pyradio
     - gtk
     - got
     - avatars
