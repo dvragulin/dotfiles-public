@@ -445,7 +445,7 @@ type = custom/script
 exec = /home/dvragulin/.config/polybar/todoist.py
 click-left = todoist && notify-send -a "Todoist:" -u normal "Todoist opened"
 
-interval = 300
+interval = 120
 label = %{T5}%{T-} %output%
 
 
