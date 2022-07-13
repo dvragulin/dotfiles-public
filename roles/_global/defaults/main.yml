@@ -145,6 +145,7 @@ aur_packages:
   - makepasswd
   - grpcurl
   - yandex-disk
+  - btop                        # Pretty Top :) 
   - smartgit
   - yq
   - jmtpfs
