@@ -8,7 +8,7 @@ import json
 
 def request_to_yadnex(token, lat, lon):
     header = {"X-Yandex-API-Key": f"{token}"}
-    URL = f"https://api.weather.yandex.ru/v2/forecast/?lat={lat}&lon={lon}"
+    URL = f"https://api.weather.yandex.ru/v2/informers/?lat={lat}&lon={lon}"
 
     response = requests.get(url=URL, headers=header)
     if response.status_code == 403:
@@ -51,9 +51,23 @@ def beauty(weather_data):
                   'moderate-rain': '',
                   'heavy-rain': '',
                   'continuous-heavy-rain': '',
+                  'partly-cloudy-and-light-rain': '',
+                  'partly-cloudy-and-rain': '',
+                  'overcast-and-rain': '',
+                  'overcast-thunderstorms-with-rain': '',
+                  'cloudy-and-light-rain': '',
+                  'overcast-and-light-rain': '',
+                  'cloudy-and-rain': '',
                   'showers': '',
                   'wet-snow': '',
                   'light-snow': '',
+                  'overcast-and -wet-snow': '',
+                  'partly-cloudy-and -light-snow': '',
+                  'partly-cloudy-and-snow': '',
+                  'overcast-and-snow': '',
+                  'cloudy-and-light-snow': '',
+                  'overcast-and-light-snow': '',
+                  'cloudy-and-snow': '',
                   'snow': '',
                   'snow-showers': '',
                   'hail': '',
@@ -72,6 +86,9 @@ def beauty(weather_data):
 
 
 def main():
+    """
+    Ссылка на кабинет разработчика: https://developer.tech.yandex.ru/services/
+    """
     eget = os.environ.get
     token = eget('YANDEX_API_TOKEN')
     lat = 55.917238
