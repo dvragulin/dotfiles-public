@@ -476,7 +476,7 @@ exec = /home/dvragulin/.config/polybar/git_mr.py
 click-left = firefox $GITLAB_WORK/dashboard/merge_requests?assignee_username=dmitriy.ragulin
 click-right = firefox $GITLAB_WORK/dashboard/merge_requests?reviewer_username=dmitriy.ragulin
 
-interval = 600
+interval = 300
 label = %{T5} %{T-} %output%
 
 ; --- Module ----------------------------------------------------------------------------------------------------------

@@ -176,6 +176,7 @@ pip_packages:
   - prettytable
   - gitpython
   - pipenv
+  - pandas
   - pendulum
   - jira
   - grip
