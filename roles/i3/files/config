@@ -38,6 +38,7 @@ exec --no-startup-id firefox                                                    
 exec --no-startup-id todoist                                                            # Run Todoist task manager
 exec --no-startup-id flameshot                                                          # Run Screenshot software
 exec --no-startup-id thunderbird                                                        # Run mail agent
+exec --no-startup-id systemsettings                                                     # Run systemsettings
 # exec --no-startup-id spectacle                                                        # Run Screenshot software
 # exec --no-startup-id slack                                                            # Run Slack
 # exec --no-startup-id whatsdesk                                                        # Run WhatsDesk

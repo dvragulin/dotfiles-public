@@ -175,6 +175,7 @@ pip_packages:
   - ipython
   - prettytable
   - gitpython
+  - kubernetes
   - pipenv
   - pandas
   - pendulum
