@@ -36,6 +36,8 @@ alias cf='cat $(fzf)'
 alias yt='ytfzf'
 alias h='history'
 alias r='ranger'
+alias t='tmux'
+alias ts='tmux list-sessions'
 alias tf='terraform'
 alias tfm='terraformer'
 alias kp='keepassxc'
@@ -86,4 +88,8 @@ extract () {
 # Update smb-cli
 autoload -U compinit; compinit
 source /home/dvragulin/.sbm-cli/completion/zsh/sbm-cli
+
+#if [[ ! $(tmux list-sessions) ]]; then 
+#  tmux
+#fi
 
