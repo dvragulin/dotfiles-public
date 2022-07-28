@@ -12,6 +12,7 @@ for i in `ls $HOME/GIT/`; do
     pwd
     echo
     git co master && git pull || true | 1>/dev/null
+    sleep 10
   done ;
 done
 
