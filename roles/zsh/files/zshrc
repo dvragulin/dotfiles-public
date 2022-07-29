@@ -86,6 +86,7 @@ extract () {
 }
 
 # Update smb-cli
+export PATH="$HOME/.go/bin:$HOME/.sbm-cli/usr/bin:$PATH"
 autoload -U compinit; compinit
 source /home/dvragulin/.sbm-cli/completion/zsh/sbm-cli
 
