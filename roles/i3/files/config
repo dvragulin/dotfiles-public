@@ -2,7 +2,6 @@
 
 set $monL DP-3-2
 set $monR DP-3-3
-
 # --- Settings ---
 
 exec_always xrandr --output eDP-1 --off
@@ -208,6 +207,14 @@ floating_modifier $mod
   client.background       #ffffff
 
 # --- Workplaces layout ----------------------------------------------------------------------------------------------#
+
+assign [class="^firefox$"]            workspace 1
+assign [class="^keepassxc$"]          workspace 1
+assign [class="^gpclient$"]           workspace 1
+assign [class="^mattermost-desktop$"] workspace 6
+assign [class="^discord$"]            workspace 6
+assign [class="^thunderbird$"]        workspace 7
+assign [class="^todoist$"]            workspace 7
 
 #exec --no-startup-id "i3-msg 'workspace 1; append_layout /home/dvragulin/.i3/workspace-1.json'"
 #exec --no-startup-id "i3-msg 'workspace 2; append_layout /home/dvragulin/.i3/workspace-2.json'"
