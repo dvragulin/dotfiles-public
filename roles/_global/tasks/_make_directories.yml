@@ -38,6 +38,8 @@
   - '$HOME/.config/k9s'
   - '$HOME/.config/btop'
   - '$HOME/.config/yandex-disk'
+  - '$HOME/.config/pyradio/'
+  - '$HOME/.config/pyradio/themes'
   - '$HOME/.ssh'
   - '$HOME/.ssh/config.d'
   - '$HOME/.tmux'

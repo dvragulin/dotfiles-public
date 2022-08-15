@@ -99,3 +99,9 @@
     state: link
     force: yes
 
+- name: Link pyradio.sh script
+  file:
+    src: "$HOME/GIT/projects_home/dotfiles-public/roles/polybar/files/pyradio.sh"
+    dest: "$HOME/.config/polybar/pyradio.sh"
+    state: link
+    force: yes
