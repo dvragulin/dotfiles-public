@@ -181,6 +181,9 @@ bindsym $mod+Shift+0 move container to workspace 10
 #bindcode $mod+Shift+$KP_0 move container to workspace 10
 # ------------
 
+# Show last notifications
+bindsym $mod+Shift+n exec "dunstctl history-pop"
+
 # Reload the configuration file
 bindsym $mod+Shift+c reload
 
