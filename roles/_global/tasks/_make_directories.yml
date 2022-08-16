@@ -18,6 +18,8 @@
   - '$HOME/NAS'
   - '$HOME/GIT'
   - '$HOME/GIT/projects_home'
+  - '$HOME/GIT/projects_home/ansible'
+  - '$HOME/GIT/projects_home/docker'
   - '$HOME/GIT/projects_work'
   - '$HOME/GIT/projects_tests'
   - '$HOME/GIT/projects_monolith'
