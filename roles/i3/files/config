@@ -34,10 +34,10 @@ exec --no-startup-id gpclient                                                   
 exec --no-startup-id guake                                                              # Run Guake
 exec --no-startup-id optimus-manager-qt                                                 # Run Optimus Manager
 exec --no-startup-id firefox                                                            # Run Web Browser
-exec --no-startup-id todoist                                                            # Run Todoist task manager
 exec --no-startup-id flameshot                                                          # Run Screenshot software
 exec --no-startup-id thunderbird                                                        # Run mail agent
 exec --no-startup-id systemsettings                                                     # Run systemsettings
+# exec --no-startup-id todoist                                                            # Run Todoist task manager
 # exec --no-startup-id spectacle                                                        # Run Screenshot software
 # exec --no-startup-id slack                                                            # Run Slack
 # exec --no-startup-id whatsdesk                                                        # Run WhatsDesk
@@ -210,14 +210,6 @@ floating_modifier $mod
   client.background       #ffffff
 
 # --- Workplaces layout ----------------------------------------------------------------------------------------------#
-
-assign [class="^firefox$"]            workspace 1
-assign [class="^keepassxc$"]          workspace 1
-assign [class="^gpclient$"]           workspace 1
-assign [class="^mattermost-desktop$"] workspace 6
-assign [class="^discord$"]            workspace 6
-assign [class="^thunderbird$"]        workspace 7
-assign [class="^todoist$"]            workspace 7
 
 #exec --no-startup-id "i3-msg 'workspace 1; append_layout /home/dvragulin/.i3/workspace-1.json'"
 #exec --no-startup-id "i3-msg 'workspace 2; append_layout /home/dvragulin/.i3/workspace-2.json'"
