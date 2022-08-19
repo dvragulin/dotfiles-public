@@ -288,9 +288,9 @@ label-layout-background = ${colors.background-alt}
 
 label-indicator-padding = 0
 label-indicator-margin = 0
-label-indicator = " CAPS "
-label-indicator-foreground = ${colors.foreground}
-label-indicator-background = ${colors.alert}
+label-indicator = "  "
+label-indicator-foreground = ${colors.alert}
+;label-indicator-background = ${colors.alert}
 ;label-indicator-underline = ${colors.alert}
 
 ; --- Module ----------------------------------------------------------------------------------------------------------
