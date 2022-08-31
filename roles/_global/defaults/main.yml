@@ -165,7 +165,7 @@ snap_packages:
   - matterhorn
 snap_classic_packages:
   - powershell
-  - pycharm-community
+  - pycharm-professional
 pip_packages:
   - requests
   - jinja2
