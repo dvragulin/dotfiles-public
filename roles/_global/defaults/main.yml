@@ -166,6 +166,8 @@ snap_packages:
 snap_classic_packages:
   - powershell
   - pycharm-professional
+  - goland
+  - datagrip
 pip_packages:
   - requests
   - jinja2
