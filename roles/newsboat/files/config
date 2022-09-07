@@ -2,7 +2,7 @@
 
 #show-read-feeds no
 #auto-reload yes
-max-items 200
+max-items 500
 
 external-url-viewer "urlscan -dc -r 'firefox {}'"
 
