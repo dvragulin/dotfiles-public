@@ -7,7 +7,7 @@ from datetime import datetime
 from todoist_api_python.api import TodoistAPI
 
 def beauty(inbox, priority, today):
-    return f" {inbox}  {today}  {priority}"
+    return f"  {inbox}   {today}  {priority}"
 
 
 def get_due_date(task):

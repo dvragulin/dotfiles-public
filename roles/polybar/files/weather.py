@@ -12,7 +12,7 @@ def request_to_yadnex(token, lat, lon):
 
     response = requests.get(url=URL, headers=header)
     if response.status_code == 403:
-        exit('')
+        exit('' )
     weather = json.loads(response.content.decode('utf-8'))
 
     return weather
@@ -41,39 +41,39 @@ def beauty(weather_data):
     thunderstorm-with-rain / дождь с грозой.
     thunderstorm-with-hail / гроза с градом.
     """
-    conditions = {'clear': '',
-                  'partly-cloudy': '',
-                  'cloudy': '',
-                  'overcast': '',
-                  'drizzle': '',
-                  'light-rain': '',
-                  'rain': '',
-                  'moderate-rain': '',
-                  'heavy-rain': '',
-                  'continuous-heavy-rain': '',
-                  'partly-cloudy-and-light-rain': '',
-                  'partly-cloudy-and-rain': '',
-                  'overcast-and-rain': '',
-                  'overcast-thunderstorms-with-rain': '',
-                  'cloudy-and-light-rain': '',
-                  'overcast-and-light-rain': '',
-                  'cloudy-and-rain': '',
-                  'showers': '',
-                  'wet-snow': '',
-                  'light-snow': '',
-                  'overcast-and -wet-snow': '',
-                  'partly-cloudy-and -light-snow': '',
-                  'partly-cloudy-and-snow': '',
-                  'overcast-and-snow': '',
-                  'cloudy-and-light-snow': '',
-                  'overcast-and-light-snow': '',
-                  'cloudy-and-snow': '',
-                  'snow': '',
-                  'snow-showers': '',
-                  'hail': '',
-                  'thunderstorm': '',
-                  'thunderstorm-with-rain': '',
-                  'thunderstorm-with-hail': ''}
+    conditions = {'clear': ' ',
+                  'partly-cloudy': ' ',
+                  'cloudy': ' ',
+                  'overcast': ' ',
+                  'drizzle': ' ',
+                  'light-rain': ' ',
+                  'rain': ' ',
+                  'moderate-rain': ' ',
+                  'heavy-rain': ' ',
+                  'continuous-heavy-rain': ' ',
+                  'partly-cloudy-and-light-rain': ' ',
+                  'partly-cloudy-and-rain': ' ',
+                  'overcast-and-rain': ' ',
+                  'overcast-thunderstorms-with-rain': ' ',
+                  'cloudy-and-light-rain': ' ',
+                  'overcast-and-light-rain': ' ',
+                  'cloudy-and-rain': ' ',
+                  'showers': ' ',
+                  'wet-snow': ' ',
+                  'light-snow': ' ',
+                  'overcast-and -wet-snow': ' ',
+                  'partly-cloudy-and -light-snow': ' ',
+                  'partly-cloudy-and-snow': ' ',
+                  'overcast-and-snow': ' ',
+                  'cloudy-and-light-snow': ' ',
+                  'overcast-and-light-snow': ' ',
+                  'cloudy-and-snow': ' ',
+                  'snow': ' ',
+                  'snow-showers': ' ',
+                  'hail': ' ',
+                  'thunderstorm': ' ',
+                  'thunderstorm-with-rain': ' ',
+                  'thunderstorm-with-hail': ' '}
     icon = None
     temp = weather_data['fact']['temp']
     feels_like = weather_data['fact']['feels_like']
@@ -81,7 +81,7 @@ def beauty(weather_data):
     for key, value in conditions.items():
         if key == condition:
             icon = value
-    report = f"{temp}°{feels_like}° {icon} "
+    report = f"{temp}°  {feels_like}° {icon} "
     return report
 
 

@@ -69,7 +69,7 @@ cursor-click          = pointer
 
 ;modules-center      =
 modules-left         = i3 sp2 xwindow
-modules-right        = cpu sp2 memory sp2 temperature sp2 updates-pac-yay sp2 trash sp2 filesystem_custom sp2 taskwarrior sp2 todoist jira_issues sp2 git_count git_mr git_wh sp2 docker sp2 pyradio sp2 volume sp2 battery0 sp2 xkeyboard translator sp2 weather sp2 calendar date sp2 mount_nas sp2
+modules-right        = cpu sp2 memory sp2 docker sp2 temperature sp2 updates-pac-yay sp2 trash sp2 filesystem_custom sp2 todoist jira_issues sp2 git_count git_mr git_wh sp2 pyradio sp2 volume sp2 translator sp2 xkeyboard sp2 weather sp2 calendar date sp2 mount_nas sp2
 
 ; Used:
 ;   [module/sp1]
@@ -183,7 +183,7 @@ headphone-soundcard = default
 master-mixer = Master
 
 format-volume = "<label-volume><bar-volume>"
-label-volume = " "
+label-volume = "  "
 label-volume-foreground = ${colors.foreground-alt}
 label-volume-background = ${colors.background-alt}
 
@@ -276,7 +276,7 @@ blacklist-1 = scroll lock
 format = <label-layout><label-indicator>
 format-spacing = 0
 
-format-prefix = " "
+format-prefix = "  "
 format-prefix-foreground = ${colors.foreground-alt}
 format-prefix-background = ${colors.background-alt}
 ;format-prefix-underline = ${colors.foreground}
@@ -390,9 +390,9 @@ format-spacing = 1
 ;ramp-foreground = ${colors.foreground-alt}
 ;ramp-background = ${colors.background-alt}
 
-label-open = %{T4}%{T-}
+label-open = %{T4} %{T-}
 label-open-foreground = ${colors.foreground-alt}
-label-close = %{T4}%{T-}
+label-close = %{T4} %{T-}
 label-close-foreground = ${colors.foreground-alt}
 ;label-close-foreground = ${colors.secondary}
 label-separator = |
@@ -462,7 +462,7 @@ click-left = /home/dvragulin/.config/polybar/git_update.sh
 click-right = /home/dvragulin/.config/polybar/git_update.sh
 
 interval = 30
-label = %{T5}%{T-}%output%
+label = %{T5} %{T-}%output%
 
 ; --- Module ----------------------------------------------------------------------------------------------------------
 [module/git_mr]
@@ -481,7 +481,7 @@ exec = docker ps -aq | wc -l
 click-left = notify-send -a "Docker:" -u normal "docker remove" && docker rm -vf $(docker ps -aq)
 click-right = notify-send -a "Docker:" -u normal "docker prune" && echo y | docker image prune -a
 interval = 120
-label =   %output%
+label =    %output%
 
 ; --- Module ----------------------------------------------------------------------------------------------------------
 [module/mount_nas]
@@ -525,7 +525,7 @@ label-font = 3
 [module/translator]
 type = custom/script
 tail = true
-exec = echo " "
+exec = echo " "
 click-left = xdg-open https://translate.yandex.ru/
 click-right = xdg-open https://translate.yandex.ru/
 
@@ -583,7 +583,7 @@ ramp-signal-background = ${colors.background-alt}
 [module/cpu]
 type = internal/cpu
 interval = 1
-format-prefix = ""
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-prefix-background = ${colors.background-alt}
 ;format-underline = ${colors.foreground}
@@ -595,7 +595,7 @@ label-background = ${colors.background-alt}
 [module/memory]
 type = internal/memory
 interval = 1
-format-prefix = " "
+format-prefix = "  "
 format-prefix-foreground = ${colors.foreground-alt}
 format-prefix-background = ${colors.background-alt}
 ;format-underline = ${colors.foreground}

@@ -26,5 +26,5 @@ try:
 except Exception:
     print("")
 
-print(f" {len(mr_body)}/{len(rw_body)} ")
+print(f"  {len(mr_body)}/{len(rw_body)} ")
 
