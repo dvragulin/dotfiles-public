@@ -167,7 +167,7 @@ label-background = ${colors.background-alt}
 ; --- Module ----------------------------------------------------------------------------------------------------------
 [module/calendar]
 type = custom/script
-exec = echo 
+exec = echo " "
 click-left = firefox https://calendar.google.com/calendar/u/0/r
 click-right = firefox https://calendar.google.com/calendar/u/0/r
 interval = 920
