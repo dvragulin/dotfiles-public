@@ -25,7 +25,7 @@ Plug 'hashivim/vim-terraform'                            " Vim Terraform plugin
 Plug 'ycm-core/YouCompleteMe',                           " code-completion
 Plug 'Xuyuanp/nerdtree-git-plugin'                       " A plugin of NERDTree showing git status flags.
 Plug 'ledesmablt/vim-run'                                " Run, view, and manage UNIX shell commands 
-
+Plug 'towolf/vim-helm'
 
 " --- Pluggins for Python ------------------------------------ 
 Plug 'python-mode/python-mode', { 'for': 'python' }      " Python IDE for vim

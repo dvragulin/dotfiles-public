@@ -46,6 +46,7 @@ pacman_packages:
   - viewnior
   - ipython
   - speedtest-cli
+  - nmap
   - telegram-desktop
   - lazygit
   - asciinema
@@ -58,7 +59,7 @@ pacman_packages:
   - zsh
   - w3m
   - w3m-imgcat
-  - aerc
+  - aerc                  # Mail clients
   - pcmanfm
   - traceroute
   - ueberzug
@@ -111,6 +112,7 @@ aur_packages:
   - siji-git                    # Fonts
   - tfswitch
   - lens-bin                    # k8s GUI cloent
+  - bcal                        # Bytes calc
   - yandex-cloud-bin            # Yandex Cloud CLI
   - gp-saml-gui                 # VPN Software
   - globalprotect-openconnect   # VPN Software
@@ -130,7 +132,6 @@ aur_packages:
   - gucharmap 
   - dive
   - rtv
-  - wuzz
   - s3cmd
   - ytfzf
   - termshark
@@ -153,7 +154,7 @@ aur_packages:
   - ctags
   - flog
   - sysz
-  - grv
+  - grv                         # Git Viewer (git dash)
   - flameshot
   - browsh
   - taskwarrior-tui             # Todo manager tui
