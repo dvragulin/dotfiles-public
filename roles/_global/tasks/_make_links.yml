@@ -28,7 +28,7 @@
 - name: Link Documents/Pictures to Pictures
   become: yes
   file:
-    src: "/home/dvragulin/Documents/Pictures"
+    src: "/home/dvragulin/Documents/_Pictures"
     dest: "/home/dvragulin/Pictures"
     state: link
     force: yes
@@ -36,7 +36,7 @@
 - name: Link Documents/Desktop to Pictures
   become: yes
   file:
-    src: "/home/dvragulin/Documents/Desktop"
+    src: "/home/dvragulin/Documents/_Desktop"
     dest: "/home/dvragulin/Desktop"
     state: link
     force: yes

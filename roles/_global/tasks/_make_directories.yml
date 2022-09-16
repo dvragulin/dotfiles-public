@@ -9,7 +9,8 @@
   loop:
   - '$HOME/Desktop'
   - '$HOME/Documents'
-  - '$HOME/Documents/Pictures'
+  - '$HOME/Documents/_Pictures'
+  - '$HOME/Documents/_Desktop'
   - '$HOME/Downloads'
   - '$HOME/Icons'
   - '$HOME/Library'
@@ -42,6 +43,8 @@
   - '$HOME/.config/yandex-disk'
   - '$HOME/.config/pyradio/'
   - '$HOME/.config/pyradio/themes'
+  - '$HOME/.config/jesseduffield/lazygit'
+  - '$HOME/.config/lazygit'
   - '$HOME/.ssh'
   - '$HOME/.ssh/config.d'
   - '$HOME/.tmux'
