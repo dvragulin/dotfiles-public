@@ -4,6 +4,7 @@
 pacman_packages:
   - base-devel
   - vim
+  - neovim
   - vim-runtime
   - vscode
   - rofi
