@@ -56,7 +56,7 @@ pacman_packages:
   - zathura-djvu          # PDF Reader plugin
   - zathura-ps            # PDF Reader plugin
   - alacritty             # Best terminal
-  - discord               # Voice chat
+  - tk                    # Requested for gitk
   - zsh
   - w3m
   - w3m-imgcat
@@ -161,6 +161,7 @@ aur_packages:
   - taskwarrior-tui             # Todo manager tui
 snap_packages:
   - mattermost-desktop
+  - discord               # Voice chat
   - whatsdesk
   - skype
   - core20
