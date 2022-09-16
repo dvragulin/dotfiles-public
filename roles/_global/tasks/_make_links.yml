@@ -33,6 +33,14 @@
     state: link
     force: yes
 
+- name: Link Documents/Desktop to Pictures
+  become: yes
+  file:
+    src: "/home/dvragulin/Documents/Desktop"
+    dest: "/home/dvragulin/Desktop"
+    state: link
+    force: yes
+
 - name: Link lazygit
   become: yes
   file:
