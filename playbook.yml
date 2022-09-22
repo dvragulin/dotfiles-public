@@ -1,12 +1,4 @@
 ---
-- name: Get distribution
-  hosts: localhost
-  gather_facts: yes
-  become: false
-  tasks:
-    - name: Distribution
-      debug: msg="{{ ansible_distribution }}"
-
 - name: Prepear Host
   hosts: DESKTOP
   become: yes
@@ -34,7 +26,6 @@
     - ranger
     - rofi
     - btop
-    - vim
     - nvim
     - mc
     - ssh
@@ -49,4 +40,5 @@
     - avatars
     - keychron
     - lazygit
+#    - vim
 

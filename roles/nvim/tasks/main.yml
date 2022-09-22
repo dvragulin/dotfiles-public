@@ -1,28 +1,35 @@
 ---
 # tasks file for vim
                                                                             
-- name: Link nvim config file | .nvimrc
+- name: Link nvim config file to home | .nvimrc
   file:
-    src: "$HOME/GIT/projects_home/dotfiles-public/roles/vim/files/vimrc"
+    src: "$HOME/GIT/projects_home/dotfiles-public/roles/nvim/files/init.vim"
     dest: "$HOME/.nvimrc"
     state: link
     force: yes
 
-- name: Link vim pluggins config file | plug.vim
+- name: Link nvim config file to configs | .nvimrc
   file:
-    src: "$HOME/GIT/projects_home/dotfiles-public/roles/nvim/files/autoload/plug.vim"
-    dest: "$HOME/config/.nvim/autoload/plug.vim"
+    src: "$HOME/GIT/projects_home/dotfiles-public/roles/nvim/files/init.vim"
+    dest: "$HOME/.config/nvim/init.vim"
     state: link
     force: yes
 
-- name: Link vim lua config files | 
+- name: Link nvim pluggins config file | plug.vim
   file:
     src: "$HOME/GIT/projects_home/dotfiles-public/roles/nvim/files/autoload/plug.vim"
-    dest: "$HOME/config/.nvim/autoload/plug.vim"
+    dest: "$HOME/.config/nvim/autoload/plug.vim"
     state: link
     force: yes
 
-- name: Install vim pluggins
+# - name: Link vim lua config files | 
+#   file:
+#     src: "$HOME/GIT/projects_home/dotfiles-public/roles/nvim/files/autoload/plug.vim"
+#     dest: "$HOME/config/nvim/autoload/plug.vim"
+#     state: link
+#     force: yes
+
+- name: Install nvim pluggins
   command: "vim +PlugInstall +qall"
   args:
     stdin: "\n"
