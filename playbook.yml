@@ -35,6 +35,7 @@
     - rofi
     - btop
     - vim
+    - nvim
     - mc
     - ssh
     - zathura

@@ -1,6 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
-export VISUAL=vim;
-export EDITOR=vim;
+export VISUAL=nvim;
+export EDITOR=nvim;
 export GOPATH="/home/dvragulin/.go"
 PATH=$PATH:$GOPATH/bin # Add GOPATH/bin to PATH for scripting
 export FZF_DEFAULT_OPTS="--ansi --preview-window 'right:60%' --preview 'bat --color=always --style=full --line-range :300 {}'"
@@ -25,19 +25,20 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
+  export EDITOR='nvim'
 else
-  export EDITOR='vim'
+  export EDITOR='nvim'
 fi
 
 # k8s aliases
 [ -f ~/.kubectl_aliases ] && source ~/.kubectl_aliases
 
 # Other aliases
+alias vim="nvim"
 alias mk="minikube"
 alias mail="aerc"
 alias email="aerc"
-alias vf='vim $(fzf)'
+alias vf='nvim $(fzf)'
 alias cf='cat $(fzf)'
 alias yt='ytfzf'
 alias h='history'
