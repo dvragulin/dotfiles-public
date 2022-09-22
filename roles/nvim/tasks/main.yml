@@ -1,14 +1,14 @@
 ---
 # tasks file for vim
                                                                             
-- name: Link nvim config file to home | .nvimrc
+- name: Link nvim config file
   file:
     src: "$HOME/GIT/projects_home/dotfiles-public/roles/nvim/files/init.vim"
     dest: "$HOME/.nvimrc"
     state: link
     force: yes
 
-- name: Link nvim config file to configs | .nvimrc
+- name: Link nvim config file
   file:
     src: "$HOME/GIT/projects_home/dotfiles-public/roles/nvim/files/init.vim"
     dest: "$HOME/.config/nvim/init.vim"
