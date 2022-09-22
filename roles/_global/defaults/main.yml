@@ -43,6 +43,7 @@ pacman_packages:
   - tree
   - make
   - htop
+  - cmake
   - dolphin
   - viewnior
   - ipython
@@ -135,6 +136,7 @@ aur_packages:
   - rtv
   - s3cmd
   - ytfzf
+  - jitsi-meet-desktop
   - termshark
   - markdown
   - dbeaver
@@ -173,6 +175,7 @@ snap_classic_packages:
   - datagrip
 pip_packages:
   - requests
+  - pynvim
   - jinja2
   - flake8
   - pyflakes
@@ -216,6 +219,9 @@ i3_packages:
   - lightdm-gtk-greeter
   - lxappearance
   - dunst
+
+npm_packages:
+  - pyright
 
 packages_to_delete:
   - spectacle
