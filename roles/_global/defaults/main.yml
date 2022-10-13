@@ -161,6 +161,7 @@ aur_packages:
   - flameshot
   - browsh
   - taskwarrior-tui             # Todo manager tui
+  - ceph-libs-bin
 snap_packages:
   - mattermost-desktop
   - discord               # Voice chat
@@ -195,6 +196,24 @@ pip_packages:
   - yandex-music                 # Client for Yandex Music
   - oauth2client
   - todoist-api-python           # Lib for todoist
+  - pyasn1-modules
+  - google-auth
+  - httplib2
+  - isort
+  - mccabe
+  - numpy
+  - filelock
+  - virtualenv
+  - dill
+  - tomlkit
+  - pylint
+  - pycodestyle
+  - google-auth-httplib2
+  - prettytable
+  - lazy-object-proxy
+  - wrapt
+  - astroid
+  - cachetools
 #  - google-api-python-client
 fonts_packages:
   - ttf-ubuntu-font-family
@@ -242,3 +261,4 @@ packages_to_delete:
   - virtualbox-host-dkms
   - virtualbox-sdk
   - kget
+  - ceph-lib
