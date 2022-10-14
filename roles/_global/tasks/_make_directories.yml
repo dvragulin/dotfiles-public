@@ -17,6 +17,7 @@
   - '$HOME/Music'
   - '$HOME/Library'
   - '$HOME/NAS'
+  - '$HOME/Shared'
   - '$HOME/GIT'
   - '$HOME/GIT/projects_home'
   - '$HOME/GIT/projects_home/ansible'
