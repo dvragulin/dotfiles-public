@@ -5,11 +5,9 @@ Music: Space Channel                        , https://graalradio.com:8128/space1
 Music: Future Channel                       , https://graalradio.com:8128/future160
 Music: Ambient                              , https://hls-01-radiorecord.hostingradio.ru/record-ambient/playlist.m3u8
 Music: lofi                                 , https://hls-01-radiorecord.hostingradio.ru/record-lofi/playlist.m3u8
-Music: Chill-Out                            , https://hls-01-radiorecord.hostingradio.ru/record-chil/96/playlist.m3u8
 Music: Space Station                        , https://ice5.somafm.com/spacestation-128-mp3
 Music: Lush                                 , https://ice5.somafm.com/lush-128-mp3
 Music: Like FM                              , https://ic4.101.ru:8000/stream/air/mp3/256/219
-Music: LiveDJsets                           , https://hls-01-radiorecord.hostingradio.ru/record-livedjsets/playlist.m3u8
 Music: Novorossia Rock                      , http://212.66.37.34:8000/nrocks
 Music: Record Rock                          , https://hls-01-radiorecord.hostingradio.ru/record-rock/96/playlist.m3u8 
 Music: Rock FM Russian                      , http://nashe.streamr.ru/rock-128.mp3
@@ -18,7 +16,7 @@ Music: Rock FM Germany                      , https://s4-webradio.webradio.de/ro
 Music: Maximum                              , http://maximum.hostingradio.ru/maximum128.mp3
 Music: Air Touch                            , https://c8.radioboss.fm:18133/radioairtouch
 Music: 0nlineradio                          , https://stream.0nlineradio.com/jazz?ref=radiobrowser
-Music: - 0 N - Classic Rock on Radio        , https://0n-classicrock.radionetz.de/0n-classicrock.mp3
+Music: Classic Rock on Radio                , https://0n-classicrock.radionetz.de/0n-classicrock.mp3
 Music: Rock Antenne                         , http://mp3channels.webradio.rockantenne.de/rockantenne
 News [Ru]: Bussiness FM                     , https://bfm.hostingradio.ru:9075/fm
 News [Ru]: Вести FM                         , https://icecast-vgtrk.cdnvideo.ru/vestifm_mp3_192kbps?382f
