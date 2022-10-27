@@ -40,6 +40,8 @@ pacman_packages:
   - pgadmin4
   - python-pip
   - llvm
+  - ethtool
+  - wol
   - tree
   - make
   - htop
