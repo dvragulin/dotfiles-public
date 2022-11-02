@@ -216,6 +216,8 @@ pip_packages:
   - wrapt
   - astroid
   - cachetools
+  - dill
+  - tomlkit
 #  - google-api-python-client
 fonts_packages:
   - ttf-ubuntu-font-family
