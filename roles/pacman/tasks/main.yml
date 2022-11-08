@@ -1,0 +1,10 @@
+---
+# tasks file for pacman.d
+                                                                            
+- name: Link pacman.d mirror list
+  file:
+    src: "$HOME/GIT/projects_home/dotfiles-public/roles/pacman/files/mirrorlist"
+    dest: "/etc/pacman.d/mirrorlist"
+    state: link
+    force: yes
+  become: yes
