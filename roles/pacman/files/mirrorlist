@@ -1,32 +1,29 @@
 ##
 ## Manjaro Linux default mirrorlist
-## Generated on 2022-11-03 11:14
+## Generated on 2022-11-10 16:39
 ##
 ## Please use 'pacman-mirrors -f [NUMBER] [NUMBER]' to modify mirrorlist
 ## (Use 0 for all mirrors)
 ##
 
-## Country: Russia
-Server = https://mirror.yandex.ru/mirrors/manjaro/stable/$repo/$arch
+## Country : Belarus
+Server = http://mirror.datacenter.by/pub/mirrors/manjaro/stable/$repo/$arch
 
-## Country : Spain
-Server = https://mirrors.ft.uam.es/manjaro/stable/$repo/$arch
+## Country : Poland
+Server = https://ftp.icm.edu.pl/pub/Linux/dist/manjaro/stable/$repo/$arch
 
-## Country : Georgia
-Server = http://manjaro.grena.ge/stable/$repo/$arch
+## Country : Germany
+Server = https://mirror.informatik.tu-freiberg.de/manjaro/stable/$repo/$arch
 
-## Country : Italy
-Server = https://manjaro.mirror.garr.it/manjaro/stable/$repo/$arch
+## Country : Germany
+Server = https://mirror.23m.com/manjaro/stable/$repo/$arch
 
 ## Country : United_States
-Server = https://coresite.mm.fcix.net/manjaro/stable/$repo/$arch
+Server = https://ridgewireless.mm.fcix.net/manjaro/stable/$repo/$arch
 
-## Country : Japan
-Server = http://ftp.riken.jp/Linux/manjaro/stable/$repo/$arch
+## Country : Taiwan
+Server = https://mirror.archlinux.tw/Manjaro/stable/$repo/$arch
 
-## Country : Uruguay
-Server = https://manjaro.repo.cure.edu.uy/stable/$repo/$arch
-
-## Country : Bangladesh
-Server = http://mirror.xeonbd.com/manjaro/stable/$repo/$arch
+## Country : China
+Server = https://mirrors.tuna.tsinghua.edu.cn/manjaro/stable/$repo/$arch
 
