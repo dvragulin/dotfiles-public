@@ -186,6 +186,7 @@ pip_packages:
   - ipython
   - prettytable
   - gitpython
+  - proxmoxer
   - kubernetes
   - pipenv
   - pandas
