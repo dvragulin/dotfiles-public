@@ -48,7 +48,6 @@ pacman_packages:
   - cmake
   - dolphin
   - viewnior
-  - ipython
   - speedtest-cli
   - nmap
   - telegram-desktop
@@ -170,7 +169,6 @@ snap_packages:
   - whatsdesk
   - skype
   - core20
-  - matterhorn
 snap_classic_packages:
   - powershell
   - pycharm-professional
@@ -207,9 +205,6 @@ pip_packages:
   - numpy
   - filelock
   - virtualenv
-  - dill
-  - tomlkit
-  - pylint
   - pycodestyle
   - google-auth-httplib2
   - prettytable
@@ -217,8 +212,6 @@ pip_packages:
   - wrapt
   - astroid
   - cachetools
-  - dill
-  - tomlkit
 #  - google-api-python-client
 fonts_packages:
   - ttf-ubuntu-font-family
