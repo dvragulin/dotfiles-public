@@ -94,6 +94,9 @@ pacman_packages:
 aur_packages:
   - rxvt                        # Terminal
   - termdbms
+  - lvm2
+  - ecryptfs-utils
+  - mdadm
   - network-manager-applet      # Applet for network manager
   - ncurses                     # Libs
   - chromedriver                # Chromedriver
