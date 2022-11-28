@@ -1,6 +1,7 @@
 " Blogs"
 https://vas3k.club/posts.rss                                                    " Blog"    "~Vas3k Club"
 https://www.redgregory.com/notion?format=rss                                    " Blog"    "~RedGregory Notion blog"
+https://modkam.ru/rsslatest.xml                                                 " Blog"    "~Modkam"
 
 " Technologies"
 https://habr.com/ru/rss/all/all/?fl=ru                                          " Tech"    "~Habr"
@@ -19,9 +20,7 @@ https://github.com/istio/istio/releases.atom                                    
 https://github.com/argoproj/argo-rollouts/releases.atom                         " ChLg"    "~Argo-rollouts"
 https://github.com/golang/go/tags.atom                                          " ChLg"    "~Go"
 https://github.com/python/cpython/tags.atom                                     " ChLg"    "~Python"
-https://github.com//releases.atom                " ChLg"    "~V"
-
-
+#https://github.com//releases.atom                " ChLg"    "~V"
 
 " ChangeLog"
 https://www.opennet.ru/opennews/opennews_6.rss                                  " ChLg"    "~OpenNet News"
@@ -46,6 +45,7 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCK5MedKoNJ5aRahfGOIGx6g    
 https://www.youtube.com/feeds/videos.xml?channel_id=UCU55LZT7oRxhX4GTvb5H4HA    " Yt"      "~Артур Крюков"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC8WjHJcS5ZhN2uV4de4o6Jg    " Yt"      "~SberMarket Tech"
 " Youtube:  Blogs"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCT2OIXoOGF1z9xWXiY00nkQ    " Yt"      "~Вастрик Клуб"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCm7SCpAUHK_9A8XlCQOAehg    " Yt"      "~Джастас Уолкер"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCsT7hk972FddMVdtGnD8tsA    " Yt"      "~Эд Халилов"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC5jJl00BwRPtXrecStzhNqw    " Yt"      "~Мастер House"
@@ -58,6 +58,7 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCoZiaJ2Yks-XzhyXoaNe3Dw    
 https://www.youtube.com/feeds/videos.xml?channel_id=UC0LacjtndcWf61vONpVVxCA    " Yt"      "~Arvet"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCsCCifMby57qV_UmrYGladQ    " Yt"      "~Awesome Restorations"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCBw12KKTLAFuPQlHZBe7sGw    " Yt"      "~Лествица"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCKHZsiBTqNW5OTbToLxMlmw    " Yt"      "~Дмитрий Боровик"
 
 " Telegram"
 https://rsshub.app/telegram/channel/severny_124a                                " Tg"      "~Канал ЖК "Северный" | ТСН"
@@ -65,3 +66,4 @@ https://rsshub.app/telegram/channel/a_articles                                  
 https://rsshub.app/telegram/channel/seniorsoftwarevlogger                       " Tg"      "~Senior Software Vlogger"
 https://rsshub.app/telegram/channel/sbermarket_tech                             " Tg"      "~SberMarket Tech"
 https://rsshub.app/telegram/channel/aliexpressgeeks                             " Tg"      "~Aliexpress for Geeks"
+
