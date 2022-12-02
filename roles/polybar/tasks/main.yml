@@ -105,3 +105,10 @@
     dest: "$HOME/.config/polybar/pyradio.sh"
     state: link
     force: yes
+
+- name: Link mic.sh script
+  file:
+    src: "$HOME/GIT/projects_home/dotfiles-public/roles/polybar/files/mic.sh"
+    dest: "$HOME/.config/polybar/mic.sh"
+    state: link
+    force: yes

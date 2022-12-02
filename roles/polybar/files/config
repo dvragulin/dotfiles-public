@@ -69,7 +69,7 @@ cursor-click          = pointer
 
 ;modules-center      =
 modules-left         = i3 sp2 xwindow
-modules-right        = cpu sp2 memory sp2 docker sp2 temperature sp2 updates-pac-yay sp2 trash sp2 filesystem_custom sp2 todoist jira_issues sp2 git_count git_mr git_wh sp2 pyradio sp2 volume sp2 translator sp2 xkeyboard sp2 weather sp2 calendar date sp2 mount_nas sp2
+modules-right        = cpu sp2 memory sp2 docker sp2 temperature sp2 updates-pac-yay sp2 trash sp2 filesystem_custom sp2 todoist jira_issues sp2 git_count git_mr git_wh sp2 pyradio sp2 mic sp2 volume sp2 translator sp2 xkeyboard sp2 weather sp2 calendar date sp2 mount_nas sp2
 
 ; Used:
 ;   [module/sp1]
@@ -190,7 +190,7 @@ label-volume-background = ${colors.background-alt}
 format-muted-prefix = " "
 format-muted-foreground = ${colors.foreground-alt}
 format-muted-background = ${colors.background-alt}
-label-muted = MUTED
+label-muted = "MUTED"
 
 bar-volume-width = 5
 bar-volume-foreground-0 = ${colors.foreground-alt}
@@ -408,7 +408,7 @@ menu-0-1-exec = $HOME/.config/polybar/pyradio.sh
 type = custom/script
 exec = /home/dvragulin/.config/polybar/updates.sh
 interval = 1200
-label = %{T4}%{T-} %output%
+label = %{T4}%{T-} %output%
 
 ; --- Module ----------------------------------------------------------------------------------------------------------
 [module/trash]
@@ -490,6 +490,14 @@ type = custom/script
 exec = /home/dvragulin/.config/polybar/mount_nas.sh
 click-left = sshfs root@192.168.1.3:/volume1 ~/NAS
 click-right = umount ~/NAS
+interval = 1
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/mic]
+type = custom/script
+exec = /home/dvragulin/.config/polybar/mic.sh
+click-left = amixer set Capture toggle
+click-right = amixer set Capture toggle
 interval = 1
 
 ; --- Module ----------------------------------------------------------------------------------------------------------
