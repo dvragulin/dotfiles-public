@@ -12,7 +12,7 @@ def request_to_yadnex(token, lat, lon):
 
     response = requests.get(url=URL, headers=header)
     if response.status_code == 403:
-        exit('' )
+        exit('   ' )
     weather = json.loads(response.content.decode('utf-8'))
 
     return weather
