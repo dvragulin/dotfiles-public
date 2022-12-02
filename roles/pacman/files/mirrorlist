@@ -1,32 +1,32 @@
 ##
 ## Manjaro Linux default mirrorlist
-## Generated on 2022-11-24 15:47
+## Generated on 2022-12-02 09:23
 ##
 ## Please use 'pacman-mirrors -f [NUMBER] [NUMBER]' to modify mirrorlist
 ## (Use 0 for all mirrors)
 ##
 
 ## Country : Russia
-Server = https://mirror.truenetwork.ru/manjaro/stable/$repo/$arch
+Server = https://mirror.yandex.ru/mirrors/manjaro/stable/$repo/$arch
 
-## Country : Austria
-Server = https://mirror.easyname.at/manjaro/stable/$repo/$arch
+## Country : Netherlands
+Server = http://ftp.snt.utwente.nl/pub/linux/manjaro/stable/$repo/$arch
 
-## Country : Sweden
-Server = https://ftpmirror1.infania.net/mirror/manjaro/stable/$repo/$arch
+## Country : Germany
+Server = https://mirror.23m.com/manjaro/stable/$repo/$arch
 
-## Country : Georgia
-Server = https://repos.silknet.com/manjaro/stable/$repo/$arch
+## Country : Germany
+Server = https://mirror.moson.org/manjaro/stable/$repo/$arch
 
-## Country : United_States
-Server = https://uvermont.mm.fcix.net/manjaro/stable/$repo/$arch
+## Country : Germany
+Server = https://ftp.halifax.rwth-aachen.de/manjaro/stable/$repo/$arch
 
-## Country : Canada
-Server = https://mirror.csclub.uwaterloo.ca/manjaro/stable/$repo/$arch
-
-## Country : Canada
-Server = https://muug.ca/mirror/manjaro/stable/$repo/$arch
+## Country : Portugal
+Server = http://ftp.dei.uc.pt/pub/linux/manjaro/stable/$repo/$arch
 
 ## Country : United_States
-Server = https://irltoolkit.mm.fcix.net/manjaro/stable/$repo/$arch
+Server = https://mirrors.sonic.net/manjaro/stable/$repo/$arch
+
+## Country : China
+Server = https://mirrors.sjtug.sjtu.edu.cn/manjaro/stable/$repo/$arch
 
