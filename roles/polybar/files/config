@@ -408,7 +408,7 @@ menu-0-1-exec = $HOME/.config/polybar/pyradio.sh
 type = custom/script
 exec = /home/dvragulin/.config/polybar/updates.sh
 interval = 1200
-label = %{T4}%{T-} %output%
+;label = %{T4}%{T-} %output%
 
 ; --- Module ----------------------------------------------------------------------------------------------------------
 [module/trash]
