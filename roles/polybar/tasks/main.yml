@@ -36,10 +36,17 @@
     state: link
     force: yes
 
-- name: Link updates.sh script
+- name: Link updates_aur.shscript
   file:
-    src: "$HOME/GIT/projects_home/dotfiles-public/roles/polybar/files/updates.sh"
-    dest: "$HOME/.config/polybar/updates.sh"
+    src: "$HOME/GIT/projects_home/dotfiles-public/roles/polybar/files/updates_aur.sh"
+    dest: "$HOME/.config/polybar/updates_aur.sh"
+    state: link
+    force: yes
+
+- name: Link updates_pacman.sh script
+  file:
+    src: "$HOME/GIT/projects_home/dotfiles-public/roles/polybar/files/updates_pacman.sh"
+    dest: "$HOME/.config/polybar/updates_pacman.sh"
     state: link
     force: yes
 

@@ -69,33 +69,7 @@ cursor-click          = pointer
 
 ;modules-center      =
 modules-left         = i3 sp2 xwindow
-modules-right        = cpu sp2 memory sp2 docker sp2 temperature sp2 updates-pac-yay sp2 trash sp2 filesystem_custom sp2 todoist jira_issues sp2 git_count git_mr git_wh sp2 pyradio sp2 mic sp2 volume sp2 translator sp2 xkeyboard sp2 weather sp2 calendar date sp2 mount_nas sp2
-
-; Used:
-;   [module/sp1]
-;   [module/sp2]
-;   [module/netspdeth]
-;   [module/eth]
-;   [module/date]
-;   [module/volume]
-;   [module/battery0]
-;   [module/xwindow]
-;   [module/xkeyboard]
-;   [module/i3]
-;   [module/music]
-;   [module/updates-pac-yay]
-;   [module/trash]
-;   [module/filesystem_custom]
-;   [module/cpu]
-;   [module/memory]
-;   [module/todoist]
-;   [module/git_count]
-;   [module/git_mr]
-;   [module/docker]
-
-; UnUsed:
-;   [module/netspdwlan]
-;   [module/wlan]
+modules-right        = cpu sp2 memory sp2 temperature sp2 docker sp2 updates_pacman sp2 updates_aur sp2 trash sp2 filesystem_custom sp2 todoist jira_issues sp2 git_count git_mr git_wh sp2 pyradio sp2 mic sp2 volume sp2 translator sp2 xkeyboard sp2 weather sp2 calendar date sp2 mount_nas sp2
 
 ; ---------------------------------------------------------------------------------------------------------------------
 ; --- Used Modules ----------------------------------------------------------------------------------------------------
@@ -402,13 +376,20 @@ menu-0-0 = 
 menu-0-0-exec = killall -q mpv
 menu-0-1 = 
 menu-0-1-exec = $HOME/.config/polybar/pyradio.sh
+menu-0-2 = 
+menu-0-2-exec = ymp
 
 ; --- Module ----------------------------------------------------------------------------------------------------------
-[module/updates-pac-yay]
+[module/updates_pacman]
 type = custom/script
-exec = /home/dvragulin/.config/polybar/updates.sh
+exec = /home/dvragulin/.config/polybar/updates_pacman.sh
 interval = 1200
-;label = %{T4}%{T-} %output%
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/updates_aur]
+type = custom/script
+exec = /home/dvragulin/.config/polybar/updates_aur.sh
+interval = 1200
 
 ; --- Module ----------------------------------------------------------------------------------------------------------
 [module/trash]
