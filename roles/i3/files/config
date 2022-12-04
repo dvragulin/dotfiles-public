@@ -26,7 +26,6 @@ exec_always feh --bg-scal --no-xinerama $HOME/GIT/projects_home/dotfiles-public/
 # --- Applications -------------------------------------------------------------------------------------------------- #
 
 exec --no-startup-id nm-applet --sm-disable                                             # Run Applet: NetworkManager
-exec --no-startup-id discord                                                            # Run Discord
 exec --no-startup-id mattermost-desktop                                                 # Run Mattermost
 exec --no-startup-id telegram-desktop                                                   # Run Telegram
 exec --no-startup-id keepassxc                                                          # Run Password manager
@@ -35,9 +34,10 @@ exec --no-startup-id guake                                                      
 exec --no-startup-id optimus-manager-qt                                                 # Run Optimus Manager
 exec --no-startup-id firefox                                                            # Run Web Browser
 exec --no-startup-id flameshot                                                          # Run Screenshot software
-exec --no-startup-id thunderbird                                                        # Run mail agent
 exec --no-startup-id systemsettings                                                     # Run systemsettings
-# exec --no-startup-id todoist                                                            # Run Todoist task manager
+# exec --no-startup-id thunderbird                                                      # Run mail agent
+# exec --no-startup-id discord                                                          # Run Discord
+# exec --no-startup-id todoist                                                          # Run Todoist task manager
 # exec --no-startup-id spectacle                                                        # Run Screenshot software
 # exec --no-startup-id slack                                                            # Run Slack
 # exec --no-startup-id whatsdesk                                                        # Run WhatsDesk

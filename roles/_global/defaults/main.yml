@@ -62,7 +62,6 @@ pacman_packages:
   - zsh
   - w3m
   - w3m-imgcat
-  - aerc                  # Mail clients
   - pcmanfm
   - traceroute
   - ueberzug
@@ -94,6 +93,8 @@ pacman_packages:
 aur_packages:
   - rxvt                        # Terminal
   - termdbms
+  - gnupg
+  - pam-gnupg
   - lvm2
   - ecryptfs-utils
   - poetry                      # package manager for python
@@ -167,6 +168,10 @@ aur_packages:
   - browsh
   - taskwarrior-tui             # Todo manager tui
   - ceph-libs-bin
+  - neomutt                     # Mail clients
+  - isync                       # downloads and syncs the mail (required if storing IMAP mail locally).
+  - msmtp                       # sends the email
+  - pass                        # safely encrypts passwords (required at install).
 snap_packages:
   - mattermost-desktop
   - discord               # Voice chat

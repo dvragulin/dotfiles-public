@@ -36,13 +36,14 @@ fi
 # Other aliases
 alias vim="nvim"
 alias mk="minikube"
-alias mail="aerc"
-alias email="aerc"
+alias mail="neomutt"
+alias email="neomutt"
 alias vf='nvim $(fzf)'
 alias cf='cat $(fzf)'
 alias yt='ytfzf'
 alias h='history'
 alias r='ranger'
+alias mkdir='mkdir -p'
 alias t='tmux'
 #alias ts='tmux list-sessions'
 alias tf='terraform'

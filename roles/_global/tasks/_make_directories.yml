@@ -49,6 +49,7 @@
   - '$HOME/.config/nvim'
   - '$HOME/.config/nvim/lua'
   - '$HOME/.config/nvim/autoload'
+  - '$HOME/.neomutt'
   - '$HOME/.ssh'
   - '$HOME/.ssh/config.d'
   - '$HOME/.tmux'
