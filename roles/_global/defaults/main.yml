@@ -87,6 +87,8 @@ pacman_packages:
   - dnsmasq
   - bridge-utils
   - openbsd-netcat
+  - iptables
+  - libguestfs
   - gpg-tui
   - newsboat                    # Rss reader
   - lynx
