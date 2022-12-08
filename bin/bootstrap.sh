@@ -56,7 +56,13 @@ cd $HOME/GIT/projects_home/dotfiles-public
 
 
 # --- Run Ansible playbook --------------------------------------------------------------------------------------------
+TIME_START=$(date +%s)
 ansible-playbook playbook.yml --extra-vars "ansible_sudo_pass=$PW"
+TIME_END=$(date +%s)
+
+DIFF=$(( $TIME_END - $TIME_START ))
+echo "It took $DIFF seconds"
+
 
 # --- Run go for intall custom apps -----------------------------------------------------------------------------------
 #go install github.com/fedeztk/got/cmd/got@latest
@@ -71,6 +77,6 @@ echo $PW | chsh -s "$(which zsh)"
 
 # --- Finaly ----------------------------------------------------------------------------------------------------------
 git home
-echo "Bootstrap complete. Successfully set up environment."
+echo "Bootstrap complete. Successfully set up environment Time:[$TIME_DIFF]"
 echo
 
