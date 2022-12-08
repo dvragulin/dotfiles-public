@@ -1,32 +1,39 @@
 ##
-## Manjaro Linux default mirrorlist
-## Generated on 2022-12-02 09:23
+## Manjaro Linux custom mirrorlist
+## Generated on 2022-12-08 11:53
 ##
-## Please use 'pacman-mirrors -f [NUMBER] [NUMBER]' to modify mirrorlist
-## (Use 0 for all mirrors)
+## Please use 'pacman-mirrors -id' To reset custom mirrorlist
+## Please use 'pacman-mirrors -c all' To reset custom mirrorlist
+## To remove custom config run  'pacman-mirrors -c all'
 ##
 
-## Country : Russia
-Server = https://mirror.yandex.ru/mirrors/manjaro/stable/$repo/$arch
-
-## Country : Netherlands
-Server = http://ftp.snt.utwente.nl/pub/linux/manjaro/stable/$repo/$arch
-
-## Country : Germany
-Server = https://mirror.23m.com/manjaro/stable/$repo/$arch
+## Country : Global
+Server = https://mirrors.manjaro.org/repo/stable/$repo/$arch
 
 ## Country : Germany
 Server = https://mirror.moson.org/manjaro/stable/$repo/$arch
 
+## Country : Finland
+Server = https://manjaro.kyberorg.fi/stable/$repo/$arch
+
+## Country : Austria
+Server = https://mirror.easyname.at/manjaro/stable/$repo/$arch
+
+## Country : France
+Server = https://mirror.ibakerserver.pt/manjaro/stable/$repo/$arch
+
+## Country : Bulgaria
+Server = https://manjaro.ipacct.com/manjaro/stable/$repo/$arch
+
+## Country : Russia
+Server = https://mirror.truenetwork.ru/manjaro/stable/$repo/$arch
+
 ## Country : Germany
-Server = https://ftp.halifax.rwth-aachen.de/manjaro/stable/$repo/$arch
+Server = https://ftp.gwdg.de/pub/linux/manjaro/stable/$repo/$arch
 
-## Country : Portugal
-Server = http://ftp.dei.uc.pt/pub/linux/manjaro/stable/$repo/$arch
+## Country : Germany
+Server = https://mirror.tarnkappe.info/manjaro/stable/$repo/$arch
 
-## Country : United_States
-Server = https://mirrors.sonic.net/manjaro/stable/$repo/$arch
-
-## Country : China
-Server = https://mirrors.sjtug.sjtu.edu.cn/manjaro/stable/$repo/$arch
+## Country : Germany
+Server = https://mirror.alpix.eu/manjaro/stable/$repo/$arch
 
