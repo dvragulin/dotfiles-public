@@ -61,7 +61,7 @@ ansible-playbook playbook.yml --extra-vars "ansible_sudo_pass=$PW"
 TIME_END=$(date +%s)
 
 DIFF=$(( $TIME_END - $TIME_START ))
-echo "It took $DIFF seconds"
+TIME_DIFF=$(date -d@$DIFF -u +%H:%M:%S)
 
 
 # --- Run go for intall custom apps -----------------------------------------------------------------------------------

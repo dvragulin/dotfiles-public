@@ -22,7 +22,6 @@ pacman_packages:
   - tldr
   - tmux
   - ncdu
-  - qbittorrent
   - duf
   - firefox
   - mc
@@ -61,7 +60,6 @@ pacman_packages:
   - tk                    # Requested for gitk
   - zsh
   - w3m
-  - w3m-imgcat
   - pcmanfm
   - traceroute
   - ueberzug
@@ -92,9 +90,11 @@ pacman_packages:
   - gpg-tui
   - newsboat                    # Rss reader
   - lynx
+  - ipython
+  - astroid
 aur_packages:
+  - w3m-imgcat
   - rxvt                        # Terminal
-  - termdbms
   - gnupg
   - pam-gnupg
   - lvm2
@@ -116,7 +116,7 @@ aur_packages:
   - asbru-cm                    # SSH GUI Client
   - zoom                        # Voice/Video chat
   - google-chrome               # Web browser
-  - etcher                      # USB boot
+  - etcher-bin                  # USB boot
   - ttf-unifont                 # Fonts
   - ttf-weather-icons           # Weather
   - siji-git                    # Fonts
@@ -124,7 +124,7 @@ aur_packages:
   - lens-bin                    # k8s GUI cloent
   - bcal                        # Bytes calc
   - yandex-cloud-bin            # Yandex Cloud CLI
-  - gp-saml-gui                 # VPN Software
+  - gp-saml-gui-git             # VPN Software
   - globalprotect-openconnect   # VPN Software
   - yandex-music-player         # Music player
   - terraformer
@@ -141,12 +141,10 @@ aur_packages:
   - fx
   - gucharmap 
   - dive
-  - rtv
   - s3cmd
   - ytfzf
   - jitsi-meet-desktop
   - termshark
-  - markdown
   - dbeaver
   - dnsutils
   - yt-dlp
@@ -163,7 +161,7 @@ aur_packages:
   - jmtpfs
   - pyradio                     # Tool for radio
   - ctags
-  - flog
+  - flog-bin
   - sysz
   - grv                         # Git Viewer (git dash)
   - flameshot
@@ -192,7 +190,6 @@ pip_packages:
   - flake8
   - pyflakes
   - pylint
-  - ipython
   - prettytable
   - gitpython
   - proxmoxer
@@ -221,7 +218,6 @@ pip_packages:
   - prettytable
   - lazy-object-proxy
   - wrapt
-  - astroid
   - cachetools
 #  - google-api-python-client
 fonts_packages:
@@ -271,3 +267,6 @@ packages_to_delete:
   - virtualbox-sdk
   - kget
   - ceph-lib
+  - termdbms
+  - rtv
+  - markdown

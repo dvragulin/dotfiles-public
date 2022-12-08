@@ -17,12 +17,17 @@ def get_due_date(task):
         due_date = None
     return due_date
 
-
+# TODO: Переписать на requests
 def main(token):
     api = TodoistAPI(token)
     inbox_count, today_priority_count, today_count = 0, 0, 0
     today = datetime.today().strftime('%Y.%m.%d').replace(".", "-")
-    tasks = api.get_tasks()
+    try:
+        tasks = api.get_tasks()
+    except Exception as e:
+        inbox_count, today_priority_count, today_count = " ", " ", " "
+        print(beauty(inbox_count, today_priority_count, today_count))
+        exit(0)
 
     for task in tasks:
         due_date = get_due_date(task)
