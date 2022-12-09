@@ -93,6 +93,7 @@ pacman_packages:
   - ipython
   - astroid
 aur_packages:
+  - lnav                        # Single log analyser
   - w3m-imgcat
   - rxvt                        # Terminal
   - gnupg
