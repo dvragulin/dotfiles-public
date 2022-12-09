@@ -11,7 +11,7 @@ def request_to_yadnex(token, lat, lon):
     URL = f"https://api.weather.yandex.ru/v2/informers/?lat={lat}&lon={lon}"
 
     response = requests.get(url=URL, headers=header)
-    if response.status_code == 403:
+    if response.status_code != 200:
         exit('   ' )
     weather = json.loads(response.content.decode('utf-8'))
 
