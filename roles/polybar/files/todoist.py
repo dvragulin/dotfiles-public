@@ -3,11 +3,13 @@
 # req. pip install todoist-api-python
 
 import os
+import time
 from datetime import datetime
 from todoist_api_python.api import TodoistAPI
 
+
 def beauty(inbox, priority, today):
-    return f"  {inbox}   {today}  {priority}"
+    return f"  {inbox}    {today}   {priority}"
 
 
 def get_due_date(task):
@@ -17,17 +19,24 @@ def get_due_date(task):
         due_date = None
     return due_date
 
-# TODO: Переписать на requests
+
 def main(token):
     api = TodoistAPI(token)
     inbox_count, today_priority_count, today_count = 0, 0, 0
     today = datetime.today().strftime('%Y.%m.%d').replace(".", "-")
-    try:
-        tasks = api.get_tasks()
-    except Exception as e:
-        inbox_count, today_priority_count, today_count = " ", " ", " "
-        print(beauty(inbox_count, today_priority_count, today_count))
-        exit(0)
+
+    for request in range(3):
+        try:
+            tasks = api.get_tasks()
+        except Exception as e:
+            if request < 3 - 1:
+                time.sleep(10)
+                continue
+            else:
+                inbox_count, today_priority_count, today_count = " ", " ", " "
+                print(beauty(inbox_count, today_priority_count, today_count))
+                exit(0)
+        break
 
     for task in tasks:
         due_date = get_due_date(task)
