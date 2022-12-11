@@ -81,7 +81,7 @@ def beauty(weather_data):
     for key, value in conditions.items():
         if key == condition:
             icon = value
-    report = f"{temp}°  {feels_like}° {icon} "
+    report = f" {temp}°   {feels_like}°  {icon} "
     return report
 
 
