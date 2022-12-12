@@ -74,6 +74,7 @@ alias ld="/usr/bin/lazydocker"
 alias bootstrap="$HOME/GIT/projects_home/dotfiles-public/bin/bootstrap.sh"
 alias tw="taskwarrior-tui"
 alias kafkacat="kcat"
+alias log="lnav"
 
 # Extract anything alias
 extract () {
