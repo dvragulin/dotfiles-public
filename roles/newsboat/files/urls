@@ -23,6 +23,7 @@ https://github.com/python/cpython/tags.atom                                     
 #https://github.com//releases.atom                " ChLg"    "~V"
 
 " ChangeLog"
+https://www.haproxy.com/feed/                                                   " ChLg"    "~HaProxy News"
 https://www.opennet.ru/opennews/opennews_6.rss                                  " ChLg"    "~OpenNet News"
 https://devopsweeklyarchive.com/feed.xml                                        " ChLg"    "~Weekly: DevOps"
 https://cprss.s3.amazonaws.com/golangweekly.com.xml                             " ChLg"    "~Weekly: Golang"
@@ -50,7 +51,6 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCm7SCpAUHK_9A8XlCQOAehg    
 https://www.youtube.com/feeds/videos.xml?channel_id=UCsT7hk972FddMVdtGnD8tsA    " Yt"      "~Эд Халилов"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC5jJl00BwRPtXrecStzhNqw    " Yt"      "~Мастер House"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCPeeH82kz24sWSnBBbkRMVw    " Yt"      "~Автоинструктор-62"
-https://www.youtube.com/feeds/videos.xml?channel_id=UC1eFXmJNkjITxPFWTy6RsWg    " Yt"      "~Редакция"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCIyLQ6cL0eWj1jT6oyy148w    " Yt"      "~Клим Жуков"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCPaSV5b5GnC-IlvdhGx34wQ    " Yt"      "~Разведос А"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCEA6zZME0YY5jNsOyaGp3lA    " Yt"      "~Разведос А+"
