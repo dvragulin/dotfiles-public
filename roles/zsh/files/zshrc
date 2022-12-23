@@ -75,6 +75,7 @@ alias bootstrap="$HOME/GIT/projects_home/dotfiles-public/bin/bootstrap.sh"
 alias tw="taskwarrior-tui"
 alias kafkacat="kcat"
 alias log="lnav"
+alias tsh-login="tsh login --proxy=$TELEPORT_PROXY"
 
 # Extract anything alias
 extract () {
