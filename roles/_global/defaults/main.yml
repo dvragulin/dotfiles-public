@@ -164,6 +164,8 @@ aur_packages:
   - ctags
   - flog-bin
   - sysz
+  - lutris
+  - wine
   - grv                         # Git Viewer (git dash)
   - flameshot
   - browsh
