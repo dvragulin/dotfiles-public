@@ -99,6 +99,7 @@ aur_packages:
   - gnupg
   - pam-gnupg
   - lvm2
+  - glab
   - ecryptfs-utils
   - poetry                      # package manager for python
   - mdadm

@@ -76,6 +76,7 @@ alias tw="taskwarrior-tui"
 alias kafkacat="kcat"
 alias log="lnav"
 alias tsh-login="tsh login --proxy=$TELEPORT_PROXY"
+alias gl="glab"
 
 # Extract anything alias
 extract () {
