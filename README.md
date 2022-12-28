@@ -15,7 +15,7 @@ bash -c "$(wget -O- https://raw.githubusercontent.com/dvragulin/dotfiles-public/
 
 #### Requirements
 
-  - OS Manjaro Linux KDE
+  - OS Manjaro Linux
   - Private SSH Keys
   - Git
   - Wget
