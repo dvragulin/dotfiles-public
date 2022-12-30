@@ -148,6 +148,7 @@ aur_packages:
   - jitsi-meet-desktop
   - termshark
   - dbeaver
+  - todoist-git
   - dnsutils
   - yt-dlp
   - goaccess
