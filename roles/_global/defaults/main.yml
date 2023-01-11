@@ -123,7 +123,6 @@ aur_packages:
   - ttf-weather-icons           # Weather
   - siji-git                    # Fonts
   - tfswitch
-  - lens-bin                    # k8s GUI cloent
   - bcal                        # Bytes calc
   - yandex-cloud-bin            # Yandex Cloud CLI
   - gp-saml-gui-git             # VPN Software
