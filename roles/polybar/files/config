@@ -378,6 +378,8 @@ menu-0-1 = 
 menu-0-1-exec = $HOME/.config/polybar/pyradio.sh
 menu-0-2 = 
 menu-0-2-exec = ymp
+menu-0-3 = 
+menu-0-3-exec = firefox https://music.yandex.ru
 
 ; --- Module ----------------------------------------------------------------------------------------------------------
 [module/updates_pacman]
