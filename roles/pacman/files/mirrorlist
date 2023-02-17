@@ -1,29 +1,29 @@
 ##
 ## Manjaro Linux custom mirrorlist
-## Generated on 2023-02-13 10:31
+## Generated on 2023-02-16 16:19
 ##
 ## Please use 'pacman-mirrors -id' To reset custom mirrorlist
 ## Please use 'pacman-mirrors -c all' To reset custom mirrorlist
 ## To remove custom config run  'pacman-mirrors -c all'
 ##
 
+## Country : Finland
+Server = https://manjaro.kyberorg.fi/stable/$repo/$arch
+
 ## Country : Global
 Server = https://mirrors.manjaro.org/repo/stable/$repo/$arch
-
-## Country : Germany
-Server = https://mirror.moson.org/manjaro/stable/$repo/$arch
 
 ## Country : Russia
 Server = https://mirror.truenetwork.ru/manjaro/stable/$repo/$arch
 
-## Country : Austria
-Server = https://mirror.easyname.at/manjaro/stable/$repo/$arch
+## Country : Bulgaria
+Server = https://manjaro.ipacct.com/manjaro/stable/$repo/$arch
+
+## Country : Germany
+Server = https://mirror.moson.org/manjaro/stable/$repo/$arch
 
 ## Country : Germany
 Server = https://ftp.gwdg.de/pub/linux/manjaro/stable/$repo/$arch
-
-## Country : France
-Server = https://mirror.ibakerserver.pt/manjaro/stable/$repo/$arch
 
 ## Country : Germany
 Server = https://mirror.tarnkappe.info/manjaro/stable/$repo/$arch
