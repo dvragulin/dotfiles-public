@@ -1,7 +1,6 @@
 " Blogs"
 https://vas3k.club/posts.rss                                                    " Blog"    "~Vas3k Club"
 https://www.redgregory.com/notion?format=rss                                    " Blog"    "~RedGregory Notion blog"
-https://modkam.ru/rsslatest.xml                                                 " Blog"    "~Modkam"
 
 " Technologies"
 https://habr.com/ru/rss/all/all/?fl=ru                                          " Tech"    "~Habr"
