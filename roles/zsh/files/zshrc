@@ -55,7 +55,6 @@ alias youtube-watch='yt'
 alias youtube-download-audio='yt-dlp -x --audio-format mp3 --cookies-from-browser firefox'
 alias youtube-download-video='yt-dlp -f mp4 --cookies-from-browser firefox'
 alias vpn='sudo openconnect --protocol=gp --user=$ADFS_USER_WORK --os=linux-64 $VPN_WORK_SRV'
-alias td="todo q "
 alias radio="pyradio --play"
 alias systemctl-f="sysz"
 alias wtf="wtfutil"

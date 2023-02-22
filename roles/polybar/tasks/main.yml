@@ -119,3 +119,10 @@
     dest: "$HOME/.config/polybar/mic.sh"
     state: link
     force: yes
+
+- name: Link iot_kettle.py script
+  file:
+    src: "$HOME/GIT/projects_home/dotfiles-public/roles/polybar/files/iot_kettle.py"
+    dest: "$HOME/.config/polybar/iot_kettle.py"
+    state: link
+    force: yes

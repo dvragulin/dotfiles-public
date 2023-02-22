@@ -29,7 +29,7 @@ line-color           = #dfdfdf
 border-top-size      = 0
 border-bottom-size   = 0
 border-left-size     = 0
-border-right-size    = 0
+border-right-size    = -1
 padding-left         = 0
 padding-right        = 0
 module-margin-left   = 0
@@ -69,7 +69,7 @@ override-redirect    = false
 
 ;modules-center      =
 modules-left         = i3 sp2 xwindow
-modules-right        = cpu sp2 memory sp2 temperature sp2 docker sp2 updates_pacman sp2 updates_aur sp2 trash sp2 filesystem_custom sp2 todoist jira_issues sp2 git_count git_mr git_wh sp2 pyradio sp2 mic sp2 volume sp2 translator sp2 xkeyboard sp2 weather sp2 calendar date sp2 mount_nas sp2
+modules-right        = cpu sp2 memory sp2 temperature sp2 docker sp2 updates_pacman sp2 updates_aur sp2 trash sp2 filesystem_custom sp2 todoist jira_issues sp2 git_count git_mr git_wh sp2 pyradio sp2 mic sp2 volume sp2 translator sp2 xkeyboard sp2 weather sp2 calendar date sp2 iot_kettle sp2 mount_nas sp2
 
 ; ---------------------------------------------------------------------------------------------------------------------
 ; --- Used Modules ----------------------------------------------------------------------------------------------------
@@ -474,6 +474,14 @@ exec = /home/dvragulin/.config/polybar/mount_nas.sh
 click-left = sshfs root@192.168.1.3:/volume1 ~/NAS
 click-right = umount ~/NAS
 interval = 1
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/iot_kettle]
+type = custom/script
+exec = /home/dvragulin/.config/polybar/iot_kettle.py
+click-left = /home/dvragulin/.config/polybar/iot_kettle.py --command="ON"
+click-right = /home/dvragulin/.config/polybar/iot_kettle.py --command="OFF"
+interval = 100
 
 ; --- Module ----------------------------------------------------------------------------------------------------------
 [module/mic]
