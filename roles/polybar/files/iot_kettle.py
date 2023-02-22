@@ -85,5 +85,3 @@ if __name__ == '__main__':
     args = args_pars()
     main(args)
 
-# print("humidifier     󱠛󱑯󱑲󱑳󱑴󱑰")
-# print("kette 󱠚 󱠛 ")
