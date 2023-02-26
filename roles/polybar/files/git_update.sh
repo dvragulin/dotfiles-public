@@ -15,8 +15,7 @@ TIME_DIFF=$(date -d@$DIFF -u +%H:%M:%S)
 LINE=$(cat $HOME/.ansible.git_control.log| grep "ok=")
 RELEVANT=$(echo $LINE | awk '{print $3}' | awk -F '=' '{print $2}')
 CHANGED=$(echo $LINE | awk '{print $4}' | awk -F '=' '{print $2}')
-FAILED=$(echo $LINE | awk '{print $6}' | awk -F '=' '{print $2}')
-SKIPPED=$(echo $LINE | awk '{print $7}' | awk -F '=' '{print $2}')
+FAILED=$(echo $LINE | awk '{print $9}' | awk -F '=' '{print $2}')
 
 echo "It took $DIFF seconds"
 notify-send -a "Git" -u normal "Repositories have been updated:
@@ -24,7 +23,6 @@ notify-send -a "Git" -u normal "Repositories have been updated:
   Relevant: [$RELEVANT]
   Changed:  [$CHANGED]
   Failed:   [$FAILED]
-  Skipped:  [$SKIPPED]
 
 Time spent:[$TIME_DIFF]
 "
