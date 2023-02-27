@@ -19,13 +19,6 @@ icon = "󱠚"
 def device_action_off():
     data_json = json.loads('"devices": "id": "' + device_id + '","actions": [{"type": '
                                                                  '"devices.capabilities.on_off","state": {"instance": "on","value": false}}]')
-    # x = f"""{
-    #     "id": {device_id},
-    #     "actions": 7867567898,
-    #     "Email": "jen123@gmail.com",
-    #     "Hobbies":["Reading", "Sketching", "Horse Riding"]
-    #     }"""
-    # data_json = json.loads(x)
 
     requests.post("https://api.iot.yandex.net/v1.0/devices/actions", headers=headers, json=data_json)
     exit(0)
@@ -43,6 +36,7 @@ def get_status():
     json_object = json.loads(response.content.decode('utf-8'))
     if json_object['state'] == 'offline':
         print(f"{icon}: ")
+        os.system('notify-send --app-name="Kittle" -u normal "Чайник отключен от сети"')
         exit(0)
     return json_object
 
