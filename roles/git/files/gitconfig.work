@@ -64,5 +64,6 @@
     gm = ! git checkout master && git pull || git pull
     rb = rebase
     dash = ! grv
+    update-all-refs = ! .config/polybar/git_update.sh
 [gc]
     autoDetach = false
