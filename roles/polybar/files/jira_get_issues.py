@@ -17,7 +17,7 @@ try:
     jira_filter = f'assignee = {jira_login} AND resolution = Unresolved AND status not in ' \
                f'(Canceled, Completed, Declined, Tested) ORDER BY Rank ASC'
 
-    jira_filter_backlog = f'assignee in (EMPTY) AND summary ~ "Запрос доступов*" AND project = INFRADEV ' \
+    jira_filter_backlog = f'assignee in (EMPTY) AND Labels = from_ITSD AND project = INFRADEV ' \
                           f'AND status in ("In Progress", Backlog, Blocked, Open, Reopened) AND "Assigned team" = ' \
                           f'DevOps-1st-line ORDER BY created DESC'
 
