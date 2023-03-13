@@ -12,7 +12,6 @@
   roles:
     - pacman
     - git
-    - todoist
     - newsboat
     - i3
     - rtv

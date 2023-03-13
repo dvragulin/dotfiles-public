@@ -78,6 +78,7 @@ alias tsh-login="tsh login --proxy=$TELEPORT_PROXY"
 alias gl="glab"
 alias rg="rg -M 1000"
 alias h="helm"
+alias todo="todoist-cli"
 
 # Extract anything alias
 extract () {
