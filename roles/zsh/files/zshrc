@@ -79,6 +79,7 @@ alias gl="glab"
 alias rg="rg -M 1000"
 alias h="helm"
 alias todo="todoist-cli"
+alias td="todoist-cli q "
 
 # Extract anything alias
 extract () {
