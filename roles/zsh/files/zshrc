@@ -80,6 +80,7 @@ alias rg="rg -M 1000"
 alias h="helm"
 alias todo="todoist-cli"
 alias td="todoist-cli q "
+alias kk="k9s"
 
 # Extract anything alias
 extract () {
