@@ -175,7 +175,6 @@ aur_packages:
   - isync                       # downloads and syncs the mail (required if storing IMAP mail locally).
   - msmtp                       # sends the email
   - pass                        # safely encrypts passwords (required at install).
-  - openlens-bin
 snap_packages:
   - mattermost-desktop
   - discord               # Voice chat
