@@ -1,6 +1,6 @@
 ##
 ## Manjaro Linux custom mirrorlist
-## Generated on 2023-05-05 14:58
+## Generated on 2023-05-12 15:14
 ##
 ## Please use 'pacman-mirrors -id' To reset custom mirrorlist
 ## Please use 'pacman-mirrors -c all' To reset custom mirrorlist
@@ -10,20 +10,20 @@
 ## Country : Finland
 Server = https://manjaro.kyberorg.fi/stable/$repo/$arch
 
+## Country : France
+Server = https://mirror.ibakerserver.pt/manjaro/stable/$repo/$arch
+
 ## Country : Russia
 Server = https://mirror.truenetwork.ru/manjaro/stable/$repo/$arch
 
-## Country : Global
-Server = https://mirrors.manjaro.org/repo/stable/$repo/$arch
-
-## Country : France
-Server = https://mirror.ibakerserver.pt/manjaro/stable/$repo/$arch
+## Country : Austria
+Server = https://mirror.easyname.at/manjaro/stable/$repo/$arch
 
 ## Country : Germany
 Server = https://mirror.alpix.eu/manjaro/stable/$repo/$arch
 
-## Country : Austria
-Server = https://mirror.easyname.at/manjaro/stable/$repo/$arch
+## Country : Global
+Server = https://mirrors.manjaro.org/repo/stable/$repo/$arch
 
 ## Country : Bulgaria
 Server = https://manjaro.ipacct.com/manjaro/stable/$repo/$arch
