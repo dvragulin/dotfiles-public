@@ -147,6 +147,7 @@ aur_packages:
   - ytfzf
   - jitsi-meet-desktop
   - termshark
+  - wireshark-git
   - dbeaver
   - todoist-git
   - dnsutils
