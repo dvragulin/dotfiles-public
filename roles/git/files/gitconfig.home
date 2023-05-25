@@ -8,6 +8,7 @@
 [core]
     editor = vim
 	autocrlf = input
+	excludesfile = ~/.gitignore
 [http]
 	sslVerify = false
 [credential]
