@@ -66,7 +66,14 @@ alias l="ls"
 alias ll="ls -all"
 alias lll="l -L 3 -D"
 alias calc="bcal"
-alias top="/usr/bin/btop"
+alias top="/usr/bin/htop"
+alias top-beauty="/usr/bin/btop"
+alias top-max="/usr/bin/glances"
+alias top-dns="/usr/bin/dnstop"
+alias top-disk='echo "Please run itotop with sudo rigths"'
+alias top-netw='echo "Please run iftop with sudo rigths"'
+alias top-power='echo "Please run powertop with sudo rigths"'
+alias top-x-resources="/usr/bin/xrestop"
 alias cat="/usr/bin/bat"
 alias lg="/usr/bin/lazygit"
 alias ld="/usr/bin/lazydocker"
@@ -81,6 +88,7 @@ alias h="helm"
 alias todo="todoist-cli"
 alias td="todoist-cli q "
 alias kk="k9s"
+alias mirror-update='reflector -c "Russia" -f 20 -l 20 -p https -p http -n 20 --save /etc/pacman.d/mirrorlist --sort rate'
 
 # Extract anything alias
 extract () {
@@ -104,7 +112,8 @@ extract () {
 }
 
 # Update smb-cli
-export PATH="$HOME/.go/bin:$HOME/.sbm-cli/usr/bin:$PATH"
-autoload -U compinit; compinit
-source /home/dvragulin/.sbm-cli/completion/zsh/sbm-cli
+#export PATH="$HOME/.go/bin:$HOME/.sbm-cli/usr/bin:$PATH"
+#autoload -U compinit; compinit
+#source /home/dvragulin/.sbm-cli/completion/zsh/sbm-cli
 
+___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
