@@ -29,6 +29,7 @@ pacman_packages:
   - ncdu
   - duf
   - firefox
+  - iftop
   - mc
   - gnupg
   - pass
@@ -95,30 +96,55 @@ pacman_packages:
   - lynx
   - ipython
   - astroid
-aur_packages:
-  - reflector-mirrorlist-update
-  - imwheel                     # Mouse speed
   - cython
   - lnav                        # Single log analyser
+  - glab
+  - ecryptfs-utils
+  - mdadm
+  - network-manager-applet      # Applet for network manager
+  - ncurses                     # Libs
+  - btop                        # Pretty Top :)
+  - k9s                         # k8s tui tool
+  - helm                        # k8s deploy tool
+  - docker
+  - docker-compose
+  - fzf                         # Fuzzy finder
+  - fx
+  - gucharmap
+  - dive
+  - s3cmd
+  - ytfzf
+  - termshark
+  - dbeaver
+  - yt-dlp
+  - goaccess
+  - go-yq
+  - flameshot
+  - taskwarrior-tui             # Todo manager tui
+  - neomutt                     # Mail clients
+  - isync                       # downloads and syncs the mail (required if storing IMAP mail locally).
+  - msmtp                       # sends the email
+  - pass                        # safely encrypts passwords (required at install).
+  - ctags
+  - git-delta                   # Diff tool
+  - bottom
+  - vte3
+  - gtk2-perl
+  - globalprotect-openconnect   # VPN Software
+  - lvm2
+  - discord                     # Voice chat
+
+aur_packages:
+  - reflector-mirrorlist-update
   - w3m-imgcat
   - rxvt                        # Terminal
   - gnupg
   - pam-gnupg
-  - lvm2
-  - glab
-  - ecryptfs-utils
   - poetry                      # package manager for python
-  - mdadm
-  - network-manager-applet      # Applet for network manager
-  - ncurses                     # Libs
   - chromedriver                # Chromedriver
-  - git-delta                   # Diff tool
   - wakeonlan                   # Tool for send wakeup
-  - lazydocker                  # TUI for Docker 
+  - lazydocker                  # TUI for Docker
   - hstr                        # History tool
-  - bottom
-  - vte3
-  - gtk2-perl
   - glab                        # GitLab cli
   - dockle                      # Container diagnostic tool
   - google-chrome               # Web browser
@@ -127,66 +153,43 @@ aur_packages:
   - bcal                        # Bytes calc
   - yandex-cloud-bin            # Yandex Cloud CLI
   - gp-saml-gui-git             # VPN Software
-  - globalprotect-openconnect   # VPN Software
   - yandex-music-player         # Music player
   - terraformer
   - transmission-remote-tui-git # Torrent client
-  - helm                        # k8s deploy tool
   - duck
-  - k9s                         # k8s tui tool
   - multiwerf-bin
-  - urlview
-  - docker
-  - docker-compose
   - cointop-bin
-  - fzf                         # Fuzzy finder
-  - fx
-  - gucharmap 
-  - dive
-  - s3cmd
-  - ytfzf
+  - urlview
   - jitsi-meet-desktop
-  - termshark
-  - wireshark-git
-  - dbeaver
   - todoist-git
+  - wireshark-git
   - dnsutils
-  - yt-dlp
-  - goaccess
   - postman-bin
   - kafkacat-git
   - ethr
   - makepasswd
   - grpcurl
   - yandex-disk
-  - btop                        # Pretty Top :) 
   - smartgit
-  - go-yq
   - jmtpfs
   - pyradio                     # Tool for radio
-  - ctags
   - flog-bin
   - sysz
   - grv                         # Git Viewer (git dash)
-  - flameshot
-  - browsh
-  - taskwarrior-tui             # Todo manager tui
   - ceph-libs-bin
-  - neomutt                     # Mail clients
-  - isync                       # downloads and syncs the mail (required if storing IMAP mail locally).
-  - msmtp                       # sends the email
-  - pass                        # safely encrypts passwords (required at install).
+  - browsh
   - mattermost-desktop-bin
+  - dnstop
+
 snap_packages:
-  - discord               # Voice chat
-  - whatsdesk
-  - skype
   - core20
+
 snap_classic_packages:
   - powershell
   - pycharm-professional
   - goland
   - datagrip
+
 pip_packages:
   - requests
   - pynvim
@@ -223,6 +226,7 @@ pip_packages:
   - lazy-object-proxy
   - wrapt
   - cachetools
+
 fonts_packages:
   - ttf-unifont                 # Fonts
   - ttf-weather-icons           # Weather
@@ -265,7 +269,6 @@ packages_to_delete:
   - kate
   - skanlite
   - okular
-  - steam-manjaro
   - konversation
   - qbittorrent
   - pidgin
