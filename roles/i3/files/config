@@ -30,11 +30,11 @@ exec --no-startup-id mattermost-desktop                                         
 exec --no-startup-id telegram-desktop                                                   # Run Telegram
 exec --no-startup-id keepassxc                                                          # Run Password manager
 exec --no-startup-id gpclient                                                           # Run VPN Client
-exec --no-startup-id guake                                                              # Run Guake
 exec --no-startup-id optimus-manager-qt                                                 # Run Optimus Manager
-exec --no-startup-id firefox                                                            # Run Web Browser
+exec --no-startup-id google-chrome-stable                                               # Run Web Browser
 exec --no-startup-id flameshot                                                          # Run Screenshot software
 exec --no-startup-id systemsettings                                                     # Run systemsettings
+#exec --no-startup-id guake                                                              # Run Guake
 # exec --no-startup-id thunderbird                                                      # Run mail agent
 # exec --no-startup-id discord                                                          # Run Discord
 # exec --no-startup-id todoist                                                          # Run Todoist task manager
