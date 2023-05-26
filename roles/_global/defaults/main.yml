@@ -3,17 +3,22 @@
 
 pacman_packages:
   - base-devel
+  - xorg-xrandr
   - vim
   - neovim
   - vim-runtime
   - vscode
   - rofi
   - openssh
+  - iotop
   - gparted
   - net-tools
   - rsync
   - ntfs-3g
+  - glances
   - vagrant
+  - alsa-lib
+  - alsa-utils-git
   - tcpdump
   - snappy
   - pulsemixer
@@ -72,9 +77,7 @@ pacman_packages:
   - postgresql
   - phpmyadmin
   - mysql-workbench
-  - gtk3
   - gobject-introspection
-  - webkit2gtk
   - mpv
   - unzip
   - ripgrep
@@ -93,6 +96,8 @@ pacman_packages:
   - ipython
   - astroid
 aur_packages:
+  - reflector-mirrorlist-update
+  - imwheel                     # Mouse speed
   - cython
   - lnav                        # Single log analyser
   - w3m-imgcat
@@ -116,13 +121,8 @@ aur_packages:
   - gtk2-perl
   - glab                        # GitLab cli
   - dockle                      # Container diagnostic tool
-  - asbru-cm                    # SSH GUI Client
-  - zoom                        # Voice/Video chat
   - google-chrome               # Web browser
   - etcher-bin                  # USB boot
-  - ttf-unifont                 # Fonts
-  - ttf-weather-icons           # Weather
-  - siji-git                    # Fonts
   - tfswitch
   - bcal                        # Bytes calc
   - yandex-cloud-bin            # Yandex Cloud CLI
@@ -176,8 +176,8 @@ aur_packages:
   - isync                       # downloads and syncs the mail (required if storing IMAP mail locally).
   - msmtp                       # sends the email
   - pass                        # safely encrypts passwords (required at install).
+  - mattermost-desktop-bin
 snap_packages:
-  - mattermost-desktop
   - discord               # Voice chat
   - whatsdesk
   - skype
@@ -223,8 +223,9 @@ pip_packages:
   - lazy-object-proxy
   - wrapt
   - cachetools
-#  - google-api-python-client
 fonts_packages:
+  - ttf-unifont                 # Fonts
+  - ttf-weather-icons           # Weather
   - ttf-ubuntu-font-family
   - ttf-font-awesome
   - ttf-freefont
@@ -232,8 +233,14 @@ fonts_packages:
   - ttf-droid
   - ttf-roboto
   - ttf-hack
+  - ttf-dejavu
+  - ttf-noto-nerd 
+  - font-awesome-5 
+  - nerd-fonts-meta
   - noto-fonts
+  - noto-fonts-extra
   - terminus-font
+  - siji-git                    # Fonts
   - arc-gtk-theme
   - papirus-icon-theme
 
@@ -272,5 +279,7 @@ packages_to_delete:
   - kget
   - ceph-lib
   - termdbms
+  - asbru-cm                    # SSH GUI Client
   - rtv
   - markdown
+  - zoom                        # Voice/Video chat
