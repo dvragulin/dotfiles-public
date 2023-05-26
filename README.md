@@ -1,6 +1,6 @@
 # Dotfiles
 
-Personal Ansible roles for installing i3 on Manjaro KDE and applying my dotfiles. 
+Personal Ansible roles for installing i3 on Arch Linux and applying my dotfiles. 
 
 #### Usage
 ```
