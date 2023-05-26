@@ -52,6 +52,7 @@
   - '$HOME/.config/btop'
   - '$HOME/.config/got'
   - '$HOME/.config/yandex-disk'
+  - '$HOME/.config/yandex-cloud'
   - '$HOME/.config/pyradio/'
   - '$HOME/.config/pyradio/themes'
   - '$HOME/.config/jesseduffield/lazygit'
