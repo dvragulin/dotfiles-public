@@ -10,7 +10,6 @@
   hosts: DESKTOP
   become: no
   roles:
-    - pacman
     - git
     - newsboat
     - i3
@@ -40,5 +39,5 @@
     - avatars
     - keychron
     - lazygit
-#    - vim
+    - vim
 
