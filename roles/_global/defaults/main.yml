@@ -25,6 +25,10 @@ pacman_packages:
   - guake
   - ranger
   - tldr
+  - nvidia # perf
+  - xf86-video-nouveau # perf OpenGL
+  - nvidia-settings # perf add
+  - cpupower # perf
   - tmux
   - ncdu
   - duf
@@ -54,6 +58,7 @@ pacman_packages:
   - dolphin
   - viewnior
   - speedtest-cli
+  - sshfs                 # For ssh connection to NAS
   - nmap
   - telegram-desktop
   - lazygit
@@ -135,6 +140,10 @@ pacman_packages:
   - discord                     # Voice chat
 
 aur_packages:
+  - cpupower-gui # perf
+  - ananicy # perf
+  - optimus-manager # perf
+  - optimus-manager-qt  # perf
   - reflector-mirrorlist-update
   - w3m-imgcat
   - rxvt                        # Terminal

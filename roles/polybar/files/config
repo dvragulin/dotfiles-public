@@ -250,7 +250,7 @@ blacklist-1 = scroll lock
 format = <label-layout><label-indicator>
 format-spacing = 0
 
-format-prefix = "  "
+format-prefix = "󰊿  "
 format-prefix-foreground = ${colors.foreground-alt}
 format-prefix-background = ${colors.background-alt}
 ;format-prefix-underline = ${colors.foreground}
