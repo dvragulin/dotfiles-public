@@ -13,7 +13,7 @@ client_id = eget("IOT_Y_CLIENT_ID")
 client_secret = eget("IOT_Y_CLIENT_SECRET")
 headers = {'Authorization': f'Bearer {token}'}
 device_id = "fbba12b6-6309-42ea-9ac2-2e2c3dbefce1"
-icon = "󱠚"
+icon = "󰛊 "
 
 
 def device_action_off():
