@@ -52,8 +52,8 @@
 [tag]
 	forceSignAnnotated = true
 [alias]
-    home = ! ln -sf $HOME/.gitconfig.home $HOME/.gitconfig && echo ' gitconfig.home has been successfully applied! ' && echo   > $HOME/.gitconfig.status ; = U+F7DD
-    work = ! ln -sf $HOME/.gitconfig.work $HOME/.gitconfig && echo ' gitconfig.work has been successfully applied! ' && echo   > $HOME/.gitconfig.status ; = U+F6D6
+    home = ! ln -sf $HOME/.gitconfig.home $HOME/.gitconfig && echo '  gitconfig.home has been successfully applied! ' && echo " " > $HOME/.gitconfig.status
+    work = ! ln -sf $HOME/.gitconfig.work $HOME/.gitconfig && echo ' 󱕱 gitconfig.work has been successfully applied! 󱕱' && echo "󱕱 " > $HOME/.gitconfig.status
     lg = log --graph --graph --abbrev-commit --decorate --format=format:'%C(blue)%h%C(reset)%C(white)  %C(reset)%C(green)%cr%C(reset)%C(white)  %C(reset)%C(yellow)%d%C(reset) %C(reset)%C(white)%s%C(reset) %C(dim white) %an' --all
     lp = log -p
     st = status -s
