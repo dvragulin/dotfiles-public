@@ -18,7 +18,7 @@
   - '$HOME/Library'
   - '$HOME/NAS'
   - '$HOME/Shared'
-  - '$HOME/Temp'
+  - '$HOME/tmp'
   - '$HOME/GIT'
   - '$HOME/GIT/projects_home'
   - '$HOME/GIT/projects_home/_ansible-collection'
