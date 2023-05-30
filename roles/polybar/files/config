@@ -69,7 +69,7 @@ override-redirect    = false
 
 ;modules-center      =
 modules-left         = i3 sp2 xwindow
-modules-right        = cpu sp2 memory sp2 temperature sp2 docker sp2 updates_pacman sp2 updates_aur sp2 trash sp2 filesystem_custom sp2 todoist jira_issues sp2 git_count git_mr git_wh sp2 pyradio sp2 mic sp2 volume sp2 translator sp2 xkeyboard sp2 weather sp2 calendar date sp2 iot_kettle sp2 mount_nas sp2
+modules-right        = cpu sp2 memory sp2 temperature sp2 docker sp2 updates_pacman sp2 updates_aur sp2 trash sp2 filesystem_custom sp2 jira_issues sp2 git_count git_mr git_wh sp2 pyradio sp2 mic sp2 pulseaudio sp2 translator sp2 xkeyboard sp2 weather sp2 calendar date sp2 iot_kettle sp2 mount_nas sp2
 
 ; ---------------------------------------------------------------------------------------------------------------------
 ; --- Used Modules ----------------------------------------------------------------------------------------------------
@@ -147,47 +147,43 @@ click-right = google-chrome-stable ${env:WORK_CALENDAR:}
 interval = 920
 
 ; --- Module ----------------------------------------------------------------------------------------------------------
-[module/volume]
-type = internal/alsa
+[module/pulseaudio]
+type = internal/pulseaudio
+use-ui-max = true
+interval = 5
 
-master-soundcard = default
-speaker-soundcard = default
-headphone-soundcard = default
+; Available tags:
+;   <label-volume> (default)
+;   <ramp-volume>
+;   <bar-volume>
+format-volume = <ramp-volume> <label-volume>
 
-master-mixer = Master
+; Available tags:
+;   <label-muted> (default)
+;   <ramp-volume>
+;   <bar-volume>
+;format-muted = <label-muted>
 
-format-volume = "<label-volume><bar-volume>"
-label-volume = "  "
-label-volume-foreground = ${colors.foreground-alt}
-label-volume-background = ${colors.background-alt}
+; Available tokens:
+;   %percentage% (default)
+;   %decibels%
+;label-volume = %percentage%%
 
-format-muted-prefix = " "
-format-muted-foreground = ${colors.foreground-alt}
-format-muted-background = ${colors.background-alt}
-label-muted = "MUTED"
+; Available tokens:
+;   %percentage% (default)
+;   %decibels%
+label-muted = 󰋐 muted
+label-muted-foreground = #666
 
-bar-volume-width = 5
-bar-volume-foreground-0 = ${colors.foreground-alt}
-bar-volume-foreground-1 = ${colors.foreground-alt}
-bar-volume-foreground-2 = ${colors.foreground-alt}
-bar-volume-foreground-3 = ${colors.foreground-alt}
-bar-volume-foreground-4 = ${colors.foreground-alt}
-bar-volume-foreground-5 = ${colors.foreground-alt}
-bar-volume-foreground-6 = ${colors.foreground-alt}
-bar-volume-gradient = false
-bar-volume-indicator = []
-bar-volume-indicator-font = 1
-bar-volume-indicator-foreground = ${colors.foreground-alt}
-bar-volume-indicator-background = ${colors.background-alt}
-bar-volume-fill = --
-bar-volume-fill-font = 1
-bar-volume-fill-foreground = ${colors.foreground-alt}
-bar-volume-fill-background = ${colors.background-alt}
-bar-volume-empty = --
-bar-volume-empty-font = 1
-bar-volume-empty-foreground = ${colors.foreground-alt}
-bar-volume-empty-background = ${colors.background-alt}
-;bar-volume-empty-underline = ${colors.foreground}
+; Only applies if <ramp-volume> is used
+ramp-volume-0 = "󰋋 "
+ramp-volume-1 = "󰋋 "
+ramp-volume-2 = "󰋋 "
+
+; Right and Middle click
+click-right = pavucontrol
+; click-middle = 
+
 
 ; --- Module ----------------------------------------------------------------------------------------------------------
 [module/battery0]
@@ -250,7 +246,7 @@ blacklist-1 = scroll lock
 format = <label-layout><label-indicator>
 format-spacing = 0
 
-format-prefix = "󰊿  "
+format-prefix = "󰗊  "
 format-prefix-foreground = ${colors.foreground-alt}
 format-prefix-background = ${colors.background-alt}
 ;format-prefix-underline = ${colors.foreground}
@@ -342,10 +338,10 @@ format-warn = <ramp><label-warn>
 ;format-warn-underline = #f50a4d
 
 ; 
-label = "%temperature%"
+label = "%temperature-c%"
 label-foreground = ${colors.foreground-alt}
 label-background = ${colors.background-alt}
-label-warn = "%temperature%"
+label-warn = "%temperature-c%"
 label-warn-foreground = ${colors.alert}
 
 ramp-0 = " "
