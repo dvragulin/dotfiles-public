@@ -64,11 +64,16 @@ DIFF=$(( $TIME_END - $TIME_START ))
 TIME_DIFF=$(date -d@$DIFF -u +%H:%M:%S)
 
 # --- Run go for intall custom apps -----------------------------------------------------------------------------------
+sudo systemctl enable fstrim.timer
 sudo systemctl enable optimus-manager.service || true
 sudo systemctl enable ananicy.service || true
 sudo systemctl enable cpupower.service || true
 sudo systemctl enable cpupower-gui.service || true
+sudo systemctl enable haveged || true
+sudo systemctl enable --now dbus-broker.service || true
 sudo systemctl start optimus-manager.service
+sudo systemctl mask NetworkManager-wait-online.service
+
 
 # --- Run go for intall custom apps -----------------------------------------------------------------------------------
 #go install github.com/fedeztk/got/cmd/got@latest
