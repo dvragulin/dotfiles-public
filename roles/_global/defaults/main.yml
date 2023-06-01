@@ -154,6 +154,7 @@ aur_packages:
   - w3m-imgcat
   - rxvt                        # Terminal
   - gnupg
+  - s5cmd
   - pam-gnupg
   - poetry                      # package manager for python
   - chromedriver                # Chromedriver
@@ -253,15 +254,15 @@ fonts_packages:
   - ttf-roboto
   - ttf-hack
   - ttf-dejavu
-  - ttf-noto-nerd 
   - font-awesome-5 
-  - nerd-fonts-meta
   - noto-fonts
   - noto-fonts-extra
   - terminus-font
   - siji-git                    # Fonts
   - arc-gtk-theme
   - papirus-icon-theme
+ # - ttf-noto-nerd 
+ # - nerd-fonts-meta
 
 i3_packages:
   - i3-wm
