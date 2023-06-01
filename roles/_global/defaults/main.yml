@@ -25,9 +25,14 @@ pacman_packages:
   - guake
   - ranger
   - tldr
-  - nvidia # perf
-  - xf86-video-nouveau # perf OpenGL
+  - vulkan-intel
+  - nvidia-dkms # perf
   - nvidia-settings # perf add
+  - nvidia-utils
+  - opencl-nvidia
+  - libxnvctrl
+  - haveged
+  - dbus-broker
   - cpupower # perf
   - tmux
   - ncdu
@@ -138,6 +143,7 @@ pacman_packages:
   - globalprotect-openconnect   # VPN Software
   - lvm2
   - discord                     # Voice chat
+  - obsidian                    # 
 
 aur_packages:
   - cpupower-gui # perf
