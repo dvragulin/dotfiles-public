@@ -23,6 +23,7 @@
   - '$HOME/GIT/projects_home'
   - '$HOME/GIT/projects_home/_ansible-collection'
   - '$HOME/GIT/projects_home/_docker-images'
+  - '$HOME/GIT/projects_notes/'
   - '$HOME/GIT/projects_work'
   - '$HOME/GIT/projects_tests'
   - '$HOME/GIT/projects_monolith'
