@@ -143,9 +143,10 @@ pacman_packages:
   - globalprotect-openconnect   # VPN Software
   - lvm2
   - discord                     # Voice chat
-  - obsidian                    # 
+  - obsidian                    # Notes app
 
 aur_packages:
+  - zotero #test
   - cpupower-gui # perf
   - ananicy # perf
   - optimus-manager # perf
@@ -153,6 +154,7 @@ aur_packages:
   - reflector-mirrorlist-update
   - w3m-imgcat
   - rxvt                        # Terminal
+  - werf-bin
   - gnupg
   - s5cmd
   - pam-gnupg
