@@ -87,7 +87,9 @@ alias h="helm"
 alias todo="todoist-cli"
 alias td="todoist-cli q "
 alias kk="k9s"
-alias mirror-update='reflector -c "Russia" -f 20 -l 20 -p https -p http -n 20 --save /etc/pacman.d/mirrorlist --sort rate'
+alias update-mirror='reflector -c "Russia" -f 20 -l 20 -p https -p http -n 20 --save /etc/pacman.d/mirrorlist --sort rate'
+alias update-apps="yay -Syu"
+alias update-git-refs="$HOME/.config/polybar/git_update.sh"
 
 # Extract anything alias
 extract () {
