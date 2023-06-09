@@ -154,7 +154,6 @@ aur_packages:
   - reflector-mirrorlist-update
   - w3m-imgcat
   - rxvt                        # Terminal
-  - werf-bin
   - gnupg
   - s5cmd
   - pam-gnupg
