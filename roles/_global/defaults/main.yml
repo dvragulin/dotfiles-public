@@ -62,6 +62,7 @@ pacman_packages:
   - cmake
   - dolphin
   - viewnior
+  - nvtop
   - speedtest-cli
   - sshfs                 # For ssh connection to NAS
   - nmap

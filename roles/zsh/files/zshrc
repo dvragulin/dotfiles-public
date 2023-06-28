@@ -69,6 +69,7 @@ alias calc="bcal"
 alias top="/usr/bin/btop"
 alias top-max="/usr/bin/glances"
 alias top-dns="/usr/bin/dnstop"
+alias top-gpu="/usr/bin/nvtop"
 alias top-disk='echo "Please run iotop with sudo rigths"'
 alias top-netw='echo "Please run iftop with sudo rigths"'
 alias top-power='echo "Please run powertop with sudo rigths"'
