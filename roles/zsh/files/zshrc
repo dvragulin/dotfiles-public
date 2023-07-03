@@ -52,8 +52,8 @@ alias kp='keepassxc'
 alias ap='ansible-playbook'
 alias pwg='makepasswd --chars=32 --count=5'
 alias youtube-watch='yt'
-alias youtube-download-audio='yt-dlp -x --audio-format mp3 --cookies-from-browser google-chrome-stable'
-alias youtube-download-video='yt-dlp -f mp4 --cookies-from-browser google-chrome-stable'
+alias youtube-download-audio='yt-dlp -x --audio-format mp3 --cookies-from-browser firefox'
+alias youtube-download-video='yt-dlp -f mp4 --cookies-from-browser firefox'
 alias vpn='sudo openconnect --protocol=gp --user=$ADFS_USER_WORK --os=linux-64 $VPN_WORK_SRV'
 alias radio="pyradio --play"
 alias systemctl-f="sysz"
