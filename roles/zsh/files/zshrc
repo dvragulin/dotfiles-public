@@ -90,6 +90,7 @@ alias td="todoist-cli q "
 alias kk="k9s"
 alias update-mirror='reflector -c "Russia" -f 20 -l 20 -p https -p http -n 20 --save /etc/pacman.d/mirrorlist --sort rate'
 alias update-apps="yay -Syu"
+alias update-apps-clean-cache="yay -Scc && yay -Syu"
 alias update-git-refs="$HOME/.config/polybar/git_update.sh"
 alias helm-yc="HELM_DRIVER=sql HELM_DRIVER_SQL_CONNECTION_STRING='${HELM_POSTGRES_CONNECTION_STRING_STAGE_YC_1}' helm"
 alias helm-sb="HELM_DRIVER=sql HELM_DRIVER_SQL_CONNECTION_STRING='${HELM_POSTGRES_CONNECTION_STRING_STAGE_SB_1}' helm"
