@@ -145,6 +145,7 @@ pacman_packages:
   - lvm2
   - discord                     # Voice chat
   - obsidian                    # Notes app
+  - apache
 
 aur_packages:
   - zotero #test
