@@ -64,5 +64,6 @@
     rb = rebase
     dash = ! grv
     update-all-refs = ! $HOME/.config/polybar/git_update.sh
+    change-author = ! git commit --amend --author="Dmitry Ragulin <dvragulin@gmail.com>" --no-edit
 [gc]
 	autoDetach = false
