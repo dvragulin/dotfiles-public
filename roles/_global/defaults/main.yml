@@ -26,10 +26,11 @@ pacman_packages:
   - ranger
   - tldr
   - vulkan-intel
-  - nvidia-dkms # perf
-  - nvidia-settings # perf add
-  - nvidia-utils
-  - opencl-nvidia
+ # - nvidia  # perf https://computingforgeeks.com/easiest-way-to-install-nvidia-3d-graphics-acceleration-driver-on-archlinux/
+ # - nvidia-settings # perf add
+ # - nvidia-utils
+  - xorg-server-devel
+ # - opencl-nvidia
   - libxnvctrl
   - haveged
   - dbus-broker
@@ -146,6 +147,8 @@ pacman_packages:
   - discord                     # Voice chat
   - obsidian                    # Notes app
   - apache
+  - bleachbit                   # ccleaner
+
 
 aur_packages:
   - zotero #test
