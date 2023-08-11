@@ -71,7 +71,8 @@ pacman_packages:
   - lazygit
   - asciinema
   - zathura               # PDF Reader
-  - zathura-pdf-poppler   # PDF Reader plugin
+#  - zathura-pdf-poppler   # PDF Reader plugin
+  - zathura-pdf-mupdf     # PDF Reader plugin
   - zathura-djvu          # PDF Reader plugin
   - zathura-ps            # PDF Reader plugin
   - alacritty             # Best terminal
@@ -173,9 +174,10 @@ aur_packages:
   - etcher-bin                  # USB boot
   - tfswitch
   - bcal                        # Bytes calc
-  - yandex-cloud-bin            # Yandex Cloud CLI
   - gp-saml-gui-git             # VPN Software
+  - yandex-cloud-bin            # Yandex Cloud CLI
   - yandex-music-player         # Music player
+  - yandex-browser-corporate
   - terraformer
   - transmission-remote-tui-git # Torrent client
   - duck
