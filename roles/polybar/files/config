@@ -142,8 +142,8 @@ label-background = ${colors.background-alt}
 [module/calendar]
 type = custom/script
 exec = echo " "
-click-left = google-chrome-stable "https://calendar.google.com/calendar/u/0/r"
-click-right = google-chrome-stable ${env:WORK_CALENDAR:}
+click-left = yandex-browser-corporate "https://calendar.google.com/calendar/u/0/r"
+click-right = yandex-browser-corporate ${env:WORK_CALENDAR:}
 interval = 920
 
 ; --- Module ----------------------------------------------------------------------------------------------------------
@@ -375,7 +375,7 @@ menu-0-1-exec = $HOME/.config/polybar/pyradio.sh
 menu-0-2 = 
 menu-0-2-exec = ymp
 menu-0-3 = 
-menu-0-3-exec = google-chrome-stable https://music.yandex.ru
+menu-0-3-exec = yandex-browser-corporate https://music.yandex.ru
 
 ; --- Module ----------------------------------------------------------------------------------------------------------
 [module/updates_pacman]
@@ -417,8 +417,8 @@ label = %{T4} %{T-} %output%
 [module/todoist]
 type = custom/script
 exec = /home/dvragulin/.config/polybar/todoist.py
-click-left = google-chrome-stable https://todoist.com/app/today
-click-right = google-chrome-stable https://todoist.com/app/today
+click-left = yandex-browser-corporate https://todoist.com/app/today
+click-right = yandex-browser-corporate https://todoist.com/app/today
 
 interval = 120
 label = %{T5}%{T-} %output%
@@ -448,8 +448,8 @@ label = %{T5} %{T-}%output%
 [module/git_mr]
 type = custom/script
 exec = /home/dvragulin/.config/polybar/git_mr.py
-click-left = google-chrome-stable $GITLAB_WORK/dashboard/merge_requests?assignee_username=dmitriy.ragulin
-click-right = google-chrome-stable $GITLAB_WORK/dashboard/merge_requests?reviewer_username=dmitriy.ragulin
+click-left = yandex-browser-corporate $GITLAB_WORK/dashboard/merge_requests?assignee_username=dmitriy.ragulin
+click-right = yandex-browser-corporate $GITLAB_WORK/dashboard/merge_requests?reviewer_username=dmitriy.ragulin
 
 interval = 300
 label = %{T5} %{T-} %output%
@@ -491,8 +491,8 @@ interval = 1
 [module/jira_issues]
 type = custom/script
 exec = /home/dvragulin/.config/polybar/jira_get_issues.py
-click-left = google-chrome-stable $JIRA_WORK/secure/Dashboard.jspa?selectPageId=10181  && notify-send -a "Firefox:" -u normal "Open Jira board"
-click-right = google-chrome-stable $JIRA_WORK/secure/RapidBoard.jspa?rapidView=348 && notify-send -a "Firefox:" -u normal "Open Jira backlog"
+click-left = yandex-browser-corporate $JIRA_WORK/secure/Dashboard.jspa?selectPageId=10181  && notify-send -a "Firefox:" -u normal "Open Jira board"
+click-right = yandex-browser-corporate $JIRA_WORK/secure/RapidBoard.jspa?rapidView=348 && notify-send -a "Firefox:" -u normal "Open Jira backlog"
 
 interval = 300
 label = %{T5}%{T-}%output%
@@ -511,8 +511,8 @@ format-prefix = " "
 ; --- Module ----------------------------------------------------------------------------------------------------------
 [module/weather]
 type = custom/script
-click-left = google-chrome-stable https://yandex.ru/pogoda/moscow?lat=55.917238&lon=37.549502
-click-right = google-chrome-stable https://yandex.ru/pogoda/maps/nowcast
+click-left = yandex-browser-corporate https://yandex.ru/pogoda/moscow?lat=55.917238&lon=37.549502
+click-right = yandex-browser-corporate https://yandex.ru/pogoda/maps/nowcast
 exec = $HOME/.config/polybar/weather.py
 interval = 1800
 label-font = 3
