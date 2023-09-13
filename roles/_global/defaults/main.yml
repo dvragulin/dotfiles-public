@@ -228,7 +228,6 @@ pip_packages:
   - pipenv
   - pandas
   - pendulum
-  - jira
   - grip
   - google-auth-httplib2
   - google-auth-oauthlib
