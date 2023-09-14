@@ -69,7 +69,7 @@ override-redirect    = false
 
 ;modules-center      =
 modules-left         = i3 sp2 xwindow
-modules-right        = cpu sp2 memory sp2 temperature sp2 docker sp2 updates_pacman sp2 updates_aur sp2 trash sp2 filesystem_custom sp2 jira_issues sp2 git_count git_mr git_wh sp2 pyradio sp2 mic sp2 pulseaudio sp2 translator sp2 xkeyboard sp2 weather sp2 calendar date sp2 iot_kettle sp2 mount_nas sp2
+modules-right        = cpu sp2 memory sp2 temperature sp2 docker sp2 updates_pacman sp2 updates_aur sp2 trash sp2 filesystem_custom sp2 jira_issues sp2 git_count git_mr git_wh sp2 newsboat sp2 pyradio sp2 mic sp2 pulseaudio sp2 translator sp2 xkeyboard sp2 weather sp2 calendar date sp2 iot_kettle sp2 mount_nas sp2
 
 ; ---------------------------------------------------------------------------------------------------------------------
 ; --- Used Modules ----------------------------------------------------------------------------------------------------
@@ -433,6 +433,16 @@ click-right = git work && notify-send -a "Git:" -u normal "gitconfig work app
 
 interval = 1
 label = : %output%
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/newsboat]
+type = custom/script
+exec = /home/dvragulin/.config/polybar/newsboat.sh
+click-left = /home/dvragulin/.config/polybar/newsboat.sh
+click-right = /home/dvragulin/.config/polybar/newsboat.sh
+
+interval = 7200
+label = %{T5}  %{T-}%output%
 
 ; --- Module ----------------------------------------------------------------------------------------------------------
 [module/git_count]

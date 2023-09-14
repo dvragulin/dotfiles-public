@@ -126,3 +126,11 @@
     dest: "$HOME/.config/polybar/iot_kettle.py"
     state: link
     force: yes
+
+- name: Link newsboat.sh script
+  file:
+    src: "$HOME/GIT/projects_home/dotfiles-public/roles/polybar/files/newsboat.sh"
+    dest: "$HOME/.config/polybar/newsboat.sh"
+    state: link
+    force: yes
+
