@@ -94,8 +94,10 @@ alias update-apps-clean-cache="yay -Scc && yay -Syu"
 alias update-git-refs="$HOME/.config/polybar/git_update.sh"
 alias helm-yc="HELM_DRIVER=sql HELM_DRIVER_SQL_CONNECTION_STRING='${HELM_POSTGRES_CONNECTION_STRING_STAGE_YC_1}' helm"
 alias helm-sb="HELM_DRIVER=sql HELM_DRIVER_SQL_CONNECTION_STRING='${HELM_POSTGRES_CONNECTION_STRING_STAGE_SB_1}' helm"
-alias ji1='jira issue list -q "project = $JIRA_CLI_PROJECT AND status in (Backlog, Blocked, Open, Reopened, Склад) AND component = slack_issue AND assignee is EMPTY AND \"Assigned team\" = $JIRA_CLI_TEAM" --order-by CREATED'
+alias ji1='jira issue list -q "project = $JIRA_CLI_PROJECT AND status in (Backlog, Blocked, Open, Reopened, Склад) AND component = slack_issue AND assignee is EMPTY AND \"Assigned team\" = $JIRA_CLI_TEAM" --order-by CREATED --reverse'
 alias ji2='jira issue list -q "assignee = currentUser() AND resolution = Unresolved AND status not in (Canceled, Completed, Declined, Tested, Resolved)" --order-by STATUS'
+alias ji3='jira issue list -q "assignee in (EMPTY) AND project = $JIRA_CLI_PROJECT AND status in (\"In Progress\", Backlog, Blocked, Open, Reopened) AND (component = \"from ITSD\" OR labels = v_backlog) AND (\"Assigned team\" is EMPTY OR \"Assigned team\" = $JIRA_CLI_TEAM)" --order-by CREATED --reverse'
+alias ji4='jira issue list -q "assignee in (EMPTY) AND project = $JIRA_CLI_PROJECT AND status in (\"In Progress\", Backlog, Blocked, Open, Reopened) AND (component is EMPTY OR component != \"from ITSD\" AND component != slack_issue) AND (\"Assigned team\" is EMPTY OR \"Assigned team\" = $JIRA_CLI_TEAM) AND (labels not in ($JIRA_CLI_TEAM, matter-bot, migrations_v3, v_backlog) OR labels is EMPTY)" --order-by CREATED --reverse'
 
 # Extract anything alias
 extract () {
