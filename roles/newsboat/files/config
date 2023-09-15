@@ -4,7 +4,7 @@
 #auto-reload yes
 max-items 500
 
-external-url-viewer "urlscan -dc -r 'google-chrome-stable {}'"
+external-url-viewer "urlscan -dc -r 'yandex-browser-corporate {}'"
 
 bind-key j down
 bind-key k up
@@ -59,15 +59,15 @@ feedlist-format "%?T? %4i %n %8u (%T) %t &  --- %t?"
 
 
 
-browser google-chrome-stable
+browser yandex-browser-corporate
 macro , open-in-browser
-macro t set browser "tsp youtube-dl --add-metadata -ic" ; open-in-browser ; set browser google-chrome-stable
-macro a set browser "tsp youtube-dl --add-metadata -xic -f bestaudio/best" ; open-in-browser ; set browser google-chrome-stable
-macro v set browser "setsid -f mpv --geometry=1000" ; open-in-browser ; set browser google-chrome-stable
-macro m set browser "setsid -f mpv --geometry=1000" ; open-in-browser ; set browser google-chrome-stable
-macro w set browser "w3m" ; open-in-browser ; set browser google-chrome-stable
-macro p set browser "dmenuhandler" ; open-in-browser ; set browser google-chrome-stable
-macro c set browser "xsel -b <<<" ; open-in-browser ; set browser google-chrome-stable
+macro t set browser "tsp youtube-dl --add-metadata -ic" ; open-in-browser ; set browser yandex-browser-corporate
+macro a set browser "tsp youtube-dl --add-metadata -xic -f bestaudio/best" ; open-in-browser ; set browser yandex-browser-corporate
+macro v set browser "setsid -f mpv --geometry=1000" ; open-in-browser ; set browser yandex-browser-corporate
+macro m set browser "setsid -f mpv --geometry=1000" ; open-in-browser ; set browser yandex-browser-corporate
+macro w set browser "w3m" ; open-in-browser ; set browser yandex-browser-corporate
+macro p set browser "dmenuhandler" ; open-in-browser ; set browser yandex-browser-corporate
+macro c set browser "xsel -b <<<" ; open-in-browser ; set browser yandex-browser-corporate
 macro r set browser "ttrv" ; open-in-browser
 
 # Podboat items

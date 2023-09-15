@@ -3,7 +3,6 @@ https://vas3k.club/posts.rss                                                    
 https://www.redgregory.com/notion?format=rss                                    " Blog"    "~RedGregory Notion blog"
 
 " Technologies"
-https://habr.com/ru/rss/all/all/?fl=ru                                          " Tech"    "~Habr"
 https://www.kryukov.biz/feed/                                                   " Tech"    "~Записки Линуксоида"
 https://lukesmith.xyz/rss.xml                                                   " Tech"    "~Luke Smith"
 https://danluu.com/atom.xml                                                     " Tech"    "~Danluu"
@@ -60,5 +59,8 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCKHZsiBTqNW5OTbToLxMlmw    
 https://rsshub.app/telegram/channel/severny_124a                                " Tg"      "~Канал ЖК "Северный" | ТСН"
 https://rsshub.app/telegram/channel/golang_digest                               " Tg"      "~Golang Дайджест
 https://rsshub.app/telegram/channel/aliexpressgeeks                             " Tg"      "~Aliexpress for Geeks"
-https://rsshub.app/telegram/channel/fit4liferu                                  " Tg"      "~Fir4Life"
+https://rsshub.app/telegram/channel/Monarch_Kredit                              " Tg"      "~Elline"
+https://rsshub.app/telegram/channel/obsidian_geek                               " Tg"      "~Obsidian Geek"
+https://rsshub.app/telegram/channel/go_update                                   " Tg"      "~Go Update"
+https://rsshub.app/telegram/channel/ntuzov                                      " Tg"      "~Nikolay Tuzov"
 

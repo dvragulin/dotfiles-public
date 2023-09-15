@@ -441,7 +441,7 @@ exec = /home/dvragulin/.config/polybar/newsboat.sh
 click-left = /home/dvragulin/.config/polybar/newsboat.sh
 click-right = /home/dvragulin/.config/polybar/newsboat.sh
 
-interval = 7200
+interval = 600
 label = %{T5}  %{T-}%output%
 
 ; --- Module ----------------------------------------------------------------------------------------------------------
