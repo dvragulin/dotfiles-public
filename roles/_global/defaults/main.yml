@@ -152,6 +152,7 @@ pacman_packages:
 
 
 aur_packages:
+  - nap-bin # Test https://github.com/maaslalani/nap
   - zotero #test
   - cpupower-gui # perf
   - ananicy # perf
