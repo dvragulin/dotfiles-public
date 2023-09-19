@@ -1,7 +1,6 @@
 #!/bin/bash
 
-newsboat -x reload 1> /dev/null
-if [ $? != 0 ]; then
+if ! newsboat -x reload 1> /dev/null; then
     echo "  "
     exit 0
 else
