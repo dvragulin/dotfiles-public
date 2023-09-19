@@ -17,7 +17,7 @@ https://github.com/prometheus/prometheus/releases.atom                          
 https://github.com/istio/istio/releases.atom                                    " ChLg"    "~Istio"
 https://github.com/argoproj/argo-rollouts/releases.atom                         " ChLg"    "~Argo-rollouts"
 https://blog.golang.org/feed.atom?format=xml                                    " ChLg"    "~Golang Blog"
-https://blog.jetbrains.com/go/feed/                                             " ChLg"    "~GoLand"
+https://blog.jetbrains.com/go/feed/                                             " ChLg"    "~GoLand Blog (JetBrains)"
 https://github.com/python/cpython/tags.atom                                     " ChLg"    "~Python"
 #https://github.com//releases.atom                " ChLg"    "~V"
 
@@ -62,4 +62,5 @@ https://rsshub.app/telegram/channel/golang_digest                               
 https://rsshub.app/telegram/channel/go_update                                   " Tg"      "~Go Update"
 https://rsshub.app/telegram/channel/aliexpressgeeks                             " Tg"      "~Aliexpress for Geeks"
 https://rsshub.app/telegram/channel/obsidian_geek                               " Tg"      "~Obsidian Geek"
+https://rsshub.app/telegram/channel/odgers_berndtson_russia                     " Tg"      "~Odgers Berndtson Russia"
 
