@@ -28,6 +28,7 @@ https://devopsweeklyarchive.com/feed.xml                                        
 https://cprss.s3.amazonaws.com/golangweekly.com.xml                             " ChLg"    "~Weekly: Golang"
 https://pycoders.com/feed/wDVNUnK6                                              " ChLg"    "~Weekly: Pycoders"
 https://us2.campaign-archive.com/feed?u=e2e180baf855ac797ef407fc7&id=9e26887fc5 " ChLg"    "~Weekly: Python"
+https://cprss.s3.amazonaws.com/postgresweekly.com.xml                           " ChLg"    "~Weekly: Postgres"
 
 " Podcast"
 https://feeds.fireside.fm/forthoseandthose/rss                                  " Pd"      "~Для Tech и этих"
