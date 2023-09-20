@@ -94,6 +94,7 @@ alias update-apps-clean-cache="yay -Scc && yay -Syu"
 alias update-git-refs="$HOME/.config/polybar/git_update.sh"
 alias helm-yc="HELM_DRIVER=sql HELM_DRIVER_SQL_CONNECTION_STRING='${HELM_POSTGRES_CONNECTION_STRING_STAGE_YC_1}' helm"
 alias helm-sb="HELM_DRIVER=sql HELM_DRIVER_SQL_CONNECTION_STRING='${HELM_POSTGRES_CONNECTION_STRING_STAGE_SB_1}' helm"
+alias jia='f() { jira issue assign $1 $(jira me); unset -f f; }; f'
 alias ji1='jira issue list -q "project = $JIRA_CLI_PROJECT AND status in (Backlog, Blocked, Open, Reopened, Склад) AND component = slack_issue AND assignee is EMPTY AND \"Assigned team\" = $JIRA_CLI_TEAM" --order-by CREATED --reverse'
 alias ji2='jira issue list -q "assignee = currentUser() AND resolution = Unresolved AND status not in (Canceled, Completed, Declined, Tested, Resolved)" --order-by STATUS'
 alias ji3='jira issue list -q "assignee in (EMPTY) AND project = $JIRA_CLI_PROJECT AND status in (\"In Progress\", Backlog, Blocked, Open, Reopened) AND (component = \"from ITSD\" OR labels = v_backlog) AND (\"Assigned team\" is EMPTY OR \"Assigned team\" = $JIRA_CLI_TEAM)" --order-by CREATED --reverse'
