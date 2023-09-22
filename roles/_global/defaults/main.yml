@@ -26,6 +26,8 @@ pacman_packages:
   - ranger
   - tldr
   - vulkan-intel
+  - intel-media-driver
+  - libva
  # - nvidia  # perf https://computingforgeeks.com/easiest-way-to-install-nvidia-3d-graphics-acceleration-driver-on-archlinux/
  # - nvidia-settings # perf add
  # - nvidia-utils
@@ -205,6 +207,8 @@ aur_packages:
   - browsh
   - mattermost-desktop-bin
   - dnstop
+  - terragrunt
+
 
 snap_packages:
   - core20

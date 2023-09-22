@@ -19,6 +19,7 @@
     - taskwarrior
     - dunst
     - zsh
+    - nap
     - k8s
     - k9s
     - bash
