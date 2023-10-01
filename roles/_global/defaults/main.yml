@@ -154,6 +154,7 @@ pacman_packages:
 
 
 aur_packages:
+  - trivy # A Simple and Comprehensive Vulnerability Scanner for Containers, Suitable for CI
   - nap-bin # Test https://github.com/maaslalani/nap
   - gum
   - glow
