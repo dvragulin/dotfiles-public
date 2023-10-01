@@ -19,8 +19,6 @@ export NAP_GRAY='0x7AB8B8'
 export NAP_WHITE='0xcbe3e7'
 export NAP_THEME="nord"
 
-
-
 ZSH_THEME="af-magic"
 DISABLE_AUTO_UPDATE="true"
 
@@ -107,10 +105,6 @@ alias helm-yc="HELM_DRIVER=sql HELM_DRIVER_SQL_CONNECTION_STRING='${HELM_POSTGRE
 alias helm-sb="HELM_DRIVER=sql HELM_DRIVER_SQL_CONNECTION_STRING='${HELM_POSTGRES_CONNECTION_STRING_STAGE_SB_1}' helm"
 alias jia='jira issue assign "$1" "$JIRA_LOGIN_WORK"'
 alias jiw='jira issue view'
-alias ji1='jira issue list -q "project = $JIRA_CLI_PROJECT AND status in (Backlog, Blocked, Open, Reopened, Склад) AND component = slack_issue AND assignee is EMPTY AND \"Assigned team\" = $JIRA_CLI_TEAM" --order-by CREATED --reverse'
-alias ji2='jira issue list -q "assignee = currentUser() AND resolution = Unresolved AND status not in (Canceled, Completed, Declined, Tested, Resolved)" --order-by STATUS'
-alias ji3='jira issue list -q "assignee in (EMPTY) AND project = $JIRA_CLI_PROJECT AND status in (\"In Progress\", Backlog, Blocked, Open, Reopened) AND (component = \"from ITSD\" OR labels = v_backlog) AND (\"Assigned team\" is EMPTY OR \"Assigned team\" = $JIRA_CLI_TEAM)" --order-by CREATED --reverse'
-alias ji4='jira issue list -q "assignee in (EMPTY) AND project = $JIRA_CLI_PROJECT AND status in (\"In Progress\", Backlog, Blocked, Open, Reopened) AND (component is EMPTY OR component != \"from ITSD\" AND component != slack_issue) AND (\"Assigned team\" is EMPTY OR \"Assigned team\" = $JIRA_CLI_TEAM) AND (labels not in ($JIRA_CLI_TEAM, matter-bot, migrations_v3, v_backlog) OR labels is EMPTY)" --order-by CREATED --reverse'
 alias napl='nap $(nap list | gum filter)'
 
 # Extract anything alias
@@ -132,6 +126,20 @@ extract () {
   else
     echo "'$1' is not a valid file"
   fi
+}
+
+ji () {
+  echo "Pick a jira filter..."
+  JIRA_FILTER=$(gum choose "Personal" "Tasks: 1-st Line"  "Tasks: From ITSD"  "Tasks: Backlog" "Tasks: PaaS" "Tasks: PaaS Backlog" --cursor.foreground "#D78700")
+  echo "Jira filter: $JIRA_FILTER"
+  case "$JIRA_FILTER" in
+    "Personal"              ) jira issue list -q "assignee = currentUser() AND resolution = Unresolved AND status not in (Canceled, Completed, Declined, Tested, Resolved)" --order-by STATUS ;;
+    "Tasks: 1-st Line"      ) jira issue list -q "project = $JIRA_CLI_PROJECT AND status in (Backlog, Blocked, Open, Reopened, Склад) AND component = slack_issue AND assignee is EMPTY AND \"Assigned team\" = $JIRA_CLI_TEAM" --order-by CREATED --reverse ;;
+    "Tasks: From ITSD"      ) jira issue list -q "assignee in (EMPTY) AND project = $JIRA_CLI_PROJECT AND status in (\"In Progress\", Backlog, Blocked, Open, Reopened) AND (component = \"from ITSD\" OR labels = v_backlog) AND (\"Assigned team\" is EMPTY OR \"Assigned team\" = $JIRA_CLI_TEAM)" --order-by CREATED --reverse ;;
+    "Tasks: Backlog"        ) jira issue list -q "assignee in (EMPTY) AND project = $JIRA_CLI_PROJECT AND status in (\"In Progress\", Backlog, Blocked, Open, Reopened) AND (component is EMPTY OR component != \"from ITSD\" AND component != slack_issue) AND (\"Assigned team\" is EMPTY OR \"Assigned team\" = $JIRA_CLI_TEAM) AND (labels not in ($JIRA_CLI_TEAM, matter-bot, migrations_v3, v_backlog) OR labels is EMPTY)" --order-by CREATED --reverse ;;
+    "Tasks: PaaS"           ) jira issue list -q "project = $JIRA_CLI_PROJECT AND (assignee in membersOf(\"(System) $JIRA_CLI_TEAM_2\") OR labels = $JIRA_CLI_TEAM_2_label OR \"Assigned team\" = $JIRA_CLI_TEAM_3) AND status not in (backlog,Closed, Resolved, Declined, Canceled, Done, Open)" --order-by STATUS ;;
+    "Tasks: PaaS Backlog"   ) jira issue list -q "project = $JIRA_CLI_PROJECT AND (assignee in membersOf(\"(System) $JIRA_CLI_TEAM_2\") OR labels = $JIRA_CLI_TEAM_2_label OR \"Assigned team\" = $JIRA_CLI_TEAM_3) AND status in (backlog)" ;;
+  esac
 }
 
 # Update smb-cli
