@@ -1,7 +1,6 @@
 " Blogs"
 https://vas3k.club/posts.rss                                                    " Blog"    "~Vas3k Club"
 
-
 " IT News and Blogs"
 https://www.kryukov.biz/feed/                                                   " B&N"    "~Blog: Записки Линуксоида"
 https://blog.golang.org/feed.atom?format=xml                                    " B$N"    "~Blog: Golang"
@@ -14,8 +13,9 @@ https://pycoders.com/feed/wDVNUnK6                                              
 https://us2.campaign-archive.com/feed?u=e2e180baf855ac797ef407fc7&id=9e26887fc5 " B$N"    "~Weekly: Python"
 https://cprss.s3.amazonaws.com/postgresweekly.com.xml                           " B$N"    "~Weekly: Postgres"
 https://habr.com/ru/rss/companies/flant/articles/?fl=ru                         " B$N"    "~Habr: Flant"
-https://habr.com/ru/rss/companies/slurm/articles/?fl=ru                             " B$N"    "~Habr: Слёрм"
-https://habr.com/ru/rss/hubs/go/articles/?fl=ru                                     " B$N"    "~Habr: Golang"
+https://habr.com/ru/rss/companies/slurm/articles/?fl=ru                         " B$N"    "~Habr: Слёрм"
+https://habr.com/ru/rss/companies/sbermarket/articles/?fl=ru                    " B$N"    "~Habr: Sbermarket"
+https://habr.com/ru/rss/hubs/go/articles/?fl=ru                                 " B$N"    "~Habr: Golang"
 
 " Youtube:  Tech"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA    " Yt"      "~Luke Smith"
@@ -53,6 +53,7 @@ https://rsshub.app/telegram/channel/obsidian_geek                               
 https://about.gitlab.com/all-releases.xml                                       " ChLg"    "~Gitlab"
 https://github.com/kubernetes/kubernetes/releases.atom                          " ChLg"    "~Kubernetes"
 https://github.com/istio/istio/releases.atom                                    " ChLg"    "~Istio"
+https://github.com/databus23/helm-diff/releases.atom                            " ChLg"    "~Helm-diff"
 https://github.com/argoproj/argo-rollouts/releases.atom                         " ChLg"    "~Argo-rollouts"
 https://github.com/prometheus/prometheus/releases.atom                          " ChLg"    "~Prometheus"
 https://github.com/VictoriaMetrics/VictoriaMetrics/releases.atom                " ChLg"    "~VictoriaMetrics"
