@@ -130,10 +130,10 @@ extract () {
 
 ji () {
   echo "Pick a jira filter..."
-  JIRA_FILTER=$(gum choose "Personal" "Tasks: 1-st Line"  "Tasks: From ITSD"  "Tasks: Backlog" "Tasks: PaaS" "Tasks: PaaS Backlog" --cursor.foreground "#D78700")
-  echo "Jira filter: $JIRA_FILTER"
+  JIRA_FILTER=$(gum choose "Tasks: Personal" "Tasks: 1-st Line"  "Tasks: From ITSD"  "Tasks: Backlog" "Tasks: PaaS" "Tasks: PaaS Backlog" --cursor.foreground "#D78700")
+  echo "Jira filter: \n   - $JIRA_FILTER"
   case "$JIRA_FILTER" in
-    "Personal"              ) jira issue list -q "assignee = currentUser() AND resolution = Unresolved AND status not in (Canceled, Completed, Declined, Tested, Resolved)" --order-by STATUS ;;
+    "Tasks: Personal"       ) jira issue list -q "assignee = currentUser() AND resolution = Unresolved AND status not in (Canceled, Completed, Declined, Tested, Resolved)" --order-by STATUS ;;
     "Tasks: 1-st Line"      ) jira issue list -q "project = $JIRA_CLI_PROJECT AND status in (Backlog, Blocked, Open, Reopened, Склад) AND component = slack_issue AND assignee is EMPTY AND \"Assigned team\" = $JIRA_CLI_TEAM" --order-by CREATED --reverse ;;
     "Tasks: From ITSD"      ) jira issue list -q "assignee in (EMPTY) AND project = $JIRA_CLI_PROJECT AND status in (\"In Progress\", Backlog, Blocked, Open, Reopened) AND (component = \"from ITSD\" OR labels = v_backlog) AND (\"Assigned team\" is EMPTY OR \"Assigned team\" = $JIRA_CLI_TEAM)" --order-by CREATED --reverse ;;
     "Tasks: Backlog"        ) jira issue list -q "assignee in (EMPTY) AND project = $JIRA_CLI_PROJECT AND status in (\"In Progress\", Backlog, Blocked, Open, Reopened) AND (component is EMPTY OR component != \"from ITSD\" AND component != slack_issue) AND (\"Assigned team\" is EMPTY OR \"Assigned team\" = $JIRA_CLI_TEAM) AND (labels not in ($JIRA_CLI_TEAM, matter-bot, migrations_v3, v_backlog) OR labels is EMPTY)" --order-by CREATED --reverse ;;
