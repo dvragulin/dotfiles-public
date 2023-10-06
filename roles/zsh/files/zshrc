@@ -75,14 +75,6 @@ alias l="ls"
 alias ll="ls -all"
 alias lll="l -L 3 -D"
 alias calc="bcal"
-alias top="/usr/bin/btop"
-alias top-max="/usr/bin/glances"
-alias top-dns="/usr/bin/dnstop"
-alias top-gpu="/usr/bin/nvtop"
-alias top-disk='echo "Please run iotop with sudo rigths"'
-alias top-netw='echo "Please run iftop with sudo rigths"'
-alias top-power='echo "Please run powertop with sudo rigths"'
-alias top-x-resources="/usr/bin/xrestop"
 alias cat="/usr/bin/bat"
 alias lg="/usr/bin/lazygit"
 alias ld="/usr/bin/lazydocker"
@@ -97,10 +89,6 @@ alias h="helm"
 alias todo="todoist-cli"
 alias td="todoist-cli q "
 alias kk="k9s"
-alias update-mirror='sudo reflector -c "Russia" -f 20 -l 20 -p https -p http -n 20 --save /etc/pacman.d/mirrorlist --sort rate'
-alias update-apps="yay -Syu"
-alias update-apps-clean-cache="yay -Scc && yay -Syu"
-alias update-git-refs="$HOME/.config/polybar/git_update.sh"
 alias helm-yc="HELM_DRIVER=sql HELM_DRIVER_SQL_CONNECTION_STRING='${HELM_POSTGRES_CONNECTION_STRING_STAGE_YC_1}' helm"
 alias helm-sb="HELM_DRIVER=sql HELM_DRIVER_SQL_CONNECTION_STRING='${HELM_POSTGRES_CONNECTION_STRING_STAGE_SB_1}' helm"
 alias jia='jira issue assign "$1" "$JIRA_LOGIN_WORK"'
@@ -126,6 +114,31 @@ extract () {
   else
     echo "'$1' is not a valid file"
   fi
+}
+
+top () {
+  echo "Pick top command..."
+  TOP_COMMAND=$(gum choose "top" "sysmon" "iomon" "gpumon" "netmon" "xresmon" "energymon" --cursor.foreground "#D78700")
+  case "$TOP_COMMAND" in
+    "top"         ) btop ;;
+    "sysmon"      ) glances ;;
+    "iomon"       ) sudo iotop ;;
+    "gpumon"      ) nvtop ;;
+    "netmon"      ) sudo iftop -i enp0s31f6 ;;
+    "xresmon"     ) xrestop ;;
+    "energymon"   ) sudo /bin/powertop ;;
+  esac
+}
+
+update () {
+  echo "Pick update command..."
+  UPDATE_COMMAND=$(gum choose "Applications" "Applications (without cache)" "Mirror list" "Git Repos" --cursor.foreground "#D78700")
+  case "$UPDATE_COMMAND" in
+    "Applications"                  ) yay -Syu ;;
+    "Applications (without cache)"  ) yay -Scc && yay -Syu ;;;
+    "Mirror list"                   ) sudo reflector -c "Russia" -f 20 -l 20 -p https -p http -n 20 --save /etc/pacman.d/mirrorlist --sort rate ;;
+    "Git Repos"                     ) $HOME/.config/polybar/git_update.sh ;;
+  esac
 }
 
 ji () {
