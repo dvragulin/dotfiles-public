@@ -73,6 +73,8 @@ set nowrap                                               " Chose `wrap` or `nowr
 set mouse=a                                              " Enable mouse usage
 set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz " Add an ability to use hotkeys in a normal mode
 set backspace=indent,eol,start
+set colorcolumn=120
+
 
 " ------------------------------------------------------------
 " ---------- Mappings ----------------------------------------
