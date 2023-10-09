@@ -38,6 +38,7 @@ Plug 'kdheepak/lazygit.nvim' " LazyGit
 Plug 'lewis6991/gitsigns.nvim' " Some for git
 Plug 'folke/todo-comments.nvim'
 
+" Fpr test
 
 " TODO: Change airline for this :arrow-down:
 "  Plug 'nvim-lualine/lualine.nvim'
@@ -49,6 +50,7 @@ call plug#end()
 " ------------------------------------------------------------
 " ---------- Settings ----------------------------------------
 " ------------------------------------------------------------
+
 
 set encoding=utf8
 colorscheme darcula
@@ -73,7 +75,7 @@ set backspace=indent,eol,start
 set noswapfile                                           " Cant create swp files
 set fileformat=unix
 set scrolloff=7
-
+set colorcolumn=120
 
 
 " ------------------------------------------------------------
