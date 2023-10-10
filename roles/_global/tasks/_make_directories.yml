@@ -57,6 +57,7 @@
   - '$HOME/.config/pyradio/themes'
   - '$HOME/.config/jesseduffield/lazygit'
   - '$HOME/.config/lazygit'
+  - '$HOME/.config/glow'
   - '$HOME/.config/nvim'
   - '$HOME/.config/nvim/lua'
   - '$HOME/.config/nvim/autoload'

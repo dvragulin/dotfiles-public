@@ -1,0 +1,9 @@
+---
+# tasks file for i3
+
+- name: Link glow config file
+  file:
+    src: "$HOME/GIT/projects_home/dotfiles-public/roles/glow/files/glow.yml"
+    dest: "$HOME/.config/glow/glow.yml"
+    state: link
+    force: yes
