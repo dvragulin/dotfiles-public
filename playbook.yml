@@ -22,6 +22,7 @@
     - nap
     - k8s
     - k9s
+    - glow
     - bash
     - ranger
     - rofi
