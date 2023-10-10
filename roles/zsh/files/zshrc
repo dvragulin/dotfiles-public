@@ -94,6 +94,7 @@ alias helm-sb="HELM_DRIVER=sql HELM_DRIVER_SQL_CONNECTION_STRING='${HELM_POSTGRE
 alias jia='jira issue assign "$1" "$JIRA_LOGIN_WORK"'
 alias jiw='jira issue view'
 alias napl='nap $(nap list | gum filter)'
+alias mkd='glow'
 
 # Extract anything alias
 extract () {
