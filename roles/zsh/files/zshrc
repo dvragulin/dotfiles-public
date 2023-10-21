@@ -96,7 +96,7 @@ alias jiw='jira issue view'
 alias napl='nap $(nap list | gum filter)'
 alias mkd='glow'
 
-# Extract anything alias
+# Extract anything
 extract () {
   if [ -f $1 ] ; then
     case $1 in
@@ -117,6 +117,7 @@ extract () {
   fi
 }
 
+# Choose the top
 top () {
   echo "Pick top command..."
   TOP_COMMAND=$(gum choose "top" "sysmon" "iomon" "gpumon" "netmon" "xresmon" "energymon" --cursor.foreground "#D78700")
@@ -131,7 +132,8 @@ top () {
   esac
 }
 
-update () {
+# Update somthing
+upd () {
   echo "Pick update command..."
   UPDATE_COMMAND=$(gum choose "Applications" "Applications (without cache)" "Mirror list" "Git Repos" --cursor.foreground "#D78700")
   case "$UPDATE_COMMAND" in
@@ -142,6 +144,7 @@ update () {
   esac
 }
 
+# Pick my jira filters
 ji () {
   echo "Pick a jira filter..."
   JIRA_FILTER=$(gum choose "Filter: Personal" "Filter: 1-st Line"  "Filter: From ITSD"  "Filter: Backlog" "Filter: PaaS" "Filter: PaaS Backlog" "Filter: RFC" "Command: Assign" --cursor.foreground "#D78700")
@@ -157,6 +160,23 @@ ji () {
     "Command: Assign"           ) jira issue assign "$1" "$JIRA_LOGIN_WORK" ;;
   esac
 }
+
+
+# The function get gitlab ci job trace
+job() {
+    JOB_ID=$(echo "$1" | grep -oP '\d+$')
+    PROJECT=$(echo "$1" | awk -F "/-/jobs" '{print $1}' | awk -F "/" '{print $NF}')
+    PROJECT_DIR="$HOME/GIT/projects_products/$PROJECT"
+    cd "$PROJECT_DIR" 2>/dev/null && glab ci trace "$JOB_ID" |& tee "$HOME/tmp/job.$PROJECT.$JOB_ID.log" ||
+    {
+     gum confirm --prompt.foreground "#D78700" --selected.background="#D78700" "Want to clone the $PROJECT repo?" ||
+      exit 0
+     git clone "$(echo "$1" | sed 's|https://|git@|;s|io/|io:|;s|/-/jobs.*$|.git|')" "$PROJECT_DIR"
+     cd "$PROJECT_DIR" && glab ci trace "$JOB_ID" |& tee "$HOME/tmp/$PROJECT.$JOB_ID.log"
+    }
+}
+
+
 
 # Update smb-cli
 #export PATH="$HOME/.go/bin:$HOME/.sbm-cli/usr/bin:$PATH"
