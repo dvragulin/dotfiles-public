@@ -121,6 +121,7 @@ pacman_packages:
   - btop                        # Pretty Top :)
   - k9s                         # k8s tui tool
   - helm                        # k8s deploy tool
+  - helm-docs
   - docker
   - docker-compose
   - fzf                         # Fuzzy finder
@@ -183,7 +184,7 @@ aur_packages:
   - gp-saml-gui-git             # VPN Software
   - yandex-cloud-bin            # Yandex Cloud CLI
   - yandex-music-player         # Music player
-  - yandex-browser-corporate
+  - yandex-browser-stable
   - terraformer
   - transmission-remote-tui-git # Torrent client
   - duck
