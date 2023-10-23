@@ -1,8 +1,10 @@
 #prepopulate-query-feeds yes
 
-#show-read-feeds no
 #auto-reload yes
+#reload-threads 10
 max-items 500
+text-width 100
+
 
 external-url-viewer "urlscan -dc -r 'yandex-browser-stable {}'"
 
@@ -30,7 +32,8 @@ color listfocus black yellow standout bold
 color listnormal_unread green default
 color listfocus_unread yellow default bold
 color info red black bold
-color article cyan default
+color article white default
+#color article white default
 
 # Use `neofetch` for color numbers
 highlight article "^Лента:.*" color11
