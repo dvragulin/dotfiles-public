@@ -3,7 +3,7 @@
 #auto-reload yes
 #reload-threads 10
 max-items 500
-text-width 100
+text-width 120
 
 
 external-url-viewer "urlscan -dc -r 'yandex-browser-stable {}'"
