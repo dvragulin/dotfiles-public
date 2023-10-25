@@ -18,6 +18,12 @@ export NAP_BLACK='0x2B2B2B'
 export NAP_GRAY='0x7AB8B8'
 export NAP_WHITE='0xcbe3e7'
 export NAP_THEME="nord"
+export GUM_FILTER_MATCH_FOREGROUND="#D78700"
+export GUM_FILTER_INDICATOR_FOREGROUND="#D78700"
+export GUM_INPUT_CURSOR_FOREGROUND="#D78700"
+export GUM_CHOOSE_CURSOR_FOREGROUND="#D78700"
+export GUM_CONFIRM_PROMPT_FOREGROUND="#D78700"
+export GUM_CONFIRM_SELECTED_BACKGROUND="#D78700"
 
 ZSH_THEME="af-magic"
 DISABLE_AUTO_UPDATE="true"
@@ -89,12 +95,15 @@ alias h="helm"
 alias todo="todoist-cli"
 alias td="todoist-cli q "
 alias kk="k9s"
+alias kkon='kubectl config set current-context $(kubectl config get-contexts | tail -n +2 | awk "{ print \$1 }" | sed "1s/.*/\"\"/" | gum filter --limit 1)'
 alias helm-yc="HELM_DRIVER=sql HELM_DRIVER_SQL_CONNECTION_STRING='${HELM_POSTGRES_CONNECTION_STRING_STAGE_YC_1}' helm"
 alias helm-sb="HELM_DRIVER=sql HELM_DRIVER_SQL_CONNECTION_STRING='${HELM_POSTGRES_CONNECTION_STRING_STAGE_SB_1}' helm"
-alias jia='jira issue assign "$1" "$JIRA_LOGIN_WORK"'
 alias jiw='jira issue view'
 alias napl='nap $(nap list | gum filter)'
 alias mkd='glow'
+alias note='NAME=$(gum input --placeholder "Enter note name:" --cursor.foreground "#D78700") && TEMPLATE="$HOME/GIT/projects_home/Notes/Notes/_meta/_templates/Template.md" && OUT_PATH="$HOME/GIT/projects_home/Notes/Notes" && cp "$TEMPLATE" "$OUT_PATH/$NAME.md" && vim "$OUT_PATH/$NAME.md"'
+alias n=note
+alias update=upd
 
 # Extract anything
 extract () {
@@ -135,7 +144,7 @@ top () {
 # Update somthing
 upd () {
   echo "Pick update command..."
-  UPDATE_COMMAND=$(gum choose "Applications" "Applications (without cache)" "Mirror list" "Git Repos" --cursor.foreground "#D78700")
+  UPDATE_COMMAND=$(gum choose "Applications" "Applications (without cache)" "Mirror list" "Git Repos")
   case "$UPDATE_COMMAND" in
     "Applications"                  ) yay -Syu ;;
     "Applications (without cache)"  ) yay -Scc && yay -Syu ;;;
@@ -147,17 +156,17 @@ upd () {
 # Pick my jira filters
 ji () {
   echo "Pick a jira filter..."
-  JIRA_FILTER=$(gum choose "Filter: Personal" "Filter: 1-st Line"  "Filter: From ITSD"  "Filter: Backlog" "Filter: PaaS" "Filter: PaaS Backlog" "Filter: RFC" "Command: Assign" --cursor.foreground "#D78700")
+  JIRA_FILTER=$(gum choose "Filter: 1-st Line" "Filter: Personal" "Filter: Personal (Backlog)" "Filter: From ITSD"  "Filter: Backlog" "Filter: PaaS" "Filter: PaaS Backlog" "Filter: RFC")
   echo "Jira filter: \n   - $JIRA_FILTER"
   case "$JIRA_FILTER" in
-    "Filter: Personal"       ) jira issue list -q "assignee = currentUser() AND resolution = Unresolved AND status not in (Canceled, Completed, Declined, Tested, Resolved)" --order-by STATUS ;;
-    "Filter: 1-st Line"      ) jira issue list -q "project = $JIRA_CLI_PROJECT AND status in (Backlog, Blocked, Open, Reopened, Склад) AND component = slack_issue AND assignee is EMPTY AND \"Assigned team\" = $JIRA_CLI_TEAM" --order-by CREATED --reverse ;;
-    "Filter: From ITSD"      ) jira issue list -q "assignee in (EMPTY) AND project = $JIRA_CLI_PROJECT AND status in (\"In Progress\", Backlog, Blocked, Open, Reopened) AND (component = \"from ITSD\" OR labels = v_backlog) AND (\"Assigned team\" is EMPTY OR \"Assigned team\" = $JIRA_CLI_TEAM)" --order-by CREATED --reverse ;;
-    "Filter: Backlog"        ) jira issue list -q "assignee in (EMPTY) AND project = $JIRA_CLI_PROJECT AND status in (\"In Progress\", Backlog, Blocked, Open, Reopened) AND (component is EMPTY OR component != \"from ITSD\" AND component != slack_issue) AND (\"Assigned team\" is EMPTY OR \"Assigned team\" = $JIRA_CLI_TEAM) AND (labels not in ($JIRA_CLI_TEAM, matter-bot, migrations_v3, v_backlog) OR labels is EMPTY)" --order-by CREATED --reverse ;;
-    "Filter: PaaS"           ) jira issue list -q "project = $JIRA_CLI_PROJECT AND (assignee in membersOf(\"(System) $JIRA_CLI_TEAM_2\") OR labels = $JIRA_CLI_TEAM_2_label OR \"Assigned team\" = $JIRA_CLI_TEAM_3) AND status not in (backlog,Closed, Resolved, Declined, Canceled, Done, Open)" --order-by STATUS ;;
-    "Filter: PaaS Backlog"   ) jira issue list -q "project = $JIRA_CLI_PROJECT AND (assignee in membersOf(\"(System) $JIRA_CLI_TEAM_2\") OR labels = $JIRA_CLI_TEAM_2_label OR \"Assigned team\" = $JIRA_CLI_TEAM_3) AND status in (backlog)" ;;
-    "Filter: RFC"            ) jira issue list -q "project = RFC and status not in (Backlog, Done)" --order-by STATUS ;;
-    "Command: Assign"           ) jira issue assign "$1" "$JIRA_LOGIN_WORK" ;;
+    "Filter: 1-st Line"            ) jira issue list -q "project = $JIRA_CLI_PROJECT AND status in (Backlog, Blocked, Open, Reopened, Склад) AND component = slack_issue AND assignee is EMPTY AND \"Assigned team\" = $JIRA_CLI_TEAM" --order-by CREATED --reverse ;;
+    "Filter: Personal"             ) jira issue list -q "assignee = currentUser() AND resolution = Unresolved AND status not in (Open, Backlog, Canceled, Completed, Declined, Tested, Resolved)" --order-by STATUS ;;
+    "Filter: Personal (Backlog)"   ) jira issue list -q "assignee = currentUser() AND resolution = Unresolved AND status not in (\"In Progress\", \"TO DO\", Review, Склад, Blocked, Reopened, Canceled, Completed, Declined, Tested, Resolved)" --order-by STATUS ;;
+    "Filter: From ITSD"            ) jira issue list -q "assignee in (EMPTY) AND project = $JIRA_CLI_PROJECT AND status in (\"In Progress\", Backlog, Blocked, Open, Reopened) AND (component = \"from ITSD\" OR labels = v_backlog) AND (\"Assigned team\" is EMPTY OR \"Assigned team\" = $JIRA_CLI_TEAM)" --order-by CREATED --reverse ;;
+    "Filter: Backlog"              ) jira issue list -q "assignee in (EMPTY) AND project = $JIRA_CLI_PROJECT AND status in (\"In Progress\", Backlog, Blocked, Open, Reopened) AND (component is EMPTY OR component != \"from ITSD\" AND component != slack_issue) AND (\"Assigned team\" is EMPTY OR \"Assigned team\" = $JIRA_CLI_TEAM) AND (labels not in ($JIRA_CLI_TEAM, matter-bot, migrations_v3, v_backlog) OR labels is EMPTY)" --order-by CREATED --reverse ;;
+    "Filter: PaaS"                 ) jira issue list -q "project = $JIRA_CLI_PROJECT AND (assignee in membersOf(\"(System) $JIRA_CLI_TEAM_2\") OR labels = $JIRA_CLI_TEAM_2_label OR \"Assigned team\" = $JIRA_CLI_TEAM_3) AND status not in (backlog,Closed, Resolved, Declined, Canceled, Done, Open)" --order-by STATUS ;;
+    "Filter: PaaS Backlog"         ) jira issue list -q "project = $JIRA_CLI_PROJECT AND (assignee in membersOf(\"(System) $JIRA_CLI_TEAM_2\") OR labels = $JIRA_CLI_TEAM_2_label OR \"Assigned team\" = $JIRA_CLI_TEAM_3) AND status in (backlog)" ;;
+    "Filter: RFC"                  ) jira issue list -q "project = RFC and status not in (Backlog, Done)" --order-by STATUS ;;
   esac
 }
 
@@ -169,14 +178,28 @@ job() {
     PROJECT_DIR="$HOME/GIT/projects_products/$PROJECT"
     cd "$PROJECT_DIR" 2>/dev/null && glab ci trace "$JOB_ID" |& tee "$HOME/tmp/job.$PROJECT.$JOB_ID.log" ||
     {
-     gum confirm --prompt.foreground "#D78700" --selected.background="#D78700" "Want to clone the $PROJECT repo?" ||
+     gum confirm "Want to clone the $PROJECT repo?" ||
       exit 0
      git clone "$(echo "$1" | sed 's|https://|git@|;s|io/|io:|;s|/-/jobs.*$|.git|')" "$PROJECT_DIR"
-     cd "$PROJECT_DIR" && glab ci trace "$JOB_ID" |& tee "$HOME/tmp/$PROJECT.$JOB_ID.log"
-    }
+     cd "$PROJECT_DIR" && glab ci trace "$JOB_ID" |& tee "$HOME/tmp/job.$PROJECT.$JOB_ID.log"
+    } && echo "Log path: ~/tmp/job.$PROJECT.$JOB_ID.log" && cd ~/tmp && 
+    log "$HOME/tmp/job.$PROJECT.$JOB_ID.log"
 }
 
-
+# The functuin manage jira issue assigne
+jia() {
+  KEY=$(gum input --value "$1" --placeholder "? Issue key")
+  JIRA_STATUS=$(gum choose "In Progress" "Todo" "Склад" "Backlog" "Done")
+  jira issue assign $KEY "$JIRA_LOGIN_WORK"
+  echo "Pick a issue status..."
+  case "$JIRA_STATUS" in
+    "In Progress"  ) jira issue move $KEY "In Progress" ;;
+    "Todo"         ) jira issue move $KEY "Todo" ;;
+    "Склад"        ) jira issue move $KEY "Склад" ;;
+    "Backlog"      ) jira issue move $KEY "Backlog" ;;
+    "Done"         ) jira issue move $KEY "Done" ;;
+  esac
+}
 
 # Update smb-cli
 #export PATH="$HOME/.go/bin:$HOME/.sbm-cli/usr/bin:$PATH"
