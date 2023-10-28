@@ -98,7 +98,6 @@ alias kk="k9s"
 alias kkon='kubectl config set current-context $(kubectl config get-contexts | tail -n +2 | awk "{ print \$1 }" | sed "1s/.*/\"\"/" | gum filter --limit 1)'
 alias helm-yc="HELM_DRIVER=sql HELM_DRIVER_SQL_CONNECTION_STRING='${HELM_POSTGRES_CONNECTION_STRING_STAGE_YC_1}' helm"
 alias helm-sb="HELM_DRIVER=sql HELM_DRIVER_SQL_CONNECTION_STRING='${HELM_POSTGRES_CONNECTION_STRING_STAGE_SB_1}' helm"
-alias jiw='jira issue view'
 alias napl='nap $(nap list | gum filter)'
 alias mkd='glow'
 alias note='NAME=$(gum input --placeholder "Enter note name:" --cursor.foreground "#D78700") && TEMPLATE="$HOME/GIT/projects_home/Notes/Notes/_meta/_templates/Template.md" && OUT_PATH="$HOME/GIT/projects_home/Notes/Notes" && cp "$TEMPLATE" "$OUT_PATH/$NAME.md" && vim "$OUT_PATH/$NAME.md"'
@@ -189,16 +188,33 @@ job() {
 # The functuin manage jira issue assigne
 jia() {
   KEY=$(gum input --value "$1" --placeholder "? Issue key")
-  JIRA_STATUS=$(gum choose "In Progress" "Todo" "Склад" "Backlog" "Done")
+  JIRA_STATUS=$(gum choose "In Progress" "Blocked" "Todo" "Склад" "Backlog" "Done" "Declined")
   jira issue assign $KEY "$JIRA_LOGIN_WORK"
   echo "Pick a issue status..."
   case "$JIRA_STATUS" in
     "In Progress"  ) jira issue move $KEY "In Progress" ;;
-    "Todo"         ) jira issue move $KEY "Todo" ;;
+    "Blocked"      ) jira issue move $KEY "Blocked" ;;
+    "Todo"         ) jira issue move $KEY "To Do" ;;
     "Склад"        ) jira issue move $KEY "Склад" ;;
     "Backlog"      ) jira issue move $KEY "Backlog" ;;
     "Done"         ) jira issue move $KEY "Done" ;;
+    "Declined"     ) jira issue move $KEY "Отклонить" ;;
   esac
+}
+
+# The functuin manage jira issue view
+jiw() {
+  KEY=$(gum input --value "$1" --placeholder "? Issue key")
+  jira issue view $KEY
+}
+
+# The function get TF states from repos
+tfstate() {
+  cd $TF_STATE_PROJECT_FULL_PATH && git co master && git pull
+  STATE_NAME=$(fd | rg values.yaml | sed 's/\/values.yaml//g; s/\//-/g' | gum filter --placeholder "Pick terraform state..." |  sed 's/^/charts-/')
+  STATE_FILE="$HOME/tmp/tf.state.$STATE_NAME.json"
+  curl -s --header "Authorization: Bearer $GITLAB_TOKEN" "$GITLAB_API_URL/projects/$TF_STATE_PROJECT_ID/terraform/state/$STATE_NAME" > "$STATE_FILE"
+  log $STATE_FILE
 }
 
 # Update smb-cli
