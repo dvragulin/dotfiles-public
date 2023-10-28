@@ -27,5 +27,5 @@ notify-send -a "Git" -u normal "Repositories have been updated:
 Time spent:[$TIME_DIFF]
 "
 
-rg FAIL -B 1 < $HOME/.ansible.git_control.log > $HOME/.ansible.git_control.errors.log
+rg FAIL -B 1 < $HOME/.ansible.git_control.log > $HOME/tmp/ansible.git_control.errors.log
 
