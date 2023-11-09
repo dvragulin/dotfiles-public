@@ -131,7 +131,6 @@ pacman_packages:
   - s3cmd
   - ytfzf
   - termshark
-  - dbeaver
   - yt-dlp
   - goaccess
   - go-yq
@@ -187,7 +186,6 @@ aur_packages:
   - yandex-browser-stable
   - terraformer
   - transmission-remote-tui-git # Torrent client
-  - duck
   - multiwerf-bin
   - cointop-bin
   - urlview
