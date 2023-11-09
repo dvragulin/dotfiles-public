@@ -188,7 +188,7 @@ job() {
 # The functuin manage jira issue assigne
 jia() {
   KEY=$(gum input --value "$1" --placeholder "? Issue key")
-  JIRA_STATUS=$(gum choose "In Progress" "Blocked" "Todo" "Склад" "Backlog" "Done" "Declined")
+  JIRA_STATUS=$(gum choose "In Progress" "Blocked" "Todo" "Склад" "Review" "Backlog" "Done" "Declined")
   jira issue assign $KEY "$JIRA_LOGIN_WORK"
   echo "Pick a issue status..."
   case "$JIRA_STATUS" in
@@ -196,6 +196,7 @@ jia() {
     "Blocked"      ) jira issue move $KEY "Blocked" ;;
     "Todo"         ) jira issue move $KEY "To Do" ;;
     "Склад"        ) jira issue move $KEY "Склад" ;;
+    "Review"       ) jira issue move $KEY "Review" ;;
     "Backlog"      ) jira issue move $KEY "Backlog" ;;
     "Done"         ) jira issue move $KEY "Done" ;;
     "Declined"     ) jira issue move $KEY "Отклонить" ;;
@@ -231,7 +232,7 @@ gitadd () {
   echo "$(git status -s | wc -l) file(s) will be committed:" && git add . && git status -s
   gum confirm "Commit changes to branch: $BRANCH_NAME?" || exit 0
   echo "Please input a name for the commit:"
-  git commit -m $(gum input --value "$BRANCH_NAME" --placeholder "$BRANCH_NAME") && git push origin $BRANCH_NAME
+  git commit -m "$(gum input --value "$BRANCH_NAME" --placeholder "$BRANCH_NAME")" && git push origin $BRANCH_NAME
 }
 
 
