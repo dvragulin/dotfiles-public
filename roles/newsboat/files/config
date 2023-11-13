@@ -2,7 +2,7 @@
 
 #auto-reload yes
 #reload-threads 10
-max-items 500
+max-items 1000
 text-width 120
 
 
