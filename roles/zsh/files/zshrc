@@ -88,7 +88,7 @@ alias bootstrap="$HOME/GIT/projects_home/dotfiles-public/bin/bootstrap.sh"
 alias tw="taskwarrior-tui"
 alias kafkacat="kcat"
 alias log="lnav"
-alias tsh-login="tsh login --proxy=$TELEPORT_PROXY"
+alias tsh-login="tsh login --proxy=$TELEPORT_PROXY" # && tsh kube login stage" 
 alias gl="glab"
 alias rg="rg -M 1000"
 alias h="helm"
@@ -204,7 +204,7 @@ jia() {
 }
 
 # The functuin manage jira issue view
-jiw() {
+jiv() {
   KEY=$(gum input --value "$1" --placeholder "? Issue key")
   jira issue view $KEY
 }
