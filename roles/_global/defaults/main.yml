@@ -143,6 +143,7 @@ pacman_packages:
   - ctags
   - git-delta                   # Diff tool
   - bottom
+  - inxi                        # Full featured CLI system information tool
   - vte3
   - gtk2-perl
   - globalprotect-openconnect   # VPN Software

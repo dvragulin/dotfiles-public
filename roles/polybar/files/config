@@ -69,7 +69,7 @@ override-redirect    = false
 
 ;modules-center      =
 modules-left         = i3 sp2 xwindow
-modules-right        = cpu sp2 memory sp2 temperature sp2 docker sp2 updates_pacman sp2 updates_aur sp2 trash tmp sp2 filesystem_custom sp2 jira_issues sp2 git_count git_mr git_wh sp2 newsboat sp2 pyradio sp2 mic sp2 pulseaudio sp2 translator sp2 xkeyboard sp2 weather sp2 calendar date sp2 iot_kettle sp2 mount_nas sp2
+modules-right        = cpu sp2 memory sp2 temperature sp2 docker sp2 updates_pacman sp2 updates_aur sp2 trash tmp pics sp2 filesystem_custom sp2 jira_issues sp2 git_count git_mr git_wh sp2 newsboat sp2 pyradio sp2 mic sp2 pulseaudio sp2 translator sp2 xkeyboard sp2 weather sp2 calendar date sp2 iot_kettle sp2 mount_nas sp2
 
 ; ---------------------------------------------------------------------------------------------------------------------
 ; --- Used Modules ----------------------------------------------------------------------------------------------------
@@ -413,12 +413,22 @@ label = %output%
 format-prefix = " %{T5}%{T-}  "
 format-prefix-padding-left = 0
 format-prefix-padding-right = 0
-;format-prefix-foreground = ${colors.foreground}
 label-padding = 0
-;label-foreground = ${colors.foreground}
 click-left = mv ~/tmp/* ~/.tmp/ && notify-send -a "Tmp" -u normal "Temporary files moved"
 click-right = mv ~/tmp/* ~/.tmp/ && notify-send -a "Tmp" -u normal "Temporary files moved"
 
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/pics]
+type = custom/script
+exec = ls -1 ~/Pictures | wc -l
+interval = 5
+label = %output%
+format-prefix = " %{T5}%{T-}  "
+format-prefix-padding-left = 0
+format-prefix-padding-right = 0
+label-padding = 0
+click-left = mv ~/Pictures/* ~/.tmp/Pictures/ && notify-send -a "Tmp" -u normal "Pictures files moved"
+click-right = mv ~/Pictures/* ~/.tmp/Pictures/ && notify-send -a "Tmp" -u normal "Pictures files moved"
 
 ; --- Module ----------------------------------------------------------------------------------------------------------
 [module/filesystem_custom]

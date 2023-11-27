@@ -31,7 +31,11 @@ map g goto top
 
 # --- Set colors ------------------------------------------
 
-#set font                    "BreezeSans Regular 14"
+set font                    "monospace Regular 9.5"
+set recolor-lightcolor       "#2B2B2B" 
+set recolor-darkcolor        "#a1a7b4" # "#93a1a1"
+set render-loading-fg        "#2b2b2b"
+set render-loading-bg        "#2b2b2b"
 set completion-group-bg      "#2B2B2B"
 set completion-bg            "#2B2B2B"
 set completion-highlight-bg  "#2B2B2B"

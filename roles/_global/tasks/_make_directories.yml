@@ -38,6 +38,7 @@
   - '$HOME/GIT/projects_paas/_misc'
   - '$HOME/GIT/projects_products'
   - '$HOME/.tmp'
+  - '$HOME/.tmp/Pictures'
   - '$HOME/.config'
   - '$HOME/.config/rofi'
   - '$HOME/.config/ranger'

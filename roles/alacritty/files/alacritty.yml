@@ -27,7 +27,7 @@ colors:
     magenta: '0xD78700'
     cyan:    '0xBDDBDB'
     white:   '0xa6b3cc'
-
+#a1a7b4
 window:
   dimensions:
     columns: 160
