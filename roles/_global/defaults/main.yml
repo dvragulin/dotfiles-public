@@ -152,6 +152,7 @@ pacman_packages:
   - obsidian                    # Notes app
   - apache
   - bleachbit                   # ccleaner
+  - helix                       # The terminal editor
 
 
 aur_packages:
