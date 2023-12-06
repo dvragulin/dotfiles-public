@@ -22,6 +22,8 @@ export GUM_FILTER_MATCH_FOREGROUND="#D78700"
 export GUM_FILTER_INDICATOR_FOREGROUND="#D78700"
 export GUM_INPUT_CURSOR_FOREGROUND="#D78700"
 export GUM_CHOOSE_CURSOR_FOREGROUND="#D78700"
+export GUM_CHOOSE_CURSOR_BACKGROUD="#D78700"
+export GUM_CHOOSE_SELECTED_FOREGROUND="#7AB87A"
 export GUM_CONFIRM_PROMPT_FOREGROUND="#D78700"
 export GUM_CONFIRM_SELECTED_BACKGROUND="#D78700"
 
@@ -100,7 +102,6 @@ alias helm-yc="HELM_DRIVER=sql HELM_DRIVER_SQL_CONNECTION_STRING='${HELM_POSTGRE
 alias helm-sb="HELM_DRIVER=sql HELM_DRIVER_SQL_CONNECTION_STRING='${HELM_POSTGRES_CONNECTION_STRING_STAGE_SB_1}' helm"
 alias napl='nap $(nap list | gum filter)'
 alias mkd='glow'
-alias note='NAME=$(gum input --placeholder "Enter note name:" --cursor.foreground "#D78700") && TEMPLATE="$HOME/GIT/projects_home/Notes/Notes/_meta/_templates/Template.md" && OUT_PATH="$HOME/GIT/projects_home/Notes/Notes" && cp "$TEMPLATE" "$OUT_PATH/$NAME.md" && vim "$OUT_PATH/$NAME.md"'
 alias n=note
 alias update=upd
 
@@ -155,7 +156,7 @@ upd () {
 # Pick my jira filters
 ji () {
   echo "Pick a jira filter..."
-  JIRA_FILTER=$(gum choose "Filter: 1-st Line" "Filter: Personal" "Filter: Personal (Backlog)" "Filter: From ITSD"  "Filter: Backlog" "Filter: PaaS" "Filter: PaaS Backlog" "Filter: RFC")
+  JIRA_FILTER=$(gum choose "Filter: 1-st Line" "Filter: Personal" "Filter: Personal (Backlog)" "Filter: From ITSD"  "Filter: Backlog" "Filter: PaaS" "Filter: PaaS Backlog" "Filter: RFC" "Filter: Onboarding")
   echo "Jira filter: \n   - $JIRA_FILTER"
   case "$JIRA_FILTER" in
     "Filter: 1-st Line"            ) jira issue list -q "project = $JIRA_CLI_PROJECT AND status in (Backlog, Blocked, Open, Reopened, Склад) AND component = slack_issue AND assignee is EMPTY AND \"Assigned team\" = $JIRA_CLI_TEAM" --order-by CREATED --reverse ;;
@@ -166,6 +167,7 @@ ji () {
     "Filter: PaaS"                 ) jira issue list -q "project = $JIRA_CLI_PROJECT AND (assignee in membersOf(\"(System) $JIRA_CLI_TEAM_2\") OR labels = $JIRA_CLI_TEAM_2_label OR \"Assigned team\" = $JIRA_CLI_TEAM_3) AND status not in (backlog,Closed, Resolved, Declined, Canceled, Done, Open)" --order-by STATUS ;;
     "Filter: PaaS Backlog"         ) jira issue list -q "project = $JIRA_CLI_PROJECT AND (assignee in membersOf(\"(System) $JIRA_CLI_TEAM_2\") OR labels = $JIRA_CLI_TEAM_2_label OR \"Assigned team\" = $JIRA_CLI_TEAM_3) AND status in (backlog)" ;;
     "Filter: RFC"                  ) jira issue list -q "project = RFC and status not in (Backlog, Done)" --order-by STATUS ;;
+    "Filter: Onboarding"           ) jira issue list -q "assignee = belousov.ayu AND resolution = Unresolved AND status not in (Canceled, Completed, Declined, Tested, Resolved)" --order-by STATUS ;;
   esac
 }
 
@@ -235,6 +237,155 @@ gitadd () {
   git commit -m "$(gum input --value "$BRANCH_NAME" --placeholder "$BRANCH_NAME")" && git push origin $BRANCH_NAME
 }
 
+
+# Create note, snippet, runbook or opertaion
+note() {
+  echo -e "\e[0;32m\e[0m What do you want to create?"
+  NOTE_TYPE=$(gum choose "Note" "Operation" "Runbook" "Snippet")
+  echo -e "\e[0A\e[K\e[0;32m\e[0m Enter the name of your \e[0;34m$NOTE_TYPE\e[0m\e[0m"
+  case $NOTE_TYPE in
+      "Note")
+          NAME=$(gum input --placeholder "? The $NOTE_TYPE name")
+          TEMPLATE="$HOME/GIT/projects_home/Notes/.helpers/notes_template"
+          OUT_PATH="$HOME/GIT/projects_home/Notes/Notes"
+          cp "$TEMPLATE" "$HOME/GIT/projects_home/Notes/Notes/$NAME.md"
+          echo -e "\e[0A\e[K\e[0;32m\e[0m Choose tags:"
+          gum choose --no-limit $(cat "$HOME/GIT/projects_home/Notes/.helpers/notes_tags") \
+            | tr -s ' ' '\n - ' \
+            | sed 's/^/  - /' \
+            | sed -i '/tags:/r /dev/stdin' "$OUT_PATH/$NAME.md"
+          sed -i "s/^Date:.*/Date: $(date +%Y-%m-%dT%H:%M:%S)/" "$OUT_PATH/$NAME.md"
+          echo -e "\e[0A\e[K\e[0;32m\e[0m $NOTE_TYPE created! "
+          echo -e "\e[0;32m\e[0m $NOTE_TYPE path: \e[0;34m$OUT_PATH/$NAME.md\e[0m"
+          vim "$OUT_PATH/$NAME.md"
+          ;;
+      "Operation")
+          NAME=$(gum input --placeholder "? The $NOTE_TYPE name")
+          TEMPLATE="$HOME/GIT/projects_home/Notes/.helpers/operation_template"
+          OUT_PATH="$HOME/GIT/projects_home/Notes/Operation"
+          cp "$TEMPLATE" "$OUT_PATH/$NAME.md"
+          echo -e "\e[0A\e[K\e[0;32m\e[0m Choose tags:"
+          gum choose --no-limit $(cat "$HOME/GIT/projects_home/Notes/.helpers/operation_tags") \
+            | tr -s ' ' '\n - ' \
+            | sed 's/^/  - /' \
+            | sed -i '/tags:/r /dev/stdin' "$OUT_PATH/$NAME.md"
+          sed -i "s/^Date:.*/Date: $(date +%Y-%m-%dT%H:%M:%S)/" "$OUT_PATH/$NAME.md"
+          echo -e "\e[0A\e[K\e[0;32m\e[0m $NOTE_TYPE created! "
+          echo -e "\e[0;32m\e[0m $NOTE_TYPE path: \e[0;34m$OUT_PATH/$NAME.md\e[0m"
+          vim "$OUT_PATH/$NAME.md"
+          ;;
+      "Runbook")
+          NAME=$(gum input --placeholder "? The $NOTE_TYPE name: <service>.<problem>")
+          TEMPLATE="$HOME/GIT/projects_home/Notes/.helpers/runbook_template"
+          OUT_PATH="$HOME/GIT/projects_home/Notes/Runbooks"
+          cp "$TEMPLATE" "$HOME/GIT/projects_home/Notes/Runbooks/$NAME.md"
+          echo -e "\e[0A\e[K\e[0;32m\e[0m Choose tags:"
+          gum choose --no-limit $(cat "$HOME/GIT/projects_home/Notes/.helpers/runbook_tags") \
+            | tr -s ' ' '\n - ' \
+            | sed 's/^/  - /' \
+            | sed -i '/tags:/r /dev/stdin' "$OUT_PATH/$NAME.md"
+          sed -i "s/^Date:.*/Date: $(date +%Y-%m-%dT%H:%M:%S)/" "$OUT_PATH/$NAME.md"
+          echo -e "\e[0A\e[K\e[0;32m\e[0m $NOTE_TYPE created!"
+          echo -e "\e[0;32m\e[0m $NOTE_TYPE path: \e[0;34m$OUT_PATH/$NAME.md\e[0m"
+          vim "$OUT_PATH/$NAME.md"
+          ;;
+      "Snippet")
+          echo -e "\e[0A\e[K\e[0;32m\e[0m Choose $NOTE_TYPE service:"
+          FLD=$(gum filter --no-strict $(find "$HOME/GIT/projects_home/Notes/Snippets" -maxdepth 1 -mindepth 1 -type d -exec basename {} \;) --width=20 --placeholder "Pick Snippet folder..." --indicator="󰘩")
+          echo -e "\e[0A\e[K\e[0;32m\e[0m Choose \e[0;34m$FLD\e[0m action:"
+          NAME=$(gum input --placeholder "<action>.<sub_action>")
+          echo -e "\e[0A\e[K\e[0;32m\e[0m Choose \e[0;34m$FLD/$NAME\e[0m language:"
+          LNG=$(gum input --placeholder "< sh | yaml | go | sql | tf | etc>")
+          TEMPLATE="$HOME/GIT/projects_home/Notes/.helpers/snippets_template"
+          OUT_PATH="$HOME/GIT/projects_home/Notes/Snippets/$FLD"
+          mkdir -p $OUT_PATH && cp "$TEMPLATE" "$OUT_PATH/$NAME.$LNG"
+          echo -e "\e[0A\e[K\e[0;32m\e[0m Your $NOTE_TYPE path: \e[0;34m$OUT_PATH/$NAME.$LNG\e[0m"
+          vim "$OUT_PATH/$NAME.$LNG"
+          ;;
+  esac
+}
+
+# Find runbook function
+rnb() {
+  FLD=($HOME/GIT/projects_home/Notes/Runbooks)
+  NAME=$(cd $FLD && find -type f | sed 's/\.\///' | fzf --cycle --no-separator --header=" Please input Runbook name:" --preview-label=" Code preview" --info=inline-right)
+  glow $FLD/$NAME && cd
+}
+# Find snippet function
+snp() {
+  FLD=($HOME/GIT/projects_home/Notes/Snippets)
+  NAME=$(cd $FLD && find -type f | sed 's/\.\///' | fzf --cycle --no-separator --header=" Please input Snippet name:" --preview-label=" Code preview" --info=inline-right)
+  cat $FLD/$NAME && cd
+}
+
+
+# Remove stage helm releases
+hlm() {
+  echo -e "\e[0;32m\e[0m Which cluster is the release in?"
+  CL_TYPE=$(gum choose "yc-stage" "sb-stage")
+  echo -e "\e[0A\e[K\e[0;32m\e[0m Please input the namespace:"
+  case $CL_TYPE in
+      "yc-stage")
+          NS_NAME=$(kubectl --context $CL_TYPE get ns | awk '{print $1}' | tail -n +2 | fzf --cycle --no-separator --header=" Please select a namespace:" --preview-window=hidden --info=inline-right)
+          echo -e "\e[0A\e[K\e[0;32m\e[0m Please select releases:"
+          RLS=$(gum choose --no-limit $(HELM_DRIVER=sql HELM_DRIVER_SQL_CONNECTION_STRING=$HELM_POSTGRES_CONNECTION_STRING_STAGE_YC_1 helm --kube-context $CL_TYPE -n $NS_NAME ls --short | awk '{print $1}') | tr '\n' ' ' )
+          echo -e "\e[0A\e[K\e[0;32m\e[0m The necessary information for deletion has been prepared:"
+          echo -e "    Cluster name: \e[0;34m$CL_TYPE\e[0m"
+          echo -e "    Namespace:    \e[0;34m$NS_NAME\e[0m"
+          echo -e "    Releases:     \e[0;34m$RLS\e[0m"
+          gum confirm "Are you sure to apply the operation?" && \
+            HELM_DRIVER=sql HELM_DRIVER_SQL_CONNECTION_STRING=$HELM_POSTGRES_CONNECTION_STRING_STAGE_YC_1 helm --kube-context $CL_TYPE -n $NS_NAME uninstall $RLS || \
+            echo -e "\e[0;32m\e[0m The operation was canceled"
+          ;;
+      "sb-stage")
+          NS_NAME=$(kubectl --context $CL_TYPE get ns | awk '{print $1}' | tail -n +2 | fzf --cycle --no-separator --header=" Please select a namespace:" --preview-window=hidden --info=inline-right)
+          echo -e "\e[0A\e[K\e[0;32m\e[0m Please select releases:"
+          RLS=$(gum choose --no-limit $(HELM_DRIVER=sql HELM_DRIVER_SQL_CONNECTION_STRING=$HELM_POSTGRES_CONNECTION_STRING_STAGE_SB_1 helm --kube-context $CL_TYPE -n $NS_NAME ls --short | awk '{print $1}') | tr '\n' ' ' )
+          echo -e "\e[0A\e[K\e[0;32m\e[0m The necessary information for deletion has been prepared:"
+          echo -e "    Cluster name: \e[0;34m$CL_TYPE\e[0m"
+          echo -e "    Namespace:    \e[0;34m$NS_NAME\e[0m"
+          echo -e "    Releases:     \e[0;34m$RLS\e[0m"
+          gum confirm "Are you sure to apply the operation?" && \
+            HELM_DRIVER=sql HELM_DRIVER_SQL_CONNECTION_STRING=$HELM_POSTGRES_CONNECTION_STRING_STAGE_SB_1 helm --kube-context $CL_TYPE -n $NS_NAME uninstall $RLS || \
+            echo -e "\e[0;32m\e[0m The operation was canceled"
+          ;;
+  esac
+}
+
+# Get kafka topics/users info
+kfk() {
+  echo -e "\e[0;32m\e[0m What Kafka resource do you need?"
+  RESOURCE_TYPE=$(gum choose "Kafka Topic" "Kafka User") # | tr -d '[:lower:] ' | tr '[:upper:]' '[:lower:]')
+  echo -e "\e[0A\e[K\e[0;32m\e[0m Which cluster are Kafka topics in?"
+  CL_TYPE=$(gum choose "yc-stage" "yc-prod")
+  echo -e "\e[0A\e[K\e[0;32m\e[0m The necessary information for deletion has been prepared:"
+  echo -e "    Cluster name:    \e[0;34m$CL_TYPE\e[0m"
+  case $RESOURCE_TYPE in
+        "Kafka Topic")
+            TOPIC_NAME=$(kubectl --context $CL_TYPE -n infra get kt | awk '{print $1}' | tail -n +2 | fzf --cycle --no-separator --header=" Please select a Kafka Topic:" --preview-window=hidden --info=inline-right)
+            KT_DSCR="$HOME/tmp/kafka-topic.wide.$TOPIC_NAME.$(date +%Y-%m-%dT%H:%M:%S).yaml"
+            KT_WIDE="$HOME/tmp/kafka-topic.describe.$TOPIC_NAME.$(date +%Y-%m-%dT%H:%M:%S).yaml"
+            kubectl --context $CL_TYPE -n infra describe kt/$TOPIC_NAME > $KT_DSCR
+            kubectl --context $CL_TYPE -n infra get kt/$TOPIC_NAME -o yaml > $KT_WIDE
+            echo -e "    Kafka Topic:     \e[0;34m$TOPIC_NAME\e[0m"
+            echo -e "    Path: Describe:  \e[0;34m$KT_DSCR\e[0m"
+            echo -e "    Path: Wide YML:  \e[0;34m$KT_WIDE\e[0m"
+            cat --theme=Visual\ Studio\ Dark+ $KT_DSCR $KT_WIDE
+            ;;
+        "Kafka User")
+            USER_NAME=$(kubectl --context $CL_TYPE -n infra get ku | awk '{print $1}' | tail -n +2 | fzf --cycle --no-separator --header=" Please select a Kafka User:" --preview-window=hidden --info=inline-right)
+            KU_DSCR="$HOME/tmp/kafka-user.wide.$USER_NAME.$(date +%Y-%m-%dT%H:%M:%S).yaml"
+            KU_WIDE="$HOME/tmp/kafka-user.describe.$USER_NAME.$(date +%Y-%m-%dT%H:%M:%S).yaml"
+            kubectl --context $CL_TYPE -n infra describe ku/$USER_NAME > $KU_DSCR
+            kubectl --context $CL_TYPE -n infra get ku/$USER_NAME -o yaml > $KU_WIDE
+            echo -e "    Kafka User:      \e[0;34m$USER_NAME\e[0m"
+            echo -e "    Path: Describe:  \e[0;34m$KU_DSCR\e[0m"
+            echo -e "    Path: Wide YML:  \e[0;34m$KU_WIDE\e[0m"
+            cat --theme=Visual\ Studio\ Dark+ $KU_DSCR $KU_WIDE
+            ;;
+  esac
+  echo -e "\e[0;32m\e[0m The operation was completed"
+}
 
 # Update smb-cli
 #export PATH="$HOME/.go/bin:$HOME/.sbm-cli/usr/bin:$PATH"
