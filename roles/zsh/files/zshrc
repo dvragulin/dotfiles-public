@@ -52,16 +52,6 @@ source $ZSH/oh-my-zsh.sh
 # k8s aliases
 [ -f ~/.kubectl_aliases ] && source ~/.kubectl_aliases
 
-# Add my functions
-if [ -d "$FUNCTIONS_DIR" ]; then
-    for func in "$FUNCTIONS_DIR"/*.sh; do
-        if [ -r "$func" ]; then
-            source "$func"
-        fi
-    done
-else
-    echo "404: ${FUNCTIONS_DIR} not found."
-fi
 
 # Add my aliases
 alias vim="nvim"
@@ -115,3 +105,15 @@ alias helm-sb="HELM_DRIVER=sql HELM_DRIVER_SQL_CONNECTION_STRING='${HELM_POSTGRE
 alias mkd='glow'
 alias n=note
 alias update=upd
+
+
+# Add my functions
+if [ -d "$FUNCTIONS_DIR" ]; then
+    for func in "$FUNCTIONS_DIR"/*.sh; do
+        if [ -r "$func" ]; then
+            source "$func"
+        fi
+    done
+else
+    echo "404: ${FUNCTIONS_DIR} not found."
+fi
