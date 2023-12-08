@@ -153,6 +153,7 @@ pacman_packages:
   - apache
   - bleachbit                   # ccleaner
   - helix                       # The terminal editor
+  - sops                        # Encrypted file editor
 
 
 aur_packages:
