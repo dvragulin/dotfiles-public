@@ -120,8 +120,6 @@ pacman_packages:
   - ncurses                     # Libs
   - btop                        # Pretty Top :)
   - k9s                         # k8s tui tool
-  - helm                        # k8s deploy tool
-  - helm-docs
   - docker
   - docker-compose
   - fzf                         # Fuzzy finder
@@ -160,6 +158,9 @@ aur_packages:
   - trivy # A Simple and Comprehensive Vulnerability Scanner for Containers, Suitable for CI
   - gum
   - glow
+  - helm                        # k8s deploy tool
+  - helm-docs
+  - helm-secrets
   - zotero #test
   - cpupower-gui # perf
   - ananicy # perf
