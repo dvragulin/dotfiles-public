@@ -152,6 +152,7 @@ pacman_packages:
   - bleachbit                   # ccleaner
   - helix                       # The terminal editor
   - sops                        # Encrypted file editor
+  - dbeaver
 
 
 aur_packages:
