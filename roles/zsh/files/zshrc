@@ -105,7 +105,7 @@ alias helm-sb="HELM_DRIVER=sql HELM_DRIVER_SQL_CONNECTION_STRING='${HELM_POSTGRE
 alias mkd='glow'
 alias n=note
 alias update=upd
-
+alias hl="helix"
 
 # Add my functions
 if [ -d "$FUNCTIONS_DIR" ]; then
