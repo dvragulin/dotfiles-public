@@ -8,15 +8,6 @@ export ZSH_TMUX_AUTOSTART=false
 export ZSH_TMUX_AUTOQUIT=true
 export ZSH_TMUX_AUTOCONNECT=false
 export TERM=xterm-256color
-export NAP_PRIMARY_COLOR='0xcbe3e7'
-export NAP_RED='0xB87A7A'
-export NAP_GREEN='0x7AB87A'
-export NAP_FOREGROUND='0xcbe3e7'
-export NAP_BACKGROUND='0x2B2B2B'
-export NAP_BLACK='0x2B2B2B'
-export NAP_GRAY='0x7AB8B8'
-export NAP_WHITE='0xcbe3e7'
-export NAP_THEME="nord"
 export GUM_FILTER_MATCH_FOREGROUND="#D78700"
 export GUM_FILTER_INDICATOR_FOREGROUND="#D78700"
 export GUM_INPUT_CURSOR_FOREGROUND="#D78700"
@@ -27,7 +18,7 @@ export GUM_CONFIRM_PROMPT_FOREGROUND="#D78700"
 export GUM_CONFIRM_SELECTED_BACKGROUND="#D78700"
 
 PATH=$PATH:$GOPATH/bin # Add GOPATH/bin to PATH for scripting
-FUNCTIONS_DIR=~/GIT/projects_home/common-scripts/zsh_functions
+
 ZSH_THEME="af-magic"
 DISABLE_AUTO_UPDATE="true"
 
@@ -108,6 +99,7 @@ alias update=upd
 alias hl="helix"
 
 # Add my functions
+FUNCTIONS_DIR="$HOME/GIT/projects_home/common-scripts/zsh_functions"
 if [ -d "$FUNCTIONS_DIR" ]; then
     for func in "$FUNCTIONS_DIR"/*.sh; do
         if [ -r "$func" ]; then
