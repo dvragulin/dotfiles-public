@@ -153,6 +153,7 @@ pacman_packages:
   - helix                       # The terminal editor
   - sops                        # Encrypted file editor
   - dbeaver
+  - trippy                      # A network diagnostic tool
 
 
 aur_packages:
