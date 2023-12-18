@@ -95,6 +95,7 @@ alias helm-yc="HELM_DRIVER=sql HELM_DRIVER_SQL_CONNECTION_STRING='${HELM_POSTGRE
 alias helm-sb="HELM_DRIVER=sql HELM_DRIVER_SQL_CONNECTION_STRING='${HELM_POSTGRES_CONNECTION_STRING_STAGE_SB_1}' helm"
 alias mkd='glow'
 alias n=note
+alias nv='glow ~/GIT/projects_home/Notes'
 alias update=upd
 alias hl="helix"
 
