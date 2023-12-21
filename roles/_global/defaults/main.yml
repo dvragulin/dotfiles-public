@@ -155,7 +155,6 @@ pacman_packages:
   - dbeaver
   - trippy                      # A network diagnostic tool
 
-
 aur_packages:
   - trivy # A Simple and Comprehensive Vulnerability Scanner for Containers, Suitable for CI
   - gum
@@ -216,6 +215,7 @@ aur_packages:
   - dnstop
   - terragrunt
   - telepresence
+  - calcure                     # TUI Calendar
 
 
 snap_packages:
