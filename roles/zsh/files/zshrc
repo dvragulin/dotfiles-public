@@ -98,6 +98,8 @@ alias n=note
 alias nv='glow ~/GIT/projects_home/Notes'
 alias update=upd
 alias hl="helix"
+alias dc="popd > /dev/null 2>&1"
+alias cl=calcure
 
 # Add my functions
 FUNCTIONS_DIR="$HOME/GIT/projects_home/common-scripts/zsh_functions"
