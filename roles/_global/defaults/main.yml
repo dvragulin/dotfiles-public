@@ -216,6 +216,7 @@ aur_packages:
   - terragrunt
   - telepresence
   - calcure                     # TUI Calendar
+  - nchat                       # https://github.com/d99kris/nchat
 
 
 snap_packages:

@@ -102,6 +102,7 @@ alias dc="popd > /dev/null 2>&1"
 alias cl=calcure
 alias bk=books
 alias bkl=books-all
+alias tg=nchat
 
 # Add my functions
 FUNCTIONS_DIR="$HOME/GIT/projects_home/common-scripts/zsh_functions"
