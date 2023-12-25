@@ -18,7 +18,6 @@ export GUM_CONFIRM_PROMPT_FOREGROUND="#D78700"
 export GUM_CONFIRM_SELECTED_BACKGROUND="#D78700"
 
 PATH=$PATH:$GOPATH/bin # Add GOPATH/bin to PATH for scripting
-
 ZSH_THEME="af-magic"
 DISABLE_AUTO_UPDATE="true"
 
@@ -102,7 +101,8 @@ alias dc="popd > /dev/null 2>&1"
 alias cl=calcure
 alias bk=books
 alias bkl=books-all
-alias tg=nchat
+alias tg="nchat -d $HOME/.config/chat/telegram"
+alias ws="nchat -d $HOME/.config/chat/whatsapp"
 
 # Add my functions
 FUNCTIONS_DIR="$HOME/GIT/projects_home/common-scripts/zsh_functions"
