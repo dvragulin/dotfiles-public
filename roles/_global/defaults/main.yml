@@ -154,6 +154,9 @@ pacman_packages:
   - sops                        # Encrypted file editor
   - dbeaver
   - trippy                      # A network diagnostic tool
+  - pavucontrol                 # UI Tool for pulse audio
+  - bluez                       # Bluetooth control
+  - bluez-utils                 # Bluetooth control
 
 aur_packages:
   - trivy # A Simple and Comprehensive Vulnerability Scanner for Containers, Suitable for CI
