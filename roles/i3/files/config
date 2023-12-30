@@ -65,6 +65,7 @@ bindsym XF86AudioMute           exec pactl set-sink-mute 0 toggle   # mute sound
 
 # Start a terminal
 bindsym $mod+Return exec alacritty
+#bindsym $mod+Return exec st
 
 # Kill focused window
 bindsym ctrl+q kill

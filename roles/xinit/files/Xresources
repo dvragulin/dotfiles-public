@@ -1,3 +1,5 @@
 Xcursor.theme: Breeze_Snow
 Xcursor.size: 16
 Xft.dpi: 126
+
+*.font: monospace: size=10
