@@ -6,7 +6,7 @@
 	email = dvragulin@gmail.com
 	signingKey = dvragulin@gmail.com
 [core]
-    editor = vim
+    editor = helix
 	autocrlf = input
 	excludesfile = ~/.gitignore
 [http]

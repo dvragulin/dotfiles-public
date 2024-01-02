@@ -6,7 +6,7 @@
 	email = dmitriy.ragulin@sbermarket.ru
 	signingKey = dmitriy.ragulin@sbermarket.ru
 [core]
-    editor = vim
+    editor = helix
 	autocrlf = input
 	excludesfile = ~/.gitignore
 [http]
