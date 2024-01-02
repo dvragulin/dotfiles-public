@@ -2,4 +2,29 @@ Xcursor.theme: Breeze_Snow
 Xcursor.size: 16
 Xft.dpi: 126
 
-*.font: monospace: size=10
+
+*.font:	monospace:pixelsize=18:antialias=true:autohint=true;
+*.alpha: 0
+
+# For apply: ":!xrdb .Xresources"
+
+!! brogrammer:
+*.foreground:  #d6dbe5
+*.background:  #131313
+*.color0:      #1f1f1f
+*.color8:      #d6dbe5
+*.color1:      #f81118
+*.color9:      #de352e
+*.color2:      #2dc55e
+*.color10:     #1dd361
+*.color3:      #ecba0f
+*.color11:     #f3bd09
+*.color4:      #2a84d2
+*.color12:     #1081d6
+*.color5:      #4e5ab7
+*.color13:     #5350b9
+*.color6:      #1081d6
+*.color14:     #0f7ddb
+*.color7:      #d6dbe5
+*.color15:     #ffffff
+*.colorBD:     #d6dbe5
