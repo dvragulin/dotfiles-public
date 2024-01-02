@@ -27,6 +27,7 @@
     - ranger
     - rofi
     - btop
+    - helix
     - nvim
     - mc
     - ssh
