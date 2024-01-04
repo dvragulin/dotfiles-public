@@ -25,9 +25,15 @@ pacman_packages:
   - guake
   - ranger
   - tldr
-  - vulkan-intel
-  - intel-media-driver
   - libva
+  - libva-intel-driver
+  - libva-mesa-driver
+  - libva-utils
+  - vulkan-intel
+  - intel-gmmlib
+  - intel-gpu-tools
+  - intel-media-driver
+  - intel-ucode
   - xorg-server-devel
   - libxnvctrl
   - haveged
@@ -162,8 +168,6 @@ aur_packages:
   - zotero #test
   - cpupower-gui # perf
   - ananicy # perf
-  - optimus-manager # perf
-  - optimus-manager-qt  # perf
   - reflector-mirrorlist-update
   - w3m-imgcat
   - rxvt                        # Terminal
