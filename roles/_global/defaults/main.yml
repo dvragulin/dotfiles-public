@@ -4,6 +4,7 @@
 pacman_packages:
   - base-devel
   - xorg-xrandr
+  - xdg-desktop-portal-gtk
   - vim
   - neovim
   - vim-runtime
