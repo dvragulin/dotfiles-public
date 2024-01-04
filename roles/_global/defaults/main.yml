@@ -28,11 +28,7 @@ pacman_packages:
   - vulkan-intel
   - intel-media-driver
   - libva
- # - nvidia  # perf https://computingforgeeks.com/easiest-way-to-install-nvidia-3d-graphics-acceleration-driver-on-archlinux/
- # - nvidia-settings # perf add
- # - nvidia-utils
   - xorg-server-devel
- # - opencl-nvidia
   - libxnvctrl
   - haveged
   - dbus-broker
@@ -66,14 +62,12 @@ pacman_packages:
   - dolphin
   - viewnior
   - nvtop
-  - speedtest-cli
   - sshfs                 # For ssh connection to NAS
   - nmap
   - telegram-desktop
   - lazygit
   - asciinema
   - zathura               # PDF Reader
-#  - zathura-pdf-poppler   # PDF Reader plugin
   - zathura-pdf-mupdf     # PDF Reader plugin
   - zathura-djvu          # PDF Reader plugin
   - zathura-ps            # PDF Reader plugin
@@ -285,8 +279,6 @@ fonts_packages:
   - siji-git                    # Fonts
   - arc-gtk-theme
   - papirus-icon-theme
- # - ttf-noto-nerd 
- # - nerd-fonts-meta
 
 i3_packages:
   - i3-wm
@@ -325,4 +317,3 @@ packages_to_delete:
   - asbru-cm                    # SSH GUI Client
   - rtv
   - markdown
-  - zoom                        # Voice/Video chat
