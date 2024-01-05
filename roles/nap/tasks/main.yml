@@ -1,7 +1,0 @@
----
-- name: Link nap dir
-  file:
-    src: "$HOME/GIT/projects_home/snippets"
-    dest: "$HOME/.local/share/nap"
-    state: link
-    force: yes
