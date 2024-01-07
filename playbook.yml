@@ -13,15 +13,14 @@
     - git
     - newsboat
     - i3
-    - rtv
     - polybar
     - alacritty
     - taskwarrior
     - dunst
     - zsh
-    - nap
     - k8s
     - k9s
+    - pacseek
     - glow
     - bash
     - ranger

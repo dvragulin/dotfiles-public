@@ -166,7 +166,6 @@ aur_packages:
   - helm                        # k8s deploy tool
   - helm-docs
   - helm-secrets
-  - zotero #test
   - cpupower-gui # perf
   - ananicy # perf
   - reflector-mirrorlist-update
@@ -219,6 +218,8 @@ aur_packages:
   - telepresence
   - calcure                     # TUI Calendar
   - nchat                       # https://github.com/d99kris/nchat
+  - ov                          # terminal pager writen on Go https://github.com/noborus/ov
+  - pacseek                     # Search and install Arch packages
 
 
 snap_packages:
