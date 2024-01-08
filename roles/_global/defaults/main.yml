@@ -220,6 +220,10 @@ aur_packages:
   - nchat                       # https://github.com/d99kris/nchat
   - ov                          # terminal pager writen on Go https://github.com/noborus/ov
   - pacseek                     # Search and install Arch packages
+  - cups                        # Print managment control
+  - cups-pdf                    # Print managment control
+  - samsung-unified-driver-common  # Driver for Sumsung Xpress M2020
+  - samsung-unified-driver-printer # Driver for Sumsung Xpress M2020
 
 
 snap_packages:
