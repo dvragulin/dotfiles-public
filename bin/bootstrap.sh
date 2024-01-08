@@ -71,11 +71,12 @@ TIME_DIFF=$(date -d@$DIFF -u +%H:%M:%S)
 
   echo "[INFO] Ansible playbook comoleted"
 # --- Run go for intall custom apps -----------------------------------------------------------------------------------
-sudo systemctl enable fstrim.timer
+sudo systemctl enable fstrim.timer || true
 sudo systemctl enable ananicy.service || true
 sudo systemctl enable cpupower.service || true
 sudo systemctl enable cpupower-gui.service || true
 sudo systemctl enable haveged || true
+sudo systemctl enable bluetooth.service || true
 sudo systemctl enable --now dbus-broker.service || true
 sudo systemctl mask NetworkManager-wait-online.service
 echo "[INFO] systemctl configured"
