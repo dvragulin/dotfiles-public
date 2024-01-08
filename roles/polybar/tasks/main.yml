@@ -134,3 +134,10 @@
     state: link
     force: yes
 
+- name: Link yandex.station.sh script
+  file:
+    src: "$HOME/GIT/projects_home/dotfiles-public/roles/polybar/files/yandex.station.sh"
+    dest: "$HOME/.config/polybar/yandex.station.sh"
+    state: link
+    force: yes
+
