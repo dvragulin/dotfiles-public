@@ -62,8 +62,9 @@ cd $HOME/GIT/projects_home/dotfiles-public
 echo "[INFO] Main git repositories updated"
 
 # --- Run Ansible playbook --------------------------------------------------------------------------------------------
+export ANSIBLE_CONFIG="./bin/ansible.cfg"
 TIME_START=$(date +%s)
-ansible-playbook playbook.yml --extra-vars "ansible_sudo_pass=$PW"
+ansible-playbook playbook.yml -e "ansible_sudo_pass=$PW"
 TIME_END=$(date +%s)
 
 DIFF=$(( $TIME_END - $TIME_START ))
@@ -71,19 +72,25 @@ TIME_DIFF=$(date -d@$DIFF -u +%H:%M:%S)
 
   echo "[INFO] Ansible playbook comoleted"
 # --- Run go for intall custom apps -----------------------------------------------------------------------------------
-sudo systemctl enable fstrim.timer || true
-sudo systemctl enable ananicy.service || true
-sudo systemctl enable cpupower.service || true
-sudo systemctl enable cpupower-gui.service || true
-sudo systemctl enable haveged || true
-sudo systemctl enable bluetooth.service || true
-sudo systemctl enable --now dbus-broker.service || true
-sudo systemctl mask NetworkManager-wait-online.service
+
+# --- Enable and mask system services ----------
+SERVICES_TO_ENABLE=("fstrim.timer"
+                    "ananicy.service"
+                    "cpupower.service"
+                    "cpupower-gui.service"
+                    "haveged"
+                    "bluetooth.service")
+for svc in "${SERVICES_TO_ENABLE[@]}"; do
+  sudo systemctl enable "$svc" || true
+  echo "[INFO] - $svc enabled"
+done
+#sudo systemctl mask NetworkManager-wait-online.service || true
+
+
 echo "[INFO] systemctl configured"
 
 
 # --- Run go for intall custom apps -----------------------------------------------------------------------------------
-#go install github.com/fedeztk/got/cmd/got@latest
 #sudo gpasswd -a $USER docker
 #sudo systemctl start docker
 #sudo chmod 666 /var/run/docker.sock

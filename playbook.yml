@@ -18,7 +18,6 @@
     - taskwarrior
     - dunst
     - zsh
-    - k8s
     - k9s
     - pacseek
     - glow
@@ -35,7 +34,6 @@
     - xinit
     - pyradio
     - gtk
-    - got
     - avatars
     - keychron
     - lazygit

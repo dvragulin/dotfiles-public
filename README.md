@@ -1,6 +1,6 @@
 # Dotfiles
 
-Personal Ansible roles for installing i3 on Arch Linux and applying my dotfiles. 
+Personal Ansible roles for applying my dotfiles. 
 
 #### Usage
 ```
@@ -15,7 +15,7 @@ bash -c "$(wget -O- https://raw.githubusercontent.com/dvragulin/dotfiles-public/
 
 #### Requirements
 
-  - OS Manjaro Linux
+  - Arch Linux
   - Private SSH Keys
   - Git
   - Wget
@@ -56,3 +56,44 @@ bash -c "$(wget -O- https://raw.githubusercontent.com/dvragulin/dotfiles-public/
   - [xinit](roles%2Fxinit)
   - [zathura](roles%2Fzathura)
   - [zsh](roles%2Fzsh)
+
+
+  New:
+  - Setup
+  - Workstation
+    - bluetooth
+    - grub
+    - keychron
+    - ssh
+    - units
+  - Profile
+    - avatars
+    - bash
+    - dunst
+    - gtk
+    - i3
+    - polybar
+    - rofi
+    - wallpapers
+    - xinit
+    - zsh
+  - Applications
+    - alacritty
+    - btop
+    - flameshot
+    - git
+    - glow
+    - helix
+    - k9s
+    - lazygit
+    - mc
+    - newsboat
+    - nvim
+    - pacseek
+    - pyradio
+    - ranger
+    - taskwarrior
+    - tmux
+    - vim
+    - zathura
+  - Common ?
