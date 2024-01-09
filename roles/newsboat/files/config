@@ -66,8 +66,8 @@ browser yandex-browser-stable
 macro , open-in-browser
 macro t set browser "tsp youtube-dl --add-metadata -ic" ; open-in-browser ; set browser yandex-browser-stable
 macro a set browser "tsp youtube-dl --add-metadata -xic -f bestaudio/best" ; open-in-browser ; set browser yandex-browser-stable
-macro v set browser "setsid -f mpv --geometry=1000" ; open-in-browser ; set browser yandex-browser-stable
-macro m set browser "setsid -f mpv --geometry=1000" ; open-in-browser ; set browser yandex-browser-stable
+macro v set browser "setsid -f mpv --geometry=500 1&> /dev/null" ; open-in-browser ; set browser yandex-browser-stable
+macro m set browser "setsid -f mpv --geometry=500" ; open-in-browser ; set browser yandex-browser-stable
 macro w set browser "w3m" ; open-in-browser ; set browser yandex-browser-stable
 macro p set browser "dmenuhandler" ; open-in-browser ; set browser yandex-browser-stable
 macro c set browser "xsel -b <<<" ; open-in-browser ; set browser yandex-browser-stable

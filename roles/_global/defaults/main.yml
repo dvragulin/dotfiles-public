@@ -166,6 +166,7 @@ aur_packages:
   - helm                        # k8s deploy tool
   - helm-docs
   - helm-secrets
+  - helm-diff
   - cpupower-gui # perf
   - ananicy # perf
   - reflector-mirrorlist-update
