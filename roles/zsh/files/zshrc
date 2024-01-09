@@ -48,12 +48,13 @@ source $ZSH/oh-my-zsh.sh
 
 
 # Add my aliases
-#alias vim="nvim"
+alias :q='exit'
+alias :Q='exit'
 alias vim="helix"
+alias hl="helix"
 alias mk="minikube"
 alias mail="aerc"
 alias email="aerc"
-#alias vf='nvim "$(fzf)"'
 alias vf='helix "$(fzf)"'
 alias cf='cat "$(fzf)"'
 alias yt='ytfzf'
@@ -102,7 +103,6 @@ alias mkd='glow'
 alias n=note
 alias nv='glow ~/GIT/projects_home/Notes'
 alias update=upd
-alias hl="helix"
 alias dc="popd > /dev/null 2>&1"
 alias cl=calcure
 alias bk=books
