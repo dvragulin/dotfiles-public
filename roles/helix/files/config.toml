@@ -4,6 +4,7 @@ theme = "darcula"
 line-number = "absolute"
 auto-completion = true
 auto-info	= true
+auto-format = false
 rulers = [120]
 
 [editor.cursor-shape]
