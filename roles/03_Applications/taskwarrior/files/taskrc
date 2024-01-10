@@ -1,0 +1,56 @@
+# --- Common Settings ---------------------------------------------------------
+weekstart=monday                            # Week start day
+data.location=~/.task                       # Files
+report.next.filter=status:pending -WAITING  # Default filter
+search.case.sensitive=no                    # Case insensitive search
+list.all.projects=yes
+# --- Colos schemes -----------------------------------------------------------
+# https://www.ditig.com/256-colors-cheat-sheet
+color.active=yellow
+#color.scheduled=blue
+color.blocked=blue
+color.blocking=blue
+color.recurring=blue
+color.completed=green
+#+ General +
+color.error=bold red
+color.debug=magenta
+
+#+-------------+
+#+ Task States +
+#+-------------+
+color.deleted=red
+#color.active=bold black on cyan
+#color.recurring=color11
+#color.scheduled=color11
+#color.until=color11
+#+ Priority +
+color.uda.priority.H=color255
+color.uda.priority.M=white
+color.uda.priority.L=color245
+#+ Tags +
+#color.tag.next=
+#color.tag.none=
+color.tagged=green
+#+ Due +
+color.due=white
+color.due.today=color11
+color.overdue=red
+# --- Priority ----------------------------------------------------------------
+urgency.uda.priority.H.coefficient=3.0
+urgency.uda.priority.M.coefficient=1.0
+urgency.uda.priority.L.coefficient=-2.0
+urgency.due.coefficient=26.25
+urgency.inherit=on
+# --- Settings for TUI --------------------------------------------------------
+# https://kdheepak.com/taskwarrior-tui/configuration/keys/
+uda.taskwarrior-tui.task-report.show-info=false
+uda.taskwarrior-tui.calendar.months-per-row=3
+uda.taskwarrior-tui.task-report.prompt-on-delete=yes
+uda.taskwarrior-tui.task-report.prompt-on-done=yes
+uda.taskwarrior-tui.style.context.active=cyan
+uda.taskwarrior-tui.style.calendar.title=cyan
+uda.taskwarrior-tui.style.report.scrollbar=white
+uda.taskwarrior-tui.selection.indicator=
+# --- News --------------------------------------------------------------------
+news.version=2.6.0

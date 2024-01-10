@@ -1,0 +1,19 @@
+---
+# tasks file for zsh
+
+- name: Link zsh config file | .zshrc
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/02_Profile/zsh/files/zshrc"
+    dest: "$HOME/.zshrc"
+    state: link
+    force: yes
+
+- name: install oh-my-zsh
+  git:
+    repo: "https://github.com/ohmyzsh/ohmyzsh.git"
+    dest: "$HOME/.oh-my-zsh"
+
+- name: install zsh-syntax-highlighting
+  git:
+    repo: "https://github.com/zsh-users/zsh-syntax-highlighting.git"
+    dest: "$HOME/.oh-my-zsh/plugins/zsh-syntax-highlighting"

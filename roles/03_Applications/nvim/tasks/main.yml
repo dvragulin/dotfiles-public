@@ -1,0 +1,28 @@
+---
+# tasks file for vim
+                                                                            
+- name: Link nvim config file
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/03_Applications/nvim/files/init.vim"
+    dest: "$HOME/.nvimrc"
+    state: link
+    force: yes
+
+- name: Link nvim config file
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/03_Applications/nvim/files/init.vim"
+    dest: "$HOME/.config/nvim/init.vim"
+    state: link
+    force: yes
+
+- name: Link nvim pluggins config file | plug.vim
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/03_Applications/nvim/files/autoload/plug.vim"
+    dest: "$HOME/.config/nvim/autoload/plug.vim"
+    state: link
+    force: yes
+
+- name: Install nvim pluggins
+  command: "vim +PlugInstall +qall"
+  args:
+    stdin: "\n"

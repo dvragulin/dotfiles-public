@@ -1,0 +1,672 @@
+; --- Common settings -------------------------------------------------------------------------------------------------
+
+[colors]
+background       = #BCC3C3
+background-alt   = #2B2B2B
+foreground       = #002B36
+foreground-alt   = #BCC3C3
+primary          = #ffb52a
+secondary        = #e60053
+alert            = #FF0000
+
+; --- Bar settings ----------------------------------------------------------------------------------------------------
+
+[bar/dvragulin]
+foreground           = ${colors.foreground-alt}
+background           = ${colors.background-alt}
+
+monitor              = ${env:MONITOR:}
+width                = 100%
+height               = 35
+radius               = 0.0
+fixed-center         = true
+bottom               = no
+;offset-x            = 1%
+;offset-y            = 1%
+
+line-size            = 1
+line-color           = #dfdfdf
+border-top-size      = 0
+border-bottom-size   = 0
+border-left-size     = 0
+border-right-size    = -1
+padding-left         = 0
+padding-right        = 0
+module-margin-left   = 0
+module-margin-right  = 0
+
+font-0               = "Noto:style=Sans:pixelsize=13;3"
+font-1               = "Siji:size=10;3"
+font-2               = "Siji:style=Solid:pixelsize=10"
+font-3               = "FontAwesome5Free:style=Solid:pixelsize=10;3"
+font-4               = "FontAewesome5Brands:style=Solid:pixelsize=10"
+font-5               = "Font Awesome 5 Brands:pixelsize=10;3"
+font-6               = "UbuntuMono Nerd Font:pixelsize=10;3"
+
+tray-position        = right
+tray-padding         = 0
+tray-detached        = false
+tray-maxsize         = 20
+;tray-transparent    = false
+;pseudo-transparency = false
+tray-scale           = 1.0
+tray-background      = ${colors.background-alt}
+tray-foreground      = ${colors.foreground-alt}
+tray-offset-x        = 0
+tray-offset-y        = 0
+
+wm-restack            = i3
+
+scroll-up             = i3wm-wsnext
+scroll-down           = i3wm-wsprev
+
+cursor-click          = pointer
+
+;cursor-scroll        = ns-resize
+override-redirect    = false
+
+; --- Modules ---------------------------------------------------------------------------------------------------------
+
+;modules-center      =
+modules-left         = i3 sp2 xwindow
+modules-right        = cpu sp2 memory sp2 temperature sp2 docker sp2 updates_pacman sp2 updates_aur sp2 trash tmp pics sp2 filesystem_custom sp2 jira_issues sp2 git_count git_mr git_wh sp2 newsboat sp2 pyradio sp2 mic sp2 yandex-station pulseaudio sp2 translator sp2 xkeyboard sp2 weather sp2 calendar date sp2 iot_kettle sp2 mount_nas sp2
+
+; ---------------------------------------------------------------------------------------------------------------------
+; --- Used Modules ----------------------------------------------------------------------------------------------------
+; ---------------------------------------------------------------------------------------------------------------------
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/sp1]
+type = custom/text
+content = " "
+content-foreground = ${colors.foreground-alt}
+content-background = ${colors.background-alt}
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/sp2]
+type = custom/text
+content = " | "
+content-foreground = #93A1A1
+content-background = ${colors.background-alt}
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/sp3]
+type = custom/text
+content = " ⸽ "
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/netspdeth]
+type = internal/network
+interface = enp0s20f0u2u1u2
+interval = 1.0
+format-connected = "<label-connected>"
+label-connected = " %downspeed:3% %upspeed:3% |"
+label-connected-foreground = ${colors.foreground-alt}
+label-connected-background = ${colors.background-alt}
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/eth]
+type = internal/network
+interface = enp0s20f0u2u1u2
+interval = 1.0
+
+format-connected-prefix = " "
+format-connected-prefix-foreground = ${colors.foreground-alt}
+format-connected-prefix-background = ${colors.background-alt}
+;format-connected-underline = ${colors.foreground}
+label-connected = " %local_ip% "
+
+;format-disconnected = <label-disconnected>
+;format-disconnected-underline = ${self.format-connected-underline}
+;label-disconnected =  %ifname%
+;label-disconnected-foreground = ${colors.foreground-alt}
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/date]
+type = internal/date
+interval = 1
+
+date = "%a %d %b"
+time = " %H:%M:%S"
+
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-background = ${colors.background-alt}
+;format-underline = ${colors.foreground}
+
+label = %date%%time%
+label-foreground = ${colors.foreground-alt}
+label-background = ${colors.background-alt}
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/calendar]
+type = custom/script
+exec = echo " "
+click-left = yandex-browser-stable "https://calendar.google.com/calendar/u/0/r"
+click-right = yandex-browser-stable ${env:WORK_CALENDAR:}
+interval = 920
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/pulseaudio]
+type = internal/pulseaudio
+use-ui-max = true
+interval = 5
+
+; Available tags:
+;   <label-volume> (default)
+;   <ramp-volume>
+;   <bar-volume>
+format-volume = <ramp-volume> <label-volume>
+
+; Available tags:
+;   <label-muted> (default)
+;   <ramp-volume>
+;   <bar-volume>
+;format-muted = <label-muted>
+
+; Available tokens:
+;   %percentage% (default)
+;   %decibels%
+;label-volume = %percentage%%
+
+; Available tokens:
+;   %percentage% (default)
+;   %decibels%
+label-muted =  muted
+label-muted-foreground = #666
+
+; Only applies if <ramp-volume> is used
+ramp-volume-0 = " " 
+ramp-volume-1 = " " 
+ramp-volume-2 = " " 
+
+; Right and Middle click
+click-right = pavucontrol
+; click-middle = 
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/yandex-station]
+type = custom/script
+exec = /home/dvragulin/.config/polybar/yandex.station.sh
+click-left = /home/dvragulin/.config/polybar/yandex.station.sh haedphones
+click-right = /home/dvragulin/.config/polybar/yandex.station.sh yandex.station
+interval = 3
+
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/battery0]
+type = internal/battery
+battery = BAT0
+adapter = AC
+full-at = 90
+
+format-charging = "<animation-charging><label-charging>"
+;format-charging-underline = ${colors.foreground}
+label-charging-foreground = ${colors.foreground-alt}
+label-charging-background = ${colors.background-alt}
+
+format-discharging = "<ramp-capacity><label-discharging>"
+;format-discharging-underline = ${self.format-charging-underline}
+label-discharging-foreground = ${colors.foreground-alt}
+label-discharging-background = ${colors.background-alt}
+
+format-full-prefix = " "
+format-full-prefix-foreground = ${colors.foreground-alt}
+format-full-prefix-background = ${colors.background-alt}
+;format-full-underline = ${self.format-charging-underline}
+
+ramp-capacity-0 = " "
+ramp-capacity-0-foreground = ${colors.alert}
+ramp-capacity-1 = " "
+ramp-capacity-2 = " "
+ramp-capacity-foreground = ${colors.foreground-alt}
+ramp-capacity-background = ${colors.background-alt}
+
+animation-charging-0 = " "
+animation-charging-1 = " "
+animation-charging-2 = " "
+animation-charging-foreground = ${colors.foreground-alt}
+animation-charging-background = ${colors.background-alt}
+animation-charging-framerate = 750
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/xwindow]
+type = internal/xwindow
+format = <label>
+format-padding = 0
+
+;label = "  %title:0:60:...% "
+label = "  %title%"
+label-maxlen = 30
+label-foreground = ${colors.foreground-alt}
+label-background = ${colors.background-alt}
+;label-underline = ${colors.foreground}
+
+label-empty =
+label-empty-foreground = ${colors.background}
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+blacklist-1 = scroll lock
+
+format = <label-layout><label-indicator>
+format-spacing = 0
+
+format-prefix = "󰗊  "
+format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-background = ${colors.background-alt}
+;format-prefix-underline = ${colors.foreground}
+
+label-layout = "%layout%"
+label-layout-foreground = ${colors.foreground-alt}
+label-layout-background = ${colors.background-alt}
+;label-layout-underline = ${colors.foreground}
+
+label-indicator-padding = 0
+label-indicator-margin = 0
+label-indicator = "  "
+label-indicator-foreground = ${colors.alert}
+;label-indicator-background = ${colors.alert}
+;label-indicator-underline = ${colors.alert}
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/i3]
+type = internal/i3
+format = <label-state> <label-mode>
+index-sort = true
+wrapping-scroll = false
+strip-wsnumbers = false
+enable-click = false
+enable-scroll = false
+
+;ws-icon-0 = 1;
+;ws-icon-1 = 2;
+;ws-icon-2 = 3;
+;ws-icon-3 = 4;
+;ws-icon-4 = 5;
+;ws-icon-5 = 6;
+;ws-icon-6 = 7;
+;ws-icon-7 = 8;
+;ws-icon-8 = 9;
+;ws-icon-9 = 10;
+;ws-icon-default = ♟
+
+; Only show workspaces on the same output as the bar
+;pin-workspaces = true
+
+label-mode = %mode%
+label-mode-padding = 1
+label-mode-foreground = ${colors.foreground-alt}
+label-mode-background = ${colors.background-alt}
+
+; focused = Active workspace on focused monitor
+label-focused = %index%
+label-focused-foreground = ${colors.foreground}
+label-focused-background = ${colors.background}
+label-focused-underline = ${colors.foreground-alt}
+label-focused-padding = 1
+
+; unfocused = Inactive workspace on any monitor
+label-unfocused = %index%
+label-unfocused-padding = ${self.label-focused-padding}
+label-unfocused-foreground = ${colors.foreground-alt}
+label-unfocused-background = ${colors.background-alt}
+
+; visible = Active workspace on unfocused monitor
+label-visible = %index%
+label-visible-foreground = ${self.label-focused-background}
+label-visible-background = ${self.label-focused-foreground}
+label-visible-underline = ${self.label-focused-underline}
+label-visible-padding = ${self.label-focused-padding}
+
+; urgent = Workspace with urgency hint set
+label-urgent = %index%
+label-urgent-foreground = ${colors.foreground}
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 1
+
+; Separator in between workspaces
+label-separator =
+label-separator-padding = 0
+label-separator-foreground = #FFF
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/temperature]
+type = internal/temperature
+thermal-zone = 0
+warn-temperature = 70
+
+format = "<ramp><label>"
+format-foreground = ${colors.foreground-alt}
+format-background = ${colors.background-alt}
+;format-underline = ${colors.foreground}
+format-warn = <ramp><label-warn>
+;format-warn-underline = #f50a4d
+
+; 
+label = "%temperature-c%"
+label-foreground = ${colors.foreground-alt}
+label-background = ${colors.background-alt}
+label-warn = "%temperature-c%"
+label-warn-foreground = ${colors.alert}
+
+ramp-0 = " "
+ramp-1 = " "
+ramp-2 = " "
+ramp-foreground = ${colors.foreground-alt}
+ramp-background = ${colors.background-alt}
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/pyradio]
+type = custom/menu
+
+expand-right = true
+format-spacing = 1
+
+;ramp-foreground = ${colors.foreground-alt}
+;ramp-background = ${colors.background-alt}
+
+label-open = %{T4} %{T-}
+label-open-foreground = ${colors.foreground-alt}
+label-close = %{T4} %{T-}
+label-close-foreground = ${colors.foreground-alt}
+;label-close-foreground = ${colors.secondary}
+label-separator = |
+label-separator-foreground = ${colors.foreground-alt}
+
+menu-0-0 = 
+menu-0-0-exec = killall -q mpv
+menu-0-1 = 
+menu-0-1-exec = $HOME/.config/polybar/pyradio.sh
+menu-0-2 = 
+menu-0-2-exec = ymp
+menu-0-3 = 
+menu-0-3-exec = yandex-browser-stable https://music.yandex.ru
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/updates_pacman]
+type = custom/script
+exec = /home/dvragulin/.config/polybar/updates_pacman.sh
+interval = 1200
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/updates_aur]
+type = custom/script
+exec = /home/dvragulin/.config/polybar/updates_aur.sh
+interval = 1200
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/trash]
+type = custom/script
+exec = /home/dvragulin/.config/polybar/trash.sh
+interval = 5
+label = %output%
+format-prefix = "%{T5}%{T-} "
+format-prefix-padding-left = 0
+format-prefix-padding-right = 0
+;format-prefix-foreground = ${colors.foreground}
+label-padding = 0
+;label-foreground = ${colors.foreground}
+click-left = pcmanfm -n ~/.local/share/Trash/files
+click-right = rm -rf ~/.local/share/Trash/files/* && notify-send -a "Trash:" -u normal "Trash cleaned"
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/tmp]
+type = custom/script
+exec = ls -1 ~/tmp | wc -l
+interval = 5
+label = %output%
+format-prefix = " %{T5}%{T-}  "
+format-prefix-padding-left = 0
+format-prefix-padding-right = 0
+label-padding = 0
+click-left = mv ~/tmp/* ~/.tmp/ && notify-send -a "Tmp" -u normal "Temporary files moved"
+click-right = mv ~/tmp/* ~/.tmp/ && notify-send -a "Tmp" -u normal "Temporary files moved"
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/pics]
+type = custom/script
+exec = ls -1 ~/Pictures | wc -l
+interval = 5
+label = %output%
+format-prefix = " %{T5}%{T-}  "
+format-prefix-padding-left = 0
+format-prefix-padding-right = 0
+label-padding = 0
+click-left = mv ~/Pictures/* ~/.tmp/Pictures/ && notify-send -a "Tmp" -u normal "Pictures files moved"
+click-right = mv ~/Pictures/* ~/.tmp/Pictures/ && notify-send -a "Tmp" -u normal "Pictures files moved"
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/filesystem_custom]
+type = custom/script
+exec = /home/dvragulin/.config/polybar/free_space_home.sh
+click-left = dolphin
+
+interval = 600
+label = %{T4} %{T-} %output%
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/todoist]
+type = custom/script
+exec = /home/dvragulin/.config/polybar/todoist.py
+click-left = yandex-browser-stable https://todoist.com/app/today
+click-right = yandex-browser-stable https://todoist.com/app/today
+
+interval = 120
+label = %{T5}%{T-} %output%
+
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/git_wh]
+type = custom/script
+exec = cat /home/dvragulin/.gitconfig.status
+click-left = git home && notify-send -a "Git:" -u normal "gitconfig home applied!"
+click-right = git work && notify-send -a "Git:" -u normal "gitconfig work applied!"
+
+interval = 1
+label = : %output%
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/newsboat]
+type = custom/script
+exec = /home/dvragulin/.config/polybar/newsboat.sh
+click-left = /home/dvragulin/.config/polybar/newsboat.sh
+click-right = /home/dvragulin/.config/polybar/newsboat.sh
+
+interval = 1800
+label = %{T5}   %{T-}%output%
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/git_count]
+type = custom/script
+exec = /home/dvragulin/.config/polybar/git_count.sh
+click-left = /home/dvragulin/.config/polybar/git_update.sh
+click-right = /home/dvragulin/.config/polybar/git_update.sh
+
+interval = 30
+label = %{T5} %{T-}%output%
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/git_mr]
+type = custom/script
+exec = /home/dvragulin/.config/polybar/git_mr.py
+click-left = yandex-browser-stable $GITLAB_WORK/dashboard/merge_requests?assignee_username=dmitriy.ragulin
+click-right = yandex-browser-stable $GITLAB_WORK/dashboard/merge_requests?reviewer_username=dmitriy.ragulin
+
+interval = 300
+label = %{T5} %{T-} %output%
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/docker]
+type = custom/script
+exec = docker ps -aq | wc -l
+click-left = notify-send -a "Docker:" -u normal "docker remove" && docker rm -vf $(docker ps -aq)
+click-right = notify-send -a "Docker:" -u normal "docker prune" && echo y | docker image prune -a
+interval = 120
+label =    %output%
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/mount_nas]
+type = custom/script
+exec = /home/dvragulin/.config/polybar/mount_nas.sh
+click-left = sshfs root@192.168.1.3:/volume1 ~/NAS
+click-right = umount ~/NAS
+interval = 1
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/iot_kettle]
+type = custom/script
+exec = /home/dvragulin/.config/polybar/iot_kettle.py
+click-left = /home/dvragulin/.config/polybar/iot_kettle.py --command="ON"
+click-right = /home/dvragulin/.config/polybar/iot_kettle.py --command="OFF"
+interval = 100
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/mic]
+type = custom/script
+exec = /home/dvragulin/.config/polybar/mic.sh
+click-left = amixer -c 1 set Mic toggle
+click-right = amixer -c 1 set Mic toggle
+interval = 1
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/jira_issues]
+type = custom/script
+exec = /home/dvragulin/.config/polybar/jira_get_issues.py
+click-left = yandex-browser-stable $JIRA_WORK/secure/Dashboard.jspa?selectPageId=10181  && notify-send -a "Firefox:" -u normal "Open Jira board"
+click-right = yandex-browser-stable $JIRA_WORK/secure/RapidBoard.jspa?rapidView=348 && notify-send -a "Firefox:" -u normal "Open Jira backlog"
+
+interval = 300
+label = %{T5}%{T-}%output%
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/taskwarrior]
+interval = 30
+type = custom/script
+exec = /home/dvragulin/.config/polybar/taskwarrior.sh
+format = <label>
+;format-foreground = #FFF
+format-prefix = " "
+;click-left = task "$((`cat /tmp/tw_polybar_id`))" done
+
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/weather]
+type = custom/script
+click-left = yandex-browser-stable https://yandex.ru/pogoda/moscow?lat=55.917238&lon=37.549502
+click-right = yandex-browser-stable https://yandex.ru/pogoda/maps/nowcast
+exec = $HOME/.config/polybar/weather.py
+interval = 1800
+label-font = 3
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/translator]
+type = custom/script
+tail = true
+exec = echo " "
+click-left = xdg-open https://translate.yandex.ru/
+click-right = xdg-open https://translate.yandex.ru/
+
+; ---------------------------------------------------------------------------------------------------------------------
+; --- UnUsed Modules --------------------------------------------------------------------------------------------------
+; ---------------------------------------------------------------------------------------------------------------------
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/netspdwlan]
+type = internal/network
+interface = wlp2s0
+interval = 1.0
+format-connected = "<label-connected>"
+label-connected = "%downspeed:9:9% %upspeed:9:9%"
+label-connected-foreground = ${colors.foreground-alt}
+label-connected-background = ${colors.background-alt}
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/wlan]
+type = internal/network
+interface = wlp5s0
+interval = 1.0
+
+; Available tokens:
+;   %ifname%    [wireless+wired]
+;   %local_ip%  [wireless+wired]
+;   %local_ip6% [wireless+wired]
+;   %essid%     [wireless]
+;   %signal%    [wireless]
+;   %upspeed%   [wireless+wired]
+;   %downspeed% [wireless+wired]
+;   %linkspeed% [wired]
+; Default: %ifname% %local_ip%
+format-connected = "<label-connected>"
+;format-connected-underline = ${colors.foreground}
+;label-connected = " %essid:0:28:% "
+;label-connected = " %essid% (%signal%%)"
+label-connected = " | W: %signal%%"
+label-connected-foreground = ${colors.foreground-alt}
+label-connected-background = ${colors.background-alt}
+
+format-disconnected = <label-disconnected>
+;format-disconnected-underline = ${self.format-connected-underline}
+label-disconnected = " OFFLINE "
+label-disconnected-foreground = ${colors.foreground-alt}
+
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+ramp-signal-foreground = ${colors.foreground-alt}
+ramp-signal-background = ${colors.background-alt}
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/cpu]
+type = internal/cpu
+interval = 1
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-background = ${colors.background-alt}
+;format-underline = ${colors.foreground}
+label = "%percentage:2%%"
+label-foreground = ${colors.foreground-alt}
+label-background = ${colors.background-alt}
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/memory]
+type = internal/memory
+interval = 1
+format-prefix = "  "
+format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-background = ${colors.background-alt}
+;format-underline = ${colors.foreground}
+label = "%percentage_used%%"
+label-foreground = ${colors.foreground-alt}
+label-background = ${colors.background-alt}
+
+; --- Module ----------------------------------------------------------------------------------------------------------
+[module/timer]
+type = custom/script
+exec = ~/.config/polybar/timer.sh tail '' 5
+tail = true
+click-left =    ~/.config/polybar/timer.sh new 25 '' 'Paused' 'notify-send "Session finished"'
+click-middle =  ~/.config/polybar/timer.sh cancel
+click-right =   ~/.config/polybar/timer.sh togglepause
+scroll-up =     ~/.config/polybar/timer.sh increase 60 || ~/.config/polybar/timer.sh new 1 '' '!=' 'notify-send -u critical "Timer expired."'
+scroll-down =   ~/.config/polybar/timer.sh increase -60
+
+; ---------------------------------------------------------------------------------------------------------------------
+
+[settings]
+screenchange-reload = true
+compositing-background = over
+compositing-foreground = over
+compositing-overline = over
+compositing-border = over
+;compositing-underline = over
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+
+[global/wm]
+margin-top = 5
+margin-bottom = 5

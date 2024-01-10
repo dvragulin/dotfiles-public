@@ -1,0 +1,9 @@
+---
+# tasks file for alacritty
+
+- name: Link alacritty config file
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/03_Applications/alacritty/files/alacritty.toml"
+    dest: "$HOME/.config/alacritty/alacritty.toml"
+    state: link
+    force: yes

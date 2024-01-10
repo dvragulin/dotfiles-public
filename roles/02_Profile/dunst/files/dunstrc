@@ -1,0 +1,47 @@
+[global]
+    font                   = monospace 9
+    allow_markup           = yes
+    format                 = "<b>%a:</b> %s\n%b"
+    sort                   = yes
+    indicate_hidden        = yes
+    alignment              = left
+    bounce_freq            = 0
+    show_age_threshold     = 40
+    word_wrap              = yes
+    ignore_newline         = no
+    geometry               = "500x10-0+35"
+    transparency           = 0
+    idle_threshold         = 120
+    frame_width            = 1
+    monitor                = 0
+    follow                 = keyboard
+    sticky_history         = yes
+    line_height            = 0
+    separator_height       = 1
+    padding                = 8
+    horizontal_padding     = 8
+    separator_color        = "#595959"
+    startup_notification   = false
+    browser                = /usr/bin/firefox -new-tab
+    max_icon_size          = 60
+
+[shortcuts]
+    close                  = mod4+m       # close notification
+    close_all              = mod4+shift+m # close all notifications
+    history                = mod4+n       # redisplay last message(s)
+    context                = mod4+shift+i # context menu
+
+[urgency_critical]
+    background             = "#2B2B2B"
+    foreground             = "#D78700"
+    timeout                = 0
+
+[urgency_normal]
+    background             = "#2B2B2B"
+    foreground             = "#7AB87A"
+    timeout                = 30
+
+[urgency_low]
+    background             = "#2B2B2B"
+    foreground             = "#7AB87A"
+    timeout                = 15

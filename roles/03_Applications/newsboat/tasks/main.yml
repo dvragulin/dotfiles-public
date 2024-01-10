@@ -1,0 +1,16 @@
+---
+# tasks file for newsboat
+
+- name: Link newsboat config file | config
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/03_Applications/newsboat/files/config"
+    dest: "$HOME/.config/newsboat/config"
+    state: link
+    force: yes
+
+- name: Link urls file | urls
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/03_Applications/newsboat/files/urls"
+    dest: "$HOME/.config/newsboat/urls"
+    state: link
+    force: yes

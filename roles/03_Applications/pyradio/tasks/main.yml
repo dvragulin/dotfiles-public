@@ -1,0 +1,23 @@
+---
+# tasks file for pyradio
+
+- name: Link radio config files | config
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/03_Applications/pyradio/files/config"
+    dest: "$HOME/.config/pyradio/config"
+    state: link
+    force: yes
+
+- name: Link radio config files | personal.pyradio-theme
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/03_Applications/pyradio/files/personal.pyradio-theme"
+    dest: "$HOME/.config/pyradio/themes/personal.pyradio-theme"
+    state: link
+    force: yes
+
+- name: Link radio config files | stations.csv
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/03_Applications/pyradio/files/stations.csv"
+    dest: "$HOME/.config/pyradio/stations.csv"
+    state: link
+    force: yes

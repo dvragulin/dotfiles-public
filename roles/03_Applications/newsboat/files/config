@@ -1,0 +1,76 @@
+#prepopulate-query-feeds yes
+
+#auto-reload yes
+#reload-threads 10
+max-items 1000
+text-width 120
+
+external-url-viewer "urlscan -dc -r 'yandex-browser-stable {}'"
+
+bind-key j down
+bind-key k up
+bind-key j next articlelist
+bind-key k prev articlelist
+bind-key J next-feed articlelist
+bind-key K prev-feed articlelist
+bind-key G end
+bind-key g home
+bind-key d pagedown
+bind-key u pageup
+bind-key l open
+bind-key h quit
+bind-key a toggle-article-read
+bind-key n next-unread
+bind-key N prev-unread
+bind-key D pb-download
+bind-key U show-urls
+bind-key x pb-delete
+
+color listnormal cyan default
+color listfocus black yellow standout bold
+color listnormal_unread green default
+color listfocus_unread yellow default bold
+color info red black bold
+color article white default
+#color article white default
+
+# Use `neofetch` for color numbers
+highlight article "^Лента:.*" color11
+highlight article "^Заголовок:.*" color11 default bold
+highlight article "^Автор:.*" color11
+highlight article "^Дата:.*" color11 default bold
+highlight article "^Ссылка:.*" color11
+highlight article "^Flags:.*" color9 
+highlight article "\\[[0-9][0-9]*\\]" color66 default bold
+highlight article "\\[image [0-9][0-9]*\\]" color109 default bold
+highlight article "\\[embedded flash: [0-9][0-9]*\\]" color66 default bold
+
+#highlight feedlist "[║│]" yellow default bold
+#highlight feedlist "╠═.*" yellow default bold
+
+highlight feedlist "  -.*" color11 default bold # Pretty for White or color11
+
+#highlight feedlist "\\(Youtube\\) .*" red
+#highlight feedlist "\\(Twitter\\) .*" blue
+#highlight feedlist "\\(Reddit\\) .*" green
+#highlight feedlist "\\(Podcast\\) .*" magenta
+#highlight feedlist "\\(Blog\\) .*" cyan
+#highlight feedlist "\\(Reddit\\) .*" color166 
+
+feedlist-format "%?T? %4i %n %8u (%T) %t &  --- %t?"
+
+browser yandex-browser-stable
+macro , open-in-browser
+macro t set browser "tsp youtube-dl --add-metadata -ic" ; open-in-browser ; set browser yandex-browser-stable
+macro a set browser "tsp youtube-dl --add-metadata -xic -f bestaudio/best" ; open-in-browser ; set browser yandex-browser-stable
+macro v set browser "setsid -f mpv --geometry=500 1&> /dev/null" ; open-in-browser ; set browser yandex-browser-stable
+macro m set browser "setsid -f mpv --geometry=500" ; open-in-browser ; set browser yandex-browser-stable
+macro w set browser "w3m" ; open-in-browser ; set browser yandex-browser-stable
+macro p set browser "dmenuhandler" ; open-in-browser ; set browser yandex-browser-stable
+macro c set browser "xsel -b <<<" ; open-in-browser ; set browser yandex-browser-stable
+macro r set browser "ttrv" ; open-in-browser
+
+# Podboat items
+download-path "~/Downloads/%h/%n"
+max-downloads 3
+player "mpd"

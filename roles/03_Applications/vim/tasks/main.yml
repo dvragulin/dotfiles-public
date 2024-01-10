@@ -1,0 +1,21 @@
+---
+# tasks file for vim
+                                                                            
+- name: Link vim config file | .vimrc
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/03_Applications/vim/files/vimrc"
+    dest: "$HOME/.vimrc"
+    state: link
+    force: yes
+
+- name: Link vim pluggins config file | plug.vim
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/03_Applications/vim/files/plug.vim"
+    dest: "$HOME/.vim/autoload/plug.vim"
+    state: link
+    force: yes
+
+- name: Install vim pluggins
+  command: "vim +PlugInstall +qall"
+  args:
+    stdin: "\n"

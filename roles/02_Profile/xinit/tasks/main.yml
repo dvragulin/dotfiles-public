@@ -1,0 +1,23 @@
+---
+# tasks file for xinit
+
+- name: Link xinit config file | .Xclients
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/02_Profile/xinit/files/Xclients"
+    dest: "$HOME/.Xclients"
+    state: link
+    force: yes
+
+- name: Link xinit config file | .Xinitrc
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/02_Profile/xinit/files/xinitrc"
+    dest: "$HOME/.xinitrc"
+    state: link
+    force: yes
+
+- name: Link xinit config file | .Xresources
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/02_Profile/xinit/files/Xresources"
+    dest: "$HOME/.Xresources"
+    state: link
+    force: yes

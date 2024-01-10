@@ -1,0 +1,121 @@
+export ZSH="$HOME/.oh-my-zsh"
+#export VISUAL=nvim;
+#export EDITOR=nvim;
+export VISUAL=helix;
+export EDITOR=helix;
+export GOPATH="/home/dvragulin/.go"
+export FZF_DEFAULT_OPTS="--ansi --preview-window 'right:60%' --preview 'bat --color=always --style=full --line-range :300 {}'"
+export BAT_THEME="ansi"
+export ZSH_TMUX_AUTOSTART=false
+export ZSH_TMUX_AUTOQUIT=true
+export ZSH_TMUX_AUTOCONNECT=false
+export TERM=xterm-256color
+export GUM_FILTER_MATCH_FOREGROUND="#D78700"
+export GUM_FILTER_INDICATOR_FOREGROUND="#D78700"
+export GUM_INPUT_CURSOR_FOREGROUND="#D78700"
+export GUM_CHOOSE_CURSOR_FOREGROUND="#D78700"
+export GUM_CHOOSE_CURSOR_BACKGROUD="#D78700"
+export GUM_CHOOSE_SELECTED_FOREGROUND="#7AB87A"
+export GUM_CONFIRM_PROMPT_FOREGROUND="#D78700"
+export GUM_CONFIRM_SELECTED_BACKGROUND="#D78700"
+
+PATH=$PATH:$GOPATH/bin # Add GOPATH/bin to PATH for scripting
+ZSH_THEME="af-magic"
+DISABLE_AUTO_UPDATE="true"
+
+plugins=(
+   sudo 
+   zsh-syntax-highlighting
+   tmux
+   # Auto start tmux
+   #https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/tmux
+)
+
+# User configuration
+if [[ -n $SSH_CONNECTION ]]; then
+  #export EDITOR='nvim'
+  export EDITOR='helix'
+else
+  export EDITOR='helix'
+  #export EDITOR='nvim'
+fi
+
+# oh-my-zsh settings
+source $ZSH/oh-my-zsh.sh
+
+
+# Add my aliases
+alias :q='exit'
+alias :Q='exit'
+alias vim="helix"
+alias hl="helix"
+alias mk="minikube"
+alias mail="aerc"
+alias email="aerc"
+alias vf='helix "$(fzf)"'
+alias cf='cat "$(fzf)"'
+alias yt='ytfzf'
+alias h='history'
+alias r='ranger'
+alias mkdir='mkdir -p'
+alias t='tmux'
+alias tf='terraform'
+alias tfm='terraformer'
+alias kp='keepassxc'
+alias ap='ansible-playbook'
+alias pwgen='makepasswd --chars=32 --count=5'
+alias youtube-watch='yt'
+alias youtube-download-audio='yt-dlp -x --audio-format mp3 --cookies-from-browser firefox'
+alias youtube-download-video='yt-dlp -f mp4 --cookies-from-browser firefox'
+alias vpn='sudo openconnect --protocol=gp --user=$ADFS_USER_WORK --os=linux-64 $VPN_WORK_SRV'
+alias radio="pyradio --play"
+alias systemctl-f="sysz"
+alias wtf="wtfutil"
+alias news="newsboat -r"
+alias curl_response_time="curl -s -w '\nLookup time:\t%{time_namelookup}\nConnect time:\t%{time_connect}\nPreXfer time:\t%{time_pretransfer}\nStartXfer time:\t%{time_starttransfer}\n\nTotal time:\t%{time_total}\n' -o /dev/null "
+alias cls="/bin/ls"
+alias ls="exa --header --icons --git --tree --level=1"
+alias l="ls"
+alias ll="ls -all"
+alias lll="l -L 3 -D"
+alias calc="bcal"
+alias cat="/usr/bin/bat"
+alias lg="/usr/bin/lazygit"
+alias ld="/usr/bin/lazydocker"
+alias bootstrap="$HOME/GIT/projects_home/dotfiles-public/bin/bootstrap.sh"
+alias tw="taskwarrior-tui"
+alias kafkacat="kcat"
+alias log="lnav"
+alias tsh-login="tsh login --proxy=$TELEPORT_PROXY" # && tsh kube login stage"
+alias gl="glab"
+alias rg="rg -M 1000"
+alias h="helm"
+alias todo="todoist-cli"
+alias td="todoist-cli q "
+alias k="kubectl"
+alias kk="k9s"
+alias kkon='kubectl config set current-context $(kubectl config get-contexts | tail -n +2 | awk "{ print \$1 }" | sed "1s/.*/\"\"/" | gum filter --limit 1)'
+alias helm-yc="HELM_DRIVER=sql HELM_DRIVER_SQL_CONNECTION_STRING='${HELM_POSTGRES_CONNECTION_STRING_STAGE_YC_1}' helm"
+alias helm-sb="HELM_DRIVER=sql HELM_DRIVER_SQL_CONNECTION_STRING='${HELM_POSTGRES_CONNECTION_STRING_STAGE_SB_1}' helm"
+alias mkd='glow'
+alias n=note
+alias nv='glow ~/GIT/projects_home/Notes'
+alias update=upd
+alias dc="popd > /dev/null 2>&1"
+alias cl=calcure
+alias bk=books
+alias bkl=books-all
+alias tg="nchat -d $HOME/.config/chat/telegram"
+alias ws="nchat -d $HOME/.config/chat/whatsapp"
+
+# Add my functions
+FUNCTIONS_DIR="$HOME/GIT/projects_home/common-scripts/zsh_functions"
+if [ -d "$FUNCTIONS_DIR" ]; then
+    for func in "$FUNCTIONS_DIR"/*.sh; do
+        if [ -r "$func" ]; then
+            source "$func"
+        fi
+    done
+else
+    echo "404: ${FUNCTIONS_DIR} not found."
+fi

@@ -1,0 +1,16 @@
+---
+# tasks file for lazygit
+
+- name: Link lazygit config file in place 1
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/03_Applications/lazygit/files/config.yml"
+    dest: "$HOME/.config/jesseduffield/lazygit/config.yml"
+    state: link
+    force: yes
+
+- name: Link lazygit config file in place 2
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/03_Applications/lazygit/files/config.yml"
+    dest: "$HOME/.config/lazygit/config.yml"
+    state: link
+    force: yes

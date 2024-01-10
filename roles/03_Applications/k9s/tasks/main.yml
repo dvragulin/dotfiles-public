@@ -1,0 +1,9 @@
+---
+# tasks file for k9s
+
+- name: Link k9s config file | skin.yml
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/03_Applications/k9s/files/skin.yml"
+    dest: "$HOME/.config/k9s/skin.yml"
+    state: link
+    force: yes

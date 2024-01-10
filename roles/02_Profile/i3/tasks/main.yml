@@ -1,0 +1,8 @@
+---
+# tasks file for i3
+- name: Link i3 config file
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/02_Profile/i3/files/config"
+    dest: "$HOME/.config/i3/config"
+    state: link
+    force: yes
