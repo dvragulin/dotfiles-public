@@ -1,0 +1,6 @@
+---
+#- name: "Step 04: Common"
+#  hosts: DESKTOP
+#  become: no
+#  roles:
+#    - role:

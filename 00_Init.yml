@@ -1,0 +1,8 @@
+---
+- name: "Step 00: Init"
+  hosts: DESKTOP
+  become: yes
+  roles:
+    - role: 00_Init/install_applications
+    - role: 00_Init/make_directories
+    - role: 00_Init/make_links

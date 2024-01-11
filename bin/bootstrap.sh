@@ -11,7 +11,6 @@ if [ -e $HOME/.ssh/id_rsa ]; then
   echo "[INFO] Change mod for id_rsa"
 fi
 
-
 # --- Make GIT directory ----------------------------------------------------------------------------------------------
 if [ ! -d "$HOME/GIT" ]; then
   mkdir $HOME/GIT \
@@ -19,7 +18,6 @@ if [ ! -d "$HOME/GIT" ]; then
   echo "[INFO] Make GIT folder"
   echo "[INFO] Make GIT/projects_home folder"
 fi
-
 
 # --- Install yay (if not exist)  -------------------------------------------------------------------------------------
 if ! [ -x "$(command -v yay)" ]; then
@@ -63,14 +61,36 @@ echo "[INFO] Main git repositories updated"
 
 # --- Run Ansible playbook --------------------------------------------------------------------------------------------
 export ANSIBLE_CONFIG="./bin/ansible.cfg"
+playbooks=($(/bin/ls *.yml))
+selected_playbooks=()
+if [ ${#playbooks[@]} -eq 0 ]; then echo "No available playbooks found."; exit 1; fi
+printf "\nSelect the playbook(s) you want to run (e.g., 1 2 3):\n"
+for i in "${!playbooks[@]}"; do
+    echo "$(($i + 1))) ${playbooks[$i]}"
+done
+read -p "Enter your choice(s): " -a choices
+for choice in "${choices[@]}"; do
+    index=$(($choice - 1))
+    if [[ $index -ge 0 && $index -lt ${#playbooks[@]} ]]; then
+        # Добавляем плейбук, если выбор корректный
+        selected_playbooks+=("${playbooks[$index]}")
+    else
+        echo "Invalid selection: $choice"
+        exit 1
+    fi
+done
+
 TIME_START=$(date +%s)
-ansible-playbook playbook.yml -e "ansible_sudo_pass=$PW"
+for playbook in "${selected_playbooks[@]}"; do
+    echo "Running playbook: $playbook"
+    ansible-playbook "$playbook" -e "ansible_sudo_pass=$PW"
+done
 TIME_END=$(date +%s)
 
 DIFF=$(( $TIME_END - $TIME_START ))
 TIME_DIFF=$(date -d@$DIFF -u +%H:%M:%S)
 
-  echo "[INFO] Ansible playbook comoleted"
+echo "[INFO] Ansible playbook comoleted"
 # --- Run go for intall custom apps -----------------------------------------------------------------------------------
 
 # --- Enable and mask system services ----------
