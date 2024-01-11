@@ -1,5 +1,5 @@
 ---
-- name: "Step 03: Applications"
+- name: "Step 04: Applications"
   hosts: DESKTOP
   become: no
   roles:

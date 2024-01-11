@@ -1,5 +1,5 @@
 ---
-- name: "Step 00: Init"
+- name: "Step 01: Init"
   hosts: DESKTOP
   become: yes
   roles:
