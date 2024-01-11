@@ -1,0 +1,8 @@
+---
+- name: Install Network & Security packages (pacman)
+  become: false
+  aur:
+    name: "{{ item }}"
+    state: latest
+  loop: "{{ network_and_security_packages_pacman }}"
+  ignore_errors: yes

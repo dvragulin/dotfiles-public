@@ -1,0 +1,8 @@
+---
+- name: Install Productivity & Office packages (pacman)
+  become: false
+  aur:
+    name: "{{ item }}"
+    state: latest
+  loop: "{{ productivity_and_office_packages_pacman }}"
+  ignore_errors: yes

@@ -1,0 +1,23 @@
+---
+- name: Install Development and terminal Utilities packages (pacman)
+  become: false
+  aur:
+    name: "{{ item }}"
+    state: latest
+  loop: "{{ dev_and_terminal_utilities_packages_pacman }}"
+  ignore_errors: yes
+
+- name: Install Development and terminal Utilities packages (snap classic)
+  snap:
+    name: '{{ item }}'
+    classic: yes
+    state: present
+  loop: "{{ dev_and_terminal_utilities_packages_snap_classic }}"
+  ignore_errors: yes
+
+- name: Install Development and terminal Utilities packages (pip)
+  pip:
+    name: '{{ item }}'
+    state: latest
+  loop: "{{ dev_and_terminal_utilities_packages_pip }}"
+  ignore_errors: yes

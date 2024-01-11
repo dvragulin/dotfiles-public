@@ -1,0 +1,11 @@
+---
+- include_tasks: 00_Core.yml
+- include_tasks: 01_System_Utilities.yml
+- include_tasks: 02_Fonts.yml
+- include_tasks: 03_Desktop_Environments.yml
+- include_tasks: 04_Virtualization.yml
+- include_tasks: 05_Multimedia.yml
+- include_tasks: 06_Development_and_Terminal_Utilities.yml
+- include_tasks: 07_Network_and_Security.yml
+- include_tasks: 08_Productivity_and_Office.yml
+- include_tasks: 10_Remove.yml

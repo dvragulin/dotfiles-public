@@ -1,0 +1,329 @@
+---
+# --- Core ------------------------------------------------------------------------------------------------------------
+core_packages_pacman:
+  - alsa-lib                           # Libraries for the Advanced Linux Sound Architecture (ALSA)
+  - alsa-utils                         # Utilities for the Advanced Linux Sound Architecture (ALSA)
+  - base-devel                         # A group of tools and libraries essential for building software
+  - dbus-broker                        # A high-performance D-Bus message broker
+  - gnupg                              # A complete and free implementation of the OpenPGP standard
+  - gobject-introspection              # A middleware for creating language bindings for C libraries
+  - haveged                            # An entropy daemon using hardware RNG to produce random numbers
+  - intel-gmmlib                       # Intel Graphics Memory Management Library, providing a unified memory management solution for Intel Graphics hardware
+  - intel-gpu-tools                    # Tools for debugging and testing of the Intel graphics drivers
+  - intel-media-driver                 # A modern VAAPI driver from Intel for Broadwell and newer Intel Graphics hardware
+  - intel-ucode                        # Microcode updates for Intel CPUs
+  - jmtpfs                             # A FUSE-based filesystem for accessing MTP devices
+  - libva                              # Video Acceleration (VA) API for Linux, providing access to hardware accelerated video processing
+  - libva-intel-driver                 # VA-API implementation for Intel G45 chipsets and newer
+  - libva-mesa-driver                  # Mesa VA-API driver, a backend for VA-API implementation on Gallium
+  - libva-utils                        # A collection of utilities and examples to test and show VA-API functionality
+  - libxnvctrl                         # NVIDIA NV-CONTROL X extension, a library for accessing XNVCTRL, NVIDIA's own X extension
+  - ncurses                            # A library for writing text-based user interfaces
+  - pam-gnupg                          # A PAM module for unlocking GnuPG keys
+  - samsung-unified-driver-common      # Common files for Samsung Unified Linux Driver (for printers and scanners)
+  - samsung-unified-driver-printer     # Printer driver for Samsung Unified Linux Driver
+  - vde2                               # Virtual Distributed Ethernet for virtual machines networking
+  - vte3                               # Terminal emulator widget for GTK+ used by GNOME Terminal
+  - vulkan-intel                       # Intel's Vulkan graphics driver
+  - xdg-desktop-portal-gtk             # GTK+ backend for xdg-desktop-portal, providing integration with GTK+ apps
+  - xorg-server-devel                  # Development files for the X.Org X server
+  - xorg-xrandr                        # Command-line interface to the RandR extension, allowing you to query and configure monitor settings
+core_packages_snap:
+  - core20
+# --- System Utilities ------------------------------------------------------------------------------------------------
+system_utilities_packages_pacman:
+  - ananicy                            # ANother Auto NICe daemon, for automatically adjusting the niceness of processes
+  - bleachbit                          # A free space cleaner, privacy manager, and system optimizer like ccleaner
+  - bluez                              # Official Linux Bluetooth protocol stack, providing support for core Bluetooth layers and protocols
+  - bluez-utils                        # Utilities for use in Bluetooth applications including hcitool, hcidump, rfcomm, and l2ping
+  - bottom                             # A graphical system monitor with a customizable interface
+  - btop                               # A resource monitor that shows usage and stats for processor, memory, disks, network, and processes
+  - cmake                              # A cross-platform open-source system that manages the build process in a compiler-independent manner
+  - cpupower                           # A suite of tools for managing CPU power management and monitoring
+  - cpupower-gui                       # A graphical utility to change the CPU frequency scaling and governor settings
+  - cups                               # A modular printing system for Unix-like operating systems which allows a computer to act as a print server
+  - cups-pdf                           # A CUPS backend module which, in combination with CUPS itself, converts print jobs to PDF files
+  - cython                             # A programming language that makes writing C extensions for the Python language as easy as Python itself
+  - dnstop                             # A console tool to analyze DNS traffic for network troubleshooting and performance tuning
+  - ecryptfs-utils                     # A cryptographic filesystem for Linux
+  - glances                            # A cross-platform system monitoring tool
+  - gparted                            # A free partition editor for graphically managing disk partitions
+  - htop                               # An interactive process viewer for Unix systems
+  - iftop                              # A tool for displaying bandwidth usage on an interface by host
+  - inxi                               # A full-featured system information script for the command line
+  - iotop                              # A Python program for monitoring disk I/O usage information output by the kernel
+  - ipython                            # An enhanced interactive Python shell
+  - libguestfs                         # A set of tools for accessing and modifying virtual machine (VM) disk images
+  - lvm2                               # A Logical Volume Manager for the Linux kernel
+  - make                               # The GNU make utility which controls the generation of executables and other non-source files from source files
+  - mdadm                              # A tool for managing MD devices, or Linux Software RAID
+  - ntfs-3g                            # An open-source implementation of the Windows NTFS file system with read-write support
+  - nvtop                              # An NVIDIA GPUs process and memory usage monitor
+  - openssh                            # An open-source version of the Secure Shell (SSH) protocol suite of network connectivity tools
+  - pacseek                            # A pacman wrapper providing advanced search and query capabilities with a TUI
+  - pavucontrol                        # A PulseAudio Volume Control graphical application
+  - pulsemixer                         # A command-line mixer for PulseAudio
+  - python-pip                         # The Python package installer, used to install and manage software packages written in Python
+  - reflector-mirrorlist-update        # A tool to fetch and sort mirrorlist entries by speed for Arch Linux repositories
+  - rsync                              # A fast, versatile, local and remote file-copying utility that provides speedup file transfer
+  - snappy                             # A package management and deployment system
+  - sshfs                              # A file system client based on SSH File Transfer Protocol
+  - sysz                               # An interactive TUI for the Systemctl
+  - ueberzug                           # A command line utility that displays images in terminals by utilizing the X11 graphic system
+  - unzip                              # A utility for extracting files from and creating ZIP archives
+  - wakeonlan                          # A tool for sending a Wake-On-LAN (WOL) packet to networked computers
+# --- Fonts -----------------------------------------------------------------------------------------------------------
+fonts_packages_pacman:
+  - arc-gtk-theme                      # A flat theme with transparent elements for GTK 3, GTK 2, and GNOME Shell
+  - font-awesome-5                     # A font and icon toolkit based on CSS and Less
+  - noto-fonts                         # Google's font family aims to support all languages with a harmonious look and feel
+  - noto-fonts-extra                   # Additional font styles for the Noto font family
+  - papirus-icon-theme                 # A comprehensive SVG icon theme based on Paper Icon Set with a lot of custom icons
+  - siji-git                           # An iconic bitmap font based on Stlarch with additional glyphs
+  - terminus-font                      # A clean, fixed width bitmap font, designed for long work with computers
+  - ttf-dejavu                         # A font family based on the Bitstream Vera Fonts with a wider range of characters
+  - ttf-droid                          # A font family originally designed for the Android platform
+  - ttf-font-awesome                   # An iconic font designed for Bootstrap
+  - ttf-freefont                       # A set of free high-quality TrueType fonts covering the Unicode character set
+  - ttf-hack                           # A typeface designed for source code
+  - ttf-liberation                     # A font family which aims at metric compatibility with Arial, Times New Roman, and Courier New
+  - ttf-roboto                         # Google’s signature family of fonts, the default font on Android and Chrome OS
+  - ttf-ubuntu-font-family             # A contemporary sans serif font family designed for Ubuntu
+  - ttf-unifont                        # A Unicode font that covers the entire BMP (Basic Multilingual Plane)
+  - ttf-weather-icons                  # A weather themed icon font
+# --- Desktop Environments --------------------------------------------------------------------------------------------
+desktop_environments_packages_pacman:
+  - alacritty                          # A cross-platform, GPU-accelerated terminal emulator
+  - dunst                              # A customizable and lightweight notification-daemon
+  - feh                                # A fast and light image viewer
+  - flameshot                          # A powerful yet simple to use screenshot software
+  - gtk2-perl                          # Perl bindings for GTK+ 2.x
+  - gucharmap                          # A Unicode character picker and font browser
+  - i3-wm                              # An improved dynamic tiling window manager
+  - i3status                           # A small program for generating a status bar for i3wm and i3bar
+  - lightdm                            # A cross-desktop display manager
+  - lightdm-gtk-greeter                # A GTK+ greeter for LightDM
+  - lxappearance                       # A desktop-independent GTK+ theme switcher
+  - numlockx                           # A simple program to turn on or off numlock on X startup
+  - pcmanfm                            # A lightweight file manager for X Window
+  - polybar                            # A fast and easy-to-use status bar
+  - rofi                               # A window switcher, application launcher and dmenu replacement
+  - rxvt                               # A VT102 emulator for the X window system
+  - zsh                                # A shell designed for interactive use, although it is also a powerful scripting language
+# --- Virtualization --------------------------------------------------------------------------------------------------
+virtualization_packages_pacman:
+  - docker                             # A platform for developers and sysadmins to develop, deploy, and run applications with containers
+  - docker-compose                     # A tool for defining and running multi-container Docker applications
+  - minikube                           # A tool that enables you to run Kubernetes locally
+  - qemu                               # A generic and open source machine emulator and virtualizer
+  - vagrant                            # A tool for building and distributing development environments
+  - virt-manager                       # A desktop application for managing virtual machines through libvirt
+# --- Multimedia ------------------------------------------------------------------------------------------------------
+multimedia_packages_pacman:
+  - calibre                            # A powerful and easy to use e-book manager
+  - mpv                                # A free, open-source, and cross-platform media player
+  - obs-studio                         # A software for video recording and live streaming
+  - rhythmbox                          # An integrated music management application, originally inspired by Apple's iTunes
+  - viewnior                           # A simple and elegant image viewer
+  - vlc                                # A free and open-source, portable, cross-platform media player and streaming media server
+  - yandex-music-player                # An unofficial desktop player for the Yandex Music service
+# --- Development and terminal Utilities --------------------------------------------------------------------------------------
+dev_and_terminal_utilities_packages_pacman:
+  - apache                             # Apache HTTP Server, a free and open-source cross-platform web server software
+  - asciinema                          # A free and open source solution for recording terminal sessions and sharing them on the web
+  - astroid                            # A graphical email client for notmuch, with threading
+  - aws-cli                            # Universal Command Line Interface for Amazon Web Services
+  - bat                                # A cat(1) clone with syntax highlighting and Git integration
+  - bcal                               # Byte CALculator for storage conversions and calculations
+  - browsh                             # A fully-modern text-based browser, rendering to TTY and browsers
+  - calcure                            # A simple curses calendar and sche
+  - chromedriver                       # A standalone server which implements WebDriver's wire protocol for Chromium
+  - ctags                              # A programming tool that generates an index file of names found in source and header files of various programming languages
+  - dbeaver                            # A free multi-platform database tool for developers, SQL programmers, and database administrators
+  - dive                               # A tool for exploring a docker image, layer contents, and discovering ways to shrink the size of your Docker/OCI image
+  - dockle                             # A container image linter for security, helping build the best-practice Docker image
+  - duf                                # A Disk Usage/Free Utility - a better 'df' alternative
+  - ethtool                            # A utility for displaying and modifying network interface cards' settings
+  - exa                                # A modern replacement for 'ls'
+  - fd                                 # A simple, fast and user-friendly alternative to 'find'
+  - flog-bin                           # A fake log generator for log systems testing
+  - fx                                 # A command-line JSON processing tool
+  - fzf                                # A general-purpose command-line fuzzy finder
+  - git-delta                          # A syntax-highlighting pager for git and diff output
+  - glab                               # An open-source GitLab command line tool bringing GitLab's cool features to your command line
+  - glow                               # A stylish CLI markdown reader
+  - gnupg                              # A complete and free implementation of the OpenPGP standard as defined by RFC4880 (repeated)
+  - go-yq                              # A lightweight and portable command-line YAML processor, written in Go
+  - goaccess                           # A real-time web log analyzer and interactive viewer
+  - gpg-tui                            # A Terminal User Interface for GnuPG
+  - grpcurl                            # Like cURL, but for gRPC: command-line tool for interacting with gRPC servers
+  - grv                                # Git Repository Viewer; a terminal based interface for viewing git repositories
+  - gum                                # A tool to stylize your CLI by engineering simple markdown-like scripts
+  - helix                              # A post-modern modal text editor
+  - helm                               # The Kubernetes package manager
+  - helm-diff                          # A Helm plugin that shows a diff explaining what a helm upgrade would change
+  - helm-docs                          # A tool for automatically generating markdown documentation for Helm charts
+  - helm-secrets                       # A Helm plugin that helps manage and store secrets safely
+  - hstr                               # A shell history suggest box for Bash and Zsh with easy view, search and manage
+  - isync                              # A command line application which synchronizes mailboxes
+  - jq                                 # A lightweight and flexible command-line JSON processor
+  - k9s                                # A terminal-based UI to interact with your Kubernetes clusters
+  - kafkacat-git                       # A command-line utility for producing and consuming Kafka messages
+  - keepassxc                          # A cross-platform community-driven port of the Windows application “KeePass Password Safe”
+  - kubectl                            # A command-line tool for controlling Kubernetes clusters
+  - lazygit                            # A simple terminal UI for git commands, with the gocui library
+  - llvm                               # A collection of modular and reusable compiler and toolchain technologies
+  - lnav                               # An advanced log file viewer for the small-scale; watch and analyze your logs in real time
+  - lynx                               # A text-based web browser
+  - makepasswd                         # A utility to generate and encrypt passwords
+  - mc                                 # Midnight Commander - a powerful file manager
+  - msmtp                              # An SMTP client
+  - multiwerf-bin                      # A version manager for werf, a GitOps tool
+  - mysql-workbench                    # A visual database design tool developed by MySQL
+  - ncdu                               # NCurses Disk Usage, a disk utility for Unix systems
+  - nchat                              # A command-line chat application for multiple platforms including Slack and IRC
+  - neomutt                            # A command-line mail reader (MUA). It's a fork of Mutt with added features
+  - neovim                             # A hyperextensible Vim-based text editor
+  - newsboat                           # An extendable RSS feed reader for text terminals
+  - ov                                 # A text viewing utility and pager program, which works on TTY and X11
+  - pass                               # A password manager following the Unix philosophy
+  - pass                               # A password manager following the Unix philosophy (repeated)
+  - pgadmin4                           # A web-based administration tool for PostgreSQL database
+  - phpmyadmin                         # A free software tool written in PHP, intended to handle the administration of MySQL over the Web
+  - postgresql                         # A powerful, open source object-relational database system
+  - postman-bin                        # A collaboration platform for API development (binary release)
+  - pyradio                            # A command-line internet radio player
+  - ranger                             # A console file manager with VI key bindings
+  - ripgrep                            # A search tool that combines the usability of ag with the raw speed of grep
+  - s3cmd                              # A command-line tool for managing AWS S3 and CloudFront services
+  - smartgit                           # A Git client with support for GitHub Pull Requests+Comments and SVN
+  - sops                               # A tool for managing secrets
+  - taskwarrior-tui                    # A Terminal User Interface (TUI) for Taskwarrior, a command-line task management tool
+  - telepresence                       # A tool for local development of Kubernetes services
+  - termshark                          # A terminal UI for tshark, similar to Wireshark
+  - terraform                          # An infrastructure as code software tool that enables you to build, change, and version infrastructure safely and efficiently
+  - terraformer                        # A CLI tool that generates tf/json and tfstate files based on existing infrastructure (reverse Terraform)
+  - terragrunt                         # A thin wrapper for Terraform that provides extra tools for keeping your configurations DRY, working with multiple Terraform modules, and managing remote state
+  - tfswitch                           # A command-line tool to switch between different versions of terraform
+  - tldr                               # A community effort to simplify man pages with practical examples
+  - tmux                               # A terminal multiplexer enabling a number of terminals to be created, accessed, and controlled from a single screen
+  - todoist-git                        # The official command-line client for Todoist
+  - tree                               # A directory listing program displaying a tree-like format
+  - trivy                              # A simple and comprehensive vulnerability scanner for containers and other artifacts
+  - urlview                            # A URL extractor/launcher
+  - vim                                # A highly configurable text editor built to enable efficient text editing
+  - vim-runtime                        # Runtime files that vim needs to run
+  - vscode                             # A source-code editor developed by Microsoft for Windows, Linux, and macOS
+  - w3m                                # A text-based web browser as well as a pager like more or less
+  - w3m-imgcat                         # This script allows you to display inline images in terminal emulators with w3mimgdisplay support
+  - wireshark-git                      # A network protocol analyzer for Unix/Linux and Windows (development version)
+  - yandex-cloud-bin                   # Official Yandex Cloud command-line interface for managing Yandex Cloud services
+  - yt-dlp                             # A command-line program to download videos from YouTube and other sites
+  - ytfzf                              # A script that enables you to search and get a preview of YouTube videos and download them using youtube-dl
+  - zathura                            # A highly customizable and functional document viewer
+  - zathura-djvu                       # A DjVu file format plugin for Zathura document viewer
+  - zathura-pdf-mupdf                  # A lightweight PDF viewer plugin for Zathura
+  - zathura-ps                         # A PostScript plugin for Zathura document viewer
+#  - lazydocker                         # A simple terminal UI for Docker and docker-compose, written in Go with the gocui library
+#  - poetry                             # A tool for dependency management and packaging in Python
+#  - s5cmd                              # A very fast S3 and local filesystem execution tool
+dev_and_terminal_utilities_packages_snap_classic:
+  - datagrip                           # Database IDE that supports multiple databases developed by JetBrains
+  - goland                             # IDE for the Go programming language developed by JetBrains
+  - powershell                         # Command-line shell and scripting language developed by Microsoft
+  - pycharm-professional               # Professional edition of PyCharm, an IDE for Python developed by JetBrains
+dev_and_terminal_utilities_packages_pip:
+  - cachetools                         # Extensible memoizing collections and decorators
+  - filelock                           # Platform independent file lock in Python
+  - flake8                             # Tool for Python style guide enforcement and linting
+  - gitpython                          # Python library used to interact with Git repositories
+  - google-auth                        # Google authentication library for Python
+  - google-auth-httplib2               # Library for Google authentication and to make authorized HTTP requests with httplib2
+  - google-auth-oauthlib               # Google authentication library integration with requests-oauthlib
+  - grip                               # Command-line server application to preview Markdown files as they would appear on GitHub
+  - httplib2                           # Comprehensive HTTP client library for Python
+  - isort                              # Python utility/library to sort imports alphabetically, and automatically separated into sections
+  - jinja2                             # Templating engine for Python, used to generate HTML or other text formats
+  - kubernetes                         # Python client library for Kubernetes, used to interact with Kubernetes cluster API
+  - lazy-object-proxy                  # A fast and thorough lazy object proxy for Python
+  - mccabe                             # Python module for McCabe complexity checker, a part of flake8
+  - notion-backup                      # Tool for backing up content from the Notion workspace
+  - numpy                              # Scientific computing library with support for large, multi-dimensional arrays and matrices
+  - oauth2client                       # Library for OAuth 2.0 and Google authentication
+  - pandas                             # Data analysis and manipulation library for Python
+  - pendulum                           # Python package for date and time manipulation
+  - pipenv                             # Tool that aims to bring the best of all packaging worlds to the Python world
+  - prettytable                        # Python library to easily display tabular data in a visually appealing ASCII table format
+  - proxmoxer                          # Wrapper for the Proxmox VE API allowing for programmable interaction
+  - pyasn1-modules                     # Collection of ASN.1-based protocols modules
+  - pycodestyle                        # Tool to check Python code against coding style standards (PEP 8)
+  - pyflakes                           # Linter to identify errors in Python code
+  - pylint                             # Code analysis tool that looks for programming errors, helps enforcing a coding standard
+  - pynvim                             # Python client and plugin host for Neovim
+  - requests                           # HTTP library for sending HTTP/1.1 requests in Python
+  - todoist-api-python                 # Official Python API library for interacting with the Todoist API
+  - virtualenv                         # Tool for creating isolated Python environments
+  - wrapt                              # Decorators, wrappers and monkey patching utility
+  - yandex-music                       # Library or client for interacting with the Yandex.Music service
+# --- Network & Security ----------------------------------------------------------------------------------------------
+network_and_security_packages_pacman:
+  - bridge-utils                       # Utilities for configuring Ethernet bridges
+  - dnsmasq                            # A lightweight DNS, DHCP, and TFTP server
+  - dnsutils                           # Utilities for querying DNS name servers
+  - ethr                               # A network performance measurement tool
+  - httpie                             # User-friendly command-line HTTP client for API testing and debugging
+  - iptables                           # A user-space utility program for configuring the Linux netfilter firewall
+  - net-tools                          # A collection of programs for controlling the network subsystem of the Linux kernel
+  - network-manager-applet             # A system tray applet for network management
+  - nmap                               # Network scanning tool for network discovery and security auditing
+  - openbsd-netcat                     # Networking utility for reading and writing data across network connections
+  - putty                              # SSH and telnet client for remote server access
+  - tcpdump                            # Command-line packet analyzer for network debugging and traffic monitoring
+  - traceroute                         # Network diagnostic tool for tracing the path packets take to a target host
+  - trippy                             # Potentially a custom or lesser-known tool; unclear without additional context
+  - wol                                # A program to send Wake-On-LAN packets
+# --- Productivity & Office -------------------------------------------------------------------------------------------
+productivity_and_office_packages_pacman:
+  - discord                            # Voice, video, and text communication platform geared toward gamers
+  - dolphin                            # File manager for KDE desktop environments
+  - etcher-bin                         # A powerful image writer tool for SD cards and USB drives
+  - firefox                            # Open-source web browser developed by Mozilla
+  - globalprotect-openconnect          # VPN client to connect to Global Protect networks using OpenConnect
+  - google-chrome                      # Popular web browser developed by Google
+  - gp-saml-gui-git                    # Graphic interface tool for GlobalProtect VPN connections
+  - jitsi-meet-desktop                 # Desktop application for Jitsi Meet, an open-source video conferencing service
+  - mattermost-desktop-bin             # Desktop client for the Mattermost communication platform
+  - obsidian                           # Markdown-based note-taking and personal knowledge base application
+  - telegram-desktop                   # Desktop client for the Telegram messaging service
+  - thunderbird                        # Open-source email client developed by the Mozilla Foundation
+  - transmission-remote-tui-git        # Terminal-based remote control client for Transmission BitTorrent client
+  - yandex-browser-stable              # Web browser developed by Yandex, focusing on security and privacy
+  - yandex-disk                        # Cloud storage service provided by Yandex
+# --- Remove ----------------------------------------------------------------------------------------------------------
+remove_packages_pacman:
+  - asbru-cm
+  - cantata
+  - ceph-lib
+  - cointop-bin
+  - guake
+  - gwenview
+  - k3b
+  - kate
+  - kdeconnect
+  - kfind
+  - kget
+  - konversation
+  - markdown
+  - okular
+  - pidgin
+  - qbittorrent
+  - rtv
+  - skanlite
+  - spectacle
+  - termdbms
+  - tk
+  - virtualbox
+  - virtualbox-host-dkms
+  - virtualbox-sdk
+  - yakuake
+  - ceph-libs-bin

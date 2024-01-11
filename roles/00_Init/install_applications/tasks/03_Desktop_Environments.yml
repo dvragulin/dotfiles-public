@@ -1,0 +1,8 @@
+---
+- name: Install Desktop Environments packages (pacman)
+  become: false
+  aur:
+    name: "{{ item }}"
+    state: latest
+  loop: "{{ desktop_environments_packages_pacman }}"
+  ignore_errors: yes

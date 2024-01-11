@@ -1,0 +1,7 @@
+---
+- name: Remove packages (pacman)
+  pacman:
+    name: '{{ item }}'
+    state: absent
+  loop: "{{ remove_packages_pacman }}"
+  ignore_errors: yes

@@ -1,0 +1,8 @@
+---
+- name: Install Virtualization packages (pacman)
+  become: false
+  aur:
+    name: "{{ item }}"
+    state: latest
+  loop: "{{ virtualization_packages_pacman }}"
+  ignore_errors: yes

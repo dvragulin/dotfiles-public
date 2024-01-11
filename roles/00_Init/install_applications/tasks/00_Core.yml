@@ -1,0 +1,15 @@
+---
+- name: Install Core packages (pacman)
+  become: false
+  aur:
+    name: "{{ item }}"
+    state: latest
+  loop: "{{ core_packages_pacman }}"
+  ignore_errors: yes
+
+- name: Install Core packages (snap)
+  snap:
+    name: '{{ item }}'
+    state: present
+  loop: "{{ core_packages_snap }}"
+  ignore_errors: yes

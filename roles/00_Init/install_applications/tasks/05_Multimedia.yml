@@ -1,0 +1,8 @@
+---
+- name: Install Multimedia packages (pacman)
+  become: false
+  aur:
+    name: "{{ item }}"
+    state: latest
+  loop: "{{ multimedia_packages_pacman }}"
+  ignore_errors: yes

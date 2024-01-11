@@ -1,0 +1,32 @@
+---
+- name: Link bootstrap
+  become: yes
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/bin/bootstrap.sh"
+    dest: "/usr/bin/bootstrap"
+    state: link
+    force: yes
+
+- name: Link Documents/Pictures to Pictures
+  become: yes
+  file:
+    src: "/home/dvragulin/Documents/_Pictures"
+    dest: "/home/dvragulin/Pictures"
+    state: link
+    force: yes
+
+- name: Link Documents/Desktop to Desktop
+  become: yes
+  file:
+    src: "/home/dvragulin/Documents/_Desktop"
+    dest: "/home/dvragulin/Desktop"
+    state: link
+    force: yes
+
+- name: Link Documents/Shared to Shared
+  become: yes
+  file:
+    src: "/home/dvragulin/Documents/_Shared"
+    dest: "/home/dvragulin/Shared"
+    state: link
+    force: yes
