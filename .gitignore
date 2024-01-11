@@ -1,3 +1,3 @@
 .idea
 /temp/
-!/roles/btop/files/btop.conf
+!/roles/04_Applications/btop/files/btop.conf
