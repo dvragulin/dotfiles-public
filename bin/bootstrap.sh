@@ -125,6 +125,8 @@ info "systemctl start: docker"
 # --- Change shell to ZSH ---------------------------------------------------------------------------------------------
 if [ "$CURRENT_SHELL" != "zsh" ]; then echo $PW | chsh -s "$(which zsh)"; fi
 info "Updated: default shell"
+git home 1> /dev/null
+info "Updated: git config"
 
 # --- Final message ---------------------------------------------------------------------------------------------------
 TIME_END=$(date +%s)
