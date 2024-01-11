@@ -43,9 +43,6 @@ fi
 # oh-my-zsh settings
 source $ZSH/oh-my-zsh.sh
 
-# k8s aliases
-[ -f ~/.kubectl_aliases ] && source ~/.kubectl_aliases
-
 
 # Add my aliases
 alias :q='exit'
@@ -95,6 +92,7 @@ alias rg="rg -M 1000"
 alias h="helm"
 alias todo="todoist-cli"
 alias td="todoist-cli q "
+alias k="kubectl"
 alias kk="k9s"
 alias kkon='kubectl config set current-context $(kubectl config get-contexts | tail -n +2 | awk "{ print \$1 }" | sed "1s/.*/\"\"/" | gum filter --limit 1)'
 alias helm-yc="HELM_DRIVER=sql HELM_DRIVER_SQL_CONNECTION_STRING='${HELM_POSTGRES_CONNECTION_STRING_STAGE_YC_1}' helm"
