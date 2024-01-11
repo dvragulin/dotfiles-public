@@ -1,63 +1,78 @@
 #!/bin/bash
 
-# A simple script for preparing the environment for PlayBook running
+info() {
+  echo -e "\033[32m ✔\033[m $1"
+}
 
-read -sp "[sudo] пароль для $USER: " PW ; echo
+TIME_START=$(date +%s)
+SSH_KEY="$HOME/.ssh/id_rsa"
+GIT_DIR="$HOME/GIT/projects_home"
+REPOS=("dotfiles-public" "common-scripts")
+CURRENT_SHELL=$(basename "$SHELL")
 
+cat << "EOF"
+ _                 _       _
+| |__   ___   ___ | |_ ___| |_ _ __ __ _ _ __
+| '_ \ / _ \ / _ \| __/ __| __| '__/ _` | '_ \
+| |_) | (_) | (_) | |_\__ \ |_| | | (_| | |_) |
+|_.__/ \___/ \___/ \__|___/\__|_|  \__,_| .__/
+                                        |_|
+
+EOF
+read -sp "🗝 Please enter the sudo password for $USER: " PW ; echo
 
 # --- Change mod for id_rsa -------------------------------------------------------------------------------------------
-if [ -e $HOME/.ssh/id_rsa ]; then
-  chmod 600 $HOME/.ssh/id_rsa
-  echo "[INFO] Change mod for id_rsa"
+if [ -e "$SSH_KEY" ]; then
+  chmod 600 "$SSH_KEY"
+  info "Updated: id_rsa"
 fi
 
 # --- Make GIT directory ----------------------------------------------------------------------------------------------
 if [ ! -d "$HOME/GIT" ]; then
   mkdir $HOME/GIT \
         $HOME/GIT/projects_home
-  echo "[INFO] Make GIT folder"
-  echo "[INFO] Make GIT/projects_home folder"
+  info "Updated: ./GIT"
+  info "Updated: ./GIT/projects_home"
 fi
 
 # --- Install yay (if not exist)  -------------------------------------------------------------------------------------
 if ! [ -x "$(command -v yay)" ]; then
-  sudo pacman-mirrors --fasttrack
-  sudo pacman -Syyu
-  sudo pacman -Syu yajl python3 base-devel
+  echo $PW | sudo -S pacman-mirrors --fasttrack
+  echo $PW | sudo -S pacman -Syyu
+  echo $PW | sudo -S pacman -Syu yajl python3 base-devel
   cd /tmp
   git clone https://aur.archlinux.org/yay-git.git && cd yay-git/
   sleep 10
   makepkg -si
-  echo "[INFO] yay installed"
+  info "Updated: yay"
 fi
 
 
 # --- Install snap (if not exist)  ------------------------------------------------------------------------------------
 if ! [ -x "$(command -v snap)" ]; then
   yes | yay -S --noconfirm --needed snapd
-  sudo systemctl enable --now snapd.socket
+  echo $PW | sudo -S systemctl enable --now snapd.socket
   echo "export PATH=\$PATH:\/snap/bin/" | sudo tee -a /etc/profile
-  sudo ln -s /var/lib/snapd/snap /snap
-  echo "[INFO] Snap installed"
+  echo $PW | sudo -S ln -s /var/lib/snapd/snap /snap
+  info "Updated: snap"
 fi
-sudo ln -s /var/lib/snapd/snap /snap 2>/dev/null || true
+echo $PW | sudo -S ln -s /var/lib/snapd/snap /snap 2>/dev/null || true
 
 
 # --- Install ansible (if not exist) ----------------------------------------------------------------------------------
 if ! [ -x "$(command -v ansible)" ]; then
-  yes | sudo -S pacman -S ansible
+  echo $PW | sudo -S pacman -S  --noconfirm ansible
   yes | yay -S --noconfirm ansible-aur
   ansible-galaxy collection install community.general
-  echo "[INFO] Ansible installed"
+  info "Updated: ansible"
 fi
-
-
 # --- Download Dotfiles from GitHub -----------------------------------------------------------------------------------
 cd $HOME/GIT/projects_home/
 git clone git@github.com:dvragulin/dotfiles-public.git 2>/dev/null || true
 git clone git@github.com:dvragulin/common-scripts.git 2>/dev/null || true
 cd $HOME/GIT/projects_home/dotfiles-public
-echo "[INFO] Main git repositories updated"
+info "Updated: dvragulin/dotfiles-public.git"
+info "Updated: dvragulin/common-scripts.git"
 
 # --- Run Ansible playbook --------------------------------------------------------------------------------------------
 export ANSIBLE_CONFIG="./bin/ansible.cfg"
@@ -66,62 +81,53 @@ selected_playbooks=()
 if [ ${#playbooks[@]} -eq 0 ]; then echo "No available playbooks found."; exit 1; fi
 printf "\nSelect the playbook(s) you want to run (e.g., 1 2 3):\n"
 for i in "${!playbooks[@]}"; do
-    echo "$(($i + 1))) ${playbooks[$i]}"
+    echo "  $(($i + 1))) ${playbooks[$i]}"
 done
 read -p "Enter your choice(s): " -a choices
 for choice in "${choices[@]}"; do
     index=$(($choice - 1))
     if [[ $index -ge 0 && $index -lt ${#playbooks[@]} ]]; then
-        # Добавляем плейбук, если выбор корректный
         selected_playbooks+=("${playbooks[$index]}")
     else
         echo "Invalid selection: $choice"
         exit 1
     fi
 done
-
-TIME_START=$(date +%s)
+echo
 for playbook in "${selected_playbooks[@]}"; do
-    echo "Running playbook: $playbook"
+    printf "%0.s_" $(seq 1 $COLUMNS)
+    echo -e "\n\n \033[33m 🏃\033[m Running playbook: \033[33m $playbook \033[m"
+    printf "%0.s_" $(seq 1 $COLUMNS); printf "\n"
     ansible-playbook "$playbook" -e "ansible_sudo_pass=$PW"
 done
-TIME_END=$(date +%s)
 
-DIFF=$(( $TIME_END - $TIME_START ))
-TIME_DIFF=$(date -d@$DIFF -u +%H:%M:%S)
-
-echo "[INFO] Ansible playbook comoleted"
-# --- Run go for intall custom apps -----------------------------------------------------------------------------------
-
-# --- Enable and mask system services ----------
-SERVICES_TO_ENABLE=("fstrim.timer"
+# --- Enable system services ------------------------------------------------------------------------------------------
+echo
+echo $PW | sudo -S gpasswd -a $USER docker 1> /dev/null
+info "Updated: gpasswd for $USER -> docker"
+echo $PW | sudo -S chmod 666 /var/run/docker.sock
+info "Updated: docker.sock"
+SERVICES_TO_ENABLE=("docker"
+                    "fstrim.timer"
                     "ananicy.service"
                     "cpupower.service"
                     "cpupower-gui.service"
                     "haveged"
                     "bluetooth.service")
 for svc in "${SERVICES_TO_ENABLE[@]}"; do
-  sudo systemctl enable "$svc" || true
-  echo "[INFO] - $svc enabled"
+  echo $PW | sudo -S systemctl enable "$svc" || true
+  info "systemctl enabled: $svc"
 done
+echo $PW | sudo -S systemctl start docker
+info "systemctl start: docker"
 #sudo systemctl mask NetworkManager-wait-online.service || true
 
-
-echo "[INFO] systemctl configured"
-
-
-# --- Run go for intall custom apps -----------------------------------------------------------------------------------
-#sudo gpasswd -a $USER docker
-#sudo systemctl start docker
-#sudo chmod 666 /var/run/docker.sock
-
-
 # --- Change shell to ZSH ---------------------------------------------------------------------------------------------
-echo $PW | chsh -s "$(which zsh)"
-echo "[INFO] zsh was choosen"
+if [ "$CURRENT_SHELL" != "zsh" ]; then echo $PW | chsh -s "$(which zsh)"; fi
+info "Updated: default shell"
 
-
-# --- Finaly ----------------------------------------------------------------------------------------------------------
-git home
-echo "[INFO] Git home configuratuin was aplied"
-echo "[INFO] Bootstrap complete. Successfully set up environment Time:[$TIME_DIFF]"
+# --- Final message ---------------------------------------------------------------------------------------------------
+TIME_END=$(date +%s)
+DIFF=$(( $TIME_END - $TIME_START ))
+TIME_DIFF=$(date -d@$DIFF -u +%H:%M:%S)
+info "Bootstrap complete. Successfully set up environment in Time: \033[32m[$TIME_DIFF]\033[m "
