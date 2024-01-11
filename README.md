@@ -9,18 +9,19 @@ bash -c "$(wget -O- https://raw.githubusercontent.com/dvragulin/dotfiles-public/
 
 ### Roles
 
-[01_Init.yml](01_Init.yml)
+
+- [01_Init.yml](01_Init.yml)
     - install_applications
     - make_directories
     - make_links
-[02_Workstation.yml](02_Workstation.yml)
+- [02_Workstation.yml](02_Workstation.yml)
     - bluetooth
     - grub
     - keychron
     - ssh
     - sysctl
     - units
-[03_Profile.yml](03_Profile.yml)
+- [03_Profile.yml](03_Profile.yml)
     - avatars
     - bash
     - dunst
@@ -31,7 +32,7 @@ bash -c "$(wget -O- https://raw.githubusercontent.com/dvragulin/dotfiles-public/
     - wallpapers
     - xinit
     - zsh
-[04_Applications.yml](04_Applications.yml)
+- [04_Applications.yml](04_Applications.yml)
     - alacritty
     - btop
     - flameshot
