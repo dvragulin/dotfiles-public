@@ -1,0 +1,16 @@
+---
+# tasks file for bash
+                                                                            
+- name: Link bash config file | .bashrc
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/03_Profile/bash/files/bashrc"
+    dest: "$HOME/.bashrc"
+    state: link
+    force: yes
+
+- name: Link bash config file | .bash_profile
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/03_Profile/bash/files/bash_profile"
+    dest: "$HOME/.bash_profile"
+    state: link
+    force: yes

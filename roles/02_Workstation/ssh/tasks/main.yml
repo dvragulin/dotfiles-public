@@ -1,0 +1,9 @@
+---
+# tasks file for ssh
+- name: Link ssh config file | ssh_config
+  become: yes
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/02_Workstation/ssh/files/ssh_config"
+    dest: "/etc/ssh/ssh_config"
+    state: link
+    force: yes

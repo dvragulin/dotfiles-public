@@ -1,9 +1,0 @@
----
-# tasks file for units
-- name: Link to cpupower unit
-  become: yes
-  file:
-    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/01_Workstation/units/files/cpupower.unit"
-    dest: "/etc/systemd/system/cpupower.service"
-    state: link
-    force: yes

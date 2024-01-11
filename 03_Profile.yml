@@ -1,0 +1,15 @@
+---
+- name: "Step 03: Profile"
+  hosts: DESKTOP
+  become: no
+  roles:
+    - role: 03_Profile/avatars
+    - role: 03_Profile/bash
+    - role: 03_Profile/dunst
+    - role: 03_Profile/gtk
+    - role: 03_Profile/i3
+    - role: 03_Profile/polybar
+    - role: 03_Profile/rofi
+    - role: 03_Profile/wallpapers
+    - role: 03_Profile/xinit
+    - role: 03_Profile/zsh

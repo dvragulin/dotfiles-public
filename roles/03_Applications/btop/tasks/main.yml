@@ -1,9 +1,0 @@
----
-# tasks file for btop
-
-- name: Link btop config file | btop.conf
-  file:
-    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/03_Applications/btop/files/btop.conf"
-    dest: "$HOME/.config/btop/btop.conf"
-    state: link
-    force: yes

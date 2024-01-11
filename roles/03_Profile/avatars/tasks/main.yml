@@ -1,0 +1,15 @@
+---
+# tasks file for avatars
+- name: Link avatar | .face
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/03_Profile/avatars/files/avatar_01"
+    dest: "$HOME/.face"
+    state: link
+    force: yes
+
+- name: Link avatar | .face.icon
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/03_Profile/avatars/files/avatar_01"
+    dest: "$HOME/.face.icon"
+    state: link
+    force: yes

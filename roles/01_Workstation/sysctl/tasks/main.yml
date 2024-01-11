@@ -1,9 +1,0 @@
----
-# tasks file for sysctl
-- name: Link max user watches
-  become: yes
-  file:
-    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/01_Workstation/sysctl/files/50-max_user_watches.conf"
-    dest: "/etc/sysctl.d/50-max_user_watches.conf"
-    state: link
-    force: yes

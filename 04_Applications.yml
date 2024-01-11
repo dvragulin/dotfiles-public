@@ -1,0 +1,23 @@
+---
+- name: "Step 03: Applications"
+  hosts: DESKTOP
+  become: no
+  roles:
+    - role: 04_Applications/alacritty
+    - role: 04_Applications/btop
+    - role: 04_Applications/flameshot
+    - role: 04_Applications/git
+    - role: 04_Applications/glow
+    - role: 04_Applications/helix
+    - role: 04_Applications/k9s
+    - role: 04_Applications/lazygit
+    - role: 04_Applications/mc
+    - role: 04_Applications/newsboat
+    - role: 04_Applications/nvim
+    - role: 04_Applications/pacseek
+    - role: 04_Applications/pyradio
+    - role: 04_Applications/ranger
+    - role: 04_Applications/taskwarrior
+    - role: 04_Applications/tmux
+    - role: 04_Applications/vim
+    - role: 04_Applications/zathura

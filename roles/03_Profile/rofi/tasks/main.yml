@@ -1,0 +1,15 @@
+---
+# tasks file for rofi
+- name: Link rofi config file | config.rasi
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/03_Profile/rofi/files/config.rasi"
+    dest: "$HOME/.config/rofi/config.rasi"
+    state: link
+    force: yes
+
+- name: Link rofi config file | dvragulin.rasi
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/03_Profile/rofi/files/dvragulin.rasi"
+    dest: "$HOME/.config/rofi/dvragulin.rasi"
+    state: link
+    force: yes

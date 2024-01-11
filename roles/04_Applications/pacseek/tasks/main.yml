@@ -1,0 +1,22 @@
+---
+# tasks file for pacseek
+
+- name: Link pacseek config file | colors.json
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/04_Applications/pacseek/files/colors.json"
+    dest: "$HOME/.config/pacseek/colors.json"
+    state: link
+    force: yes
+- name: Link pacseek config file | config.json
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/04_Applications/pacseek/files/config.json"
+    dest: "$HOME/.config/pacseek/config.json"
+    state: link
+    force: yes
+
+- name: Link pacseek config file | glyphs.json
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/04_Applications/pacseek/files/glyphs.json"
+    dest: "$HOME/.config/pacseek/glyphs.json"
+    state: link
+    force: yes

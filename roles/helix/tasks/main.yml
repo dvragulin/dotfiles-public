@@ -1,9 +1,0 @@
----
-# tasks file for helix
-                                                                            
-- name: Link helix config file
-  file:
-    src: "$HOME/GIT/projects_home/dotfiles-public/roles/helix/files/config.toml"
-    dest: "$HOME/.config/helix/config.toml"
-    state: link
-    force: yes

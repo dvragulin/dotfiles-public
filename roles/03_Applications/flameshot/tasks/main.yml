@@ -1,9 +1,0 @@
----
-# tasks file for flameshot
-
-- name: Link flameshot config file
-  file:
-    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/03_Applications/flameshot/files/flameshot.ini"
-    dest: "$HOME/.config/flameshot/flameshot.ini"
-    state: link
-    force: yes
