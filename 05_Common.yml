@@ -1,0 +1,7 @@
+---
+- name: "Step 05: Common"
+  hosts: DESKTOP
+  become: no
+  roles:
+    - role: 05_Common/obsidian
+    - role: 05_Common/vim

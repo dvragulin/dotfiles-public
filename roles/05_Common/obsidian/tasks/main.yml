@@ -1,0 +1,12 @@
+---
+
+- name: Delete obsidian cache
+  become: no
+  file:
+    path: '{{ item }}'
+    state: absent
+  loop:
+  - '$HOME/.config/obsidian/Cache'
+  - '$HOME/.config/obsidian/Code Cache'
+  - '$HOME/.config/obsidian/GPUCache'
+
