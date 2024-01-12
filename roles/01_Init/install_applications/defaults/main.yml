@@ -195,6 +195,7 @@ dev_and_terminal_utilities_packages_pacman:
   - postman-bin                        # A collaboration platform for API development (binary release)
   - pyradio                            # A command-line internet radio player
   - ranger                             # A console file manager with VI key bindings
+  - redis                              # A powerful, open source object-relational database system
   - ripgrep                            # A search tool that combines the usability of ag with the raw speed of grep
   - s3cmd                              # A command-line tool for managing AWS S3 and CloudFront services
   - smartgit                           # A Git client with support for GitHub Pull Requests+Comments and SVN
