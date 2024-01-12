@@ -216,7 +216,6 @@ dev_and_terminal_utilities_packages_pacman:
   - vscode                             # A source-code editor developed by Microsoft for Windows, Linux, and macOS
   - w3m                                # A text-based web browser as well as a pager like more or less
   - w3m-imgcat                         # This script allows you to display inline images in terminal emulators with w3mimgdisplay support
-  - wireshark-git                      # A network protocol analyzer for Unix/Linux and Windows (development version)
   - yandex-cloud-bin                   # Official Yandex Cloud command-line interface for managing Yandex Cloud services
   - yt-dlp                             # A command-line program to download videos from YouTube and other sites
   - ytfzf                              # A script that enables you to search and get a preview of YouTube videos and download them using youtube-dl
@@ -224,6 +223,7 @@ dev_and_terminal_utilities_packages_pacman:
   - zathura-djvu                       # A DjVu file format plugin for Zathura document viewer
   - zathura-pdf-mupdf                  # A lightweight PDF viewer plugin for Zathura
   - zathura-ps                         # A PostScript plugin for Zathura document viewer
+#  - wireshark-git                      # A network protocol analyzer for Unix/Linux and Windows (development version)
 #  - lazydocker                         # A simple terminal UI for Docker and docker-compose, written in Go with the gocui library
 #  - poetry                             # A tool for dependency management and packaging in Python
 #  - s5cmd                              # A very fast S3 and local filesystem execution tool
@@ -232,39 +232,39 @@ dev_and_terminal_utilities_packages_snap_classic:
   - goland                             # IDE for the Go programming language developed by JetBrains
   - powershell                         # Command-line shell and scripting language developed by Microsoft
   - pycharm-professional               # Professional edition of PyCharm, an IDE for Python developed by JetBrains
-dev_and_terminal_utilities_packages_pip:
-  - cachetools                         # Extensible memoizing collections and decorators
-  - filelock                           # Platform independent file lock in Python
-  - flake8                             # Tool for Python style guide enforcement and linting
-  - gitpython                          # Python library used to interact with Git repositories
-  - google-auth                        # Google authentication library for Python
-  - google-auth-httplib2               # Library for Google authentication and to make authorized HTTP requests with httplib2
-  - google-auth-oauthlib               # Google authentication library integration with requests-oauthlib
-  - grip                               # Command-line server application to preview Markdown files as they would appear on GitHub
-  - httplib2                           # Comprehensive HTTP client library for Python
-  - isort                              # Python utility/library to sort imports alphabetically, and automatically separated into sections
-  - jinja2                             # Templating engine for Python, used to generate HTML or other text formats
-  - kubernetes                         # Python client library for Kubernetes, used to interact with Kubernetes cluster API
-  - lazy-object-proxy                  # A fast and thorough lazy object proxy for Python
-  - mccabe                             # Python module for McCabe complexity checker, a part of flake8
-  - notion-backup                      # Tool for backing up content from the Notion workspace
-  - numpy                              # Scientific computing library with support for large, multi-dimensional arrays and matrices
-  - oauth2client                       # Library for OAuth 2.0 and Google authentication
-  - pandas                             # Data analysis and manipulation library for Python
-  - pendulum                           # Python package for date and time manipulation
-  - pipenv                             # Tool that aims to bring the best of all packaging worlds to the Python world
-  - prettytable                        # Python library to easily display tabular data in a visually appealing ASCII table format
-  - proxmoxer                          # Wrapper for the Proxmox VE API allowing for programmable interaction
-  - pyasn1-modules                     # Collection of ASN.1-based protocols modules
-  - pycodestyle                        # Tool to check Python code against coding style standards (PEP 8)
-  - pyflakes                           # Linter to identify errors in Python code
-  - pylint                             # Code analysis tool that looks for programming errors, helps enforcing a coding standard
-  - pynvim                             # Python client and plugin host for Neovim
-  - requests                           # HTTP library for sending HTTP/1.1 requests in Python
-  - todoist-api-python                 # Official Python API library for interacting with the Todoist API
-  - virtualenv                         # Tool for creating isolated Python environments
-  - wrapt                              # Decorators, wrappers and monkey patching utility
-  - yandex-music                       # Library or client for interacting with the Yandex.Music service
+#dev_and_terminal_utilities_packages_pip:
+#  - cachetools                         # Extensible memoizing collections and decorators
+#  - filelock                           # Platform independent file lock in Python
+#  - flake8                             # Tool for Python style guide enforcement and linting
+#  - gitpython                          # Python library used to interact with Git repositories
+#  - google-auth                        # Google authentication library for Python
+#  - google-auth-httplib2               # Library for Google authentication and to make authorized HTTP requests with httplib2
+#  - google-auth-oauthlib               # Google authentication library integration with requests-oauthlib
+#  - grip                               # Command-line server application to preview Markdown files as they would appear on GitHub
+#  - httplib2                           # Comprehensive HTTP client library for Python
+#  - isort                              # Python utility/library to sort imports alphabetically, and automatically separated into sections
+#  - jinja2                             # Templating engine for Python, used to generate HTML or other text formats
+#  - kubernetes                         # Python client library for Kubernetes, used to interact with Kubernetes cluster API
+#  - lazy-object-proxy                  # A fast and thorough lazy object proxy for Python
+#  - mccabe                             # Python module for McCabe complexity checker, a part of flake8
+#  - notion-backup                      # Tool for backing up content from the Notion workspace
+#  - numpy                              # Scientific computing library with support for large, multi-dimensional arrays and matrices
+#  - oauth2client                       # Library for OAuth 2.0 and Google authentication
+#  - pandas                             # Data analysis and manipulation library for Python
+#  - pendulum                           # Python package for date and time manipulation
+#  - pipenv                             # Tool that aims to bring the best of all packaging worlds to the Python world
+#  - prettytable                        # Python library to easily display tabular data in a visually appealing ASCII table format
+#  - proxmoxer                          # Wrapper for the Proxmox VE API allowing for programmable interaction
+#  - pyasn1-modules                     # Collection of ASN.1-based protocols modules
+#  - pycodestyle                        # Tool to check Python code against coding style standards (PEP 8)
+#  - pyflakes                           # Linter to identify errors in Python code
+#  - pylint                             # Code analysis tool that looks for programming errors, helps enforcing a coding standard
+#  - pynvim                             # Python client and plugin host for Neovim
+#  - requests                           # HTTP library for sending HTTP/1.1 requests in Python
+#  - todoist-api-python                 # Official Python API library for interacting with the Todoist API
+#  - virtualenv                         # Tool for creating isolated Python environments
+#  - wrapt                              # Decorators, wrappers and monkey patching utility
+#  - yandex-music                       # Library or client for interacting with the Yandex.Music service
 # --- Network & Security ----------------------------------------------------------------------------------------------
 network_and_security_packages_pacman:
   - bridge-utils                       # Utilities for configuring Ethernet bridges
