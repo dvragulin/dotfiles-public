@@ -4,234 +4,233 @@
   pacman:
     name: '{{ item }}'
     state: absent
-  loop: "{{ remove_packages_pacman }}"
   ignore_errors: yes
-
-haskell-aeson 2.1.2.1-31
-haskell-aeson-pretty 0.8.9-161
-haskell-ansi-terminal 0.11.4-52
-haskell-ansi-wl-pprint 0.6.9-404
-haskell-appar 0.1.8-13
-haskell-asn1-encoding 0.9.6-222
-haskell-asn1-parse 0.9.5-222
-haskell-asn1-types 0.3.4-201
-haskell-assoc 1.0.2-234
-haskell-async 2.2.5-9
-haskell-attoparsec 0.14.4-67
-haskell-attoparsec-iso8601 1.1.0.0-43
-haskell-auto-update 0.1.6-326
-haskell-base-compat 0.12.2-1
-haskell-base-compat-batteries 0.12.2-70
-haskell-base-orphans 0.8.7-80
-haskell-base-unicode-symbols 0.2.4.2-13
-haskell-base16-bytestring 1.0.2.0-73
-haskell-base64 0.4.2.4-61
-haskell-base64-bytestring 1.2.1.0-96
-haskell-basement 0.0.16-1
-haskell-bifunctors 5.6-45
-haskell-bitvec 1.1.3.0-78
-haskell-blaze-builder 0.4.2.3-1
-haskell-blaze-html 0.9.1.2-219
-haskell-blaze-markup 0.8.3.0-3
-haskell-boring 0.2.1-2
-haskell-bsb-http-chunked 0.0.0.4-370
-haskell-byteorder 1.0.4-24
-haskell-call-stack 0.4.0-170
-haskell-case-insensitive 1.2.1.0-196
-haskell-cassava 0.5.3.0-83
-haskell-cereal 0.5.8.3-1
-haskell-citeproc 0.8.1-79
-haskell-cmdargs 0.10.22-1
-haskell-colour 2.3.6-196
-haskell-commonmark 0.2.3-16
-haskell-commonmark-extensions 0.2.3.5-18
-haskell-commonmark-pandoc 0.2.1.3-60
-haskell-comonad 5.0.8-229
-haskell-conduit 1.3.5-32
-haskell-conduit-extra 1.3.6-113
-haskell-constraints 0.13.4-42
-haskell-contravariant 1.5.5-3
-haskell-cookie 0.4.6-1
-haskell-cryptohash-sha256 0.11.102.1-84
-haskell-crypton 0.34-3
-haskell-crypton-connection 0.3.1-26
-haskell-crypton-x509 1.7.6-20
-haskell-crypton-x509-store 1.6.9-20
-haskell-crypton-x509-system 1.6.7-20
-haskell-crypton-x509-validation 1.6.12-20
-haskell-data-array-byte 0.1.0.1-41
-haskell-data-default 0.7.1.1-295
-haskell-data-default-class 0.1.2.0-24
-haskell-data-default-instances-containers 0.0.1-3
-haskell-data-default-instances-dlist 0.0.1-308
-haskell-data-default-instances-old-locale 0.0.1-3
-haskell-data-fix 0.3.2-95
-haskell-dec 0.0.5-4
-haskell-digest 0.0.1.7-1
-haskell-digits 0.3.1-14
-haskell-distributive 0.6.2.1-202
-haskell-dlist 1.0-230
-haskell-doclayout 0.4.0.1-19
-haskell-doctemplates 0.11-53
-haskell-easy-file 0.2.5-14
-haskell-echo 0.1.4-4
-haskell-ed25519 0.0.5.0-24
-haskell-edit-distance 0.2.2.1-200
-haskell-emojis 0.1.3-3
-haskell-erf 2.0.0.0-24
-haskell-fast-logger 3.1.2-55
-haskell-file-embed 0.0.15.0-1
-haskell-foldable1-classes-compat 0.1-45
-haskell-generically 0.1.1-1
-haskell-ghc-bignum-orphans 0.1.1-1
-haskell-glob 0.10.2-83
-haskell-gridtables 0.1.0.0-38
-haskell-hackage-security 0.6.2.4-2
-haskell-haddock-library 1.10.0-254
-haskell-hashable 1.4.3.0-28
-haskell-hourglass 0.2.12-239
-haskell-hslua 2.3.0-31
-haskell-hslua-aeson 2.3.0.1-14
-haskell-hslua-classes 2.3.0-34
-haskell-hslua-core 2.3.1-28
-haskell-hslua-list 1.1.1-40
-haskell-hslua-marshalling 2.3.0-29
-haskell-hslua-module-doclayout 1.1.0-34
-haskell-hslua-module-path 1.1.0-31
-haskell-hslua-module-system 1.1.0.1-5
-haskell-hslua-module-text 1.1.0.1-5
-haskell-hslua-module-version 1.1.0-31
-haskell-hslua-module-zip 1.1.0-30
-haskell-hslua-objectorientation 2.3.0-29
-haskell-hslua-packaging 2.3.0-29
-haskell-hslua-repl 0.1.1-28
-haskell-hslua-typing 0.1.0-29
-haskell-http 4000.4.1-165
-haskell-http-api-data 0.5.1-37
-haskell-http-client 0.7.15-5
-haskell-http-client-tls 0.3.6.3-36
-haskell-http-date 0.0.11-129
-haskell-http-media 0.8.1.1-7
-haskell-http-types 0.12.3-330
-haskell-http2 4.0.0-5
-haskell-hunit 1.6.2.0-213
-haskell-indexed-traversable 0.1.3-37
-haskell-indexed-traversable-instances 0.1.1.2-28
-haskell-integer-logarithms 1.0.3.1-6
-haskell-iproute 1.7.12-75
-haskell-ipynb 0.2-122
-haskell-isocline 1.0.9-1
-haskell-jira-wiki-markup 1.5.1-15
-haskell-juicypixels 3.3.8-24
-haskell-lexer 1.1.1-1
-haskell-libyaml 0.1.2-329
-haskell-lpeg 1.0.4-18
-haskell-lua 2.3.1-15
-haskell-lukko 0.1.1.3-177
-haskell-memory 0.17.0-61
-haskell-mime-types 0.1.2.0-1
-haskell-mmorph 1.2.0-5
-haskell-monad-control 1.0.3.1-95
-haskell-mono-traversable 1.0.15.3-156
-haskell-network 3.1.4.0-13
-haskell-network-byte-order 0.1.7-1
-haskell-network-uri 2.6.4.2-23
-haskell-old-locale 1.0.0.7-30
-haskell-old-time 1.1.0.4-1
-haskell-onetuple 0.3.1-68
-haskell-only 0.1-22
-haskell-optparse-applicative 0.17.1.0-13
-haskell-ordered-containers 0.2.3-1
-haskell-pandoc 3.1.6-21
-haskell-pandoc-lua-engine 0.2.1-21
-haskell-pandoc-lua-marshal 0.2.2-42
-haskell-pandoc-types 1.23.1-5
-haskell-pem 0.2.4-278
-haskell-pretty-show 1.10-14
-haskell-prettyprinter 1.7.1-149
-haskell-primitive 0.7.4.0-97
-haskell-psqueues 0.2.8.0-3
-haskell-quickcheck 2.14.3-44
-haskell-random 1.2.1.1-145
-haskell-recv 0.1.0-23
-haskell-regex-base 0.94.0.2-2
-haskell-regex-posix 0.96.0.1-3
-haskell-regex-tdfa 1.3.2.2-28
-haskell-resolv 0.1.2.0-194
-haskell-resourcet 1.2.6-44
-haskell-safe 0.3.19-8
-haskell-safe-exceptions 0.1.7.4-14
-haskell-scientific 0.3.7.0-106
-haskell-semialign 1.2.0.1-144
-haskell-semigroupoids 5.3.7-126
-haskell-servant 0.19.1-70
-haskell-sha 1.6.4.4-19
-haskell-simple-sendfile 0.2.32-15
-haskell-singleton-bool 0.1.7-2
-haskell-skylighting 0.13.4.1-7
-haskell-skylighting-core 0.13.4.1-7
-haskell-skylighting-format-ansi 0.1-99
-haskell-skylighting-format-blaze-html 0.1.1.1-32
-haskell-skylighting-format-context 0.1.0.2-64
-haskell-skylighting-format-latex 0.1-99
-haskell-socks 0.6.1-230
-haskell-some 1.0.5-1
-haskell-sop-core 0.5.0.2-1
-haskell-split 0.2.4-9
-haskell-splitmix 0.1.0.5-8
-haskell-statevar 1.2.2-2
-haskell-streaming-commons 0.2.2.6-19
-haskell-strict 0.4.0.1-208
-haskell-string-conversions 0.4.0.1-164
-haskell-syb 0.7.2.3-25
-haskell-tagged 0.8.8-1
-haskell-tagsoup 0.14.8-219
-haskell-tar 0.5.1.1-165
-haskell-temporary 1.3-563
-haskell-texmath 0.12.8.2-7
-haskell-text-conversions 0.3.1.1-55
-haskell-text-icu 0.8.0.4-10
-haskell-text-short 0.1.5-72
-haskell-th-abstraction 0.4.5.0-1
-haskell-th-compat 0.1.4-36
-haskell-th-lift 0.8.4-1
-haskell-th-lift-instances 0.1.20-40
-haskell-these 1.1.1.1-235
-haskell-time-compat 1.9.6.1-90
-haskell-time-manager 0.0.1-22
-haskell-tls 1.8.0-19
-haskell-toml-parser 1.3.1.3-2
-haskell-transformers-base 0.4.6-95
-haskell-transformers-compat 0.7.2-1
-haskell-type-equality 1-12
-haskell-typed-process 0.2.11.1-7
-haskell-typst 0.3.2.1-9
-haskell-typst-symbols 0.1.4-1
-haskell-unicode-collation 0.1.3.6-3
-haskell-unicode-data 0.4.0.1-26
-haskell-unicode-transforms 0.4.0.1-65
-haskell-uniplate 1.6.13-207
-haskell-unix-compat 0.7-28
-haskell-unix-time 0.4.11-13
-haskell-unliftio 0.2.25.0-3
-haskell-unliftio-core 0.2.1.0-1
-haskell-unordered-containers 0.2.20-2
-haskell-utf8-string 1.0.2-143
-haskell-uuid-types 1.0.5.1-9
-haskell-vault 0.3.1.5-169
-haskell-vector 0.13.1.0-15
-haskell-vector-algorithms 0.9.0.1-78
-haskell-vector-stream 0.1.0.1-1
-haskell-wai 3.2.4-2
-haskell-wai-cors 0.2.7-338
-haskell-wai-extra 3.1.13.0-226
-haskell-wai-logger 2.4.0-377
-haskell-warp 3.3.30-29
-haskell-witherable 0.4.2-85
-haskell-word8 0.1.3-22
-haskell-xml 1.3.14-30
-haskell-xml-conduit 1.9.1.3-32
-haskell-xml-types 0.3.8-8
-haskell-yaml 0.11.11.2-27
-haskell-zip-archive 0.4.3-20
-haskell-zlib 0.6.3.0-53
+  loop: 
+    - "haskell-aeson"
+    - "haskell-aeson-pretty"
+    - "haskell-ansi-terminal"
+    - "haskell-ansi-wl-pprint"
+    - "haskell-appar"
+    - "haskell-asn1-encoding"
+    - "haskell-asn1-parse"
+    - "haskell-asn1-types"
+    - "haskell-assoc"
+    - "haskell-async"
+    - "haskell-attoparsec"
+    - "haskell-attoparsec-iso8601"
+    - "haskell-auto-update"
+    - "haskell-base-compat"
+    - "haskell-base-compat-batteries"
+    - "haskell-base-orphans"
+    - "haskell-base-unicode-symbols"
+    - "haskell-base16-bytestring"
+    - "haskell-base64"
+    - "haskell-base64-bytestring"
+    - "haskell-basement"
+    - "haskell-bifunctors"
+    - "haskell-bitvec"
+    - "haskell-blaze-builder"
+    - "haskell-blaze-html"
+    - "haskell-blaze-markup"
+    - "haskell-boring"
+    - "haskell-bsb-http-chunked"
+    - "haskell-byteorder"
+    - "haskell-call-stack"
+    - "haskell-case-insensitive"
+    - "haskell-cassava"
+    - "haskell-cereal"
+    - "haskell-citeproc"
+    - "haskell-cmdargs"
+    - "haskell-colour"
+    - "haskell-commonmark"
+    - "haskell-commonmark-extensions"
+    - "haskell-commonmark-pandoc"
+    - "haskell-comonad"
+    - "haskell-conduit"
+    - "haskell-conduit-extra"
+    - "haskell-constraints"
+    - "haskell-contravariant"
+    - "haskell-cookie"
+    - "haskell-cryptohash-sha256"
+    - "haskell-crypton"
+    - "haskell-crypton-connection"
+    - "haskell-crypton-x509"
+    - "haskell-crypton-x509-store"
+    - "haskell-crypton-x509-system"
+    - "haskell-crypton-x509-validation"
+    - "haskell-data-array-byte"
+    - "haskell-data-default"
+    - "haskell-data-default-class"
+    - "haskell-data-default-instances-containers"
+    - "haskell-data-default-instances-dlist"
+    - "haskell-data-default-instances-old-locale"
+    - "haskell-data-fix"
+    - "haskell-dec"
+    - "haskell-digest"
+    - "haskell-digits"
+    - "haskell-distributive"
+    - "haskell-dlist"
+    - "haskell-doclayout"
+    - "haskell-doctemplates"
+    - "haskell-easy-file"
+    - "haskell-echo"
+    - "haskell-ed25519"
+    - "haskell-edit-distance"
+    - "haskell-emojis"
+    - "haskell-erf"
+    - "haskell-fast-logger"
+    - "haskell-file-embed"
+    - "haskell-foldable1-classes-compat"
+    - "haskell-generically"
+    - "haskell-ghc-bignum-orphans"
+    - "haskell-glob"
+    - "haskell-gridtables"
+    - "haskell-hackage-security"
+    - "haskell-haddock-library"
+    - "haskell-hashable"
+    - "haskell-hourglass"
+    - "haskell-hslua"
+    - "haskell-hslua-aeson"
+    - "haskell-hslua-classes"
+    - "haskell-hslua-core"
+    - "haskell-hslua-list"
+    - "haskell-hslua-marshalling"
+    - "haskell-hslua-module-doclayout"
+    - "haskell-hslua-module-path"
+    - "haskell-hslua-module-system"
+    - "haskell-hslua-module-text"
+    - "haskell-hslua-module-version"
+    - "haskell-hslua-module-zip"
+    - "haskell-hslua-objectorientation"
+    - "haskell-hslua-packaging"
+    - "haskell-hslua-repl"
+    - "haskell-hslua-typing"
+    - "haskell-http"
+    - "haskell-http-api-data"
+    - "haskell-http-client"
+    - "haskell-http-client-tls"
+    - "haskell-http-date"
+    - "haskell-http-media"
+    - "haskell-http-types"
+    - "haskell-http2"
+    - "haskell-hunit"
+    - "haskell-indexed-traversable"
+    - "haskell-indexed-traversable-instances"
+    - "haskell-integer-logarithms"
+    - "haskell-iproute"
+    - "haskell-ipynb"
+    - "haskell-isocline"
+    - "haskell-jira-wiki-markup"
+    - "haskell-juicypixels"
+    - "haskell-lexer"
+    - "haskell-libyaml"
+    - "haskell-lpeg"
+    - "haskell-lua"
+    - "haskell-lukko"
+    - "haskell-memory"
+    - "haskell-mime-types"
+    - "haskell-mmorph"
+    - "haskell-monad-control"
+    - "haskell-mono-traversable"
+    - "haskell-network"
+    - "haskell-network-byte-order"
+    - "haskell-network-uri"
+    - "haskell-old-locale"
+    - "haskell-old-time"
+    - "haskell-onetuple"
+    - "haskell-only"
+    - "haskell-optparse-applicative"
+    - "haskell-ordered-containers"
+    - "haskell-pandoc"
+    - "haskell-pandoc-lua-engine"
+    - "haskell-pandoc-lua-marshal"
+    - "haskell-pandoc-types"
+    - "haskell-pem"
+    - "haskell-pretty-show"
+    - "haskell-prettyprinter"
+    - "haskell-primitive"
+    - "haskell-psqueues"
+    - "haskell-quickcheck"
+    - "haskell-random"
+    - "haskell-recv"
+    - "haskell-regex-base"
+    - "haskell-regex-posix"
+    - "haskell-regex-tdfa"
+    - "haskell-resolv"
+    - "haskell-resourcet"
+    - "haskell-safe"
+    - "haskell-safe-exceptions"
+    - "haskell-scientific"
+    - "haskell-semialign"
+    - "haskell-semigroupoids"
+    - "haskell-servant"
+    - "haskell-sha"
+    - "haskell-simple-sendfile"
+    - "haskell-singleton-bool"
+    - "haskell-skylighting"
+    - "haskell-skylighting-core"
+    - "haskell-skylighting-format-ansi"
+    - "haskell-skylighting-format-blaze-html"
+    - "haskell-skylighting-format-context"
+    - "haskell-skylighting-format-latex"
+    - "haskell-socks"
+    - "haskell-some"
+    - "haskell-sop-core"
+    - "haskell-split"
+    - "haskell-splitmix"
+    - "haskell-statevar"
+    - "haskell-streaming-commons"
+    - "haskell-strict"
+    - "haskell-string-conversions"
+    - "haskell-syb"
+    - "haskell-tagged"
+    - "haskell-tagsoup"
+    - "haskell-tar"
+    - "haskell-temporary"
+    - "haskell-texmath"
+    - "haskell-text-conversions"
+    - "haskell-text-icu"
+    - "haskell-text-short"
+    - "haskell-th-abstraction"
+    - "haskell-th-compat"
+    - "haskell-th-lift"
+    - "haskell-th-lift-instances"
+    - "haskell-these"
+    - "haskell-time-compat"
+    - "haskell-time-manager"
+    - "haskell-tls"
+    - "haskell-toml-parser"
+    - "haskell-transformers-base"
+    - "haskell-transformers-compat"
+    - "haskell-type-equality"
+    - "haskell-typed-process"
+    - "haskell-typst"
+    - "haskell-typst-symbols"
+    - "haskell-unicode-collation"
+    - "haskell-unicode-data"
+    - "haskell-unicode-transforms"
+    - "haskell-uniplate"
+    - "haskell-unix-compat"
+    - "haskell-unix-time"
+    - "haskell-unliftio"
+    - "haskell-unliftio-core"
+    - "haskell-unordered-containers"
+    - "haskell-utf8-string"
+    - "haskell-uuid-types"
+    - "haskell-vault"
+    - "haskell-vector"
+    - "haskell-vector-algorithms"
+    - "haskell-vector-stream"
+    - "haskell-wai"
+    - "haskell-wai-cors"
+    - "haskell-wai-extra"
+    - "haskell-wai-logger"
+    - "haskell-warp"
+    - "haskell-witherable"
+    - "haskell-word8"
+    - "haskell-xml"
+    - "haskell-xml-conduit"
+    - "haskell-xml-types"
+    - "haskell-yaml"
+    - "haskell-zip-archive"
+    - "haskell-zlib"

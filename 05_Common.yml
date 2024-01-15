@@ -3,5 +3,6 @@
   hosts: DESKTOP
   become: no
   roles:
-    - role: 05_Common/obsidian
-    - role: 05_Common/vim
+#    - role: 05_Common/vim
+#    - role: 05_Common/remove_apps
+#    - role: 05_Common/obsidian
