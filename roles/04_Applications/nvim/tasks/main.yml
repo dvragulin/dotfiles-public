@@ -22,7 +22,3 @@
     state: link
     force: yes
 
-- name: Install nvim pluggins
-  command: "vim +PlugInstall +qall"
-  args:
-    stdin: "\n"
