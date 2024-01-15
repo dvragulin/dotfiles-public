@@ -1,4 +1,13 @@
-# OneDark presets
+# -----------------------------------------------------------------------------
+# K9s Paragon Theme
+# -----------------------------------------------------------------------------
+
+# Styles...
+current_line: &current_line "#b87a7a"
+selection: &selection "#2b2b2b"
+comment: &comment "#cbe5e7"
+cyan: &cyan "#7a7ab8"
+magenta: &magenta "#7ab87a"
 foreground: &foreground "#cbe3e7"
 background: &background "#2b2b2b"
 black: &black "#2b2b2b"
@@ -11,17 +20,18 @@ red: &red "#b87a7a"
 yellow: &yellow "#d78700"
 yellow_bright: &yellow_bright "#dbdbbd"
 
+# Skin...
 k9s:
   body:
     fgColor: *foreground
     bgColor: *background
-    logoColor: *green
+    logoColor: *blue
   prompt:
     fgColor: *foreground
     bgColor: *background
     suggestColor: *orange
   info:
-    fgColor: *grey
+    fgColor: *magenta
     sectionColor: *green
   dialog:
     fgColor: *black
@@ -48,9 +58,8 @@ k9s:
       newColor: *blue
       modifyColor: *green
       addColor: *grey
-      pendingColor: *orange
       errorColor: *red
-      highlightcolor: *yellow
+      highlightColor: *yellow
       killColor: *green
       completedColor: *grey
     title:
@@ -73,7 +82,6 @@ k9s:
       bgColor: *background
       cursorFgColor: *black
       cursorBgColor: *blue
-      markColor: *yellow_bright
       header:
         fgColor: *grey
         bgColor: *background
@@ -82,10 +90,10 @@ k9s:
       fgColor: *blue
       bgColor: *background
       cursorColor: *foreground
-      graphicColor: *yellow_bright
+      graphicColor: *yellow
       showIcons: true
     yaml:
-      keyColor: *red
+      keyColor: *blue
       colonColor: *grey
       valueColor: *grey
     logs:
@@ -94,6 +102,8 @@ k9s:
       indicator:
         fgColor: *blue
         bgColor: *background
+        toggleOnColor: *magenta
+        toggleOffColor: *blue
     help:
       fgColor: *grey
       bgColor: *background

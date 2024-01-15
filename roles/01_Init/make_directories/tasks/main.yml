@@ -49,6 +49,7 @@
   - '$HOME/.config/newsboat'
   - '$HOME/.config/rtv'
   - '$HOME/.config/k9s'
+  - '$HOME/.config/k9s/skins'
   - '$HOME/.config/btop'
   - '$HOME/.config/got'
   - '$HOME/.config/yandex-disk'

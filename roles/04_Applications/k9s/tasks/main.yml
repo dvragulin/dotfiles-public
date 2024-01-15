@@ -1,9 +1,24 @@
 ---
 # tasks file for k9s
 
-- name: Link k9s config file | skin.yml
+- name: Link k9s config file | config.yaml
   file:
-    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/04_Applications/k9s/files/skin.yml"
-    dest: "$HOME/.config/k9s/skin.yml"
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/04_Applications/k9s/files/config.yaml"
+    dest: "$HOME/.config/k9s/config.yaml"
     state: link
     force: yes
+
+- name: Link k9s config file | aliases.yaml
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/04_Applications/k9s/files/aliases.yaml"
+    dest: "$HOME/.config/k9s/aliases.yaml"
+    state: link
+    force: yes
+
+- name: Link k9s config file | paragon.yaml
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/04_Applications/k9s/files/paragon.yaml"
+    dest: "$HOME/.config/k9s/skins/paragon.yaml"
+    state: link
+    force: yes
+
