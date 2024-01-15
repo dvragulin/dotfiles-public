@@ -1,12 +1,12 @@
 k9s:
-  liveViewAutoRefresh: false
+  liveViewAutoRefresh: true
   screenDumpDir: /home/dvragulin/tmp
   refreshRate: 2
-  maxConnRetry: 5
+  maxConnRetry: 10
   readOnly: false
-  noExitOnCtrlC: false
+  noExitOnCtrlC: true
   ui:
-    skin: paragon
+    skin: dvragulin
     enableMouse: false
     headless: false
     logoless: false
@@ -27,7 +27,7 @@ k9s:
       namespaces: []
       labels: {}
   logger:
-    tail: 100
+    tail: 500
     buffer: 5000
     sinceSeconds: -1
     fullScreen: false

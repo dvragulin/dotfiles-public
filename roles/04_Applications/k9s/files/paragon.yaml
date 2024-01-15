@@ -1,24 +1,18 @@
 # -----------------------------------------------------------------------------
-# K9s Paragon Theme
+# K9s dvragulin theme
 # -----------------------------------------------------------------------------
 
 # Styles...
-current_line: &current_line "#b87a7a"
-selection: &selection "#2b2b2b"
-comment: &comment "#cbe5e7"
-cyan: &cyan "#7a7ab8"
-magenta: &magenta "#7ab87a"
 foreground: &foreground "#cbe3e7"
 background: &background "#2b2b2b"
-black: &black "#2b2b2b"
-blue: &blue "#7a7ab8"
-green: &green "#7ab87a"
-grey: &grey "#cbe5e7"
-orange: &orange "#ffb86c"
-purple: &purple "#7ab87a"
-red: &red "#b87a7a"
-yellow: &yellow "#d78700"
-yellow_bright: &yellow_bright "#dbdbbd"
+blue:       &blue       "#7a7ab8"
+black:      &black      "#2b2b2b"
+green:      &green      "#7ab87a"
+grey:       &grey       "#cbe5e7"
+magenta:    &magenta    "#7ab87a"
+orange:     &orange     "#ffb86c"
+red:        &red        "#b87a7a"
+yellow:     &yellow     "#d78700"
 
 # Skin...
 k9s:
@@ -30,6 +24,9 @@ k9s:
     fgColor: *foreground
     bgColor: *background
     suggestColor: *orange
+    border:
+        command: *green
+        default: *foreground
   info:
     fgColor: *magenta
     sectionColor: *green
