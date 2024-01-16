@@ -7,3 +7,11 @@
     dest: "$HOME/.config/helix/config.toml"
     state: link
     force: yes
+
+- name: Link helix config file
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/04_Applications/helix/files/languages.toml"
+    dest: "$HOME/.config/helix/languages.toml"
+    state: link
+    force: yes
+
