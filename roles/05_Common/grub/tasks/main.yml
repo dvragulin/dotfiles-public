@@ -1,0 +1,11 @@
+---
+- name: Push grub config
+  become: true
+  ansible.builtin.copy:
+    src: /home/dvragulin/GIT/projects_home/dotfiles-public/roles/02_Workstation/grub/grub
+    dest: /etc/default/grub_new
+
+- name: Apply grub conifg
+  become: true
+  command: "grub-mkconfig -o /boot/grub/grub.cfg"
+
