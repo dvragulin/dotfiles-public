@@ -23,3 +23,6 @@ separator = "│"
 mode.normal = "NOR"
 mode.insert = "INS"
 mode.select = "SEL"
+
+[keys.normal]
+W = ["select_mode", "goto_line_end", "normal_mode"]
