@@ -22,10 +22,10 @@
     state: link
     force: yes
 
-- name: Link k9s config file | paragon.yaml
+- name: Link k9s config file | dvragulin.yaml
   file:
-    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/04_Applications/k9s/files/paragon.yaml"
-    dest: "$HOME/.config/k9s/skins/paragon.yaml"
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/04_Applications/k9s/files/dvragulin.yaml"
+    dest: "$HOME/.config/k9s/skins/dvragulin.yaml"
     state: link
     force: yes
 
