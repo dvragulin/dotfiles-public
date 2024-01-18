@@ -1,5 +1,4 @@
 " Blogs"
-https://vas3k.club/posts.rss                                                    " Blog"    "~Vas3k Club"
 https://rsshub.app/telegram/channel/the_thought_cabinet                         " Blog"    "~Кабинет Мыслей"
 https://qnnnp.substack.com/feed                                                 " Blog"    "~qnnnp"
 
@@ -22,11 +21,9 @@ https://habr.com/ru/rss/hubs/go/articles/?fl=ru                                 
 https://habr.com/ru/rss/hubs/kubernetes/articles/?fl=ru                         " B$N"    "~Habr:Hub: Kubernetes"
 
 " Youtube:  Tech"
-https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA    " Yt"      "~Luke Smith"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCL4BwOrBEKggPyqsdVpraFg    " Yt"      "~Johe News"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC9MK8SybZcrHR3CUV4NMy2g    " Yt"      "~Диджитализируй!"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCQfwKTJdCmiA6cXAY0PNRJw    " Yt"      "~Тимофей Хирьянов"
-https://www.youtube.com/feeds/videos.xml?channel_id=UC-sAMvDe7gTmBbub-rWljZg    " Yt"      "~ADV-IT"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCwHL6WHUarjGfUM_586me8w    " Yt"      "~HighLoad Channel"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCi8Dw_Kc5hKyK83xCW0jVfQ    " Yt"      "~linkmeup"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCK5MedKoNJ5aRahfGOIGx6g    " Yt"      "~Слёрм"
@@ -39,7 +36,6 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCm7SCpAUHK_9A8XlCQOAehg    
 https://www.youtube.com/feeds/videos.xml?channel_id=UCsT7hk972FddMVdtGnD8tsA    " Yt"      "~Эд Халилов"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCPeeH82kz24sWSnBBbkRMVw    " Yt"      "~Автоинструктор-62"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCoZiaJ2Yks-XzhyXoaNe3Dw    " Yt"      "~NVP73"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCsCCifMby57qV_UmrYGladQ    " Yt"      "~Awesome Restorations"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCBw12KKTLAFuPQlHZBe7sGw    " Yt"      "~Лествица"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCKHZsiBTqNW5OTbToLxMlmw    " Yt"      "~Дмитрий Боровик"
 
