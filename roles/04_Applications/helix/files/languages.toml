@@ -1,9 +1,7 @@
-use-grammars = { except = ["gemini"] }
-
 [[language]]
 name = "go"
 language-servers = ["gopls"]
-
+auto-format = false
 [language-server.gopls.config]
 gofumpt = true
 memoryMode = "DegradeClosed"
@@ -12,6 +10,14 @@ staticcheck = true
 
 [[language]]
 name = "yaml"
-
+auto-format = false
 [language-server.yaml-language-server.config]
 yaml.keyOrdering = false
+staticcheck = true
+
+[[language]]
+name = "bash"
+auto-format = false
+[language-server.bash-language-server.config]
+staticcheck = true
+

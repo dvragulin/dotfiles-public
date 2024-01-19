@@ -161,6 +161,9 @@ dev_and_terminal_utilities_packages_pacman:
   - grv                                # Git Repository Viewer; a terminal based interface for viewing git repositories
   - gum                                # A tool to stylize your CLI by engineering simple markdown-like scripts
   - helix                              # A post-modern modal text editor
+  - yaml-language-server               # YAML Language server
+  - bash-language-server               # Bash language server
+  - gopls                              # Go language server
   - helm                               # The Kubernetes package manager
   - helm-diff                          # A Helm plugin that shows a diff explaining what a helm upgrade would change
   - helm-docs                          # A tool for automatically generating markdown documentation for Helm charts
