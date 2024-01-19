@@ -1,3 +1,4 @@
+# --- Go -------------------------------------------------------------------------------------------------------------
 [[language]]
 name = "go"
 language-servers = ["gopls"]
@@ -8,6 +9,7 @@ memoryMode = "DegradeClosed"
 deepCompletion = true
 staticcheck = true
 
+# --- Yaml -----------------------------------------------------------------------------------------------------------
 [[language]]
 name = "yaml"
 auto-format = false
@@ -15,12 +17,14 @@ auto-format = false
 yaml.keyOrdering = false
 staticcheck = true
 
+# --- Bash -----------------------------------------------------------------------------------------------------------
 [[language]]
 name = "bash"
 auto-format = false
 [language-server.bash-language-server.config]
 staticcheck = true
 
+# --- Python ---------------------------------------------------------------------------------------------------------
 [[language]]
 name = "python"
 language-servers = ["pylsp"]

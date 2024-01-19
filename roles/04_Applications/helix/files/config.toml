@@ -21,10 +21,10 @@ select = "underline"
 hidden = false
 
 [editor.statusline]
-left = ["mode", "spinner", "file-name"]
+left = ["read-only-indicator", "mode", "spinner", "file-name"]
 center = []
-right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
-separator = "│"
+right = ["version-control", "separator", "diagnostics", "selections", "position", "position-percentage", "file-encoding", "file-line-ending", "file-type"]
+separator = " "
 mode.normal = "NOR"
 mode.insert = "INS"
 mode.select = "SEL"
