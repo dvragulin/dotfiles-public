@@ -21,3 +21,7 @@ auto-format = false
 [language-server.bash-language-server.config]
 staticcheck = true
 
+[[language]]
+name = "python"
+language-servers = ["pylsp"]
+auto-format = false
