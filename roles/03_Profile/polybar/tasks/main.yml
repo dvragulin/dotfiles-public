@@ -139,3 +139,10 @@
     dest: "$HOME/.config/polybar/yandex.station.sh"
     state: link
     force: yes
+
+- name: Link threads.count.sh script
+  file:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/03_Profile/polybar/files/threads.count.sh"
+    dest: "$HOME/.config/polybar/threads.count.sh"
+    state: link
+    force: yes
