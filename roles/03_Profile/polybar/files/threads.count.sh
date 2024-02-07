@@ -8,5 +8,5 @@ COUNT=$(
   "$MATTERMOST_HOST/api/v4/users/$MATTERMOST_USER_ID/teams/$MATTERMOST_TEAM_ID/threads" | jq ".total"
 )
 
-if [ $COUNT -gt 50 ]; then echo   %{F\#cebaba}$COUNT ; fi
+if [ $COUNT -gt 50 ]; then echo "%{F#cebaba}  $COUNT"; else echo   $COUNT; fi
 
