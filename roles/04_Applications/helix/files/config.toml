@@ -30,7 +30,7 @@ mode.insert = "INS"
 mode.select = "SEL"
 
 [keys.normal]
-"r" = ["redo"]
+"C-r" = ["redo"]
 "e" = ["move_next_word_end", "collapse_selection"]
 "W" = ["select_mode", "goto_line_end", "normal_mode"]
 "C-/" = ["toggle_comments", "move_visual_line_down"]
