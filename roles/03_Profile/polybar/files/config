@@ -69,7 +69,7 @@ override-redirect    = false
 
 ;modules-center      =
 modules-left         = i3 sp2 xwindow
-modules-right        = cpu sp2 memory sp2 temperature sp2 docker sp2 updates_pacman sp2 updates_aur sp2 trash tmp pics sp2 filesystem_custom sp2 threads_count jira_issues sp2 git_count git_mr git_wh sp2 newsboat sp2 pyradio sp2 mic sp2 yandex-station pulseaudio sp2 translator sp2 xkeyboard sp2 weather sp2 calendar date sp2 iot_kettle sp2 obs sp2 mount_nas sp2
+modules-right        = cpu sp2 memory sp2 temperature sp2 docker sp2 updates_pacman sp2 updates_aur sp2 trash tmp pics sp2 filesystem_custom sp2 mattermost jira_issues sp2 git_count git_mr git_wh sp2 newsboat sp2 pyradio sp2 mic sp2 yandex-station pulseaudio sp2 translator sp2 xkeyboard sp2 weather sp2 calendar date sp2 iot_kettle sp2 obs sp2 mount_nas sp2
 
 ; ---------------------------------------------------------------------------------------------------------------------
 ; --- Used Modules ----------------------------------------------------------------------------------------------------
@@ -479,11 +479,11 @@ interval = 1800
 label = %{T5}   %{T-}%output%
 
 ; --- Module ----------------------------------------------------------------------------------------------------------
-[module/threads_count]
+[module/mattermost]
 type = custom/script
-exec = /home/dvragulin/.config/polybar/threads.count.sh
-;click-left = /home/dvragulin/.config/polybar/threads.count.sh
-;click-right = /home/dvragulin/.config/polybar/threads.count.sh 
+exec = /home/dvragulin/.config/polybar/mattermost.sh
+;click-left = /home/dvragulin/.config/polybar/mattermost.sh
+;click-right = /home/dvragulin/.config/polybar/mattermost.sh
 
 interval = 10
 label = "%{T5}%{T-}%output% "

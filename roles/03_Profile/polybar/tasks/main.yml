@@ -140,9 +140,9 @@
     state: link
     force: yes
 
-- name: Link threads.count.sh script
+- name: Link mattermost.sh script
   file:
-    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/03_Profile/polybar/files/threads.count.sh"
-    dest: "$HOME/.config/polybar/threads.count.sh"
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/03_Profile/polybar/files/mattermost.sh"
+    dest: "$HOME/.config/polybar/mattermost.sh"
     state: link
     force: yes
