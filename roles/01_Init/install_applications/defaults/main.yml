@@ -172,6 +172,7 @@ dev_and_terminal_utilities_packages_pacman:
   - hstr                               # A shell history suggest box for Bash and Zsh with easy view, search and manage
   - isync                              # A command line application which synchronizes mailboxes
   - jq                                 # A lightweight and flexible command-line JSON processor
+  - yj                                 # Convert between YAML, TOML, JSON, and HCL.
   - k9s                                # A terminal-based UI to interact with your Kubernetes clusters
   - kafkacat-git                       # A command-line utility for producing and consuming Kafka messages
   - keepassxc                          # A cross-platform community-driven port of the Windows application “KeePass Password Safe”
