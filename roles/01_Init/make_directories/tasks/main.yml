@@ -37,6 +37,7 @@
   - '$HOME/GIT/projects_products'
   - '$HOME/.tmp'
   - '$HOME/.tmp/Pictures'
+  - '$HOME/.tmp/Downloads'
   - '$HOME/.config'
   - '$HOME/.config/rofi'
   - '$HOME/.config/ranger'
