@@ -303,6 +303,7 @@ productivity_and_office_packages_pacman:
   - obsidian                           # Markdown-based note-taking and personal knowledge base application
   - telegram-desktop                   # Desktop client for the Telegram messaging service
   - thunderbird                        # Open-source email client developed by the Mozilla Foundation
+  - systray-x-common                   # System tray for Thunderbird
   - transmission-remote-tui-git        # Terminal-based remote control client for Transmission BitTorrent client
   - yandex-browser-stable              # Web browser developed by Yandex, focusing on security and privacy
   - yandex-disk                        # Cloud storage service provided by Yandex
