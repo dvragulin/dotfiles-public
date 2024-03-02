@@ -1,12 +1,12 @@
 # --- AUTOLOAD ------------------------------------------------------------------------------------------------------ #
+# --- Settings ---
+
 set $monN eDP-1-1
 set $monL DP-3-2
 set $monR DP-3-3
-# --- Settings ---
-
-exec_always xrandr --output eDP-1 --off
-exec_always xrandr --output $monL --mode 2560x1440 --pos 0x0 --primary
-exec_always xrandr --output $monR --mode 2560x1440 --pos 2560x0
+# exec_always xrandr --output eDP-1 --off
+# exec_always xrandr --output $monL --mode 2560x1440 --pos 0x0 --primary
+# exec_always xrandr --output $monR --mode 2560x1440 --pos 2560x0
 
 workspace 1 output $monL
 workspace 2 output $monL
