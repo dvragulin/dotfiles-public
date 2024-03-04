@@ -52,7 +52,8 @@ https://rsshub.app/telegram/channel/aliexpressgeeks                             
 https://rsshub.app/telegram/channel/obsidian_geek                               " Tg"      "~Obsidian Geek"
 
 " ChangeLog (version controll)"
-https://about.gitlab.com/all-releases.xml                                       " ChLg"    "~Gitlab"
+https://about.gitlab.com/all-releases.xml                                       " ChLg"    "~Gitlab: Release Notes"
+https://about.gitlab.com/breaking-changes.xml                                   " ChLg"    "~Gitlab: Breaking Changes"
 https://github.com/kubernetes/kubernetes/releases.atom                          " ChLg"    "~Kubernetes"
 https://github.com/istio/istio/releases.atom                                    " ChLg"    "~Istio"
 https://github.com/databus23/helm-diff/releases.atom                            " ChLg"    "~Helm-diff"
