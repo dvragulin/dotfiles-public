@@ -107,6 +107,7 @@ alias tg="nchat -d $HOME/.config/chat/telegram"
 alias ws="nchat -d $HOME/.config/chat/whatsapp"
 
 # Add my functions
+source "$HOME/GIT/projects_home/common-scripts/tools.sh"
 FUNCTIONS_DIR="$HOME/GIT/projects_home/common-scripts/zsh_functions"
 if [ -d "$FUNCTIONS_DIR" ]; then
     for func in "$FUNCTIONS_DIR"/*.sh; do

@@ -230,6 +230,7 @@ dev_and_terminal_utilities_packages_pacman:
   - zathura-djvu                       # A DjVu file format plugin for Zathura document viewer
   - zathura-pdf-mupdf                  # A lightweight PDF viewer plugin for Zathura
   - zathura-ps                         # A PostScript plugin for Zathura document viewer
+  - goenv
 #  - wireshark-git                      # A network protocol analyzer for Unix/Linux and Windows (development version)
 #  - lazydocker                         # A simple terminal UI for Docker and docker-compose, written in Go with the gocui library
 #  - poetry                             # A tool for dependency management and packaging in Python
