@@ -1,5 +1,40 @@
 #!/usr/bin/bash
 
+echo -e "\e[0A\e[K\e[0;34m\ Collecting... \e[0m"
+notify-send -a "Git:" -u normal "Git repo's collecting started."
+
+RENEDER_STOPPER="false"
+PRINT_REPOS_ANS="$1"
+
+rm /tmp/git_update.sh.log 2>/dev/null || true
+
+for i in `ls $HOME/GIT/`; do
+  for x in `ls $HOME/GIT/$i`; do
+    cd $HOME/GIT/$i/$x
+    if [ $(git status --porcelain 2>/dev/null | wc -l) -eq "0" ]; then
+      true
+    else
+      RENDER_ERROR="true"
+      echo $HOME/GIT/$i/$x >> /tmp/git_update.sh.log
+      REPOS=$((REPOS+1))
+    fi
+  done
+done
+
+if [[ "$RENDER_ERROR" == "true" && "$PRINT_REPOS_ANS" == "yes" ]]; then
+  echo -e "\e[0A\e[K\e[0;32m\e[0m Information about $REPOS uncommited repositories was found:\n"
+  cat /tmp/git_update.sh.log
+
+  gum confirm "Do you want to continue?"
+
+  if [ $? -eq 1 ]; then
+    echo -e "\n\e[0;32m\e[0m Operation was canceled."
+    exit 0
+  fi
+
+  echo -e "\n\n \033[33m 🏃\033[m Running playbook \n"
+fi
+
 notify-send -a "Git:" -u normal "Git repo's update started."
 
 NAME_HEADER=$(date -u +%Y%m%d%H%M%S)
