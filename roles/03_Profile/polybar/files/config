@@ -574,7 +574,7 @@ interval = 1
 [module/jira_issues]
 type = custom/script
 exec = /home/dvragulin/.config/polybar/jira_get_issues.py
-click-left = yandex-browser-stable $JIRA_WORK/secure/Dashboard.jspa?selectPageId=10181  && notify-send -a "Firefox:" -u normal "Open Jira board"
+click-left = yandex-browser-stable $JIRA_WORK/secure/Dashboard.jspa?selectPageId=2045 && notify-send -a "Firefox:" -u normal "Open Jira board"
 click-right = yandex-browser-stable $JIRA_WORK/secure/RapidBoard.jspa?rapidView=348 && notify-send -a "Firefox:" -u normal "Open Jira backlog"
 
 interval = 900
