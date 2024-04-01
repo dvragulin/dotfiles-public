@@ -38,11 +38,14 @@ system_utilities_packages_pacman:
   - bluez-utils                        # Utilities for use in Bluetooth applications including hcitool, hcidump, rfcomm, and l2ping
   - bottom                             # A graphical system monitor with a customizable interface
   - btop                               # A resource monitor that shows usage and stats for processor, memory, disks, network, and processes
+  - i7z
   - cmake                              # A cross-platform open-source system that manages the build process in a compiler-independent manner
   - cpupower                           # A suite of tools for managing CPU power management and monitoring
   - cpupower-gui                       # A graphical utility to change the CPU frequency scaling and governor settings
+  - power-profiles-daemon
   - cups                               # A modular printing system for Unix-like operating systems which allows a computer to act as a print server
   - cups-pdf                           # A CUPS backend module which, in combination with CUPS itself, converts print jobs to PDF files
+  - cronie
   - cython                             # A programming language that makes writing C extensions for the Python language as easy as Python itself
   - dnstop                             # A console tool to analyze DNS traffic for network troubleshooting and performance tuning
   - ecryptfs-utils                     # A cryptographic filesystem for Linux
@@ -308,6 +311,7 @@ productivity_and_office_packages_pacman:
   - transmission-remote-tui-git        # Terminal-based remote control client for Transmission BitTorrent client
   - yandex-browser-stable              # Web browser developed by Yandex, focusing on security and privacy
   - yandex-disk                        # Cloud storage service provided by Yandex
+  - stacer                             # Ccleaner for Linux
 # --- Remove ----------------------------------------------------------------------------------------------------------
 remove_packages_pacman:
   - asbru-cm

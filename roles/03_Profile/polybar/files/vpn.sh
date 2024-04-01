@@ -16,5 +16,20 @@ vpn-switcher(){
 
 vpn-switcher "$1"
 
+GITLAB_WORK_URI=$(echo $GITLAB_WORK | sed 's|https://\(.*\)|\1|')
 VAR=$(ps aux | rg openconnect | rg background | awk '{{ print $2}}')
-if [[ -z $VAR ]]; then echo 󱕴 ; else echo %{F\#7AB87A}󰕥%{F-}; fi
+
+if [[ -z $VAR ]]; then
+    echo 󱕴
+else
+
+    ssh_output=$(ssh -oBatchMode=yes -oConnectTimeout=5 $GITLAB_WORK_URI 2>&1) # Адрес сервера для подключения
+
+    if echo "$ssh_output" | grep -q "Welcome to GitLab"; then
+        echo %{F\#7AB87A}󰕥%{F-}
+    fi
+
+    if echo "$ssh_output" | grep -q "Could not resolve hostname"; then
+        echo %{F\#913434}󰕥%{F-}
+    fi
+fi

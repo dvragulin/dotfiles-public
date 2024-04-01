@@ -113,14 +113,19 @@ SERVICES_TO_ENABLE=("docker"
                     "cpupower.service"
                     "cpupower-gui.service"
                     "haveged"
+                    "power-profiles-daemon"
                     "bluetooth.service")
 for svc in "${SERVICES_TO_ENABLE[@]}"; do
-  echo $PW | sudo -S systemctl enable "$svc" || true
+  echo $PW | sudo -S systemctl enable --now "$svc" || true
   info "systemctl enabled: $svc"
 done
 echo $PW | sudo -S systemctl start docker
 info "systemctl start: docker"
 #sudo systemctl mask NetworkManager-wait-online.service || true
+
+# Help for CPU 400mhz
+# sudo rmmod intel_rapl_msr
+# sudo modprobe intel_rapl_msr
 
 # --- Change shell to ZSH ---------------------------------------------------------------------------------------------
 if [ "$CURRENT_SHELL" != "zsh" ]; then echo $PW | chsh -s "$(which zsh)"; fi
