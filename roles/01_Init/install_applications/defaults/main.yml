@@ -122,6 +122,7 @@ virtualization_packages_pacman:
   - qemu                               # A generic and open source machine emulator and virtualizer
   - vagrant                            # A tool for building and distributing development environments
   - virt-manager                       # A desktop application for managing virtual machines through libvirt
+  - kaniko                             # Build Container Images In Kubernetes
 # --- Multimedia ------------------------------------------------------------------------------------------------------
 multimedia_packages_pacman:
   - calibre                            # A powerful and easy to use e-book manager
