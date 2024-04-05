@@ -41,8 +41,8 @@ system_utilities_packages_pacman:
   - i7z
   - cmake                              # A cross-platform open-source system that manages the build process in a compiler-independent manner
   - cpupower                           # A suite of tools for managing CPU power management and monitoring
-  - cpupower-gui                       # A graphical utility to change the CPU frequency scaling and governor settings
-  - power-profiles-daemon
+  - throttled                          # Fix for Lenovo thinkpad CPU
+  - auto-cpufreq                       # 
   - cups                               # A modular printing system for Unix-like operating systems which allows a computer to act as a print server
   - cups-pdf                           # A CUPS backend module which, in combination with CUPS itself, converts print jobs to PDF files
   - cronie

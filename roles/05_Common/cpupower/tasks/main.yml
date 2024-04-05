@@ -1,0 +1,7 @@
+---
+- name: Push cpupower config
+  become: true
+  ansible.builtin.copy:
+    src: /home/dvragulin/GIT/projects_home/dotfiles-public/roles/02_Workstation/cpupower/cpupower
+    dest: /etc/default/cpupower
+

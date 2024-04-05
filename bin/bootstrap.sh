@@ -110,10 +110,11 @@ info "Updated: docker.sock"
 SERVICES_TO_ENABLE=("docker"
                     "fstrim.timer"
                     "ananicy.service"
-                    "cpupower.service"
-                    "cpupower-gui.service"
                     "haveged"
-                    "power-profiles-daemon"
+                    "auto-cpufreq"
+                    "throttled.service"
+                    # "cpupower.service"
+                    # "power-profiles-daemon"
                     "bluetooth.service")
 for svc in "${SERVICES_TO_ENABLE[@]}"; do
   echo $PW | sudo -S systemctl enable --now "$svc" || true
@@ -124,10 +125,9 @@ info "systemctl start: docker"
 #sudo systemctl mask NetworkManager-wait-online.service || true
 
 # Help for CPU 400mhz
-# sudo rmmod intel_rapl_msr
-# sudo modprobe intel_rapl_msr
+# sudo systemctl enable --now throttled.service
+# sudo /usr/lib/throttled/throttled.py
 
-# echo 1 | sudo tee /sys/module/processor/parameters/ignore_ppc
 
 # --- Change shell to ZSH ---------------------------------------------------------------------------------------------
 if [ "$CURRENT_SHELL" != "zsh" ]; then echo $PW | chsh -s "$(which zsh)"; fi

@@ -1,0 +1,11 @@
+[Unit]
+Description=Set CPU governor to performance
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/cpupower -c all frequency-set -g userspace
+ExecStart=/usr/bin/cpupower frequency-set --min 2100MHz
+ExecStart=/usr/bin/cpupower frequency-set --max 3200MH
+
+[Install]
+WantedBy=multi-user.target

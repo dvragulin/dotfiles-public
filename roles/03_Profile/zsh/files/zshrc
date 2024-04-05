@@ -118,3 +118,5 @@ if [ -d "$FUNCTIONS_DIR" ]; then
 else
     echo "404: ${FUNCTIONS_DIR} not found."
 fi
+autoload -U compinit; compinit
+source /home/dvragulin/.sbm-cli/completion/zsh/sbm-cli

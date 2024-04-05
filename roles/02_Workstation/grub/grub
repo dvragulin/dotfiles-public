@@ -3,7 +3,7 @@
 GRUB_DEFAULT="0"
 GRUB_TIMEOUT="0"
 GRUB_DISTRIBUTOR="Arch Linux"
-GRUB_CMDLINE_LINUX_DEFAULT="loglevel=1 rd.systemd.show_status=auto rd.udev.log_level=0 rootfstype=xfs selinux=0 lpj=3499912 raid=noautodetect noibrs noibpb no_stf_barrier tsx=on tsx_async_abort=off elevator=noop mitigations=off"
+GRUB_CMDLINE_LINUX_DEFAULT="loglevel=1 rd.systemd.show_status=auto rd.udev.log_level=0 rootfstype=xfs selinux=0 lpj=3499912 raid=noautodetect noibrs noibpb no_stf_barrier tsx=on tsx_async_abort=off elevator=noop mitigations=off  modprobe.blacklist=nouveau"
 GRUB_CMDLINE_LINUX="rootfstype=xfs"
 
 # Preload both GPT and MBR modules so that they are not missed

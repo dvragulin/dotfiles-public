@@ -9,6 +9,7 @@
     editor = helix
 	autocrlf = input
 	excludesfile = ~/.gitignore
+	hookspath = /home/dvragulin/.git_settings/hooks
 [http]
 	sslVerify = false
 [credential]

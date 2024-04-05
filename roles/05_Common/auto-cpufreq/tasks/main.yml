@@ -1,0 +1,13 @@
+---
+- name: Push auto-cpufreq config
+  become: true
+  ansible.builtin.copy:
+    src: /home/dvragulin/GIT/projects_home/dotfiles-public/roles/02_Workstation/auto-cpufreq/auto-cpufreq.conf
+    dest: /etc/default/auto-cpufreq.conf
+
+- name: Push auto-cpufreq.service unit
+  become: true
+  ansible.builtin.copy:
+    src: /home/dvragulin/GIT/projects_home/dotfiles-public/roles/02_Workstation/auto-cpufreq/auto-cpufreq.service
+    dest: /etc/systemd/system/auto-cpufreq.service
+
