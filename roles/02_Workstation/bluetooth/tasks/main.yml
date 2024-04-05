@@ -1,0 +1,7 @@
+---
+# tasks file for bluetooth keyboard
+- name: Link bluetooth main.conf
+  become: yes
+  ansible.builtin.copy:
+    src: "/home/dvragulin/GIT/projects_home/dotfiles-public/roles/02_Workstation/bluetooth/files/main.conf"
+    dest: "/etc/bluetooth/main.conf"

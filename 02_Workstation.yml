@@ -4,8 +4,8 @@
   become: no
   roles:
     - role: 02_Workstation/bluetooth
-    - role: 02_Workstation/grub
-    - role: 02_Workstation/keychron
-    - role: 02_Workstation/ssh
-    - role: 02_Workstation/sysctl
-    - role: 02_Workstation/units
+    # - role: 02_Workstation/grub
+    # - role: 02_Workstation/keychron
+    # - role: 02_Workstation/ssh
+    # - role: 02_Workstation/sysctl
+    # - role: 02_Workstation/units

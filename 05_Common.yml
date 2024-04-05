@@ -3,6 +3,7 @@
   hosts: DESKTOP
   become: no
   roles:
+    # todo: move to workstation cpu and grub
     # - role: 05_Common/cpupower
     # - role: 05_Common/auto-cpufreq
     # - role: 05_Common/grub
