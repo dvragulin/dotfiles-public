@@ -127,6 +127,8 @@ info "systemctl start: docker"
 # sudo rmmod intel_rapl_msr
 # sudo modprobe intel_rapl_msr
 
+# echo 1 | sudo tee /sys/module/processor/parameters/ignore_ppc
+
 # --- Change shell to ZSH ---------------------------------------------------------------------------------------------
 if [ "$CURRENT_SHELL" != "zsh" ]; then echo $PW | chsh -s "$(which zsh)"; fi
 info "Updated: default shell"
