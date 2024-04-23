@@ -604,9 +604,9 @@ label-font = 3
 [module/translator]
 type = custom/script
 tail = true
-exec = echo " "
-click-left = xdg-open https://translate.yandex.ru/
-click-right = xdg-open https://translate.yandex.ru/
+exec = echo " "
+click-left = yandex-browser-stable https://translate.yandex.ru/
+click-right = yandex-browser-stable https://translate.yandex.ru/
 
 ; ---------------------------------------------------------------------------------------------------------------------
 ; --- UnUsed Modules --------------------------------------------------------------------------------------------------

@@ -21,7 +21,7 @@ try:
 
     RFC_TASK_D = list({len(jira_client.search_issues(jira_filter_RFC))})
     RFC_TASK_P = list({len(jira_client.search_issues(jira_filter_RFC_INF))})
-    jira_report = f"  {len(jira_client.search_issues(jira_filter_backlog))}  " \
+    jira_report = f"  {len(jira_client.search_issues(jira_filter_backlog))}   " \
                   f"{len(jira_client.search_issues(jira_filter_progress))}"
 
     if RFC_TASK_D[0] > 0:

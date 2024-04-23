@@ -55,4 +55,4 @@ choose_sink() {
 
 choose_sink "$1"
 VAR=$(pactl list short | rg $DEVICE_YC | head -1 | awk '{print $1}')
-if  [[ -z $VAR ]]; then echo 󰋋 ; else echo %{F\#7AB87A}󰂰 ; fi
+if  [[ -z $VAR ]]; then echo 󰋋 ; else echo %{F\#7AB87A} ; fi
