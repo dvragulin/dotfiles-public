@@ -68,6 +68,7 @@ system_utilities_packages_pacman:
   - pulsemixer                         # A command-line mixer for PulseAudio
   - python-pip                         # The Python package installer, used to install and manage software packages written in Python
   - python-pipx                        # The Python package installer, used to install and manage software packages written in Python
+  - python-pyinotify
   - reflector-mirrorlist-update        # A tool to fetch and sort mirrorlist entries by speed for Arch Linux repositories
   - rsync                              # A fast, versatile, local and remote file-copying utility that provides speedup file transfer
   - snappy                             # A package management and deployment system
