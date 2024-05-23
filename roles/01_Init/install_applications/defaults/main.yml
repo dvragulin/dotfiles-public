@@ -155,6 +155,7 @@ dev_and_terminal_utilities_packages_pacman:
   - flog-bin                           # A fake log generator for log systems testing
   - fx                                 # A command-line JSON processing tool
   - fzf                                # A general-purpose command-line fuzzy finder
+  - superfile
   - git-delta                          # A syntax-highlighting pager for git and diff output
   - glab                               # An open-source GitLab command line tool bringing GitLab's cool features to your command line
   - glow                               # A stylish CLI markdown reader

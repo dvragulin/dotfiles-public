@@ -7,7 +7,7 @@
     state: link
     force: yes
 
-- name: Link Documents/Pictures to Pictures
+- name: Link ~/Documents/_Pictures to Pictures
   become: yes
   file:
     src: "/home/dvragulin/Documents/_Pictures"
@@ -15,7 +15,15 @@
     state: link
     force: yes
 
-- name: Link Documents/Desktop to Desktop
+- name: Link ~/Documents/_Video to Video
+  become: yes
+  file:
+    src: "/home/dvragulin/Documents/_Video"
+    dest: "/home/dvragulin/Video"
+    state: link
+    force: yes
+
+- name: Link ~/Documents/_Desktop to Desktop
   become: yes
   file:
     src: "/home/dvragulin/Documents/_Desktop"
@@ -23,7 +31,7 @@
     state: link
     force: yes
 
-- name: Link Documents/Shared to Shared
+- name: Link ~/Documents/_Shared to Shared
   become: yes
   file:
     src: "/home/dvragulin/Documents/_Shared"
