@@ -69,10 +69,12 @@ fi
 # --- Download Dotfiles from GitHub -----------------------------------------------------------------------------------
 cd $HOME/GIT/projects_home/
 git clone git@github.com:dvragulin/dotfiles-public.git 2>/dev/null || true
-git clone git@github.com:dvragulin/common-scripts.git 2>/dev/null || true
-cd $HOME/GIT/projects_home/dotfiles-public
 info "Updated: dvragulin/dotfiles-public.git"
+git clone git@github.com:dvragulin/common-scripts.git 2>/dev/null || true
 info "Updated: dvragulin/common-scripts.git"
+git clone git@github.com:dvragulin/ansible-git-control.git 2>/dev/null || true
+info "Updated: dvragulin/ansible-git-control.git"
+cd $HOME/GIT/projects_home/dotfiles-public
 
 # --- Run Ansible playbook --------------------------------------------------------------------------------------------
 export ANSIBLE_CONFIG="./bin/ansible.cfg"

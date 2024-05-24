@@ -41,7 +41,7 @@ NAME_HEADER=$(date -u +%Y%m%d%H%M%S)
 
 TIME_START=$(date +%s)
 
-ansible-playbook ~/GIT/projects_home/_ansible-collection/ansible-git-control/playbook.yml | tee $HOME/tmp/ansible.git.conrtol.$NAME_HEADER.log
+ansible-playbook ~/GIT/projects_home/ansible-git-control/playbook.yml | tee $HOME/tmp/ansible.git.conrtol.$NAME_HEADER.log
 
 TIME_END=$(date +%s)
 
