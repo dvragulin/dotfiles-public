@@ -16,3 +16,20 @@ views:
       - "%CPU/L"
       - "%MEM/R"
       - "%MEM/L"
+  # v1/nodes:
+    # columns:
+      # - NAME
+      # - ZONE
+      # - RESTARTS
+      # - READY
+      # - STATUS
+      # - IP
+      # - NODE
+      # - AGE
+      # - CPU
+      # - MEM
+      # - "%CPU/R"
+      # - "%CPU/L"
+      # - "%MEM/R"
+      # - "%MEM/L"
+
