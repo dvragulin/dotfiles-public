@@ -226,6 +226,7 @@ dev_and_terminal_utilities_packages_pacman:
   - vim                                # A highly configurable text editor built to enable efficient text editing
   - vim-runtime                        # Runtime files that vim needs to run
   - vscode                             # A source-code editor developed by Microsoft for Windows, Linux, and macOS
+  - code-marketplace
   - w3m                                # A text-based web browser as well as a pager like more or less
   - w3m-imgcat                         # This script allows you to display inline images in terminal emulators with w3mimgdisplay support
   - yandex-cloud-bin                   # Official Yandex Cloud command-line interface for managing Yandex Cloud services
