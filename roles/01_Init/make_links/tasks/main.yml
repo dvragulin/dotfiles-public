@@ -15,14 +15,6 @@
     state: link
     force: yes
 
-- name: Link ~/Documents/_Video to Video
-  become: yes
-  file:
-    src: "/home/dvragulin/Documents/_Video"
-    dest: "/home/dvragulin/Video"
-    state: link
-    force: yes
-
 - name: Link ~/Documents/_Desktop to Desktop
   become: yes
   file:

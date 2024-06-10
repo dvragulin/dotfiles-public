@@ -20,8 +20,6 @@ core_packages_pacman:
   - libxnvctrl                         # NVIDIA NV-CONTROL X extension, a library for accessing XNVCTRL, NVIDIA's own X extension
   - ncurses                            # A library for writing text-based user interfaces
   - pam-gnupg                          # A PAM module for unlocking GnuPG keys
-  - samsung-unified-driver-common      # Common files for Samsung Unified Linux Driver (for printers and scanners)
-  - samsung-unified-driver-printer     # Printer driver for Samsung Unified Linux Driver
   - vde2                               # Virtual Distributed Ethernet for virtual machines networking
   - vte3                               # Terminal emulator widget for GTK+ used by GNOME Terminal
   - vulkan-intel                       # Intel's Vulkan graphics driver
