@@ -12,6 +12,7 @@ https://us2.campaign-archive.com/feed?u=e2e180baf855ac797ef407fc7&id=9e26887fc5 
 https://cprss.s3.amazonaws.com/postgresweekly.com.xml                           " Nws"    "~Weekly: Postgres"
 
 " Blogs"
+https://simkinbh.com/?feed=rss2                                                 " Blg"    "~Борис Симкин"
 https://www.kryukov.biz/feed/                                                   " Blg"    "~Записки Линуксоида"
 https://jedi.be/blog/index.xml                                                  " Blg"    "~Patrick Debois"
 https://habr.com/ru/rss/companies/flant/articles/?fl=ru                         " Blg"    "~Habr:Cmp: Flant"
