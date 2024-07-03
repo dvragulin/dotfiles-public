@@ -69,5 +69,5 @@ https://github.com/redis/redis/releases.atom                                    
 https://github.com/python/cpython/tags.atom                                     " CL"    "~Python"
 https://git.sr.ht/~rjarry/aerc/refs/rss.xml                                     " CL"    "~Aerc"
 
-" Podcast"
-https://feeds.fireside.fm/forthoseandthose/rss                                  " Pd"      "~Для Tech и этих"
+#" Podcast"
+#https://feeds.fireside.fm/forthoseandthose/rss                                  " Pd"      "~Для Tech и этих"

@@ -194,6 +194,10 @@ bindsym $mod+Shift+r restart
 # Exit i3
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you really want to exit i3?' -b 'Yes, exit i3' 'i3-msg exit'"
 
+
+# Restart i3 inplace
+bindsym Print exec "flameshot gui"
+
 # --- Common Settings ------------------------------------------------------------------------------------------------#
 
 set $mod Mod4
