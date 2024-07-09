@@ -49,7 +49,7 @@
 [interactive]
     diffFilter = delta --color-only
 [commit]
-	gpgSign = true
+	gpgSign = false
 [tag]
 	forceSignAnnotated = true
 [url "git@gitlab.sbermarket.tech:"]
