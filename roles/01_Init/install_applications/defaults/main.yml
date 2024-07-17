@@ -74,6 +74,7 @@ system_utilities_packages_pacman:
   - sysz                               # An interactive TUI for the Systemctl
   - ueberzug                           # A command line utility that displays images in terminals by utilizing the X11 graphic system
   - unzip                              # A utility for extracting files from and creating ZIP archives
+  - p7zip
   - wakeonlan                          # A tool for sending a Wake-On-LAN (WOL) packet to networked computers
 # --- Fonts -----------------------------------------------------------------------------------------------------------
 fonts_packages_pacman:
