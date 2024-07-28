@@ -97,7 +97,6 @@ alias kkon='kubectl config set current-context $(kubectl config get-contexts | t
 alias helm-yc="HELM_DRIVER=sql HELM_DRIVER_SQL_CONNECTION_STRING='${HELM_POSTGRES_CONNECTION_STRING_STAGE_YC_1}' helm"
 alias helm-sb="HELM_DRIVER=sql HELM_DRIVER_SQL_CONNECTION_STRING='${HELM_POSTGRES_CONNECTION_STRING_STAGE_SB_1}' helm"
 alias mkd='glow'
-alias n=note
 alias update=upd
 alias dc="popd > /dev/null 2>&1"
 alias cl=calcure
