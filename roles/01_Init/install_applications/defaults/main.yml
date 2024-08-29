@@ -179,6 +179,7 @@ dev_and_terminal_utilities_packages_pacman:
   - yj                                 # Convert between YAML, TOML, JSON, and HCL.
   - k9s                                # A terminal-based UI to interact with your Kubernetes clusters
   - kafkacat-git                       # A command-line utility for producing and consuming Kafka messages
+  - kafkactl
   - keepassxc                          # A cross-platform community-driven port of the Windows application “KeePass Password Safe”
   - kubectl                            # A command-line tool for controlling Kubernetes clusters
   - lazygit                            # A simple terminal UI for git commands, with the gocui library
