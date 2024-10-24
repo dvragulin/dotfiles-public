@@ -6,7 +6,7 @@
 	email = dmitriy.ragulin@sbermarket.ru
 	signingKey = dmitriy.ragulin@sbermarket.ru
 [core]
-    editor = helix
+    editor = hx
 	autocrlf = input
 	excludesfile = ~/.gitignore
 	hookspath = /home/dvragulin/.git_settings/hooks
